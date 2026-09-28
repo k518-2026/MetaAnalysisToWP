@@ -26,6 +26,11 @@ on:
         description: 'WordPress へ送る'
         type: boolean
         default: true
+      llm:
+        description: '最初に使う AI（gemini は無料だが混雑すると Claude に切り替わる。claude は従量課金）'
+        type: choice
+        options: [gemini, claude]
+        default: gemini
 
 permissions:
   contents: write
@@ -70,6 +75,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_PRIMARY: ${{ inputs.llm || 'gemini' }}
         run: |
           args=""
           [ -n "${{ inputs.theme }}" ] && args="$args --theme ${{ inputs.theme }}"

@@ -253,8 +253,10 @@ module.exports = {
   pdfTextMaxChars: 90000,   // 抽出に渡す上限（参考文献リストは先に落とす）
 
   // --- Gemini（主）と Claude（Gemini が全部混雑したときの逃げ道）---
+  // 'claude' にすると最初から Claude で書く（従量課金）。環境変数 LLM_PRIMARY が優先（Actions の手動実行で選べる）
+  llmPrimary: 'gemini',
   geminiModels: ['gemini-3.6-flash', 'gemini-3.8-flash', 'gemini-3.5-flash', 'gemini-3.7-flash', 'gemini-3.5-flash-lite'],
-  geminiRounds: 3,
+  geminiRounds: 2,          // Claude の鍵があれば、2巡しても駄目な時点で Claude に切り替える
   geminiRoundWaitMs: 90 * 1000,
   temperature: 0.2,
   maxOutputTokens: 16384,

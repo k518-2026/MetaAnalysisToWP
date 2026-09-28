@@ -156,6 +156,55 @@ async function unitTests() {
 }
 
 // ============================================================
+// 言語モデルの切り替え（Gemini が全部混雑 → Claude、以後はずっと Claude）
+// ============================================================
+
+async function llmTest() {
+  const http = require('./lib/http');
+  const llm = require('./lib/llm');
+  const claude = require('./lib/claude');
+  const saved = { fetch: global.fetch, env: { ...process.env }, wait: config.geminiRoundWaitMs, base: http.retry.baseMs, client: claude.createClient };
+  let geminiCalls = 0;
+  let claudeCalls = 0;
+  global.fetch = async () => { geminiCalls++; return { ok: false, status: 503, headers: { get: () => null }, text: async () => 'overloaded', clone() { return this; } }; };
+  claude.createClient = () => ({ messages: { create: async () => { claudeCalls++; return { stop_reason: 'end_turn', content: [{ type: 'text', text: '{"ok":true}' }] }; } } });
+  process.env.GEMINI_API_KEY = 'x';
+  process.env.ANTHROPIC_API_KEY = 'y';
+  delete process.env.LLM_PRIMARY;
+  config.geminiRoundWaitMs = 0;
+  http.retry.baseMs = 0;
+  const warn = console.warn;
+  console.warn = () => {};
+  try {
+    llm._reset();
+    const a = await llm.generateJson('p', null);
+    const first = geminiCalls;
+    const claudeAfterFirst = claudeCalls;
+    const b = await llm.generateJson('p', null);
+    check('LLM: 全部混雑なら Claude で書く', a.ok && claudeAfterFirst === 1 && first === config.geminiModels.length * 2 * config.geminiRounds, JSON.stringify({ a, claudeCalls, first }));
+    check('LLM: 一度尽きたら以後は Gemini を呼ばない', b.ok && geminiCalls === first && claudeCalls === 2, geminiCalls);
+    llm._reset();
+    process.env.LLM_PRIMARY = 'claude';
+    geminiCalls = 0;
+    await llm.generateJson('p', null);
+    check('LLM: LLM_PRIMARY=claude なら最初から Claude', geminiCalls === 0 && claudeCalls === 3);
+    llm._reset();
+    delete process.env.LLM_PRIMARY;
+    global.fetch = async () => { geminiCalls++; throw new Error('The operation was aborted due to timeout'); };
+    await llm.generateJson('p', null);
+    check('LLM: 時間切れも混雑と同じに扱い Claude に回る', claudeCalls === 4);
+  } finally {
+    console.warn = warn;
+    global.fetch = saved.fetch;
+    claude.createClient = saved.client;
+    config.geminiRoundWaitMs = saved.wait;
+    http.retry.baseMs = saved.base;
+    ['GEMINI_API_KEY', 'ANTHROPIC_API_KEY', 'LLM_PRIMARY'].forEach((k) => { if (saved.env[k] === undefined) delete process.env[k]; else process.env[k] = saved.env[k]; });
+    llm._reset();
+  }
+}
+
+// ============================================================
 // 通しの検査（偽物）
 // ============================================================
 
@@ -404,6 +453,7 @@ async function liveTest() {
 
 (async () => {
   await unitTests();
+  await llmTest();
   await pipelineTest();
   if (LIVE) await liveTest();
   const ng = checks.filter((c) => !c[1]);
