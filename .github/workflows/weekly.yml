@@ -51,6 +51,20 @@ jobs:
         with:
           node-version: '20'
 
+      # 値は出さず、登録されているかどうかだけを出す（失敗の原因を切り分けるため）
+      - name: Secrets の登録状況
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WP_POST_EMAIL: ${{ secrets.WP_POST_EMAIL }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          for k in GEMINI_API_KEY OPENALEX_API_KEY ANTHROPIC_API_KEY WP_POST_EMAIL SMTP_USER SMTP_PASSWORD; do
+            if [ -n "${!k}" ]; then echo "$k: 登録あり"; else echo "$k: 未登録"; fi
+          done
+
       - name: 自己検査（通信は偽物）
         run: node test.js
 

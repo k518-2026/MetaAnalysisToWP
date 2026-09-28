@@ -193,6 +193,23 @@ async function llmTest() {
     global.fetch = async () => { geminiCalls++; throw new Error('The operation was aborted due to timeout'); };
     await llm.generateJson('p', null);
     check('LLM: 時間切れも混雑と同じに扱い Claude に回る', claudeCalls === 4);
+    // Claude には構造化出力でスキーマを渡す
+    let sent = null;
+    claude.createClient = () => ({ messages: { create: async (p) => { sent = p; return { stop_reason: 'end_turn', content: [{ type: 'text', text: '{"decisions":[]}' }] }; } } });
+    process.env.LLM_PRIMARY = 'claude';
+    await llm.generateJson('p', { type: 'OBJECT', properties: { decisions: { type: 'ARRAY', items: { type: 'OBJECT', properties: { n: { type: 'INTEGER' }, band: { type: 'STRING', enum: ['a', 'b'] } } } } } });
+    const f = sent && sent.output_config && sent.output_config.format;
+    check('LLM: Claude は json_schema の構造化出力', f && f.type === 'json_schema' && f.schema.type === 'object' && f.schema.additionalProperties === false &&
+      f.schema.properties.decisions.items.properties.n.type === 'integer' && f.schema.properties.decisions.items.properties.band.enum.length === 2 &&
+      f.schema.properties.decisions.items.required.join() === 'n,band' && sent.output_config.effort === config.claude.effort, JSON.stringify(f));
+    // 選別がすべて失敗したら「0件」ではなく止める
+    claude.createClient = () => ({ messages: { create: async () => { throw new Error('400 invalid_request_error'); } } });
+    let threw = null;
+    try { await review.screen(config.themes[0], [{ title: 'a', abstract: 'x', year: '2020', venue: 'v' }]); } catch (e) { threw = e; }
+    check('選別: 全部失敗なら止めて原因を見せる', threw && threw.systemic && /400 invalid_request_error/.test(threw.message), threw && threw.message);
+    claude.createClient = () => ({ messages: { create: async () => ({ stop_reason: 'end_turn', content: [{ type: 'text', text: '{"decisions":[{"n":1,"include":"false","score":9,"reason":"r"},{"n":2,"include":true,"score":7,"reason":"ok"}]}' }] }) } });
+    const got = await review.screen(config.themes[0], [{ title: 'a', abstract: 'x' }, { title: 'b', abstract: 'y' }]);
+    check('選別: include が文字列 "false" なら不採用', got.length === 1 && got[0].title === 'b');
   } finally {
     console.warn = warn;
     global.fetch = saved.fetch;

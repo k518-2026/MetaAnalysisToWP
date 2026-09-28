@@ -146,6 +146,13 @@ async function collect(theme) {
     console.log(`    採用: ${theme.effect === 'r' ? 'r' : 'g'} = ${effect.display.toFixed(2)}（${effect.method}、N = ${effect.n}）`);
     studies.push({ paper, data, effect, pdfUrl: pdf.url });
   }
+  // 抽出が1本も成功しなかったのは仕組みの故障（AI の呼び出しの失敗など）。テーマのせいにせず止める
+  if (search.excluded.error >= 3 && search.excluded.error === search.fullTextsTried - search.excluded.noPdf && !studies.length) {
+    const last = examined.filter((x) => /^抽出に失敗/.test(x.outcome)).pop();
+    const e = new Error('本文からの抽出がすべて失敗しました: ' + (last ? last.outcome : ''));
+    e.systemic = true;
+    throw e;
+  }
   // 抽出に失敗したものは「適格でない」と区別できるよう、合計に入れて報告する
   search.excluded.ineligible += search.excluded.error;
 
