@@ -387,6 +387,11 @@ async function pipelineTest() {
     return en.includes('<i>g</i> = ' + g) && ja.includes('<i>g</i> = ' + g);
   })());
   check('英語版: 数値は計算結果から（HKSJ の t 値）', en.includes('<i>t</i>(' + report.analysis.overall.df + ')'));
+  check('日本語版: 表1〜3と図1があり、本文で説明している', ['表１　対象とした研究の概要', '表２　各研究の介入・比較の条件・成果指標', '表３　メタ分析の結果', '図１　フォレストプロット', 'を表１に示す', 'を表２に示す', '図１に各研究の効果量', '表３にまとめる'].every((x) => ja.includes(x)),
+    ['表１　対象とした研究の概要', '表２　各研究の介入', '表３　メタ分析の結果', '図１に各研究の効果量', '表３にまとめる'].filter((x) => !ja.includes(x)));
+  check('英語版: Table 1〜3 と Fig. 1 があり、本文で説明している', ['<b>Table 1.</b>', '<b>Table 2.</b>', '<b>Table 3.</b>', '<b>Figure 1.</b>', 'Table 2 lists', 'Fig. 1 shows the forest plot', 'Table 3 summarizes'].every((x) => en.includes(x)));
+  check('図表は参照する文の後に置く（日本語版）', ja.indexOf('を表１に示す') < ja.indexOf('表１　対象とした研究の概要') && ja.indexOf('図１に各研究の効果量') < ja.indexOf('図１　フォレストプロット') && ja.indexOf('表３にまとめる') < ja.indexOf('表３　メタ分析の結果'));
+  check('本文の集計（正の効果量の本数）', /10本のうち|本のうちd+本で効果量が正/.test(ja.replace(/<[^>]+>/g, '')) || /本のうち[０-９d]+本で効果量が正/.test(ja.replace(/<[^>]+>/g, '')));
   check('英語版: 日本語版へのリンク', en.includes('paper-ja.pdf') && ja.includes('paper-en.pdf'));
   check('記事: PDF へのリンク', art.includes('href="https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/paper-ja.pdf"') && art.includes('/paper-en.pdf"') && art.includes('/studies.csv"') && !art.includes('/blob/'));
   check('記事: 図は raw の URL', art.includes('https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/forest-ja.png'));
