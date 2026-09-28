@@ -379,7 +379,7 @@ async function pipelineTest() {
   })());
   check('英語版: 数値は計算結果から（HKSJ の t 値）', en.includes('<i>t</i>(' + report.analysis.overall.df + ')'));
   check('英語版: 日本語版へのリンク', en.includes('paper-ja.pdf') && ja.includes('paper-en.pdf'));
-  check('記事: PDF へのリンク', art.includes('/blob/main/reports/2026-10-04-math-fraction-instruction/paper-ja.pdf') && art.includes('paper-en.pdf'));
+  check('記事: PDF へのリンク', art.includes('href="https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/paper-ja.pdf"') && art.includes('/paper-en.pdf"') && art.includes('/studies.csv"') && !art.includes('/blob/'));
   check('記事: 図は raw の URL', art.includes('https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/forest-ja.png'));
   check('記事: "--" と <hr> が無い', !art.includes('--') && !/<hr/i.test(art));
   check('記事: 表がある', art.includes('<table>'));

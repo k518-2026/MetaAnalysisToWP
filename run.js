@@ -187,7 +187,8 @@ async function analyzeAndWrite(report) {
   console.log(`\n統合: k = ${o.k}, ${et === 'r' ? 'r' : 'g'} = ${meta.back(et, o.est).toFixed(2)} [${meta.back(et, o.ci[0]).toFixed(2)}, ${meta.back(et, o.ci[1]).toFixed(2)}], I2 = ${o.I2.toFixed(1)}%`);
 
   const facts = buildFacts(report);
-  const factsText = JSON.stringify(facts);
+  // 効果の大きさの目安（Cohen: g は 0.2 / 0.5 / 0.8、r は .1 / .3 / .5）は、渡した数値でなくても書いてよい
+  const factsText = JSON.stringify(facts) + ' 0.1 0.2 0.3 0.5 0.8';
   report.warnings = report.warnings || [];
 
   console.log('英語の地の文を書いています…');
@@ -222,15 +223,16 @@ async function analyzeAndWrite(report) {
 // 書き出し
 // ============================================================
 
+/** 記事と論文から張るリンク。PDF と CSV は GitHub のプレビューではなくファイルへの直リンク（ユーザー指定 2026-09-29） */
 function links(dir) {
   const { owner, name, branch } = config.repo;
-  const rel = config.paths.reports + '/' + dir;
+  const raw = `https://raw.githubusercontent.com/${owner}/${name}/${branch}/${config.paths.reports}/${dir}`;
   return {
-    paperJa: `https://github.com/${owner}/${name}/blob/${branch}/${rel}/paper-ja.pdf`,
-    paperEn: `https://github.com/${owner}/${name}/blob/${branch}/${rel}/paper-en.pdf`,
-    data: `https://github.com/${owner}/${name}/blob/${branch}/${rel}/studies.csv`,
-    figure: `https://raw.githubusercontent.com/${owner}/${name}/${branch}/${rel}/forest-ja.png`,
-    rawPaperJa: `https://raw.githubusercontent.com/${owner}/${name}/${branch}/${rel}/paper-ja.pdf`
+    paperJa: `${raw}/paper-ja.pdf`,
+    paperEn: `${raw}/paper-en.pdf`,
+    data: `${raw}/studies.csv`,
+    figure: `${raw}/forest-ja.png`,
+    rawPaperJa: `${raw}/paper-ja.pdf`
   };
 }
 
@@ -307,7 +309,7 @@ async function build(report, outDir) {
 function writeIndex(root, ledger) {
   const { owner, name, branch } = config.repo;
   const rows = ledger.runs.filter((r) => r.status === ledgerLib.STATUS.DONE).slice().reverse().map((r) => {
-    const base = `https://github.com/${owner}/${name}/blob/${branch}/${config.paths.reports}/${r.dir}`;
+    const base = `https://raw.githubusercontent.com/${owner}/${name}/${branch}/${config.paths.reports}/${r.dir}`;
     return `| ${r.date} | ${r.titleJa} | ${r.k} | ${r.pooled} | [日本語](${base}/paper-ja.pdf) / [English](${base}/paper-en.pdf) | ${r.wpSentAt ? '送信済み' : '未送信'} |`;
   });
   const md = ['# メタ分析の一覧', '', '新しい順。台帳（ledger.json）から自動で作っています。', '',
