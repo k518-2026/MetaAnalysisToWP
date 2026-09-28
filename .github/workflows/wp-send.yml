@@ -1,0 +1,49 @@
+name: WordPress だけ送る
+
+# 作ってある報告の記事を WordPress へ送り直す（論文は作り直さない）。
+#   dir を空にすると、まだ送っていない最新の報告を送る。
+#   draft にすると下書きとして送る（見え方の確認用。台帳は更新しない）。
+
+on:
+  workflow_dispatch:
+    inputs:
+      dir:
+        description: 'reports/ の下のフォルダ名（空なら未送信の最新）'
+        type: string
+        default: ''
+      draft:
+        description: '下書きとして送る'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-audit --no-fund
+      - name: 送る
+        env:
+          WP_POST_EMAIL: ${{ secrets.WP_POST_EMAIL }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          args=""
+          [ -n "${{ inputs.dir }}" ] && args="$args --dir ${{ inputs.dir }}"
+          [ "${{ inputs.draft }}" = "true" ] && args="$args --draft"
+          node send-wp.js $args
+      - name: 台帳を更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in ledger.json reports/README.md; do [ -e "$p" ] && git add "$p"; done
+          if ! git diff --cached --quiet; then
+            git commit -m "Record WordPress post"
+            git push
+          fi

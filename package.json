@@ -1,0 +1,16 @@
+{
+  "name": "meta-analysis-to-wp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "小中学校の数学教育・情報教育の論文を週1回メタ分析し、日本語記事と英語論文（APA）を WordPress へメール投稿する",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node run.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.74.0",
+    "nodemailer": "^7.0.9",
+    "puppeteer-core": "^24.0.0"
+  }
+}
