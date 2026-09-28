@@ -19,7 +19,7 @@ on:
         type: string
         default: ''
       force:
-        description: '前回から6日たっていなくても作る'
+        description: '前回から3日たっていなくても作る'
         type: boolean
         default: false
       send:

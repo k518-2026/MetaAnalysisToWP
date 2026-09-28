@@ -59,6 +59,7 @@ const options = {
   dryRun: process.argv.includes('--dry-run'),
   force: process.argv.includes('--force'),
   theme: argValue('--theme'),
+  allowRepeat: process.argv.includes('--allow-repeat'),
   root: ROOT
 };
 
@@ -333,13 +334,22 @@ async function main() {
     return null;
   }
 
+  // 過去に記事にしたテーマは二度扱わない（台帳と reports/ のフォルダの両方を見る）
+  const used = ledgerLib.usedThemes(ledger, path.join(options.root, config.paths.reports));
   let themes;
   if (options.theme) {
     const t = config.themes.find((x) => x.id === options.theme);
     if (!t) throw new Error('テーマが見つかりません: ' + options.theme + '（config.js の themes の id）');
+    if (used.has(t.id) && !options.allowRepeat) {
+      throw new Error(`テーマ「${t.titleJa}」（${t.id}）はすでに記事にしています。同じテーマで作り直すときは --allow-repeat を付けてください`);
+    }
     themes = [t];
   } else {
-    themes = ledgerLib.themeOrder(config.themes, ledger).slice(0, config.maxThemesPerRun);
+    themes = ledgerLib.themeOrder(config.themes, ledger, used).slice(0, config.maxThemesPerRun);
+    console.log(`未使用のテーマ: ${config.themes.length - used.size} / ${config.themes.length}（記事にしたもの: ${[...used].join(', ') || 'なし'}）`);
+    if (!themes.length) {
+      throw new Error('未使用のテーマがありません。config.js の themes に新しいテーマを足してください');
+    }
   }
 
   let report = null;

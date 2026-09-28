@@ -3,6 +3,7 @@ name: WordPress だけ送る
 # 作ってある報告の記事を WordPress へ送り直す（論文は作り直さない）。
 #   dir を空にすると、まだ送っていない最新の報告を送る。
 #   draft にすると下書きとして送る（見え方の確認用。台帳は更新しない）。
+#   WordPress で記事を消して出し直すときは、dir を空のまま実行する（台帳で「未送信」に戻してある報告が送られる）。
 
 on:
   workflow_dispatch:
@@ -12,9 +13,9 @@ on:
         type: string
         default: ''
       draft:
-        description: '下書きとして送る'
+        description: '下書きとして送る（見え方の確認用。台帳は更新しない）'
         type: boolean
-        default: true
+        default: false
 
 permissions:
   contents: write

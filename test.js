@@ -138,7 +138,16 @@ async function unitTests() {
   const L = { runs: [{ date: '2026-09-20', themeId: 'math-fraction-instruction', status: 'done' }] };
   const order = ledgerLib.themeOrder(config.themes, L);
   check('前回が数学なら次は情報', order[0].domain === 'info', order[0].id);
-  check('扱ったテーマは後ろへ', order[order.length - 1].id === 'math-fraction-instruction', order.map((t) => t.id).slice(-2));
+  check('記事にしたテーマは選ばない', !order.some((t) => t.id === 'math-fraction-instruction') && order.length === config.themes.length - 1);
+  const tmpRep = fs.mkdtempSync(path.join(os.tmpdir(), 'meta-rep-'));
+  fs.mkdirSync(path.join(tmpRep, '2026-10-11-info-unplugged-ct'));
+  fs.writeFileSync(path.join(tmpRep, 'README.md'), '');
+  const usedSet = ledgerLib.usedThemes(L, tmpRep);
+  check('過去の記事のフォルダからも使用済みを拾う', usedSet.has('info-unplugged-ct') && usedSet.has('math-fraction-instruction') && usedSet.size === 2, [...usedSet]);
+  check('フォルダだけにあるテーマも選ばない', !ledgerLib.themeOrder(config.themes, L, usedSet).some((t) => t.id === 'info-unplugged-ct'));
+  const allUsed = { runs: config.themes.map((t) => ({ date: '2026-01-01', themeId: t.id, status: 'done' })) };
+  check('全部使ったら候補は空', ledgerLib.themeOrder(config.themes, allUsed).length === 0);
+  fs.rmSync(tmpRep, { recursive: true, force: true });
   const L2 = { runs: [{ date: '2026-09-20', themeId: 'info-unplugged-ct', status: 'failed' }, { date: '2026-09-20', themeId: 'math-fraction-instruction', status: 'done' }] };
   check('失敗したテーマは後回し', ledgerLib.themeOrder(config.themes, L2)[0].id !== 'info-unplugged-ct');
   check('日数の計算', ledgerLib.daysSinceLast(L, '2026-09-27') === 7 && ledgerLib.daysSinceLast({ runs: [] }, '2026-09-27') === Infinity);
@@ -397,11 +406,21 @@ async function pipelineTest() {
 
   // 2回目は間隔があいていないので何もしない
   console.log = () => {};
-  run.deps.now = () => new Date('2026-10-06T22:00:00Z');
+  run.deps.now = () => new Date('2026-10-05T22:00:00Z');   // 日本時間 10-06（前回 10-04 から2日）
   run.options.theme = null;
   const again = await run.main();
   console.log = origLog;
-  check('週1回: 3日後は作らない', again === null);
+  check('週1回: 2日後は作らない', again === null);
+
+  // 同じテーマを指定しても、記事にしたテーマは作らない（--allow-repeat が無ければ）
+  run.options.force = true;
+  run.options.theme = 'math-fraction-instruction';
+  let repeatErr = null;
+  console.log = () => {};
+  try { await run.main(); } catch (e) { repeatErr = e; } finally { console.log = origLog; }
+  check('重複: 記事にしたテーマは指定しても止める', repeatErr && /すでに記事にしています/.test(repeatErr.message), repeatErr && repeatErr.message);
+  run.options.force = false;
+  run.options.theme = null;
 
   // ---- 送信 ----
   const sendWp = require('./send-wp');
