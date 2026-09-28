@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="446" viewBox="0 0 900 446" font-family="'Noto Sans', 'Noto Sans CJK JP', 'Yu Gothic', 'Meiryo', Arial, sans-serif" font-size="13">
+<rect width="900" height="446" fill="#ffffff"/>
+<text x="12" y="32" font-weight="bold">Study</text>
+<text x="660" y="32" font-weight="bold">g [95% CI]</text>
+<text x="880" y="32" font-weight="bold" text-anchor="end">Weight</text>
+<line x1="12" y1="42" x2="888" y2="42" stroke="#333" stroke-width="1"/>
+<text x="12" y="68">Bulut et al. [1]</text>
+<line x1="436.25451352797216" y1="64" x2="548.7677081791885" y2="64" stroke="#222" stroke-width="1.4"/>
+<rect x="485.788290885192" y="57.27718003161163" width="13.445639936776745" height="13.445639936776745" fill="#1f4e79"/>
+<text x="660" y="68">0.83 [0.20, 1.47]</text>
+<text x="880" y="68" text-anchor="end">9.3%</text>
+<text x="12" y="96">Lemonidis and Kaiafa [2]</text>
+<line x1="429.11027038973816" y1="92" x2="509.5879571846749" y2="92" stroke="#222" stroke-width="1.4"/>
+<rect x="462.3746337684749" y="85.02551998126837" width="13.948960037463248" height="13.948960037463248" fill="#1f4e79"/>
+<text x="660" y="96">0.57 [0.12, 1.03]</text>
+<text x="880" y="96" text-anchor="end">10.4%</text>
+<text x="12" y="124">Mahama and Kyeremeh [3]</text>
+<line x1="502.17814179264667" y1="120" x2="580.6571258978945" y2="120" stroke="#222" stroke-width="1.4"/>
+<rect x="534.4289754942835" y="113.01134164901285" width="13.97731670197429" height="13.97731670197429" fill="#1f4e79"/>
+<text x="660" y="124">1.39 [0.94, 1.83]</text>
+<text x="880" y="124" text-anchor="end">10.5%</text>
+<text x="12" y="152">Van Hoof et al. [6]</text>
+<line x1="357.091949471029" y1="148" x2="436.26746956697406" y2="148" stroke="#222" stroke-width="1.4"/>
+<rect x="389.69596698558007" y="141.01625746657854" width="13.967485066842928" height="13.967485066842928" fill="#1f4e79"/>
+<text x="660" y="152">−0.25 [−0.69, 0.20]</text>
+<text x="880" y="152" text-anchor="end">10.5%</text>
+<text x="12" y="180">Prediger and Wessel [7]</text>
+<line x1="452.3038104236074" y1="176" x2="536.9864453371108" y2="176" stroke="#222" stroke-width="1.4"/>
+<rect x="487.70117888256544" y="169.05605100220632" width="13.887897995587393" height="13.887897995587393" fill="#1f4e79"/>
+<text x="660" y="180">0.86 [0.38, 1.34]</text>
+<text x="880" y="180" text-anchor="end">10.3%</text>
+<text x="12" y="208">Ubah [4]</text>
+<line x1="554.1598194246251" y1="204" x2="631.0166147260775" y2="204" stroke="#222" stroke-width="1.4"/>
+<rect x="585.5882170753513" y="197" width="14" height="14" fill="#1f4e79"/>
+<text x="660" y="208">1.96 [1.53, 2.40]</text>
+<text x="880" y="208" text-anchor="end">10.5%</text>
+<text x="12" y="236">Pal [5]</text>
+<line x1="472.94627649689414" y1="232" x2="591.5282574479496" y2="232" stroke="#222" stroke-width="1.4"/>
+<rect x="525.5658541204298" y="225.32858714800798" width="13.342825703984019" height="13.342825703984019" fill="#1f4e79"/>
+<text x="660" y="236">1.28 [0.61, 1.95]</text>
+<text x="880" y="236" text-anchor="end">9.1%</text>
+<text x="12" y="264">KARAMERT and Vardar [8]</text>
+<line x1="424.89151405760714" y1="260" x2="528.2733312481075" y2="260" stroke="#222" stroke-width="1.4"/>
+<rect x="469.7840174885755" y="253.20159483571817" width="13.596810328563663" height="13.596810328563663" fill="#1f4e79"/>
+<text x="660" y="264">0.65 [0.07, 1.24]</text>
+<text x="880" y="264" text-anchor="end">9.6%</text>
+<text x="12" y="292">Tahiroğlu and Özcan [9]</text>
+<line x1="478.08495445750026" y1="288" x2="562.8321828037756" y2="288" stroke="#222" stroke-width="1.4"/>
+<rect x="513.5150957630943" y="281.0565271324565" width="13.88694573508698" height="13.88694573508698" fill="#1f4e79"/>
+<text x="660" y="292">1.15 [0.67, 1.63]</text>
+<text x="880" y="292" text-anchor="end">10.3%</text>
+<text x="12" y="320">Sancar and Özkaya [10]</text>
+<line x1="432.98320113624436" y1="316" x2="539.718210607546" y2="316" stroke="#222" stroke-width="1.4"/>
+<rect x="479.5797778467404" y="309.2290719748453" width="13.541856050309452" height="13.541856050309452" fill="#1f4e79"/>
+<text x="660" y="320">0.77 [0.16, 1.37]</text>
+<text x="880" y="320" text-anchor="end">9.5%</text>
+<line x1="12" y1="342" x2="888" y2="342" stroke="#999" stroke-width="0.8"/>
+<text x="12" y="362" font-weight="bold">Random-effects model (HKSJ)</text>
+<polygon points="462.5021504996043,358 500.32580904837937,350 538.1494675971544,358 500.32580904837937,366" fill="#c00000"/>
+<text x="660" y="362" font-weight="bold">0.92 [0.50, 1.35]</text>
+<text x="880" y="362" text-anchor="end" font-weight="bold">100%</text>
+<text x="12" y="390">Prediction interval</text>
+<line x1="369.90990600490954" y1="386" x2="630.7417120918492" y2="386" stroke="#c00000" stroke-width="1.4" stroke-dasharray="5,4"/>
+<text x="660" y="390">[−0.55, 2.40]</text>
+<line x1="418.57142857142856" y1="46" x2="418.57142857142856" y2="392" stroke="#666" stroke-width="1" stroke-dasharray="2,3"/>
+<line x1="330" y1="392" x2="640" y2="392" stroke="#333" stroke-width="1"/>
+<line x1="330" y1="392" x2="330" y2="397" stroke="#333"/>
+<text x="330" y="411" text-anchor="middle">−1.00</text>
+<line x1="374.2857142857143" y1="392" x2="374.2857142857143" y2="397" stroke="#333"/>
+<text x="374.2857142857143" y="411" text-anchor="middle">−0.50</text>
+<line x1="418.57142857142856" y1="392" x2="418.57142857142856" y2="397" stroke="#333"/>
+<text x="418.57142857142856" y="411" text-anchor="middle">0.00</text>
+<line x1="462.8571428571429" y1="392" x2="462.8571428571429" y2="397" stroke="#333"/>
+<text x="462.8571428571429" y="411" text-anchor="middle">0.50</text>
+<line x1="507.1428571428571" y1="392" x2="507.1428571428571" y2="397" stroke="#333"/>
+<text x="507.1428571428571" y="411" text-anchor="middle">1.00</text>
+<line x1="551.4285714285714" y1="392" x2="551.4285714285714" y2="397" stroke="#333"/>
+<text x="551.4285714285714" y="411" text-anchor="middle">1.50</text>
+<line x1="595.7142857142858" y1="392" x2="595.7142857142858" y2="397" stroke="#333"/>
+<text x="595.7142857142858" y="411" text-anchor="middle">2.00</text>
+<line x1="640" y1="392" x2="640" y2="397" stroke="#333"/>
+<text x="640" y="411" text-anchor="middle">2.50</text>
+<text x="410.57142857142856" y="432" text-anchor="end" fill="#555">← Favors comparison</text>
+<text x="426.57142857142856" y="432" fill="#555">Favors intervention →</text>
+</svg>

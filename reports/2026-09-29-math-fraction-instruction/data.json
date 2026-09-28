@@ -1,0 +1,1911 @@
+{
+ "theme": {
+  "id": "math-fraction-instruction",
+  "domain": "math",
+  "effect": "smd",
+  "titleJa": "分数の指導法は理解を高めるか",
+  "titleEn": "Effects of Fraction Instruction Interventions on Students' Fraction Understanding",
+  "query": "(fraction OR fractions) AND (intervention OR instruction OR teaching OR training) AND (elementary OR primary OR \"middle school\" OR \"junior high\" OR \"lower secondary\" OR grade OR children OR pupils)",
+  "jstage": [
+   "分数 指導 小学校",
+   "分数 授業 効果"
+  ],
+  "population": "students in grades 1-9 (primary/elementary school and lower secondary/middle/junior high school, ages about 6-15). Exclude preschool-only, upper secondary-only, university, adult, and teacher/pre-service teacher samples.",
+  "intervention": "an instructional intervention or teaching approach targeting fraction concepts or operations",
+  "comparison": "business-as-usual instruction, an alternative instruction, or a no-treatment control group",
+  "outcome": "a fraction knowledge test or mathematics achievement test"
+ },
+ "search": {
+  "openalex": {
+   "total": 331,
+   "retrieved": 150
+  },
+  "jstage": {
+   "total": 5,
+   "retrieved": 5
+  },
+  "merged": 154,
+  "screened": 145,
+  "passedScreening": 31,
+  "fullTextsTried": 26,
+  "excluded": {
+   "noPdf": 11,
+   "ineligible": 0,
+   "noStats": 2,
+   "unverified": 3,
+   "implausible": 0,
+   "error": 0
+  }
+ },
+ "studies": [
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2342771458",
+    "doi": "10.29333/iejme/338",
+    "title": "The Effects of GeoGebra On Third Grade Primary Students’ Academic Achievement in Fractions",
+    "titleEn": "",
+    "authors": [
+     "Mehmet Bulut",
+     "Hanife Ünlütürk Akçakın",
+     "Gürcan Kaya",
+     "Veysel Akçakın"
+    ],
+    "venue": "International Electronic Journal of Mathematics Education",
+    "volume": "11",
+    "issue": "2",
+    "pages": "347–255",
+    "year": "2016",
+    "language": "en",
+    "citedBy": 45,
+    "url": "https://doi.org/10.29333/iejme/338",
+    "landing": "https://doi.org/10.29333/iejme/338",
+    "pdfUrls": [
+     "https://www.iejme.com/download/the-effects-of-geogebra-on-third-grade-primary-students-academic-achievement-in-fractions.pdf"
+    ],
+    "abstract": "The aim of this study is to examine the effects of GeoGebra on third grade primary students’ academic achievement in fractions concept. This study was conducted with 40 students in two intact classes in Ankara. One of the classes was randomly selected as an experimental group and other for control group. There were 19 students in the experimental group, while 21 students in control group. The matching- only posttest- only control group quasi-experimental design was employed. As a pretest, student’s first term mathematics scores were used. Data were collected with post-test about fractions. The post-test consisted of 22 short ended questions. Thanks to the scores weren’t violated the normality, independent t test was employed. The findings of the study showed that there were significant differences in favor of the experimental group. According to findings of this study, it was recommended that GeoGebra supporting teaching methods can be used on teaching fractions in third grade.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Quasi-experimental GeoGebra intervention with control group, third graders, posttest reported"
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental design comparing GeoGebra-based fraction instruction to traditional instruction in Grade 3 primary students using a fraction achievement post-test.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "GeoGebra dynamic representational activities for teaching fractions",
+    "comparison": "Traditional/normal fraction teaching sequence",
+    "outcomeMeasure": "22-item fractions academic achievement post-test (48 sub-questions)",
+    "summaryEn": "This quasi-experimental study compared third-grade students taught fractions using GeoGebra-based dynamic activities to those taught with traditional methods, using a post-test-only matched control design. Results showed the GeoGebra group scored significantly higher on the fractions achievement test than the control group, both in raw means and after controlling for prior mathematics achievement via ANCOVA.",
+    "summaryJa": "この準実験研究では、GeoGebraを用いた動的な活動で分数を学んだ小学3年生と、従来の方法で学んだ生徒を、事後テストのみのマッチング統制群デザインで比較しました。結果として、GeoGebra群は分数達成度テストにおいて統制群より有意に高い得点を示し、事前の数学成績を共変量としたANCOVAでもその効果は有意でした。",
+    "evidence": "There was significant difference in favor of the experimental (M=55.79, SD=29.16) group than the control group (M=34.4, SD=20.81); t (38) =-2.69, p=.011.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学3年",
+     "design": "準実験",
+     "intervention": "GeoGebraを用いた動的な分数指導活動",
+     "comparison": "従来の通常の分数指導法",
+     "outcomeMeasure": "22問から成る分数達成度事後テスト(下位問題含め48問)"
+    },
+    "stats": {
+     "nTreatment": "19",
+     "nControl": "21",
+     "meanTreatment": "55.79",
+     "meanControl": "34.40",
+     "sdTreatment": "29.16",
+     "sdControl": "20.81",
+     "t": "-2.69",
+     "F": "8.574",
+     "d": "",
+     "g": "",
+     "r": "0.583",
+     "nTotal": "40",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.8348028644759069,
+    "vi": 0.1050179266230277,
+    "n": 40,
+    "method": "means and SDs",
+    "display": 0.8348028644759069
+   },
+   "pdfUrl": "https://www.iejme.com/download/the-effects-of-geogebra-on-third-grade-primary-students-academic-achievement-in-fractions.pdf",
+   "sid": "S1"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2919284781",
+    "doi": "10.5539/jel.v8n2p165",
+    "title": "The Effect of Using Storytelling Strategy on Students’ Performance in Fractions",
+    "titleEn": "",
+    "authors": [
+     "Charalampos Lemonidis",
+     "Ioanna Kaiafa"
+    ],
+    "venue": "Journal of Education and Learning",
+    "volume": "8",
+    "issue": "2",
+    "pages": "165",
+    "year": "2019",
+    "language": "en",
+    "citedBy": 34,
+    "url": "https://doi.org/10.5539/jel.v8n2p165",
+    "landing": "https://doi.org/10.5539/jel.v8n2p165",
+    "pdfUrls": [
+     "http://www.ccsenet.org/journal/index.php/jel/article/download/0/0/38699/39362"
+    ],
+    "abstract": "Research findings in the field of Mathematics Education emphasize that storytelling is an effective instructional tool in the teaching of mathematics, as it provides a meaningful context that attracts students’ interest and makes learning a pleasant process. The use of stories and fairy tales in the teaching of mathematics motivates students to learn and provides students with an authentic context to understand mathematical concepts and procedures. It is a clear way to incorporate mathematics into other, broader cognitive domains and promotes mathematical discussion in the classroom. The main purpose of this study was to investigate the role that the use of storytelling can play in teaching fractions to third grade students. The study sample consisted of 76 third graders, who attended two primary schools in the city of Florina (Greece). This sample was divided into experimental (n=38) and control (n=38) group. In this study target-focused teaching stories were used. These stories were written in accordance with the objectives of a new Curriculum for rational numbers teaching. The study results showed that the use of storytelling had a positive effect on students’ achievement in fractions, as the experimental group performed significantly better than the control group. The students who benefited most from the use of storytelling were those with medium, especially, with low performance. Finally, the use of storytelling had a positive effect on specific mathematical skills, such as comparing fractions, finding equivalent fractions, creating and manipulating representations and problem solving.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Experimental study with control group comparing storytelling intervention on third graders' fraction performance"
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental comparison of storytelling versus manipulative-based fraction instruction among third-grade primary students using a fraction knowledge post-test.",
+    "country": "Greece",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Teaching fractions using target-focused storytelling with picture stories",
+    "comparison": "Teaching fractions using manipulative materials (objects, area models, number lines)",
+    "outcomeMeasure": "10-item fraction achievement post-test",
+    "summaryEn": "This quasi-experimental study compared 38 third-grade Greek students taught fractions through target-focused storytelling with 38 students taught using manipulative materials over a 4-week intervention. The storytelling group scored significantly higher on the fraction post-test (M=7.89, SD=1.328) than the control group (M=6.96, SD=1.842), t=2.517, p=0.017, with medium and low achievers benefiting most.",
+    "summaryJa": "この準実験研究では、ギリシャの小学3年生76名を対象に、ストーリーテリングを用いた分数指導群(38名)と操作教材を用いた指導群(38名)を4週間にわたり比較しました。ストーリーテリング群は分数の事後テストで統計的に有意に高い得点(平均7.89、SD1.328)を示し、統制群(平均6.96、SD1.842)よりも成績が良く(t=2.517, p=0.017)、特に中位・低位群の生徒に効果が大きく見られました。",
+    "evidence": "there was a statistically significant difference in the students’ performance between the experimental and control group [t=2.517, df=74, p=0.017<0.05]... mean score, was 7.89 with a standard deviation of 1.328... 6.96 with a standard deviation of 1.842",
+    "ja": {
+     "country": "ギリシャ",
+     "gradeLevel": "小学3年",
+     "design": "準実験",
+     "intervention": "目標焦点型の教育的物語(ストーリーテリング)を用いた分数指導",
+     "comparison": "操作教材(具体物・面積モデル・数直線など)を用いた分数指導",
+     "outcomeMeasure": "10項目からなる分数達成度事後テスト"
+    },
+    "stats": {
+     "nTreatment": "38",
+     "nControl": "38",
+     "meanTreatment": "7.89",
+     "meanControl": "6.96",
+     "sdTreatment": "1.328",
+     "sdControl": "1.842",
+     "t": "2.517",
+     "F": "44.9",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "76",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.57329644598459,
+    "vi": 0.053728844072597814,
+    "n": 76,
+    "method": "means and SDs",
+    "display": 0.57329644598459
+   },
+   "pdfUrl": "http://www.ccsenet.org/journal/index.php/jel/article/download/0/0/38699/39362",
+   "sid": "S2"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4308289254",
+    "doi": "10.29333/mathsciteacher/12610",
+    "title": "Impact of multiple representations-based instruction on basic six pupils’ performance in solving problems on common fractions",
+    "titleEn": "",
+    "authors": [
+     "Peter Nindow Mahama",
+     "Patrick Kyeremeh"
+    ],
+    "venue": "Journal of Mathematics and Science Teacher",
+    "volume": "3",
+    "issue": "1",
+    "pages": "em023",
+    "year": "2022",
+    "language": "en",
+    "citedBy": 7,
+    "url": "https://doi.org/10.29333/mathsciteacher/12610",
+    "landing": "https://doi.org/10.29333/mathsciteacher/12610",
+    "pdfUrls": [
+     "https://www.mathsciteacher.com/download/impact-of-multiple-representations-based-instruction-on-basic-six-pupils-performance-in-solving-12610.pdf"
+    ],
+    "abstract": "The study sought to investigate the impacts of multiple representations-based instructions (MRBI) on basic six pupils’ performance in solving problems on common fractions in the Sagnarigu Municipality of Ghana. The study employed non-equivalent control group design in which 96 pupils in one primary school were purposively sampled and assigned to experimental group (n=46) and control group (n=50). Data were gathered using tests (pre- and post-test) and analyzed using descriptive and inferential statistics (independent samples t-test). Also, pupils’ exposed to multiple representations-based instructions performed better in the post-test than in the conventional group. This suggests that MRBI positively impacted pupils’ performance in solving problems on common fractions. We conclude that MRBI is an effective approach, which mathematics teachers need to incorporate in their teaching of fractions. Therefore, we recommend the MRBI approach for basic school mathematics teachers to enhance pupils’ understanding of mathematics concepts, especially at mathematics education’s foundation (basic level).",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Quasi-experimental study with control group and t-test on fraction performance."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental comparison of Grade 6 (basic six) pupils receiving multiple representations-based instruction versus conventional instruction on a fraction problem-solving post-test, meeting all inclusion criteria.",
+    "country": "Ghana",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (non-equivalent control group design)",
+    "intervention": "Multiple representations-based instruction (paper folding, number line, symbols, verbal)",
+    "comparison": "Conventional lecture/discussion instruction on common fractions",
+    "outcomeMeasure": "10-item common fraction problem-solving test (post-test, out of 30)",
+    "summaryEn": "This quasi-experimental study compared basic six pupils taught fractions using multiple representations-based instruction (MRBI) versus conventional instruction in Ghana. The experimental group scored significantly higher on the post-test (M=20.13) than the control group (M=11.74), t(94)=6.85, p<0.001, with a large effect size (d=1.40).",
+    "summaryJa": "この準実験研究では、ガーナの小学6年生を対象に、複数表現に基づく指導法(MRBI)と従来型指導法による分数指導の効果を比較しました。実験群は事後テストで有意に高い得点(M=20.13)を示し、対照群(M=11.74)との差はt(94)=6.85、p<0.001で、効果量は大きい(d=1.40)ことが分かりました。",
+    "evidence": "experimental group (M=20.13, SD=6.38, n=46) compared to the control group (M=11.74, SD=5.63, n=50), with t(94)=6.85, p=0.00...large effect size (d=1.40)",
+    "ja": {
+     "country": "ガーナ",
+     "gradeLevel": "小学6年",
+     "design": "準実験(非同等対照群デザイン)",
+     "intervention": "複数表現に基づく指導法(紙折り、数直線、記号、言語表現を用いる)",
+     "comparison": "従来型の講義・討論による指導法",
+     "outcomeMeasure": "共通分数の問題解決テスト(10問、30点満点、事後テスト)"
+    },
+    "stats": {
+     "nTreatment": "46",
+     "nControl": "50",
+     "meanTreatment": "20.13",
+     "meanControl": "11.74",
+     "sdTreatment": "6.38",
+     "sdControl": "5.63",
+     "t": "6.85",
+     "F": "0.61",
+     "d": "1.40",
+     "g": "",
+     "r": "",
+     "nTotal": "96",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 1.3869732853498296,
+    "vi": 0.05109321989318485,
+    "n": 96,
+    "method": "means and SDs",
+    "display": 1.3869732853498296
+   },
+   "pdfUrl": "https://www.mathsciteacher.com/download/impact-of-multiple-representations-based-instruction-on-basic-six-pupils-performance-in-solving-12610.pdf",
+   "sid": "S3"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W3157627159",
+    "doi": "10.1080/01443410.2021.1908521",
+    "title": "How robust are learners’ misconceptions of fraction magnitude? An intervention study comparing the use of refutation and expository text",
+    "titleEn": "",
+    "authors": [
+     "Jo Van Hoof",
+     "Anne-Sophie Engelen",
+     "Wim Van Dooren"
+    ],
+    "venue": "Educational Psychology",
+    "volume": "41",
+    "issue": "5",
+    "pages": "524–543",
+    "year": "2021",
+    "language": "en",
+    "citedBy": 16,
+    "url": "https://doi.org/10.1080/01443410.2021.1908521",
+    "landing": "https://doi.org/10.1080/01443410.2021.1908521",
+    "pdfUrls": [
+     "https://lirias.kuleuven.be/retrieve/4b684e7c-e7c2-4824-8977-ea63d7bcc0ff"
+    ],
+    "abstract": "Although a good rational number understanding is of crucial importance for learners’ general maths achievement, many learners have misconceptions about fractions. An often described misconception is that a fraction’s numerical magnitude increases when its denominator, numerator, or both increase. The present intervention study investigated how robust this misconception is, after learners have specifically been instructed on the incorrectness of their idea by means of a refutation text, as opposed to a condition where they received an expository text. Results of 76 fourth graders showed a (long-term) learning effect, but no larger learning gains in the group that received a refutation text compared to the group that received an expository text. Results further pointed to large individual differences in the learning gains. While there is a subgroup of learners that benefits from the refutation text, another subgroup was found that tend to overuse and misapply the information given in this text.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Intervention study comparing refutation vs expository text with fourth graders and quantitative results."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a randomized experiment comparing fourth-grade students receiving a refutation text versus an expository text on fraction magnitude, matching the population, intervention, comparison, outcome, and design criteria.",
+    "country": "Belgium",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "Refutation text explicitly refuting fraction magnitude misconception",
+    "comparison": "Expository text explaining fractions without addressing misconception",
+    "outcomeMeasure": "Accuracy on computerized fraction magnitude comparison test",
+    "summaryEn": "In this randomized study, 76 Flemish fourth graders were assigned to read either a refutation text or an expository text about fraction magnitude, and their accuracy and reaction times on a fraction comparison test were measured at pretest, posttest, and a six-week delayed test. Both groups showed significant learning gains, but the expository text group showed slightly larger and more durable long-term gains than the refutation text group, with no significant advantage of refutation text over expository text.",
+    "summaryJa": "この研究では、76名のフラマン語圏の小学4年生がランダムに反駁文または説明文のいずれかを読むグループに割り当てられ、分数の大小比較テストにおける正答率と反応時間が事前・事後・6週間後の遅延テストで測定されました。両グループとも有意な学習効果が見られましたが、説明文グループの方がやや大きく持続的な長期効果を示し、反駁文が説明文より優れているという有意差は見られませんでした。",
+    "evidence": "only in the group of learners that received an expository text a significant long term learning effect was found (from 78.59% accuracy in pretest to 86.25% accuracy in delayed posttest",
+    "ja": {
+     "country": "ベルギー",
+     "gradeLevel": "小学4年",
+     "design": "ランダム化比較実験",
+     "intervention": "分数の大小に関する誤概念を明示的に反駁する反駁文による指導",
+     "comparison": "誤概念に言及せず説明のみを行う説明文による指導",
+     "outcomeMeasure": "コンピュータ化された分数大小比較テストの正答率"
+    },
+    "stats": {
+     "nTreatment": "37",
+     "nControl": "39",
+     "meanTreatment": "76.64",
+     "meanControl": "86.25",
+     "sdTreatment": "42.33",
+     "sdControl": "34.45",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "76",
+     "direction": "control_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": -0.24716456994675687,
+    "vi": 0.05200419492207593,
+    "n": 76,
+    "method": "means and SDs",
+    "display": -0.24716456994675687
+   },
+   "pdfUrl": "https://lirias.kuleuven.be/retrieve/4b684e7c-e7c2-4824-8977-ea63d7bcc0ff",
+   "sid": "S4"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W1963557692",
+    "doi": "10.1007/s13394-013-0079-2",
+    "title": "Fostering German-language learners’ constructions of meanings for fractions—design and effects of a language- and mathematics-integrated intervention",
+    "titleEn": "",
+    "authors": [
+     "Susanne Prediger",
+     "Lena Wessel"
+    ],
+    "venue": "Mathematics Education Research Journal",
+    "volume": "25",
+    "issue": "3",
+    "pages": "435–456",
+    "year": "2013",
+    "language": "en",
+    "citedBy": 91,
+    "url": "https://doi.org/10.1007/s13394-013-0079-2",
+    "landing": "https://doi.org/10.1007/s13394-013-0079-2",
+    "pdfUrls": [
+     "https://link.springer.com/content/pdf/10.1007/s13394-013-0079-2.pdf"
+    ],
+    "abstract": "Learning situations that concentrate on conceptual understanding are particularly challenging for learners with limited proficiency in the language of instruction. This article presents an intervention on fractions for Grade 7 in which linguistic challenges and conceptual mathematical challenges were treated in an integrated way. The quantitative evaluation in a pre-test post-test control-group design shows high effect sizes for the growth of conceptual understanding of fractions. The qualitative in-depth analysis of the initiated learning processes contributes to understanding the complex interplay between the construction of meaning and activating linguistic means in school and technical registers.",
+    "screen": {
+     "include": true,
+     "score": 7,
+     "reason": "Pre-post control-group intervention on fractions for grade 7 students with effect sizes"
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study involved Grade 7 students in a quasi-experimental pre-post control group design testing a fraction instruction intervention against regular classroom teaching, matching all inclusion criteria.",
+    "country": "Germany",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental pre-test post-test control group design with random assignment to matched pairs",
+    "intervention": "Language- and mathematics-integrated intervention relating registers, pushed output, and scaffolding for fractions",
+    "comparison": "Regular classroom instruction with usual fraction textbook repetition program",
+    "outcomeMeasure": "Standardised fraction test (41 items) post-test score",
+    "summaryEn": "Seventy-two low-achieving Grade 7 second-language learners were assigned to an intervention group receiving a six-lesson language- and mathematics-integrated fraction program or a control group receiving regular teaching, using a pre-post test design. The intervention group showed a significantly larger increase in fraction test scores (d=1.22) than the control group (d=0.42), with a high inter-group effect size (η2=0.13).",
+    "summaryJa": "低学力の第7学年の第二言語学習者72名が、言語と数学を統合した6回の分数指導プログラムを受ける介入群と、通常の授業を受ける対照群に分けられ、事前・事後テストデザインで比較されました。介入群は分数テストの得点上昇が対照群(d=0.42)よりも大きく(d=1.22)、群間の効果量も高い値(η2=0.13)を示しました。",
+    "evidence": "Intervention group (N=36) m=16.58 SD=4.90; Control group (N=36) m=12.33 SD=4.89; F(Group) [1, 70]=6.59, p<0.05, η2=0.09",
+    "ja": {
+     "country": "ドイツ",
+     "gradeLevel": "中学1年(第7学年)",
+     "design": "準実験(事前事後テスト対照群デザイン)",
+     "intervention": "レジスター関連付け・プッシュドアウトプット・スキャフォールディングを用いた言語・数学統合型分数指導",
+     "comparison": "通常の教科書に基づく分数の復習授業",
+     "outcomeMeasure": "標準化された分数テスト(41項目)の事後得点"
+    },
+    "stats": {
+     "nTreatment": "36",
+     "nControl": "36",
+     "meanTreatment": "16.58",
+     "meanControl": "12.33",
+     "sdTreatment": "4.90",
+     "sdControl": "4.89",
+     "t": "",
+     "F": "6.59",
+     "d": "1.22",
+     "g": "",
+     "r": "",
+     "nTotal": "72",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.8588966051008289,
+    "vi": 0.05949017590225307,
+    "n": 72,
+    "method": "means and SDs",
+    "display": 0.8588966051008289
+   },
+   "pdfUrl": "https://link.springer.com/content/pdf/10.1007/s13394-013-0079-2.pdf",
+   "sid": "S5"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W3134252584",
+    "doi": "10.4102/sajce.v11i1.854",
+    "title": "The impact of different approaches to the teaching of Grade 5 fraction by three experienced teachers",
+    "titleEn": "",
+    "authors": [
+     "Ifunanya J.A. Ubah"
+    ],
+    "venue": "South African Journal of Childhood Education",
+    "volume": "11",
+    "issue": "1",
+    "pages": "",
+    "year": "2021",
+    "language": "en",
+    "citedBy": 7,
+    "url": "https://doi.org/10.4102/sajce.v11i1.854",
+    "landing": "https://doi.org/10.4102/sajce.v11i1.854",
+    "pdfUrls": [
+     "https://sajce.co.za/index.php/sajce/article/download/854/1782"
+    ],
+    "abstract": "Background: Many teachers for different reasons recognise the teaching of fraction as a challenge. This research explored the teaching of fraction in Grade 5 by three experienced teachers (Ben, Greg and Will) in KwaZulu-Natal province, South Africa. Aim: The purpose of this study was to investigate the impact of different approaches to the teaching of Grade 5 fraction by three experienced teachers. Method: Three teachers and 177 learners were purposively sampled for this study. Classroom observations, interview and fraction achievement test (FAT) were instruments used for data collection. Hence, this study employed a mixed method, where both quantitative and qualitative data sets were collected at the same time, and the data were analysed at the same time in order to discuss the findings. Results: The quantitative data were analysed using descriptive statistics and analysis of covariance (ANCOVA), whilst the qualitative data were analysed in themes. The results showed that learners of teacher Ben performed significantly better than those of teachers Will and Greg. The findings revealed that a combination of good practices and appropriate use of multiple representations by teacher Ben improved his learners’ achievement in addition of fraction more than other learners taught by the other two teachers. Conclusion: The study recommends that mathematics teachers should endeavour to facilitate learners’ conceptual knowledge of fraction by using appropriate teaching approach in their instruction, namely, learner-centred approach, activity-based learning, use of mother tongue for clarity and use of multiple representations. This recommendation will improve learners’ knowledge and conceptual understanding of fraction and algebra in its entity.",
+    "screen": {
+     "include": true,
+     "score": 7,
+     "reason": "Grade 5 study comparing teaching approaches with ANCOVA on achievement test."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study compares three Grade 5 teachers' fraction instruction approaches using a quasi-experimental nonequivalent control group design with pre/post achievement tests, matching the population, intervention, comparison, and outcome criteria.",
+    "country": "South Africa",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (nonequivalent control group, pre-test/post-test)",
+    "intervention": "Teacher Ben's approach using multiple representations (concrete-to-semi-concrete-to-symbolic) and learner-centered activities for addition of fractions",
+    "comparison": "Teacher Will's approach using teacher-led demonstrations with limited representation connections",
+    "outcomeMeasure": "Fraction Achievement Test (FAT) post-test score on addition of fractions",
+    "summaryEn": "Three experienced Grade 5 teachers (Ben, Will, Greg) taught addition of fractions using different instructional approaches, with student achievement measured via a researcher-developed Fraction Achievement Test before and after instruction. ANCOVA controlling for pre-test scores showed that Ben's learner-centered, multiple-representation approach produced significantly higher post-test scores than Will's more procedural, demonstration-based approach.",
+    "summaryJa": "3名の経験豊富な小学5年担任教師（Ben、Will、Greg）が異なる指導法で分数の加法を教え、独自に開発された分数達成度テスト（FAT）を用いて指導前後の成績を測定しました。事前テストを共変量としたANCOVAの結果、複数の表象を用いた学習者中心のBenの指導法は、より手続き的で教師主導のWillの指導法よりも事後テストの成績が有意に高いことが示されました。",
+    "evidence": "Ben group had 6.15 and 29.27 in the pre-test and post-test scores...standard deviation was 3.24 and 7.46...Post-test 61 6.23 3.15 10.54 ... Post-test 16.77 4.98",
+    "ja": {
+     "country": "南アフリカ",
+     "gradeLevel": "小学5年",
+     "design": "準実験（非同等対照群、事前事後テスト）",
+     "intervention": "具体物から半具体物、記号表象へと段階的に進む複数表象を用いた学習者中心の分数加法指導（Ben教師）",
+     "comparison": "教師主導の実演によるより手続き的な分数加法指導（Will教師）",
+     "outcomeMeasure": "分数達成度テスト（FAT）事後テストの得点"
+    },
+    "stats": {
+     "nTreatment": "59",
+     "nControl": "61",
+     "meanTreatment": "29.27",
+     "meanControl": "16.77",
+     "sdTreatment": "7.46",
+     "sdControl": "4.98",
+     "t": "",
+     "F": "135.82",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "177",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 1.964705676657192,
+    "vi": 0.04900281974195439,
+    "n": 120,
+    "method": "means and SDs",
+    "display": 1.964705676657192
+   },
+   "pdfUrl": "https://sajce.co.za/index.php/sajce/article/download/854/1782",
+   "sid": "S6"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2318110223",
+    "doi": "10.9790/7388-04241218",
+    "title": "Making Conceptual Knowledge Connections to Clear Misconceptions in Fractions in Primary Classrooms",
+    "titleEn": "",
+    "authors": [
+     "Mithu Pal"
+    ],
+    "venue": "IOSR Journal of Research & Method in Education (IOSRJRME)",
+    "volume": "4",
+    "issue": "2",
+    "pages": "12–18",
+    "year": "2014",
+    "language": "en",
+    "citedBy": 3,
+    "url": "https://doi.org/10.9790/7388-04241218",
+    "landing": "https://doi.org/10.9790/7388-04241218",
+    "pdfUrls": [
+     "https://doi.org/10.9790/7388-04241218"
+    ],
+    "abstract": "This study aimed at investigating the effect of making conceptual knowledge connections through multiple representations in clearing misconceptions in the study of fractions.The study used a quasiexperimental research design with a pre-test-intervention-post-test format where in 40 students of Grade 4 of a primary school in New Delhi were randomly selected.The students in the control group were taught fractions using the conventional approach where as the experimental group was exposed to an instructional program that utilized a problem solving approach.The emphasis during the intervention program was on making connections among various mathematical representations to develop fraction number sense and operation sense among children.The treatment group was immersed in fraction instructions for six weeks and problem contexts were used each and every day to clear misconceptions.The effect of making conceptual knowledge connections in fractions and the performance of the students in solving fraction problems were assessed with a pre-test and post-test.For better understanding of the thinking processes and working patterns of the children while dealing with fractions, the classes were regularly observed by the researcher and interviews with 5 students each in the control and experimental groups were conducted by her.The findings of the study indicated that the students who received the treatment had significantly higher scores, used manipulatives more meaningfully when posed with fraction problems and had lesser misconceptions suggesting deeper conceptual understanding of fractions.",
+    "screen": {
+     "include": true,
+     "score": 7,
+     "reason": "Quasi-experimental pre-post design with grade 4 students comparing instructional approaches."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental pre-test/post-test design comparing multi-representational fraction instruction to conventional instruction in Grade 4 students using a fraction knowledge test.",
+    "country": "India",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Multiple representations based instructional program using manipulatives, pictures, and problem solving for fractions",
+    "comparison": "Conventional/traditional fraction instruction taught discretely without connecting representations",
+    "outcomeMeasure": "Fraction concepts test (pre-test and post-test scores)",
+    "summaryEn": "This quasi-experimental study compared 20 fourth-grade students taught fractions via a multi-representational, conceptual connections approach with 20 students taught via conventional instruction over six weeks. The experimental group scored significantly higher on the post-test (mean 13.17 vs 10.11, t=3.39, p=0.002) and showed deeper conceptual understanding with fewer misconceptions.",
+    "summaryJa": "この準実験研究では、6週間にわたり多重表現を用いた概念的つながりの指導を受けた4年生20名と、従来型の指導を受けた20名を比較しました。実験群は事後テストで有意に高い得点を示し(平均13.17対10.11、t=3.39、p=0.002)、誤概念も少なく、より深い概念理解を示しました。",
+    "evidence": "Experimental 20 13.17 2.81; Control 20 10.11 1.74; df 38 t 3.39 Sig.(2 tailed) 0.002",
+    "ja": {
+     "country": "インド",
+     "gradeLevel": "小学4年",
+     "design": "準実験",
+     "intervention": "多重表現を用いた概念的知識の関連づけによる分数指導プログラム",
+     "comparison": "多重表現を関連づけない従来型の分数指導",
+     "outcomeMeasure": "分数概念に関する事前・事後テスト得点"
+    },
+    "stats": {
+     "nTreatment": "20",
+     "nControl": "20",
+     "meanTreatment": "13.17",
+     "meanControl": "10.11",
+     "sdTreatment": "2.81",
+     "sdControl": "1.74",
+     "t": "3.39",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "40",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 1.2833239819466986,
+    "vi": 0.11665246755220382,
+    "n": 40,
+    "method": "means and SDs",
+    "display": 1.2833239819466986
+   },
+   "pdfUrl": "https://doi.org/10.9790/7388-04241218",
+   "sid": "S7"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W3166654252",
+    "doi": "10.31681/jetol.904704",
+    "title": "The effect of gamification on young mathematics learners’ achievements and attitudes",
+    "titleEn": "",
+    "authors": [
+     "Önder KARAMERT",
+     "Aslıhan Kuyumcu Vardar"
+    ],
+    "venue": "Journal of Educational Technology and Online Learning",
+    "volume": "4",
+    "issue": "2",
+    "pages": "96–114",
+    "year": "2021",
+    "language": "en",
+    "citedBy": 43,
+    "url": "https://doi.org/10.31681/jetol.904704",
+    "landing": "https://doi.org/10.31681/jetol.904704",
+    "pdfUrls": [
+     "https://dergipark.org.tr/en/download/article-file/1667860"
+    ],
+    "abstract": "This study aims to investigate the effect of gamification on fifth-grade students’ academic achievements and attitudes towards mathematics course. For this purpose, the teaching process of the “fractions” as a subject of the mathematics course is equipped with gamification elements. The quasi-experimental design is preferred as the research design. Achievement test and attitude scale were used as data collection instruments. The participants of the study consisted of fifth-grade students (n = 46). The Pyramidal Design Model was preferred as the gamification design model in this study. Elements of this model were adapted to the class level of participants in this research. As a result of the study, a remarkable statistical difference was observed in the achievement test in favor of the experimental group. However, no major difference was observed in the attitude scale results. This study contains suggestions for the educational use of gamification based on research findings.",
+    "screen": {
+     "include": true,
+     "score": 7,
+     "reason": "Quasi-experimental gamification intervention on fifth graders with achievement test"
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "This quasi-experimental study compared gamified vs non-gamified fraction instruction for fifth-grade students using a fraction achievement test as outcome.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Gamified fraction instruction using Pyramidal Design Model elements (progress map, badges, avatars)",
+    "comparison": "Standard non-gamified fraction instruction following the same curriculum",
+    "outcomeMeasure": "Teacher-developed 24-item academic achievement test on fractions",
+    "summaryEn": "In this six-week quasi-experimental study, 46 fifth-grade Turkish students were divided into gamified and non-gamified groups for fraction instruction, matched on prior achievement. The gamified group scored significantly higher on the post-test achievement test than the control group (Mann-Whitney U=143.00, p=.007), while no significant difference emerged in attitudes toward mathematics.",
+    "summaryJa": "この6週間の準実験研究では、トルコの小学5年生46名が学力に基づいてマッチングされ、ゲーミフィケーション群と非ゲーミフィケーション群に分かれて分数の授業を受けました。ゲーミフィケーション群は事後テストの学力得点が統制群より有意に高く(Mann-Whitney U=143.00, p=.007)、一方で数学に対する態度には有意差は見られませんでした。",
+    "evidence": "Experimental 23 60.14 19.21; Control 23 47.10 19.92; U = 143.00, p = .007",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "ピラミッド型デザインモデルの要素(進捗マップ、バッジ、アバター)を用いたゲーミフィケーション分数指導",
+     "comparison": "同じカリキュラムに基づく通常の非ゲーミフィケーション分数指導",
+     "outcomeMeasure": "研究者作成の24項目分数学力テスト"
+    },
+    "stats": {
+     "nTreatment": "23",
+     "nControl": "23",
+     "meanTreatment": "60.14",
+     "meanControl": "47.10",
+     "sdTreatment": "19.21",
+     "sdControl": "19.92",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "46",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.654962836403228,
+    "vi": 0.08866349590425882,
+    "n": 46,
+    "method": "means and SDs",
+    "display": 0.654962836403228
+   },
+   "pdfUrl": "https://dergipark.org.tr/en/download/article-file/1667860",
+   "sid": "S8"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4413939338",
+    "doi": "10.33902/jpr.202533896",
+    "title": "Impact of worked-out examples via a Web 2.0 tool on fifth graders achievement, attitudes, and motivation in mathematics",
+    "titleEn": "",
+    "authors": [
+     "Neşe Gökdeniz Tahiroğlu",
+     "Zeynep Çiğdem Özcan"
+    ],
+    "venue": "Journal of Pedagogical Research",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "year": "2025",
+    "language": "en",
+    "citedBy": 1,
+    "url": "https://doi.org/10.33902/jpr.202533896",
+    "landing": "https://doi.org/10.33902/jpr.202533896",
+    "pdfUrls": [
+     "https://www.ijopr.com/download/impact-of-worked-out-examples-via-a-web-20-tool-on-fifth-graders-achievement-attitudes-and-16844.pdf"
+    ],
+    "abstract": "This research examines the effects of worked-out examples, grounded in Cognitive Load Theory, which incorporate different solution methods through the Nearpod application—a Web 2.0 tool—on fifth-grade students' achievement in fractions, as well as their attitudes and motivation towards mathematics. The study group consisted of 77 fifth-grade students from two separate classes at a public secondary school in Istanbul. These two classes were randomly assigned, with one serving as the control group and the other as the experimental group. The intervention lasted for six weeks. The research was conducted using an explanatory sequential mixed design, which included both quantitative and qualitative methods. Quantitative data were collected through fraction achievement tests, a mathematics motivation scale, and a mathematics attitude scale. Qualitative data were obtained from students' responses to interview questions to evaluate the effectiveness of the intervention. The findings revealed a statistically significant improvement in the post-test scores for fractions achievement, mathematics motivation, and attitudes towards mathematics in favor of the experimental group, even after controlling for pre-test scores. The results of the interviews also supported these findings, with all interviewed students stating that they found the intervention helpful and engaging. This study contributes to the growing body of literature on the integration of technology in mathematics education, highlighting the need for further research on the application of different solution strategies in digital learning environments.",
+    "screen": {
+     "include": true,
+     "score": 7,
+     "reason": "Quasi-experimental study with control group on fraction achievement in fifth graders"
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental intervention comparing worked-out examples via Nearpod with regular textbook instruction on fifth-grade students' fraction achievement, matching all inclusion criteria.",
+    "country": "Türkiye",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Worked-out examples with multiple solution methods delivered via Nearpod Web 2.0 tool",
+    "comparison": "Textbook-based activities delivered via Nearpod with single solution method",
+    "outcomeMeasure": "Fraction Achievement Test (FAT) post-test score",
+    "summaryEn": "This quasi-experimental study compared fifth-grade students who received worked-out examples with multiple solution methods via Nearpod to a control group using textbook activities via Nearpod over six weeks. After controlling for pre-test scores, the experimental group scored significantly higher on the Fraction Achievement Test post-test (F(1,67)=16.55, p<.001, partial η2=.21), as well as on delayed post-test, attitude, and motivation measures.",
+    "summaryJa": "この準実験研究では、5年生の児童を対象に、Nearpodを用いて複数の解法を提示するワークアウト例による指導群と、Nearpodを用いた教科書活動による対照群を6週間にわたり比較しました。事前テストスコアを統制した結果、実験群は分数達成度テストの事後テストで統制群より有意に高いスコアを示し(F(1,67)=16.55, p<.001, 偏η2=.21)、遅延テスト、態度、動機づけの指標でも同様の傾向が見られました。",
+    "evidence": "Posttest 39.60 (19.48) 62.37 (19.72) F(1,67)=16.55, p<.001; partial η2 = .21",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "Nearpodを用いた複数解法によるワークアウト例指導",
+     "comparison": "Nearpodを用いた教科書活動による通常指導",
+     "outcomeMeasure": "分数達成度テスト(FAT)事後テストスコア"
+    },
+    "stats": {
+     "nTreatment": "37",
+     "nControl": "40",
+     "meanTreatment": "62.37",
+     "meanControl": "39.60",
+     "sdTreatment": "19.72",
+     "sdControl": "19.48",
+     "t": "",
+     "F": "16.55",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "77",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 1.150338678087847,
+    "vi": 0.059580965241093936,
+    "n": 77,
+    "method": "means and SDs",
+    "display": 1.150338678087847
+   },
+   "pdfUrl": "https://www.ijopr.com/download/impact-of-worked-out-examples-via-a-web-20-tool-on-fifth-graders-achievement-attitudes-and-16844.pdf",
+   "sid": "S9"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4403901007",
+    "doi": "10.5817/sp2024-2-2",
+    "title": "Error-based Activity Applications in Sixth Grade Fraction Teaching",
+    "titleEn": "",
+    "authors": [
+     "Esmanur Sancar",
+     "Merve Özkaya"
+    ],
+    "venue": "Studia paedagogica",
+    "volume": "29",
+    "issue": "2",
+    "pages": "33–65",
+    "year": "2024",
+    "language": "en",
+    "citedBy": 0,
+    "url": "https://doi.org/10.5817/sp2024-2-2",
+    "landing": "https://doi.org/10.5817/sp2024-2-2",
+    "pdfUrls": [
+     "https://journals.phil.muni.cz/studia-paedagogica/article/download/39516/33446"
+    ],
+    "abstract": "This study aims to determine how the error-based activity (EBA) applications used in teaching fractions to sixth-grade students affect the academic achievement of the students, the perceived error climate in the classroom, student math anxiety levels, the permanence of the knowledge, and student views on the EBA applications. In the quantitative part of this research, a mixed-method study, a quasi-experimental design with a pretest-posttest control group was used to examine the effects of EBA applications on math achievement, math anxiety levels, classroom error climate, and permanence. A purposive sampling method was used to collect the quantitative data for the study. In the qualitative part of this research, a case study, semi-structured interviews were conducted with nine volunteers from the experimental group to determine the student views of EBA practices. Analyzing the data obtained showed that EBA had a positive effect on student success, positively affected the perceived error climate in the classroom, and effectively reduced student math anxiety levels and made the knowledge permanent. Apart from this, the results indicated that EBA applications positively affect students in terms of cognitive and affective aspects, increase the quality of teaching, and can be effective in different subjects and courses.",
+    "screen": {
+     "include": true,
+     "score": 7,
+     "reason": "Quasi-experimental pretest-posttest control group study on error-based fraction teaching in sixth graders"
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental pretest-posttest control group design with sixth-grade students receiving fraction instruction with error-based activities compared to standard curriculum instruction, using a fraction achievement test as outcome.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Error-based activity (EBA) fraction instruction using incorrect and correct solutions with discussion",
+    "comparison": "Standard mathematics curriculum instruction without error-based activities",
+    "outcomeMeasure": "Subject Comprehension Test (SCT) fraction achievement post-test",
+    "summaryEn": "This quasi-experimental study compared sixth-grade students taught fractions with error-based activities (experimental group, n=21) to students taught with the standard curriculum (control group, n=23) over five weeks. The experimental group scored significantly higher on the post-test fraction achievement test (M=73.76) than the control group (M=56.52), t(42)=2.582, p<.05.",
+    "summaryJa": "この準実験研究では、6年生の分数指導において誤りに基づく活動(EBA)を用いた実験群(n=21)と、通常のカリキュラムで指導した統制群(n=23)を5週間にわたり比較しました。事後テストの分数理解テストの得点は、実験群(M=73.76)が統制群(M=56.52)より有意に高く、t(42)=2.582、p<.05でした。",
+    "evidence": "the post-test SCT average score of the experimental group (M = 73.76) and the post-test SCT average score of the control group (M = 56.52) in favor of the experimental group [t(42) = 2.582, p < 0.05]",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年(6年生)",
+     "design": "準実験",
+     "intervention": "誤りに基づく活動(EBA)を用いた分数指導(誤答と正答を提示し議論する)",
+     "comparison": "通常の数学カリキュラムに沿った指導(誤答提示なし)",
+     "outcomeMeasure": "教科理解テスト(SCT)による分数達成度の事後テスト"
+    },
+    "stats": {
+     "nTreatment": "21",
+     "nControl": "23",
+     "meanTreatment": "73.762",
+     "meanControl": "56.522",
+     "sdTreatment": "25.420",
+     "sdControl": "18.628",
+     "t": "2.582",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "44",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.7652499050052679,
+    "vi": 0.09450837885638075,
+    "n": 44,
+    "method": "means and SDs",
+    "display": 0.7652499050052679
+   },
+   "pdfUrl": "https://journals.phil.muni.cz/studia-paedagogica/article/download/39516/33446",
+   "sid": "S10"
+  }
+ ],
+ "examined": [
+  {
+   "id": "W2033010365",
+   "title": "Sixth Graders Benefit from Educational Software when Learning about Fractions: A Controlled Classroom study",
+   "year": "2014",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W2342771458",
+   "title": "The Effects of GeoGebra On Third Grade Primary Students’ Academic Achievement in Fractions",
+   "year": "2016",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental design comparing GeoGebra-based fraction instruction to traditional instruction in Grade 3 primary students using a fraction achievement post-test.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "GeoGebra dynamic representational activities for teaching fractions",
+    "comparison": "Traditional/normal fraction teaching sequence",
+    "outcomeMeasure": "22-item fractions academic achievement post-test (48 sub-questions)",
+    "summaryEn": "This quasi-experimental study compared third-grade students taught fractions using GeoGebra-based dynamic activities to those taught with traditional methods, using a post-test-only matched control design. Results showed the GeoGebra group scored significantly higher on the fractions achievement test than the control group, both in raw means and after controlling for prior mathematics achievement via ANCOVA.",
+    "summaryJa": "この準実験研究では、GeoGebraを用いた動的な活動で分数を学んだ小学3年生と、従来の方法で学んだ生徒を、事後テストのみのマッチング統制群デザインで比較しました。結果として、GeoGebra群は分数達成度テストにおいて統制群より有意に高い得点を示し、事前の数学成績を共変量としたANCOVAでもその効果は有意でした。",
+    "evidence": "There was significant difference in favor of the experimental (M=55.79, SD=29.16) group than the control group (M=34.4, SD=20.81); t (38) =-2.69, p=.011.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学3年",
+     "design": "準実験",
+     "intervention": "GeoGebraを用いた動的な分数指導活動",
+     "comparison": "従来の通常の分数指導法",
+     "outcomeMeasure": "22問から成る分数達成度事後テスト(下位問題含め48問)"
+    },
+    "stats": {
+     "nTreatment": "19",
+     "nControl": "21",
+     "meanTreatment": "55.79",
+     "meanControl": "34.40",
+     "sdTreatment": "29.16",
+     "sdControl": "20.81",
+     "t": "-2.69",
+     "F": "8.574",
+     "d": "",
+     "g": "",
+     "r": "0.583",
+     "nTotal": "40",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W2919284781",
+   "title": "The Effect of Using Storytelling Strategy on Students’ Performance in Fractions",
+   "year": "2019",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental comparison of storytelling versus manipulative-based fraction instruction among third-grade primary students using a fraction knowledge post-test.",
+    "country": "Greece",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Teaching fractions using target-focused storytelling with picture stories",
+    "comparison": "Teaching fractions using manipulative materials (objects, area models, number lines)",
+    "outcomeMeasure": "10-item fraction achievement post-test",
+    "summaryEn": "This quasi-experimental study compared 38 third-grade Greek students taught fractions through target-focused storytelling with 38 students taught using manipulative materials over a 4-week intervention. The storytelling group scored significantly higher on the fraction post-test (M=7.89, SD=1.328) than the control group (M=6.96, SD=1.842), t=2.517, p=0.017, with medium and low achievers benefiting most.",
+    "summaryJa": "この準実験研究では、ギリシャの小学3年生76名を対象に、ストーリーテリングを用いた分数指導群(38名)と操作教材を用いた指導群(38名)を4週間にわたり比較しました。ストーリーテリング群は分数の事後テストで統計的に有意に高い得点(平均7.89、SD1.328)を示し、統制群(平均6.96、SD1.842)よりも成績が良く(t=2.517, p=0.017)、特に中位・低位群の生徒に効果が大きく見られました。",
+    "evidence": "there was a statistically significant difference in the students’ performance between the experimental and control group [t=2.517, df=74, p=0.017<0.05]... mean score, was 7.89 with a standard deviation of 1.328... 6.96 with a standard deviation of 1.842",
+    "ja": {
+     "country": "ギリシャ",
+     "gradeLevel": "小学3年",
+     "design": "準実験",
+     "intervention": "目標焦点型の教育的物語(ストーリーテリング)を用いた分数指導",
+     "comparison": "操作教材(具体物・面積モデル・数直線など)を用いた分数指導",
+     "outcomeMeasure": "10項目からなる分数達成度事後テスト"
+    },
+    "stats": {
+     "nTreatment": "38",
+     "nControl": "38",
+     "meanTreatment": "7.89",
+     "meanControl": "6.96",
+     "sdTreatment": "1.328",
+     "sdControl": "1.842",
+     "t": "2.517",
+     "F": "44.9",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "76",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4308289254",
+   "title": "Impact of multiple representations-based instruction on basic six pupils’ performance in solving problems on common fractions",
+   "year": "2022",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental comparison of Grade 6 (basic six) pupils receiving multiple representations-based instruction versus conventional instruction on a fraction problem-solving post-test, meeting all inclusion criteria.",
+    "country": "Ghana",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (non-equivalent control group design)",
+    "intervention": "Multiple representations-based instruction (paper folding, number line, symbols, verbal)",
+    "comparison": "Conventional lecture/discussion instruction on common fractions",
+    "outcomeMeasure": "10-item common fraction problem-solving test (post-test, out of 30)",
+    "summaryEn": "This quasi-experimental study compared basic six pupils taught fractions using multiple representations-based instruction (MRBI) versus conventional instruction in Ghana. The experimental group scored significantly higher on the post-test (M=20.13) than the control group (M=11.74), t(94)=6.85, p<0.001, with a large effect size (d=1.40).",
+    "summaryJa": "この準実験研究では、ガーナの小学6年生を対象に、複数表現に基づく指導法(MRBI)と従来型指導法による分数指導の効果を比較しました。実験群は事後テストで有意に高い得点(M=20.13)を示し、対照群(M=11.74)との差はt(94)=6.85、p<0.001で、効果量は大きい(d=1.40)ことが分かりました。",
+    "evidence": "experimental group (M=20.13, SD=6.38, n=46) compared to the control group (M=11.74, SD=5.63, n=50), with t(94)=6.85, p=0.00...large effect size (d=1.40)",
+    "ja": {
+     "country": "ガーナ",
+     "gradeLevel": "小学6年",
+     "design": "準実験(非同等対照群デザイン)",
+     "intervention": "複数表現に基づく指導法(紙折り、数直線、記号、言語表現を用いる)",
+     "comparison": "従来型の講義・討論による指導法",
+     "outcomeMeasure": "共通分数の問題解決テスト(10問、30点満点、事後テスト)"
+    },
+    "stats": {
+     "nTreatment": "46",
+     "nControl": "50",
+     "meanTreatment": "20.13",
+     "meanControl": "11.74",
+     "sdTreatment": "6.38",
+     "sdControl": "5.63",
+     "t": "6.85",
+     "F": "0.61",
+     "d": "1.40",
+     "g": "",
+     "r": "",
+     "nTotal": "96",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W3157627159",
+   "title": "How robust are learners’ misconceptions of fraction magnitude? An intervention study comparing the use of refutation and expository text",
+   "year": "2021",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a randomized experiment comparing fourth-grade students receiving a refutation text versus an expository text on fraction magnitude, matching the population, intervention, comparison, outcome, and design criteria.",
+    "country": "Belgium",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "Refutation text explicitly refuting fraction magnitude misconception",
+    "comparison": "Expository text explaining fractions without addressing misconception",
+    "outcomeMeasure": "Accuracy on computerized fraction magnitude comparison test",
+    "summaryEn": "In this randomized study, 76 Flemish fourth graders were assigned to read either a refutation text or an expository text about fraction magnitude, and their accuracy and reaction times on a fraction comparison test were measured at pretest, posttest, and a six-week delayed test. Both groups showed significant learning gains, but the expository text group showed slightly larger and more durable long-term gains than the refutation text group, with no significant advantage of refutation text over expository text.",
+    "summaryJa": "この研究では、76名のフラマン語圏の小学4年生がランダムに反駁文または説明文のいずれかを読むグループに割り当てられ、分数の大小比較テストにおける正答率と反応時間が事前・事後・6週間後の遅延テストで測定されました。両グループとも有意な学習効果が見られましたが、説明文グループの方がやや大きく持続的な長期効果を示し、反駁文が説明文より優れているという有意差は見られませんでした。",
+    "evidence": "only in the group of learners that received an expository text a significant long term learning effect was found (from 78.59% accuracy in pretest to 86.25% accuracy in delayed posttest",
+    "ja": {
+     "country": "ベルギー",
+     "gradeLevel": "小学4年",
+     "design": "ランダム化比較実験",
+     "intervention": "分数の大小に関する誤概念を明示的に反駁する反駁文による指導",
+     "comparison": "誤概念に言及せず説明のみを行う説明文による指導",
+     "outcomeMeasure": "コンピュータ化された分数大小比較テストの正答率"
+    },
+    "stats": {
+     "nTreatment": "37",
+     "nControl": "39",
+     "meanTreatment": "76.64",
+     "meanControl": "86.25",
+     "sdTreatment": "42.33",
+     "sdControl": "34.45",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "76",
+     "direction": "control_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W2768057974",
+   "title": "Is Formal Language Proficiency in the Home Language Required to Profit from a Bilingual Teaching Intervention in Mathematics? A Mixed Methods Study on Fostering Multilingual Students’ Conceptual Understanding",
+   "year": "2017",
+   "screenScore": 8,
+   "outcome": "本文で確認できない数値: F=F(group) = 0.3 (ns), d=0.99 (pre-post gain, bilingual group)",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial comparing bilingual and monolingual fraction teaching interventions with a control group among Grade 7 students, meeting all inclusion criteria.",
+    "country": "Germany",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "randomized controlled trial",
+    "intervention": "Bilingual German/Turkish teaching intervention on fraction concepts (5x90min)",
+    "comparison": "Control group with regular mathematics instruction, no additional intervention",
+    "outcomeMeasure": "Fraction conceptual understanding test (post-test score)",
+    "summaryEn": "In a randomized controlled trial, 128 German/Turkish bilingual Grade 7 students were assigned to a bilingual intervention, a monolingual intervention, or a no-treatment control group, each intervention consisting of five 90-minute sessions on fraction concepts. Both the bilingual and monolingual intervention groups showed significantly higher learning gains in fraction understanding than the control group, with the bilingual intervention performing equally well as the monolingual one, though students with higher Turkish formal language proficiency benefited more from the bilingual approach.",
+    "summaryJa": "ランダム化比較試験において、ドイツ語/トルコ語バイリンガルの中学1年生128名が、バイリンガル介入、モノリンガル介入、無介入の統制群のいずれかに割り当てられ、各介入は分数概念に関する90分間の授業を5回実施しました。バイリンガル介入群とモノリンガル介入群はいずれも統制群より有意に高い学習の伸びを示し、バイリンガル介入はモノリンガル介入と同程度の効果がありましたが、トルコ語の形式的言語能力が高い生徒ほどバイリンガル介入からより多く利益を得る傾向が見られました。",
+    "evidence": "Bilingual intervention (n = 41) 7.93 (2.60) 10.88 (3.38)...Control group: No intervention (n = 43) 8.42 (2.95) 9.4 (3.57)",
+    "ja": {
+     "country": "ドイツ",
+     "gradeLevel": "中学1年(7年生)",
+     "design": "ランダム化比較試験",
+     "intervention": "分数概念理解を目的としたドイツ語/トルコ語バイリンガル指導(90分×5回)",
+     "comparison": "追加の介入を行わない通常の数学授業(統制群)",
+     "outcomeMeasure": "分数概念理解テストの事後テスト得点"
+    },
+    "stats": {
+     "nTreatment": "41",
+     "nControl": "43",
+     "meanTreatment": "10.88",
+     "meanControl": "9.4",
+     "sdTreatment": "3.38",
+     "sdControl": "3.57",
+     "t": "",
+     "F": "F(group) = 0.3 (ns)",
+     "d": "0.99 (pre-post gain, bilingual group)",
+     "g": "",
+     "r": "",
+     "nTotal": "128",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": [
+     "F=F(group) = 0.3 (ns)",
+     "d=0.99 (pre-post gain, bilingual group)"
+    ]
+   }
+  },
+  {
+   "id": "W2526173121",
+   "title": "Impacts of a university–school partnership on middle school students' fractional knowledge: A quasiexperimental study",
+   "year": "2016",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4310588306",
+   "title": "Improving Pupils’ Achievement in Fraction Using Inquiry-Based Instructional Strategy Enriched with Origami Activities",
+   "year": "2022",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4403457150",
+   "title": "Vietnamese sixth graders' mathematical communication competency developed by teaching fraction topics using the 5E model",
+   "year": "2024",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4415166583",
+   "title": "Bridging learning gaps: Testing the efficacy of simulation-based instruction on the mastery of fractions",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4413854138",
+   "title": "Improving Understanding of Fraction Concepts Through Problem-Based Learning in Elementary Schools",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W1963557692",
+   "title": "Fostering German-language learners’ constructions of meanings for fractions—design and effects of a language- and mathematics-integrated intervention",
+   "year": "2013",
+   "screenScore": 7,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study involved Grade 7 students in a quasi-experimental pre-post control group design testing a fraction instruction intervention against regular classroom teaching, matching all inclusion criteria.",
+    "country": "Germany",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental pre-test post-test control group design with random assignment to matched pairs",
+    "intervention": "Language- and mathematics-integrated intervention relating registers, pushed output, and scaffolding for fractions",
+    "comparison": "Regular classroom instruction with usual fraction textbook repetition program",
+    "outcomeMeasure": "Standardised fraction test (41 items) post-test score",
+    "summaryEn": "Seventy-two low-achieving Grade 7 second-language learners were assigned to an intervention group receiving a six-lesson language- and mathematics-integrated fraction program or a control group receiving regular teaching, using a pre-post test design. The intervention group showed a significantly larger increase in fraction test scores (d=1.22) than the control group (d=0.42), with a high inter-group effect size (η2=0.13).",
+    "summaryJa": "低学力の第7学年の第二言語学習者72名が、言語と数学を統合した6回の分数指導プログラムを受ける介入群と、通常の授業を受ける対照群に分けられ、事前・事後テストデザインで比較されました。介入群は分数テストの得点上昇が対照群(d=0.42)よりも大きく(d=1.22)、群間の効果量も高い値(η2=0.13)を示しました。",
+    "evidence": "Intervention group (N=36) m=16.58 SD=4.90; Control group (N=36) m=12.33 SD=4.89; F(Group) [1, 70]=6.59, p<0.05, η2=0.09",
+    "ja": {
+     "country": "ドイツ",
+     "gradeLevel": "中学1年(第7学年)",
+     "design": "準実験(事前事後テスト対照群デザイン)",
+     "intervention": "レジスター関連付け・プッシュドアウトプット・スキャフォールディングを用いた言語・数学統合型分数指導",
+     "comparison": "通常の教科書に基づく分数の復習授業",
+     "outcomeMeasure": "標準化された分数テスト(41項目)の事後得点"
+    },
+    "stats": {
+     "nTreatment": "36",
+     "nControl": "36",
+     "meanTreatment": "16.58",
+     "meanControl": "12.33",
+     "sdTreatment": "4.90",
+     "sdControl": "4.89",
+     "t": "",
+     "F": "6.59",
+     "d": "1.22",
+     "g": "",
+     "r": "",
+     "nTotal": "72",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W3134252584",
+   "title": "The impact of different approaches to the teaching of Grade 5 fraction by three experienced teachers",
+   "year": "2021",
+   "screenScore": 7,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study compares three Grade 5 teachers' fraction instruction approaches using a quasi-experimental nonequivalent control group design with pre/post achievement tests, matching the population, intervention, comparison, and outcome criteria.",
+    "country": "South Africa",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (nonequivalent control group, pre-test/post-test)",
+    "intervention": "Teacher Ben's approach using multiple representations (concrete-to-semi-concrete-to-symbolic) and learner-centered activities for addition of fractions",
+    "comparison": "Teacher Will's approach using teacher-led demonstrations with limited representation connections",
+    "outcomeMeasure": "Fraction Achievement Test (FAT) post-test score on addition of fractions",
+    "summaryEn": "Three experienced Grade 5 teachers (Ben, Will, Greg) taught addition of fractions using different instructional approaches, with student achievement measured via a researcher-developed Fraction Achievement Test before and after instruction. ANCOVA controlling for pre-test scores showed that Ben's learner-centered, multiple-representation approach produced significantly higher post-test scores than Will's more procedural, demonstration-based approach.",
+    "summaryJa": "3名の経験豊富な小学5年担任教師（Ben、Will、Greg）が異なる指導法で分数の加法を教え、独自に開発された分数達成度テスト（FAT）を用いて指導前後の成績を測定しました。事前テストを共変量としたANCOVAの結果、複数の表象を用いた学習者中心のBenの指導法は、より手続き的で教師主導のWillの指導法よりも事後テストの成績が有意に高いことが示されました。",
+    "evidence": "Ben group had 6.15 and 29.27 in the pre-test and post-test scores...standard deviation was 3.24 and 7.46...Post-test 61 6.23 3.15 10.54 ... Post-test 16.77 4.98",
+    "ja": {
+     "country": "南アフリカ",
+     "gradeLevel": "小学5年",
+     "design": "準実験（非同等対照群、事前事後テスト）",
+     "intervention": "具体物から半具体物、記号表象へと段階的に進む複数表象を用いた学習者中心の分数加法指導（Ben教師）",
+     "comparison": "教師主導の実演によるより手続き的な分数加法指導（Will教師）",
+     "outcomeMeasure": "分数達成度テスト（FAT）事後テストの得点"
+    },
+    "stats": {
+     "nTreatment": "59",
+     "nControl": "61",
+     "meanTreatment": "29.27",
+     "meanControl": "16.77",
+     "sdTreatment": "7.46",
+     "sdControl": "4.98",
+     "t": "",
+     "F": "135.82",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "177",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4401116347",
+   "title": "Impact of using virtual and concrete manipulatives on students’ learning of fractions",
+   "year": "2024",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W3157920640",
+   "title": "An Application Example for The Teaching Fractions with the Developed Digital Fraction Transparency Material",
+   "year": "2021",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4318311446",
+   "title": "The effect of problem posing-based active learning activities on problem-solving and posing performance: The case of fractions",
+   "year": "2023",
+   "screenScore": 7,
+   "outcome": "効果量を計算できない: 効果量を計算できる統計量がない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental pretest-posttest control group design with sixth-grade students comparing problem posing-based active learning to regular instruction on a fraction-related problem-solving test.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (intact classes assigned to experimental/control)",
+    "intervention": "Problem posing-based active learning activities for fraction operations",
+    "comparison": "Standard curriculum-based instruction on fraction operations",
+    "outcomeMeasure": "Problem-Solving Test (PST) post-test score",
+    "summaryEn": "Two sixth-grade classes (experimental n=23, control n=25) were compared after the experimental group engaged in seven problem posing-based active learning activities on fraction operations over six weeks. The experimental group's post-test mean rank on the problem-solving test was higher than the control group's, but the Mann-Whitney U test showed the difference was not statistically significant (U=201.50, p=.075).",
+    "summaryJa": "6年生の2クラス(実験群23名、対照群25名)を対象に、実験群は分数の四則演算に関する問題設定型アクティブラーニング活動を6週間にわたって7回実施しました。実験群の問題解決テストの事後テスト平均順位は対照群より高かったものの、マン・ホイットニーのU検定では統計的に有意な差は見られませんでした(U=201.50, p=.075)。",
+    "evidence": "Based on Table 5, the problem-solving achievement of students who participated in active learning activities based on problem-posing was higher than that of those who did not participate [U = 201.50, p > .05].",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学6年",
+     "design": "準実験(学級単位の実験群・対照群比較)",
+     "intervention": "分数の演算に関する問題設定型アクティブラーニング活動",
+     "comparison": "通常のカリキュラムに基づく分数演算の指導",
+     "outcomeMeasure": "問題解決テスト(PST)の事後テスト得点"
+    },
+    "stats": {
+     "nTreatment": "23",
+     "nControl": "25",
+     "meanTreatment": "28.24",
+     "meanControl": "21.06",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "48",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W2318110223",
+   "title": "Making Conceptual Knowledge Connections to Clear Misconceptions in Fractions in Primary Classrooms",
+   "year": "2014",
+   "screenScore": 7,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental pre-test/post-test design comparing multi-representational fraction instruction to conventional instruction in Grade 4 students using a fraction knowledge test.",
+    "country": "India",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Multiple representations based instructional program using manipulatives, pictures, and problem solving for fractions",
+    "comparison": "Conventional/traditional fraction instruction taught discretely without connecting representations",
+    "outcomeMeasure": "Fraction concepts test (pre-test and post-test scores)",
+    "summaryEn": "This quasi-experimental study compared 20 fourth-grade students taught fractions via a multi-representational, conceptual connections approach with 20 students taught via conventional instruction over six weeks. The experimental group scored significantly higher on the post-test (mean 13.17 vs 10.11, t=3.39, p=0.002) and showed deeper conceptual understanding with fewer misconceptions.",
+    "summaryJa": "この準実験研究では、6週間にわたり多重表現を用いた概念的つながりの指導を受けた4年生20名と、従来型の指導を受けた20名を比較しました。実験群は事後テストで有意に高い得点を示し(平均13.17対10.11、t=3.39、p=0.002)、誤概念も少なく、より深い概念理解を示しました。",
+    "evidence": "Experimental 20 13.17 2.81; Control 20 10.11 1.74; df 38 t 3.39 Sig.(2 tailed) 0.002",
+    "ja": {
+     "country": "インド",
+     "gradeLevel": "小学4年",
+     "design": "準実験",
+     "intervention": "多重表現を用いた概念的知識の関連づけによる分数指導プログラム",
+     "comparison": "多重表現を関連づけない従来型の分数指導",
+     "outcomeMeasure": "分数概念に関する事前・事後テスト得点"
+    },
+    "stats": {
+     "nTreatment": "20",
+     "nControl": "20",
+     "meanTreatment": "13.17",
+     "meanControl": "10.11",
+     "sdTreatment": "2.81",
+     "sdControl": "1.74",
+     "t": "3.39",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "40",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W2611283757",
+   "title": "The Effect of E-Learning Approach on Students’ Achievement in Fraction Math Course Level 5 at Yemens Public Primary School",
+   "year": "2014",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4387176533",
+   "title": "Targeting fraction misconceptions and reducing high confidence errors in an online tutor",
+   "year": "2023",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4386166087",
+   "title": "Improving the Computational Skills in Integers, Fractions, and Decimals Through Technology-Enhanced Mathematics Instruction (TEMI)",
+   "year": "2023",
+   "screenScore": 7,
+   "outcome": "本文で確認できない数値: nTotal=85",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental comparison of Grade 7 students receiving technology-enhanced instruction versus traditional instruction on a computational skills test that includes fraction items, meeting all inclusion criteria.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Technology-enhanced mathematics instruction (Google Classroom, YouTube, Kahoot, virtual manipulatives) for integers, fractions, decimals",
+    "comparison": "Traditional classroom instruction without technology",
+    "outcomeMeasure": "40-item researcher-made computational skills test covering integers, fractions, and decimals",
+    "summaryEn": "This quasi-experimental study compared Grade 7 students receiving Technology-Enhanced Mathematics Instruction (TEMI), including Google Classroom, YouTube, and Kahoot activities, with a control group taught traditionally on computational skills in integers, fractions, and decimals. The experimental group's posttest mean score (22.16) was significantly higher than the control group's (11.89), with a highly significant t-value of 14.36, indicating TEMI was effective in improving students' computational skills.",
+    "summaryJa": "本研究は準実験デザインで、Google Classroom、YouTube、Kahootなどを用いた技術強化数学指導(TEMI)を受けた中学1年生(Grade 7)と、従来型の指導を受けた統制群を、整数・分数・小数の計算スキルテストで比較しました。実験群の事後テスト平均点(22.16)は統制群(11.89)よりも有意に高く、t値は14.36と非常に有意であり、TEMIが計算スキルの向上に効果的であることが示されました。",
+    "evidence": "the posttest mean score of 22.16, while the posttest mean score of the control group slightly increases to 11.89... with a t-value of 14.36 and a p-value of 0.000",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "中学1年(Grade 7)",
+     "design": "準実験",
+     "intervention": "技術強化数学指導(TEMI):Google Classroom、YouTube、Kahoot、仮想操作教材を用いた整数・分数・小数の指導",
+     "comparison": "技術を用いない従来型の教室指導",
+     "outcomeMeasure": "整数・分数・小数の計算スキルを測る40項目の研究者作成テスト"
+    },
+    "stats": {
+     "nTreatment": "42",
+     "nControl": "43",
+     "meanTreatment": "22.16",
+     "meanControl": "11.89",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "14.36",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "85",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": [
+     "nTotal=85"
+    ]
+   }
+  },
+  {
+   "id": "W2103564288",
+   "title": "Predictors of Achievement When Virtual Manipulatives are Used for Mathematics Instruction",
+   "year": "2014",
+   "screenScore": 7,
+   "outcome": "本文で確認できない数値: nTotal=350",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental comparison of virtual manipulative versus physical manipulative/text-based fraction instruction for third- and fourth-grade students with pre/post fraction tests.",
+    "country": "United States",
+    "gradeLevel": "Grades 3-4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Computer lab instruction using virtual fraction manipulatives (VM)",
+    "comparison": "Classroom instruction using physical manipulatives and text-based materials (CI)",
+    "outcomeMeasure": "Fraction knowledge pre-test, Post-test 1, and delayed Post-test 2 scores",
+    "summaryEn": "This quasi-experimental study compared third- and fourth-grade students receiving fraction instruction via virtual manipulatives (VM) versus physical manipulatives and text-based materials (CI), examining predictors of achievement rather than direct group comparisons, with no statistically significant differences in achievement reported between VM and CI groups in the companion paper. The results showed that demographic variables such as SES, ELL status, and gender predicted achievement more strongly in the CI group than in the VM group, suggesting virtual manipulatives had an equalizing effect on learning outcomes.",
+    "summaryJa": "本研究は準実験デザインにより、第3・4学年の児童を対象に、仮想操作教具(VM)を用いた分数指導と物理的操作教具・教科書を用いた指導(CI)を比較し、達成度そのものよりもその予測要因を検討したものです。関連論文ではVM群とCI群の間に統計的に有意な達成度の差は見られなかったと報告されており、本研究ではSES(社会経済的地位)、ELL(英語学習者)状況、性別などの人口統計学的変数がCI群でより強く達成度を予測した一方、VM群ではそのような予測変数が少なく、仮想操作教具が学習成果を均等化する効果を持つことが示唆されました。",
+    "evidence": "there were no statistically significant differences between the VM and CI groups in terms of student achievement on the pre-, post-, and delayed post-tests",
+    "ja": {
+     "country": "アメリカ合衆国",
+     "gradeLevel": "小学3〜4年",
+     "design": "準実験",
+     "intervention": "仮想操作教具を用いたコンピュータ室での分数指導(VM)",
+     "comparison": "物理的操作教具と教科書を用いた通常教室での分数指導(CI)",
+     "outcomeMeasure": "分数知識のプレテスト、事後テスト1、遅延事後テスト2の得点"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "350",
+     "direction": "unclear"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": [
+     "nTotal=350"
+    ]
+   }
+  },
+  {
+   "id": "W4414867549",
+   "title": "Learning Activities in a Dynamic Learning Environment to Foster a Basic Fraction Concept",
+   "year": "2025",
+   "screenScore": 7,
+   "outcome": "効果量を計算できない: 効果量を計算できる統計量がない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental comparison of 5th graders randomly assigned to dynamic vs static fraction bar conditions with a post-task measuring basic fraction concept understanding, meeting all inclusion criteria.",
+    "country": "Germany",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "randomized experiment (random assignment within classes)",
+    "intervention": "Dynamic digital fraction bars requiring students to generate their own visualizations",
+    "comparison": "Static digital fraction bars with pre-generated visualizations",
+    "outcomeMeasure": "Post-task fraction comparison strategy level (SOLO-based ordinal scale 0-3)",
+    "summaryEn": "In this study, 92 fifth graders were randomly assigned within classes to work with either dynamic (self-manipulated) or static (pre-generated) fraction bars in a digital problem-solving environment before formal fraction instruction, and their basic fraction concept was assessed via a post-task coded on an ordinal strategy level. An ordinal logistic regression showed no significant difference between the dynamic and static groups (p = .264), though descriptively more dynamic-group students reached higher levels.",
+    "summaryJa": "本研究では、92人の5年生が学級内でランダムに、動的（自分で操作する）または静的（あらかじめ生成された）分数バーを用いたデジタル問題解決環境のいずれかに割り当てられ、正式な分数指導の前にポストタスクで基本的な分数概念が順序尺度の戦略レベルで評価されました。順序ロジスティック回帰の結果、動的群と静的群の間に有意差は見られませんでした（p = .264）が、記述的には動的群でより高いレベルに到達した生徒が多い傾向がありました。",
+    "evidence": "an ordinal logistic regression showed no significant difference between the conditions (p = .264).",
+    "ja": {
+     "country": "ドイツ",
+     "gradeLevel": "小学5年",
+     "design": "ランダム化実験（学級内でのランダム割り当て）",
+     "intervention": "生徒自身が操作する動的デジタル分数バー",
+     "comparison": "あらかじめ生成された静的デジタル分数バー",
+     "outcomeMeasure": "ポストタスクにおける分数比較の戦略レベル（SOLOに基づく順序尺度0〜3）"
+    },
+    "stats": {
+     "nTreatment": "46",
+     "nControl": "46",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "92",
+     "direction": "unclear"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4409834108",
+   "title": "Integrating Contextual Problem-Based Animated Videos in Mathematics Learning: A Strategy to Improve Students' Understanding of Fractions",
+   "year": "2024",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W3166654252",
+   "title": "The effect of gamification on young mathematics learners’ achievements and attitudes",
+   "year": "2021",
+   "screenScore": 7,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "This quasi-experimental study compared gamified vs non-gamified fraction instruction for fifth-grade students using a fraction achievement test as outcome.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Gamified fraction instruction using Pyramidal Design Model elements (progress map, badges, avatars)",
+    "comparison": "Standard non-gamified fraction instruction following the same curriculum",
+    "outcomeMeasure": "Teacher-developed 24-item academic achievement test on fractions",
+    "summaryEn": "In this six-week quasi-experimental study, 46 fifth-grade Turkish students were divided into gamified and non-gamified groups for fraction instruction, matched on prior achievement. The gamified group scored significantly higher on the post-test achievement test than the control group (Mann-Whitney U=143.00, p=.007), while no significant difference emerged in attitudes toward mathematics.",
+    "summaryJa": "この6週間の準実験研究では、トルコの小学5年生46名が学力に基づいてマッチングされ、ゲーミフィケーション群と非ゲーミフィケーション群に分かれて分数の授業を受けました。ゲーミフィケーション群は事後テストの学力得点が統制群より有意に高く(Mann-Whitney U=143.00, p=.007)、一方で数学に対する態度には有意差は見られませんでした。",
+    "evidence": "Experimental 23 60.14 19.21; Control 23 47.10 19.92; U = 143.00, p = .007",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "ピラミッド型デザインモデルの要素(進捗マップ、バッジ、アバター)を用いたゲーミフィケーション分数指導",
+     "comparison": "同じカリキュラムに基づく通常の非ゲーミフィケーション分数指導",
+     "outcomeMeasure": "研究者作成の24項目分数学力テスト"
+    },
+    "stats": {
+     "nTreatment": "23",
+     "nControl": "23",
+     "meanTreatment": "60.14",
+     "meanControl": "47.10",
+     "sdTreatment": "19.21",
+     "sdControl": "19.92",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "46",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4413939338",
+   "title": "Impact of worked-out examples via a Web 2.0 tool on fifth graders achievement, attitudes, and motivation in mathematics",
+   "year": "2025",
+   "screenScore": 7,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental intervention comparing worked-out examples via Nearpod with regular textbook instruction on fifth-grade students' fraction achievement, matching all inclusion criteria.",
+    "country": "Türkiye",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Worked-out examples with multiple solution methods delivered via Nearpod Web 2.0 tool",
+    "comparison": "Textbook-based activities delivered via Nearpod with single solution method",
+    "outcomeMeasure": "Fraction Achievement Test (FAT) post-test score",
+    "summaryEn": "This quasi-experimental study compared fifth-grade students who received worked-out examples with multiple solution methods via Nearpod to a control group using textbook activities via Nearpod over six weeks. After controlling for pre-test scores, the experimental group scored significantly higher on the Fraction Achievement Test post-test (F(1,67)=16.55, p<.001, partial η2=.21), as well as on delayed post-test, attitude, and motivation measures.",
+    "summaryJa": "この準実験研究では、5年生の児童を対象に、Nearpodを用いて複数の解法を提示するワークアウト例による指導群と、Nearpodを用いた教科書活動による対照群を6週間にわたり比較しました。事前テストスコアを統制した結果、実験群は分数達成度テストの事後テストで統制群より有意に高いスコアを示し(F(1,67)=16.55, p<.001, 偏η2=.21)、遅延テスト、態度、動機づけの指標でも同様の傾向が見られました。",
+    "evidence": "Posttest 39.60 (19.48) 62.37 (19.72) F(1,67)=16.55, p<.001; partial η2 = .21",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "Nearpodを用いた複数解法によるワークアウト例指導",
+     "comparison": "Nearpodを用いた教科書活動による通常指導",
+     "outcomeMeasure": "分数達成度テスト(FAT)事後テストスコア"
+    },
+    "stats": {
+     "nTreatment": "37",
+     "nControl": "40",
+     "meanTreatment": "62.37",
+     "meanControl": "39.60",
+     "sdTreatment": "19.72",
+     "sdControl": "19.48",
+     "t": "",
+     "F": "16.55",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "77",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4403901007",
+   "title": "Error-based Activity Applications in Sixth Grade Fraction Teaching",
+   "year": "2024",
+   "screenScore": 7,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental pretest-posttest control group design with sixth-grade students receiving fraction instruction with error-based activities compared to standard curriculum instruction, using a fraction achievement test as outcome.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Error-based activity (EBA) fraction instruction using incorrect and correct solutions with discussion",
+    "comparison": "Standard mathematics curriculum instruction without error-based activities",
+    "outcomeMeasure": "Subject Comprehension Test (SCT) fraction achievement post-test",
+    "summaryEn": "This quasi-experimental study compared sixth-grade students taught fractions with error-based activities (experimental group, n=21) to students taught with the standard curriculum (control group, n=23) over five weeks. The experimental group scored significantly higher on the post-test fraction achievement test (M=73.76) than the control group (M=56.52), t(42)=2.582, p<.05.",
+    "summaryJa": "この準実験研究では、6年生の分数指導において誤りに基づく活動(EBA)を用いた実験群(n=21)と、通常のカリキュラムで指導した統制群(n=23)を5週間にわたり比較しました。事後テストの分数理解テストの得点は、実験群(M=73.76)が統制群(M=56.52)より有意に高く、t(42)=2.582、p<.05でした。",
+    "evidence": "the post-test SCT average score of the experimental group (M = 73.76) and the post-test SCT average score of the control group (M = 56.52) in favor of the experimental group [t(42) = 2.582, p < 0.05]",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年(6年生)",
+     "design": "準実験",
+     "intervention": "誤りに基づく活動(EBA)を用いた分数指導(誤答と正答を提示し議論する)",
+     "comparison": "通常の数学カリキュラムに沿った指導(誤答提示なし)",
+     "outcomeMeasure": "教科理解テスト(SCT)による分数達成度の事後テスト"
+    },
+    "stats": {
+     "nTreatment": "21",
+     "nControl": "23",
+     "meanTreatment": "73.762",
+     "meanControl": "56.522",
+     "sdTreatment": "25.420",
+     "sdControl": "18.628",
+     "t": "2.582",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "44",
+     "direction": "treatment_higher"
+    },
+    "model": "claude-sonnet-5",
+    "unverified": []
+   }
+  }
+ ],
+ "models": [
+  "claude-sonnet-5"
+ ],
+ "date": "2026-09-29",
+ "dateEn": "September 29, 2026",
+ "dateJa": "2026年9月29日",
+ "analysis": {
+  "effectType": "smd",
+  "overall": {
+   "k": 10,
+   "est": 0.9230333279655736,
+   "se": 0.1887761439473192,
+   "ci": [
+    0.4959920217697259,
+    1.3500746341614214
+   ],
+   "test": 4.889565538658104,
+   "p": 0.0008599421964328169,
+   "df": 9,
+   "fixed": {
+    "est": 0.9337277539518339,
+    "se": 0.08127987357374537
+   },
+   "Q": 58.14411694996714,
+   "pQ": 3.049713259706266e-9,
+   "I2": 84.52121990648774,
+   "tau2": 0.36413167023068427,
+   "pi": [
+    -0.549404287041344,
+    2.395470942972491
+   ],
+   "weights": [
+    9.28924809126854,
+    10.429430032074507,
+    10.495630442078422,
+    10.472654154654379,
+    10.287587944001226,
+    10.548736798473,
+    9.064456696075007,
+    9.624764845201446,
+    10.285383612033021,
+    9.502107384140471
+   ]
+  },
+  "subgroups": {
+   "groups": [
+    {
+     "band": "elementary",
+     "k": 8,
+     "est": 0.9499344420762957,
+     "se": 0.23687027090789436,
+     "ci": [
+      0.38982525500614296,
+      1.5100436291464485
+     ],
+     "test": 4.010357392826524,
+     "p": 0.005121979221664574,
+     "df": 7,
+     "fixed": {
+      "est": 0.9582527932395553,
+      "se": 0.08981083916829662
+     },
+     "Q": 57.675077700231114,
+     "pQ": 4.388044372305444e-10,
+     "I2": 87.86304192534803,
+     "tau2": 0.4730258945838237,
+     "pi": [
+      -0.8498440694291628,
+      2.749712953581754
+     ],
+     "weights": [
+      11.760241717608034,
+      12.905313539469384,
+      12.970210154509786,
+      12.947705658469669,
+      13.022147775036075,
+      11.528208422194437,
+      12.102658828672691,
+      12.763513904039916
+     ]
+    },
+    {
+     "band": "middle",
+     "k": 2,
+     "est": 0.8227205600068853,
+     "se": 0.04559672144921149,
+     "ci": [
+      0.2433592819749274,
+      1.4020818380388431
+     ],
+     "test": 18.04341483023694,
+     "p": 0.03524660749667219,
+     "df": 1,
+     "fixed": {
+      "est": 0.8227205600068853,
+      "se": 0.19107306086491815
+     },
+     "Q": 0.05694666714588939,
+     "pQ": 0.8113886166152093,
+     "I2": 0,
+     "tau2": 0,
+     "pi": null,
+     "weights": [
+      61.36965311428172,
+      38.63034688571829
+     ]
+    }
+   ],
+   "Qbetween": 0.278128909685488,
+   "df": 1,
+   "p": 0.5979302261678521
+  },
+  "leaveOneOut": [
+   {
+    "id": "S1",
+    "est": 0.9320591615437199,
+    "ci": [
+     0.4484575923209835,
+     1.4156607307664564
+    ]
+   },
+   {
+    "id": "S2",
+    "est": 0.9635189969586796,
+    "ci": [
+     0.4875105009589689,
+     1.4395274929583903
+    ]
+   },
+   {
+    "id": "S3",
+    "est": 0.8687514968788119,
+    "ci": [
+     0.4009324871770033,
+     1.3365705065806206
+    ]
+   },
+   {
+    "id": "S4",
+    "est": 1.066422047156309,
+    "ci": [
+     0.7167140202220601,
+     1.416130074090558
+    ]
+   },
+   {
+    "id": "S5",
+    "est": 0.9302600854453528,
+    "ci": [
+     0.44435588269979853,
+     1.416164288190907
+    ]
+   },
+   {
+    "id": "S6",
+    "est": 0.7971017503188713,
+    "ci": [
+     0.41546859431268507,
+     1.1787349063250576
+    ]
+   },
+   {
+    "id": "S7",
+    "est": 0.88686244336357,
+    "ci": [
+     0.4130001195228026,
+     1.3607247672043374
+    ]
+   },
+   {
+    "id": "S8",
+    "est": 0.9516125941039332,
+    "ci": [
+     0.47240184476533476,
+     1.4308233434425315
+    ]
+   },
+   {
+    "id": "S9",
+    "est": 0.8969620550312397,
+    "ci": [
+     0.41510364668051153,
+     1.3788204633819678
+    ]
+   },
+   {
+    "id": "S10",
+    "est": 0.9396084367984783,
+    "ci": [
+     0.45688673876228436,
+     1.4223301348346722
+    ]
+   }
+  ],
+  "looRange": [
+   0.7971017503188713,
+   1.066422047156309
+  ],
+  "egger": {
+   "intercept": -1.1292744069133036,
+   "se": 5.647184348938286,
+   "t": -0.19997123117215324,
+   "df": 8,
+   "p": 0.8464927474163781
+  },
+  "totalN": 687
+ },
+ "warnings": [
+  "記事に計算結果に無い数値: 0.8"
+ ],
+ "text": {
+  "en": {
+   "background": "Fractions are a persistent stumbling block in mathematics learning, and identifying instructional approaches that improve fraction understanding matters for teachers in primary and lower secondary classrooms.",
+   "conclusionAbstract": "These findings suggest that targeted fraction instruction can meaningfully improve fraction understanding among students in grades 1-9, though heterogeneity across studies warrants cautious interpretation.",
+   "introduction": [
+    "Fractions are widely recognized as one of the most conceptually demanding topics in primary and lower secondary mathematics, and difficulties with fraction understanding in these early grades are often linked to later struggles with algebra and other advanced mathematical content. Because grades 1-9 represent the period in which formal fraction instruction is introduced and consolidated, this age range is a critical window for identifying instructional practices that support robust conceptual and procedural understanding of fractions.",
+    "A wide variety of instructional interventions and teaching approaches have been designed to target fraction concepts or operations, ranging from technology-based tools to representation-based teaching sequences and error-based or language-integrated instruction. The included studies examined interventions such as dynamic digital representations [S1], storytelling-based instruction [S2], multiple-representations instruction [S3, S6, S7], refutation texts addressing magnitude misconceptions [S4], language- and mathematics-integrated scaffolding for low-achieving learners [S5], gamified instruction [S8], worked-out examples delivered through a web tool [S9], and error-based activities [S10]. These interventions were generally compared against business-as-usual instruction, an alternative teaching approach, or a no-treatment control group, with fraction knowledge or mathematics achievement tests as the outcome.",
+    "Although individual studies provide valuable evidence about specific interventions in specific contexts, the diversity of approaches, samples, and measures makes it difficult to draw general conclusions about the overall effectiveness of fraction instruction interventions from any single study. A quantitative synthesis that combines effect sizes across studies can offer a more precise and generalizable estimate of the overall effect, while also allowing exploration of variability across school levels and assessment of the robustness of the pooled result.",
+    "The purpose of this meta-analysis was therefore to synthesize the available quantitative evidence on the effects of fraction instruction interventions on students' fraction understanding in grades 1-9. Specifically, this study addressed the following research question: what is the overall effect of fraction instruction interventions on fraction understanding, and does this effect differ between elementary and middle school students?"
+   ],
+   "discussion": [
+    "The pooled effect across the ten included studies indicated a large positive effect of fraction instruction interventions on students' fraction understanding, suggesting that, on average, students receiving these targeted interventions substantially outperformed students in comparison conditions on fraction knowledge or mathematics achievement measures. This magnitude of effect is considerably larger than what is typically observed for general educational interventions, suggesting that well-designed fraction-specific instruction may offer meaningful benefits over business-as-usual or alternative teaching approaches.",
+    "However, the heterogeneity statistics indicate substantial variability in effect sizes across studies, with a wide prediction interval that even includes negative values. This suggests that although the average effect is strongly positive, the effect of a given intervention in a new, similar context could plausibly range from null or even slightly negative to very large. This variability likely reflects genuine differences among the interventions studied, which ranged from technology-based tools [S1, S9] to representation-based teaching [S3, S6, S7], language-integrated scaffolding for low-achieving learners [S5], gamification [S8], and error-based instruction [S10], as well as differences in comparison conditions, outcome measures, and sample characteristics.",
+    "The subgroup analysis comparing elementary and middle school levels showed similar effect sizes for both groups, and the test for subgroup differences was not statistically significant, indicating that the benefits of fraction instruction interventions may generalize across this range of grade levels rather than being specific to either primary or lower secondary education. The leave-one-out sensitivity analysis showed that the pooled estimate remained consistently large and positive across all iterations, suggesting that no single study disproportionately drove the overall result, which lends some confidence to the robustness of the general pattern despite the observed heterogeneity.",
+    "Notably, one included study [S4], which examined a refutation text intervention targeting a specific fraction magnitude misconception, found a small negative effect favoring the comparison condition, in contrast to the generally strong positive effects observed in studies using representation-based or activity-based instructional approaches [S3, S6, S7, S9]. This contrast suggests that not all forms of fraction-related instruction are equally effective, and that interventions involving active, representation-rich, or error-focused engagement with fraction concepts may be particularly promising.",
+    "For teachers in grades 1-9, these findings tentatively suggest that incorporating multiple representations, active problem-solving, technology-supported tools, or targeted scaffolding into fraction instruction may support stronger student understanding than conventional teaching alone. However, given the variability across studies, teachers and school leaders should consider the specific instructional approach and context rather than assuming uniform benefits from any single method."
+   ],
+   "limitations": [
+    "This meta-analysis is based on a small number of studies (k = 10), which limits the precision and generalizability of the pooled estimate and constrains the statistical power of subgroup and sensitivity analyses, particularly the comparison between elementary and middle school levels, which included only two studies at the middle school level. The small number of studies also means that the pooled effect and heterogeneity estimates should be interpreted with caution, as they may be sensitive to the addition of future studies.",
+    "Additionally, the included studies relied predominantly on quasi-experimental designs with only one randomized controlled trial, used varied and often researcher-developed outcome measures, and drew on samples from a limited set of countries, which may affect the comparability and generalizability of the pooled results. Effect sizes and study characteristics were extracted automatically, which may introduce inaccuracies not fully captured in this synthesis."
+   ],
+   "conclusion": [
+    "This meta-analysis of ten studies found a large, statistically significant overall effect of fraction instruction interventions on students' fraction understanding in grades 1-9, with no significant difference between elementary and middle school levels and a robust result across sensitivity analyses. However, substantial heterogeneity among studies and the small number of included studies indicate that these findings should be interpreted as an encouraging but preliminary synthesis, highlighting the need for further high-quality research to clarify which specific instructional features most reliably support fraction understanding across primary and lower secondary education."
+   ],
+   "keywords": [
+    "fraction instruction",
+    "mathematics education",
+    "elementary school",
+    "lower secondary school",
+    "instructional intervention"
+   ]
+  },
+  "ja": {
+   "background": "分数は数学学習における根強い難点であり，その理解を促す指導法の特定は初等・中等教育の教師にとって重要である．",
+   "conclusionAbstract": "標的を絞った分数指導は1〜9年生の分数理解を有意に改善しうるが，研究間の異質性には慎重な解釈を要する．",
+   "introduction": [
+    "分数は初等・中等教育の数学において概念的に最も難解な単元の一つとして広く認識されており，これらの学年段階における分数理解の困難は，後の代数などの高度な数学的内容における困難と関連することが多い．1〜9年生は，分数の正式な指導が導入され定着する時期にあたるため，分数の概念的・手続き的理解を支える指導実践を特定する上で重要な時期である．",
+    "分数の概念や演算を対象とした様々な指導的介入や教授法が考案されており，技術（テクノロジー）を活用した教具から，表現に基づく指導系列，誤り分析に基づく指導や言語統合型の指導まで多岐にわたる．採用された研究では，動的なデジタル表現を用いた介入 [S1]，ストーリーテリングに基づく指導 [S2]，多重表現指導 [S3, S6, S7]，大小関係の誤概念に対応する反証テキスト（refutation text） [S4]，低学力学習者向けの言語・数学統合型スキャフォールディング [S5]，ゲーミフィケーションを用いた指導 [S8]，ウェブツールによるワークアウトエグザンプル（worked-out examples）の提示 [S9]，誤りに基づく活動 [S10]などの介入が検討されていた．これらの介入は，通常授業，代替的な教授法，または無処置対照群と比較されることが多く，分数の知識または数学の学力テストが結果指標として用いられていた．",
+    "個々の研究は特定の文脈における特定の介入について貴重な知見を提供するが，アプローチ，標本，測定指標の多様性により，単一の研究から分数指導介入の全体的な効果について一般的な結論を導くことは難しい．研究間の効果量を統合する量的統合は，全体的な効果についてより精緻で一般化可能な推定を提供するとともに，学校段階間の変動の検討や統合結果の頑健性の評価を可能にする．",
+    "したがって，本メタ分析の目的は，1〜9年生における児童生徒の分数理解に対する分数指導介入の効果に関する量的な実証研究を統合することであった．具体的には，本研究は以下の研究課題に取り組んだ．すなわち，分数指導介入が分数理解に及ぼす全体的な効果はどの程度か，またこの効果は小学生と中学生の間で異なるか，である．"
+   ],
+   "discussion": [
+    "採用された10件の研究にわたる統合効果量は，分数指導介入が児童生徒の分数理解に及ぼす大きな正の効果を示しており，これらの標的介入を受けた児童生徒は，比較条件の児童生徒よりも分数の知識または数学の学力測定において平均的に大きく上回ったことを示している．この効果の大きさは，一般的な教育介入で通常観察される効果よりもかなり大きく，よく設計された分数特化型の指導が，通常授業や代替的な教授法に比べて意味のある利益をもたらす可能性があることを示唆している．",
+    "しかし，異質性統計量は研究間の効果量に相当な変動があることを示しており，予測区間は広く，負の値さえ含んでいる．これは，平均的な効果が強く正であるとしても，類似の新たな文脈における特定の介入の効果は，ゼロあるいはわずかに負の値から非常に大きな値まで幅広くありうることを示唆している．この変動は，検討された介入が技術を活用した教具 [S1, S9]から，表現に基づく指導 [S3, S6, S7]，低学力学習者向けの言語統合型スキャフォールディング [S5]，ゲーミフィケーション [S8]，誤りに基づく指導 [S10]まで多岐にわたることに起因する実質的な差異，並びに比較条件，結果指標，標本特性の違いを反映していると考えられる．",
+    "小学校段階と中学校段階を比較したサブグループ分析では両群の効果量は同程度であり，サブグループ間差の検定も統計的に有意ではなかった．これは，分数指導介入の効果がいずれかの学校段階に特有のものではなく，これらの学年段階の範囲にわたって一般化しうる可能性を示している．一つずつ除外する感度分析（leave-one-out）の結果，統合推定値はすべての反復において一貫して大きく正であり，特定の一つの研究が全体の結果を過度に左右していないことが示された．これは，観察された異質性はあるものの，全体的な傾向の頑健性に一定の確信を与えるものである．",
+    "注目すべきは，特定の分数の大小関係に関する誤概念を対象とした反証テキスト介入を検討した研究 [S4]では，比較条件の方が有利となる小さな負の効果が見られた点であり，表現に基づく指導や活動に基づく指導法を用いた研究 [S3, S6, S7, S9]で一般的に見られた強い正の効果とは対照的であった．この対比は，分数に関するすべての指導形態が同等に効果的であるわけではなく，分数の概念に対して能動的で表現豊富，あるいは誤りに着目した取り組みを伴う介入が特に有望である可能性を示唆している．",
+    "1〜9年生を担当する教師にとって，これらの知見は，多重表現，能動的な問題解決，技術支援を用いた教具，あるいは標的を絞ったスキャフォールディングを分数指導に取り入れることが，従来の指導のみよりも児童生徒のより強い理解を支える可能性があることを暫定的に示唆している．ただし，研究間の変動を考慮すると，教師や学校管理者は，いかなる単一の手法からも一律の効果が得られると想定するのではなく，具体的な指導法とその文脈を検討すべきである．"
+   ],
+   "limitations": [
+    "本メタ分析は少数の研究（k = 10）に基づいており，統合推定値の精度と一般化可能性を制限し，特にサブグループ分析と感度分析の統計的検出力を制約している．とりわけ小学校段階と中学校段階の比較は，中学校段階の研究がわずか2件しか含まれていなかった．研究数が少ないことは，統合効果量と異質性の推定値についても慎重な解釈を要することを意味し，これらは今後の研究の追加によって変化しうる可能性がある．",
+    "さらに，採用された研究は主に準実験デザインに依拠しており，ランダム化比較試験（RCT）は1件のみであった．また，結果指標は多様であり，研究者が独自に作成したものが多く，標本も限られた国々から抽出されていたため，統合結果の比較可能性と一般化可能性に影響を及ぼす可能性がある．効果量や研究特性は自動的に抽出されており，本統合には十分に捉えられていない不正確さが含まれる可能性がある．"
+   ],
+   "conclusion": [
+    "10件の研究を対象とした本メタ分析では，1〜9年生の児童生徒の分数理解に対する分数指導介入の統計的に有意な大きな全体的効果が見出され，小学校段階と中学校段階の間に有意な差はなく，感度分析全体にわたって結果は頑健であった．しかし，研究間の相当な異質性と採用された研究数の少なさから，これらの知見は有望ではあるが予備的な統合として解釈されるべきであり，初等・中等教育全体にわたって分数理解を最も確実に支える具体的な指導上の特徴を明らかにするための，さらなる質の高い研究の必要性が浮かび上がった．"
+   ],
+   "keywords": [
+    "分数指導",
+    "数学教育",
+    "小学校",
+    "中学校",
+    "指導的介入"
+   ],
+   "criteria": {
+    "population": "1〜9年生（小学校・中学校）の児童生徒（6〜15歳程度）．幼児のみ，高校生のみ，大学生，成人，教員・教員志望者の標本は除く．",
+    "intervention": "分数の概念または演算を対象とした指導的介入または教授法",
+    "comparison": "通常授業，代替的な教授法，または無処置対照群",
+    "outcome": "分数の知識テストまたは数学の学力テスト"
+   }
+  },
+  "article": {
+   "lead": "分数の指導方法に関する10件の研究（対象児童生徒687名）をまとめたメタ分析を紹介します。授業でのさまざまな工夫が、通常の指導と比べて分数の理解にどの程度違いをもたらすのかを調べた結果をお伝えします。",
+   "question": "この分析が調べたのは「分数の概念や計算を対象とした指導の工夫は、通常の授業やほかの指導法と比べて、分数の理解度テストの点数にどの程度の違いを生むか」という問いです。分数は小学校算数のつまずきやすい単元として知られており、どのような指導が効果を示しているのかを知ることは、日々の授業づくりの参考になります。",
+   "reading": [
+    "10件の研究全体をまとめると、効果量g（介入群と比較群の平均点の差を、ばらつきの大きさである標準偏差で割った値）は0.92でした。一般的な目安では0.8以上は「大きい」とされる値で、今回の結果も大きい部類に入ります。ただし研究数は10件と少なく、対象人数も687名にとどまるため、この数値はあくまで参考値として捉える必要があります。",
+    "結果には研究間でかなりのばらつき（異質性）が見られました。I²という指標では84.5%と高く、効果の大きさが研究によって大きく異なることを示しています。実際、将来同じような研究を行った場合に予想される効果の範囲（予測区間）は−0.55から2.40と非常に広く、中にはほとんど差が出ない、あるいは逆の結果になる可能性も含まれています。特定の研究を除いても平均的な効果量は0.80〜1.07の範囲にとどまっており、一つの研究だけが結果を大きく左右しているわけではなさそうです。",
+    "学年別に見ると、小学校段階（8件）ではg=0.95、中学校段階（2件）ではg=0.82で、両者の差は統計的に有意ではありませんでした（p=.598）。つまり、今回集められたデータの範囲では、小学校と中学校で効果の大きさに明確な違いがあるとは言えません。ただし中学校段階の研究はわずか2件しかなく、この結果から強い結論を出すことはできません。"
+   ],
+   "hints": [
+    "具体物や図、数直線、記号など複数の表し方を関連づけながら教える指導は、複数の研究[S3][S6][S7]で高い効果が見られており、授業に取り入れる価値がありそうです。",
+    "誤答例を提示して話し合わせる指導[S10]や、複数の解き方を比較させる指導[S9]も、通常の指導より効果が高かったと報告されています。",
+    "ICTツールやゲーム要素を使った指導[S1][S8][S9]でも肯定的な効果が見られましたが、道具そのものよりも、その中でどのような考え方を扱うかが鍵になっている可能性があります。",
+    "誤概念を直接指摘する文章による指導[S4]では、通常の説明文と比べて明確な優位性は見られませんでした。指導方法の効果は内容や対象学年によって変わりうる点に注意が必要です。"
+   ],
+   "cautions": [
+    "研究数が10件、合計687名と限られており、効果量のばらつきも大きいため、今回の「平均g=0.92」という数値を過大に受け止めないようにしてください。",
+    "分析対象となった研究の多くは準実験デザイン（ランダムに群分けしていない研究）であり、結果の背後にほかの要因が影響している可能性も否定できません。",
+    "今回のデータは自動的な情報抽出によって整理されたものであり、原論文の細部までは確認しきれていない点にもご留意ください。"
+   ],
+   "sns": "分数指導の工夫、効果はどれくらい？10件のメタ分析（687名）を読み解く教育ブログを公開しました。効果は大きめですが研究間のばらつきにも注目です。"
+  }
+ },
+ "dir": "2026-09-29-math-fraction-instruction"
+}

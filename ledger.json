@@ -1,3 +1,20 @@
 {
-  "runs": []
+  "runs": [
+    {
+      "date": "2026-09-29",
+      "themeId": "math-fraction-instruction",
+      "status": "done",
+      "dir": "2026-09-29-math-fraction-instruction",
+      "titleJa": "分数の指導法は理解を高めるか",
+      "k": 10,
+      "pooled": "g = 0.92 [0.50, 1.35]",
+      "models": [
+        "claude-sonnet-5"
+      ],
+      "warnings": [
+        "記事に計算結果に無い数値: 0.8"
+      ],
+      "wpSentAt": ""
+    }
+  ]
 }
