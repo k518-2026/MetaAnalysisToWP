@@ -102,6 +102,30 @@ async function unitTests() {
   check('効果量: カンマ表記の平均・SD から計算できる', Number.isFinite(ec.yi) && ec.yi > 0.3 && ec.yi < 0.4, ec.yi);
   check('数値でない値は照合に落ちる', review.verifyStats({ nControl: 'about 30' }, text).length === 1);
 
+  // ---- 比較条件の種類（受動／能動）----
+  const passiveActive = (arr) => arr.map(([yi, c]) => ({ yi, vi: 0.04, n: 40, gradeBand: 'elementary', comparator: c }));
+  const cs = meta.analyze('smd', passiveActive([[0.8, 'passive'], [0.9, 'passive'], [0.1, 'active'], [0.0, 'active'], [0.5, 'unclear']]));
+  check('比較の種類: 受動と能動の2群に分かれる（受動が先）', cs.comparatorSubgroups && cs.comparatorSubgroups.groups.map((g) => g.key).join() === 'passive,active', cs.comparatorSubgroups);
+  check('比較の種類: 群ごとの k と、差の Q 検定', cs.comparatorSubgroups.groups.every((g) => g.k === 2) && cs.comparatorSubgroups.df === 1 && cs.comparatorSubgroups.p < 0.05, cs.comparatorSubgroups.p);
+  check('比較の種類: 不明の研究は分析から除き、数える', cs.comparatorUnclear === 1 && cs.overall.k === 5);
+  check('比較の種類: 片方が1研究だけなら行わない', meta.analyze('smd', passiveActive([[0.8, 'passive'], [0.9, 'passive'], [0.1, 'active']])).comparatorSubgroups === null);
+  check('比較の種類: 相関のテーマでは行わない', meta.analyze('r', passiveActive([[0.2, 'passive'], [0.3, 'passive'], [0.1, 'active'], [0.2, 'active']])).comparatorSubgroups === null);
+  check('学年別の分析は従来どおり', meta.subgroups([{ yi: 0.2, vi: 0.02, gradeBand: 'elementary' }, { yi: 0.3, vi: 0.02, gradeBand: 'elementary' }, { yi: 0.8, vi: 0.02, gradeBand: 'middle' }, { yi: 0.9, vi: 0.02, gradeBand: 'middle' }]).groups[0].band === 'elementary');
+
+  // 分類の根拠の引用は本文で確かめる（数値と違い、文字列では確かめられない）
+  const body = 'In the control group, the students were taught with the regular logical and mathematics curriculum, without any pro-\ngramming activities during the semester.';
+  check('引用: 本文にある（ハイフンで切れた語・大文字小文字の違いを許す）', review.quoteSupported('the students were taught with the Regular logical and mathematics curriculum, without any programming activities', body));
+  check('引用: 本文に無い作文は通らない', !review.quoteSupported('the control group played plugged-in coding games on tablets every week', body));
+  check('引用: 短すぎるものは通らない', !review.quoteSupported('regular curriculum', body));
+  check('引用: 日本語の本文でも照合できる', review.quoteSupported('統制群は通常の算数の授業を受けた', '対象は小学5年生であった。 統制群は 通常の 算数の授業を 受けた。 授業は週3回であった。'));
+  const th = config.themes.find((x) => x.id === 'info-unplugged-ct');
+  const rawC = (over) => ({ comparisonType: 'active', comparisonEvidence: 'the students were taught with the regular logical and mathematics curriculum', ...over });
+  check('分類: 引用が本文にあれば採用', review.classifyComparison(th, rawC(), body).comparisonType === 'active');
+  const dg = review.classifyComparison(th, rawC({ comparisonEvidence: 'they played tablet games for two hours every single day' }), body);
+  check('分類: 引用が本文に無ければ unclear に落とし、理由を残す', dg.comparisonType === 'unclear' && /見つからない/.test(dg.comparisonNote), dg);
+  check('分類: 想定外の値は unclear', review.classifyComparison(th, rawC({ comparisonType: 'sham' }), body).comparisonType === 'unclear');
+  check('分類: 相関のテーマでは使わない', review.classifyComparison(config.themes.find((x) => x.id === 'math-anxiety-achievement'), rawC(), body).comparisonType === 'unclear');
+
   // ---- 引用と参考文献（日本語版 = JSET、英語版 = IEEE）----
   check('名前の分解', cite.splitName('John A. Smith').initials === 'J. A.' && cite.splitName('Jean-Paul Sartre').initials === 'J.-P.');
   check('姓の前置詞', cite.splitName('Ludwig van Beethoven').family === 'van Beethoven');
@@ -279,6 +303,7 @@ function fakeData(i) {
   const m1 = (12 + i * 0.3).toFixed(2); const m2 = '11.20';
   return {
     eligible: i !== 2, reason: i === 2 ? 'Teacher sample.' : 'Meets criteria.',
+    comparisonType: i === 7 ? 'unclear' : i % 3 === 0 ? 'active' : 'passive', comparisonEvidence: 'the control group received regular lessons',
     country: i % 2 ? 'Turkey' : 'Japan', gradeLevel: i % 2 ? 'Grade 7' : 'Grade 4', gradeBand: i % 2 ? 'middle' : 'elementary',
     design: 'quasi-experimental', intervention: 'number line fraction instruction', comparison: 'business as usual',
     outcomeMeasure: 'fraction test', summaryEn: 'Students learned fractions. The intervention helped.',
@@ -429,6 +454,23 @@ async function pipelineTest() {
   check('有意な統合値では従来の文のまま', !/統計的に有意ではなく（信頼区間/.test(content.resultsBlocks(report, 'ja', new cite.Bibliography(report.studies.map((s) => ({ sid: s.sid, paper: s.paper })), 'jset')).filter((b) => typeof b === 'string').join('')));
   const artNS = content.buildArticleHtml(rSig, report.text.article, new cite.Bibliography(report.studies.map((s) => ({ sid: s.sid, paper: s.paper })), 'jset'), { paperJa: 'a', paperEn: 'b', data: 'c', figure: '' }, false);
   check('有意でない統合値（記事）: 信頼区間が0をまたぐと書く', artNS.includes('95% 信頼区間が0をまたいでおり、統計的に有意ではありません'));
+  // ---- 比較条件の種類の分析が、論文・表・CSV に出る ----
+  const cgr = report.analysis.comparatorSubgroups;
+  check('通し: 比較の種類の分析ができる', cgr && cgr.groups.length === 2 && report.analysis.comparatorUnclear === 1, cgr && cgr.groups.map((g) => g.key + ':' + g.k));
+  check('日本語版: 方法に比較の種類の分類と分析を書く', ja.includes('比較群の条件が') && ja.includes('根拠となる本文の箇所を引用させた') && ja.includes('引用が本文に見つからない分類は「不明」とした') && ja.includes('による下位集団分析も') && ja.includes('比較の種類が不明な研究は'));
+  check('日本語版: 結果に比較の種類別の推定値・差の検定・不明の除外を書く', ja.includes('比較条件の種類別では') && ja.includes('受動的な比較') && ja.includes('能動的な比較') && ja.includes('比較の種類による差は統計的に有意') && ja.includes('比較の種類が不明だった') && ja.includes('探索的'),
+    ['比較条件の種類別では', '受動的な比較', '能動的な比較', '比較の種類による差は統計的に有意', '比較の種類が不明だった', '探索的'].filter((x) => !ja.includes(x)));
+  check('英語版: 結果に比較の種類別の推定値・差の検定・不明の除外を書く', en.includes('By type of comparison condition') && en.includes('passive comparison (no intervention or regular lessons)') && en.includes('active comparison (an alternative intervention)') && en.includes('difference between comparison types') && en.includes('whose comparison type was unclear was left out') && en.includes('exploratory'));
+  check('表3に比較の種類の行がある（日英）', ja.includes('受動的な比較（介入なし・通常授業など）') && en.includes('passive comparison (no intervention or regular lessons)') && (ja.match(/能動的な比較/g) || []).length >= 2);
+  check('表2の比較条件に [受動]／[能動] の印（不明は付けない）', ja.includes('[受動]') && ja.includes('[能動]') && en.includes('[passive]') && en.includes('[active]') && (ja.match(/\[(受動|能動)\]/g) || []).length >= 6);
+  const csvText = fs.readFileSync(path.join(outDir, 'studies.csv'), 'utf8');
+  check('CSV に comparison_type の列', csvText.split('\r\n')[0].includes('comparison_type') && /,(passive|active|unclear),/.test(csvText));
+  // この機能より前の報告（分類なし）は文面が変わらない
+  const legacy = { ...report, studies: report.studies.map((s) => ({ ...s, data: { ...s.data, comparisonType: undefined } })), analysis: { ...report.analysis, comparatorSubgroups: undefined, comparatorUnclear: undefined } };
+  const legacyText = content.resultsBlocks(legacy, 'ja', new cite.Bibliography(report.studies.map((s) => ({ sid: s.sid, paper: s.paper })), 'jset')).filter((b) => typeof b === 'string').join('') +
+    content.methodBlocks(legacy, 'ja').filter((b) => typeof b === 'string').join('') + content.methodBlocks(legacy, 'en').filter((b) => typeof b === 'string').join('');
+  check('分類のない過去の報告には、比較の種類のことを書かない', !/比較条件の種類|受動的|passive|comparison type/.test(legacyText) && !content.table2(legacy, 'en', new cite.Bibliography(report.studies.map((s) => ({ sid: s.sid, paper: s.paper })), 'ieee')).note.includes('passive'));
+  check('事実に比較の種類の分析が入る（AI が書けるように）', JSON.stringify(content.buildFacts(report)).includes('difference between comparison types'));
   check('英語版: 日本語版へのリンク', en.includes('paper-ja.pdf') && ja.includes('paper-en.pdf'));
   check('記事: PDF へのリンク', art.includes('href="https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/paper-ja.pdf"') && art.includes('/paper-en.pdf"') && art.includes('/studies.csv"') && !art.includes('/blob/'));
   check('記事: 図は raw の URL', art.includes('https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/forest-ja.png'));

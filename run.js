@@ -182,7 +182,7 @@ async function analyzeAndWrite(report) {
   const { unknownNumbers } = require('./lib/write');
   const et = report.theme.effect;
   report.analysis = meta.analyze(et, report.studies.map((s) => ({
-    id: s.sid, yi: s.effect.yi, vi: s.effect.vi, n: s.effect.n, gradeBand: s.data.gradeBand
+    id: s.sid, yi: s.effect.yi, vi: s.effect.vi, n: s.effect.n, gradeBand: s.data.gradeBand, comparator: s.data.comparisonType
   })));
   const o = report.analysis.overall;
   console.log(`\n統合: k = ${o.k}, ${et === 'r' ? 'r' : 'g'} = ${meta.back(et, o.est).toFixed(2)} [${meta.back(et, o.ci[0]).toFixed(2)}, ${meta.back(et, o.ci[1]).toFixed(2)}], I2 = ${o.I2.toFixed(1)}%`);
