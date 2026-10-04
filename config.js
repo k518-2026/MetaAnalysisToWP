@@ -196,6 +196,30 @@ const themes = [
     outcome: 'a numeracy or mathematics achievement test' }
 ];
 
+// ============================================================
+// 検索する分野（OpenAlex の subfield）
+// ============================================================
+// 教育（3304）と教育心理学（3204）だけに限ると、情報教育の論文の大半を取りこぼした。
+// 2026-10-04 に分野の限定を外して分類を集計したところ、主な分類は次のとおりだった:
+//   アンプラグド  コンピュータ科学応用 139 / 教育 28 / 情報システム 15
+//   ブロック型    コンピュータ科学応用 336 / 情報システム 75 / 教育 60
+//   ロボット      コンピュータ科学応用 459 / 情報システム 121 / 教育 120（ほかに外科 179 などの医学が混ざる）
+//   算数不安      実験・認知心理学 218 / 教育 42
+// 全分野にすると医学（ejection fraction の分数など）のノイズが増えるので、必要な分野だけを足す。
+const SUBFIELD = {
+  education: '3304', eduPsych: '3204',
+  csApplications: '1706', infoSystems: '1710',
+  expCogPsych: '3205', socialPsych: '3207'
+};
+themes.forEach((t) => {
+  if (t.subfields) return;
+  const base = [SUBFIELD.education, SUBFIELD.eduPsych];
+  if (t.domain === 'info') base.push(SUBFIELD.csApplications, SUBFIELD.infoSystems);
+  // 相関を調べるテーマは心理学の雑誌に載ることが多い
+  if (t.effect === 'r') base.push(SUBFIELD.expCogPsych, SUBFIELD.socialPsych);
+  t.subfields = base;
+});
+
 module.exports = {
   themes,
 
@@ -210,16 +234,17 @@ module.exports = {
   // 前回の報告から何日たてば次を作ってよいか。同じ週に二重に作らないための歯止め。
   // 6 だと、平日に手動で作った週の次の日曜が飛ばされる（2026-09-29 火曜に手動 → 10-04 日曜は5日後）ので 3 にした
   minDaysBetweenReports: 3,
-  // 1回の実行で試すテーマの数（論文が集まらなければ次のテーマへ）
-  maxThemesPerRun: 3,
+  // 1回の実行で試すテーマの数（論文が集まらなければ次のテーマへ）。
+  // 数学と情報を交互に試すので、4 なら片方の分野が全部だめでも、もう片方を2つ試せる
+  maxThemesPerRun: 4,
 
   // --- 検索（OpenAlex）---
   openalex: {
-    // 3304 Education / 3204 Developmental and Educational Psychology。テーマごとに theme.subfields で上書きできる
+    // 既定。テーマごとの分野は上の themes.forEach で theme.subfields に入れてある
     subfields: ['3304', '3204'],
     fromYear: 2012,
     perPage: 50,
-    pages: 3,
+    pages: 4,
     // true にすると全体が OA の雑誌（ゴールド OA）だけにする。false はハイブリッド誌の OA 論文も含める
     openJournalsOnly: false,
     languages: ['en']
@@ -230,14 +255,14 @@ module.exports = {
     enabled: true,
     fromYear: 2012,
     count: 50,
-    maxPageFetch: 30,       // 要旨と PDF の URL を取るために開く記事ページの上限
+    maxPageFetch: 50,       // 要旨と PDF の URL を取るために開く記事ページの上限（30 だとロボットの候補 34 件の4件が要旨なしで落ちた）
     pageIntervalMs: 1500
   },
 
   // --- 選別と採録 ---
   screening: {
     batchSize: 20,
-    maxCandidates: 150,     // 要旨で選別する候補の上限
+    maxCandidates: 200,     // 要旨で選別する候補の上限
     abstractMaxChars: 1500
   },
   studies: {

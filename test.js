@@ -87,6 +87,19 @@ async function unitTests() {
   check('全角数字の本文も照合できる', review.verifyStats({ meanControl: '12.50' }, text).length === 0);
   check('本文に無い数値は見つからない', review.verifyStats({ meanControl: '12.5', sdControl: '2.95' }, text).length === 2);
   check('数字の一部だけの一致は認めない（14.3 と 14.32）', review.verifyStats({ meanTreatment: '14.3' }, text).length === 1);
+  // 小数点がカンマの論文（インドネシア語など）。2026-10-04 の実行で、本文に「79,8」「86,3」「-5,160」とある有効な研究が
+  // 「本文で確認できない数値」として捨てられた
+  const comma = 'rata-rata 79,8 dan 86,3 (n = 1.234; SD 2,5). Hasil uji t = -5,160 dengan p < 0,001. 平均 8,40';
+  check('小数点がカンマの本文: 抽出が「.」でも通る', review.verifyStats({ meanTreatment: '79.8', meanControl: '86.3', t: '-5.160', sdTreatment: '2.5' }, comma).length === 0,
+    review.verifyStats({ meanTreatment: '79.8', meanControl: '86.3', t: '-5.160', sdTreatment: '2.5' }, comma));
+  check('小数点がカンマの本文: 抽出が「,」のままでも通る', review.verifyStats({ meanTreatment: '79,8', t: '-5,160', meanControl: '8,40' }, comma).length === 0);
+  check('桁区切りの人数（本文 1.234 / 抽出 1234）', review.verifyStats({ nTreatment: '1234' }, comma).length === 0);
+  check('カンマ表記でも、ずれた値は落とす', review.verifyStats({ meanTreatment: '79.9', t: '5.16' }, comma).length === 2, review.verifyStats({ meanTreatment: '79.9', t: '5.16' }, comma));
+  check('長い数の一部には一致しない（15,160 の中の 5,160）', review.verifyStats({ t: '5.160' }, 'nilai 15,160 saja').length === 1);
+  check('読み取り: 平均のカンマは小数点', review.parseNumber('8,40', 'meanTreatment') === 8.4 && review.parseNumber('-5,160', 't') === -5.16);
+  check('読み取り: 人数のカンマは桁区切り', review.parseNumber('1,234', 'nTreatment') === 1234 && review.parseNumber('2.500', 'nTotal') === 2500);
+  const ec = meta.computeEffect('smd', { nTreatment: '25', nControl: '25', meanTreatment: '8,40', meanControl: '7,97', sdTreatment: '1,2', sdControl: '1,3', direction: 'treatment_higher' });
+  check('効果量: カンマ表記の平均・SD から計算できる', Number.isFinite(ec.yi) && ec.yi > 0.3 && ec.yi < 0.4, ec.yi);
   check('数値でない値は照合に落ちる', review.verifyStats({ nControl: 'about 30' }, text).length === 1);
 
   // ---- 引用と参考文献（日本語版 = JSET、英語版 = IEEE）----
@@ -138,6 +151,11 @@ async function unitTests() {
   const L = { runs: [{ date: '2026-09-20', themeId: 'math-fraction-instruction', status: 'done' }] };
   const order = ledgerLib.themeOrder(config.themes, L);
   check('前回が数学なら次は情報', order[0].domain === 'info', order[0].id);
+  check('数学と情報を交互に並べる（片方が全部失敗しても、もう片方を同じ実行で試せる）', order.slice(0, 6).every((x, i) => x.domain === (i % 2 === 0 ? 'info' : 'math')), order.slice(0, 6).map((x) => x.domain));
+  const Lf = { runs: ['info-unplugged-ct', 'info-block-programming-ct', 'info-educational-robotics'].map((id) => ({ date: '2026-10-04', themeId: id, status: 'failed' }))
+    .concat([{ date: '2026-09-29', themeId: 'math-fraction-instruction', status: 'done' }]) };
+  const orderF = ledgerLib.themeOrder(config.themes, Lf).slice(0, config.maxThemesPerRun);
+  check('情報が3つ失敗していても、同じ実行で数学も試す', orderF.length === config.maxThemesPerRun && orderF.some((x) => x.domain === 'math') && orderF.filter((x) => x.domain === 'info').length === 2 && !orderF.some((x) => /unplugged|block-programming|educational-robotics/.test(x.id)), orderF.map((x) => x.id));
   check('記事にしたテーマは選ばない', !order.some((t) => t.id === 'math-fraction-instruction') && order.length === config.themes.length - 1);
   const tmpRep = fs.mkdtempSync(path.join(os.tmpdir(), 'meta-rep-'));
   fs.mkdirSync(path.join(tmpRep, '2026-10-11-info-unplugged-ct'));
@@ -152,6 +170,16 @@ async function unitTests() {
   check('失敗したテーマは後回し', ledgerLib.themeOrder(config.themes, L2)[0].id !== 'info-unplugged-ct');
   check('日数の計算', ledgerLib.daysSinceLast(L, '2026-09-27') === 7 && ledgerLib.daysSinceLast({ runs: [] }, '2026-09-27') === Infinity);
   check('日本時間の日付（朝6時でも当日）', ledgerLib.jstDate(new Date('2026-09-27T21:00:00Z')) === '2026-09-28');
+
+  // ---- 検索する分野（情報教育の論文は教育以外に分類されているものが多い）----
+  const sub = (id) => config.themes.find((x) => x.id === id).subfields;
+  check('情報のテーマはコンピュータ科学応用と情報システムも検索', config.themes.filter((x) => x.domain === 'info').every((x) => x.subfields.includes('1706') && x.subfields.includes('1710') && x.subfields.includes('3304')));
+  check('相関のテーマは心理学も検索', ['math-anxiety-achievement', 'math-self-efficacy-achievement', 'info-ct-math-correlation'].every((id) => sub(id).includes('3205') && sub(id).includes('3207')));
+  check('分数のテーマは医学が混ざらない分野のまま', sub('math-fraction-instruction').join() === '3304,3204', sub('math-fraction-instruction'));
+  check('分野の指定が検索式に入る', require('./lib/openalex').buildFilter(config.themes.find((x) => x.id === 'info-unplugged-ct')).includes('primary_topic.subfield.id:3304|3204|1706|1710'));
+  const htmlMeta = '<head><meta name="citation_title" content="x"><meta name="citation_pdf_url" content="/article/download/12/34?a=1&amp;b=2"></head>';
+  check('論文のページから PDF の URL を探す', require('./lib/pdf').pdfLinkFromHtml(htmlMeta, 'https://journal.example.org/index.php/x/article/view/12') === 'https://journal.example.org/article/download/12/34?a=1&b=2');
+  check('PDF の URL が無いページは空', require('./lib/pdf').pdfLinkFromHtml('<head></head>', 'https://x.org/') === '');
 
   // ---- テーマ定義 ----
   const ids = new Set();

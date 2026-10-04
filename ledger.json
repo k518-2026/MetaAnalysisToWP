@@ -16,30 +16,6 @@
       ],
       "wpSentAt": "2026-09-28T16:15:55.314Z",
       "note": "WordPress の記事をユーザーが削除（直リンク版で再投稿するため）2026-09-29"
-    },
-    {
-      "date": "2026-10-04",
-      "themeId": "info-unplugged-ct",
-      "status": "failed",
-      "note": "効果量を計算できた研究が 0 本（5 本必要）",
-      "searched": 52,
-      "tried": 2
-    },
-    {
-      "date": "2026-10-04",
-      "themeId": "info-block-programming-ct",
-      "status": "failed",
-      "note": "効果量を計算できた研究が 0 本（5 本必要）",
-      "searched": 120,
-      "tried": 6
-    },
-    {
-      "date": "2026-10-04",
-      "themeId": "info-educational-robotics",
-      "status": "failed",
-      "note": "効果量を計算できた研究が 0 本（5 本必要）",
-      "searched": 181,
-      "tried": 2
     }
   ]
 }
