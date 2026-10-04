@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Effects of Unplugged Activities on Computational Thinking in School Students: A Meta-Analysis</title><style>
+@page { size: A4; margin: 30mm 30mm 32mm 30mm; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Times New Roman', 'Liberation Serif', 'Nimbus Roman', 'Noto Serif', serif; font-size: 9pt; line-height: 11pt; color: #000; }
+p { margin: 0; text-indent: 1.5em; text-align: justify; hyphens: auto; }
+.series { text-align: right; font-size: 8pt; letter-spacing: 0.02em; }
+.type { font-family: Arial, 'Liberation Sans', 'Nimbus Sans', Helvetica, sans-serif; font-weight: bold; font-size: 10pt; margin-top: 16pt; text-indent: 0; }
+h1.title { font-family: Arial, 'Liberation Sans', 'Nimbus Sans', Helvetica, sans-serif; font-size: 14pt; line-height: 18pt; font-weight: bold; margin: 8pt 0 6pt; }
+.authors { font-size: 11pt; line-height: 14pt; font-weight: bold; text-indent: 0; }
+.orig { font-style: italic; margin: 8pt 0 8pt; text-indent: 0; }
+.abs { font-size: 8pt; line-height: 10pt; text-indent: 0; margin-bottom: 2pt; }
+.cols { column-count: 2; column-gap: 7.5mm; margin-top: 14pt; column-fill: balance; }
+h2 { font-family: Arial, 'Liberation Sans', 'Nimbus Sans', Helvetica, sans-serif; font-size: 11pt; font-weight: bold; margin: 10pt 0 4pt; break-after: avoid; }
+h3 { font-family: Arial, 'Liberation Sans', 'Nimbus Sans', Helvetica, sans-serif; font-size: 10pt; font-weight: bold; margin: 7pt 0 3pt; break-after: avoid; }
+h2 + p, h3 + p, .noind { text-indent: 0; }
+.wide { column-span: all; margin: 8pt 0; }
+.figure-block { break-inside: avoid; }
+.table-block .cap { break-after: avoid; }
+tr { break-inside: avoid; }
+thead { display: table-header-group; }
+.cap { text-indent: 0; margin: 3pt 0; text-align: left; }
+table { border-collapse: collapse; width: 100%; font-size: 8pt; line-height: 10pt; }
+th { border-top: 0.75pt solid #000; border-bottom: 0.5pt solid #000; font-weight: normal; text-align: left; padding: 1.5pt 3pt; }
+td { padding: 1.5pt 3pt; vertical-align: top; }
+tbody tr:last-child td { border-bottom: 0.75pt solid #000; }
+.tnote { font-size: 8pt; line-height: 10pt; text-indent: 0; margin-top: 2pt; }
+.figure-block svg { width: 100%; height: auto; }
+.ref { display: flex; text-indent: 0; text-align: left; margin-bottom: 1.5pt; }
+.ref .n { flex: 0 0 2.4em; }
+.ref .t { flex: 1; overflow-wrap: anywhere; }
+td.nw, th.nw { white-space: nowrap; }
+table.fixed { table-layout: fixed; }
+table.fixed td { overflow-wrap: break-word; hyphens: auto; }
+a { color: #000; text-decoration: none; }
+</style></head><body>
+<p class="series">SEDA GENERATIVE AI PAPERS, 2026</p>
+<p class="type">Generative AI paper</p>
+<h1 class="title">Effects of Unplugged Activities on Computational Thinking in School Students: A Meta-Analysis</h1>
+<p class="authors">Society for Educational Data Analysis (SEDA)</p>
+<p class="orig">(The Japanese version of this paper, with identical content, is available at https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-info-unplugged-ct/paper-ja.pdf. Published October 4, 2026.)</p>
+<p class="abs"><b><i>Abstract</i></b> Developing computational thinking skills in early education is increasingly vital, prompting schools to explore diverse pedagogical approaches. Using an automated workflow in which every extracted number was verified against the full text, 6 open-access studies (<i>N</i> = 450) were pooled with a random-effects model. The pooled effect was <i>g</i> = 0.51, 95% CI [−0.15, 1.16], with <i>I</i>² = 80.9%. Unplugged activities show moderate potential for fostering computational thinking, but further rigorous research is required to confirm their effectiveness in primary and lower secondary classrooms.</p>
+<p class="abs"><b><i>Keywords</i></b> meta-analysis, unplugged activities, computational thinking, elementary education, computer science education</p>
+<div class="cols">
+<h2>1. Introduction</h2>
+<p>Primary and lower secondary schools are increasingly integrating computer science concepts into their curricula to prepare students for a digital world. Developing computational thinking at an early age is considered essential for fostering problem-solving and logical reasoning skills. However, schools often face resource constraints, such as a lack of computers or internet access, which can hinder the implementation of digital programming lessons.</p>
+<p>To address these challenges, educators have turned to unplugged (computer-free) computer science and computational thinking activities. These activities use physical games, puzzles, cards, or kinesthetic movements to teach core concepts like algorithms, patterns, and debugging without requiring digital devices. Researchers have investigated various unplugged approaches, including general computational thinking activities [1], [2], coding tasks [3], specific tools like Tospaa [4], musical activities based on Bebras challenges [5], and educational board games like SmartGames [6].</p>
+<p>While individual studies report positive or mixed outcomes, their findings are often limited by small sample sizes and diverse comparison groups, which range from regular lessons [1], [3] and no computational thinking instruction [2], [5] to plugged-in programming [4], [6]. A quantitative synthesis is useful to systematically pool these disparate findings, estimate the overall effect size, and evaluate the consistency of unplugged activities across different educational contexts.</p>
+<p>The purpose of this meta-analysis is to synthesize the existing empirical evidence on the effectiveness of unplugged activities. Specifically, this study addresses the following research question: What is the overall effect of unplugged computer science and computational thinking activities on the computational thinking test performance of school students compared to control conditions?</p>
+<h2>2. Method</h2>
+<h3>2.1 Literature Search</h3>
+<p>Searches were run on October 4, 2026 in two open bibliographic sources. OpenAlex was searched in the title and abstract fields with the query “(unplugged) AND (&quot;computational thinking&quot; OR programming OR &quot;computer science&quot;) AND (elementary OR primary OR &quot;middle school&quot; OR &quot;junior high&quot; OR secondary OR &quot;K-12&quot; OR grade OR children OR pupils)”, restricted to open-access journal articles published in 2012 or later and classified in the Education or Developmental and Educational Psychology subfields. J-STAGE, the Japanese journal platform, was searched in the abstract field with the keywords “アンプラグド プログラミング”, “アンプラグド 小学校” (2012 or later) to include studies published in Japan.</p>
+<h3>2.2 Eligibility Criteria</h3>
+<p>Studies were eligible if they (a) sampled students in primary or secondary school (K-12); Primary and lower secondary samples are preferred; upper secondary samples are acceptable; Exclude university, adult, and teacher/pre-service teacher samples; (b) examined unplugged (computer-free) computer science or computational thinking activities; (c) compared it with no computational thinking instruction, regular lessons, or plugged (computer-based) activities; (d) measured a computational thinking test or programming concept test; and (e) reported statistics sufficient to compute a standardized mean difference. Reviews, qualitative studies, single-case designs, and single-group pre-post designs were excluded.</p>
+<h3>2.3 Screening and Data Extraction</h3>
+<p>Screening and data extraction were automated. A large language model (gemini-3.6-flash, gemini-3.8-flash, gemini-3.5-flash, gemini-3.5-flash-lite) rated each title and abstract against the eligibility criteria. Full texts (PDF) of the highest-rated records were retrieved and converted to plain text, and the model extracted study characteristics and summary statistics from them. Every extracted number was then checked by software against the full text, and a study was excluded from the synthesis if any extracted number could not be found verbatim. No human reviewer verified the screening or the extraction. When more than 10 studies qualified, the 10 with the highest screening ratings were retained.</p>
+<h3>2.4 Effect Sizes</h3>
+<p>Standardized mean differences were computed as Hedges’ g [7] from post-test means, standard deviations, and group sizes; when these were unavailable, from independent-samples t statistics, from F statistics with one numerator degree of freedom, or from reported d or g values. Positive values indicate higher scores in the intervention group. One effect size per study was used.</p>
+<h3>2.5 Statistical Analysis</h3>
+<p>Effect sizes were pooled with a random-effects model in which the between-study variance (<i>τ</i>²) was estimated with the DerSimonian–Laird method [8]. Confidence intervals and tests of the pooled effect used the Hartung–Knapp–Sidik–Jonkman (HKSJ) adjustment, which is recommended when the number of studies is small [9], [10]. Heterogeneity was assessed with Q, <i>I</i>² [11], <i>τ</i>², and a 95% prediction interval. Subgroup analyses by school level (elementary: grades 1–6; lower secondary: grades 7–9) were conducted when each level included at least two studies. Robustness was examined with leave-one-out analysis, and Egger’s regression test [12] was planned only when at least 10 studies were available. Effect magnitudes were interpreted with conventional benchmarks [13]. Analyses followed standard formulas [14] implemented in open-source JavaScript code (<span class="q">https://github.com/k518-2026/MetaAnalysisToWP</span>).</p>
+<h2>3. Results</h2>
+<h3>3.1 Study Selection</h3>
+<p>The searches returned 189 records from OpenAlex (of 189 matching the query) and 18 from J-STAGE, for 204 unique records. Of the 194 records with abstracts that were screened, 21 were rated as potentially eligible. Full texts of 21 records were examined: 6 could not be retrieved or read, 5 did not meet the eligibility criteria, 3 did not report sufficient statistics, 1 contained extracted numbers that could not be verified in the text, and 0 yielded implausible values. In total, 6 studies were included in the meta-analysis.</p>
+<h3>3.2 Study Characteristics</h3>
+<p>Table 1 summarizes the country, grade, design, sample size, and effect size of each included study [1], [2], [3], [4], [5], [6]. The studies comprised 450 participants in total and were conducted in Ecuador, Turkey, Spain, Netherlands, Brazil. By school level, 1 study sampled other students, 4 studies sampled elementary (grades 1–6) students, 1 study sampled lower secondary (grades 7–9) students. Sample sizes ranged from 22 to 220, and individual effect sizes ranged from <i>g</i> = −0.64 to <i>g</i> = 1.33.</p>
+<div class="wide table-block"><p class="cap"><b>Table 1.</b> Overview of the Included Studies</p><table class="fixed"><colgroup><col style="width:26%"><col style="width:11%"><col style="width:12%"><col style="width:23%"><col style="width:7%"><col style="width:21%"></colgroup><thead><tr><th>Study</th><th>Country</th><th>Grade</th><th>Design</th><th><i>N</i></th><th><i>g</i> [95% CI]</th></tr></thead><tbody><tr><td>Montes-León et al. [1]</td><td>Ecuador</td><td>Grade 10</td><td>quasi-experimental</td><td class="nw">80</td><td class="nw">0.69 [0.25, 1.14]</td></tr><tr><td>Namlı and Aybek [3]</td><td>Turkey</td><td>Grade 5</td><td>randomized controlled trial</td><td class="nw">54</td><td class="nw">0.37 [−0.17, 0.90]</td></tr><tr><td>YILMAZ and İzmirli [4]</td><td>Turkey</td><td>Grade 5</td><td>quasi-experimental</td><td class="nw">36</td><td class="nw">0.56 [−0.09, 1.22]</td></tr><tr><td>Durán et al. [5]</td><td>Spain</td><td>Grades 3-6</td><td>quasi-experimental</td><td class="nw">220</td><td class="nw">1.33 [1.00, 1.67]</td></tr><tr><td>Fanchamps et al. [6]</td><td>Netherlands</td><td>Grades 5-6</td><td>randomized controlled trial</td><td class="nw">22</td><td class="nw">−0.64 [−1.47, 0.19]</td></tr><tr><td>Brackmann et al. [2]</td><td>Brazil</td><td>Grades 5-6</td><td>quasi-experimental</td><td class="nw">38</td><td class="nw">0.36 [−0.27, 0.98]</td></tr></tbody></table><p class="tnote"><i>Note.</i> CI = confidence interval. <i>g</i> = Hedges’ g (positive values favor the intervention). Grades and designs were extracted automatically from the full texts.</p></div>
+<p>Table 2 lists the intervention, comparison condition, and outcome measure of each study. All 6 studies compared an intervention group with a comparison group on a post-test.</p>
+<div class="wide table-block"><p class="cap"><b>Table 2.</b> Interventions, Comparison Conditions, and Outcome Measures</p><table class="fixed"><colgroup><col style="width:20%"><col style="width:32%"><col style="width:24%"><col style="width:24%"></colgroup><thead><tr><th>Study</th><th>Intervention</th><th>Comparison</th><th>Outcome</th></tr></thead><tbody><tr><td>Montes-León et al. [1]</td><td>unplugged computational thinking activities</td><td>regular logical and mathematical reasoning instruction</td><td>computational thinking test</td></tr><tr><td>Namlı and Aybek [3]</td><td>unplugged coding activities</td><td>regular curriculum instruction without interventions</td><td>International Informatics and Computational Thinking Activity Task Test</td></tr><tr><td>YILMAZ and İzmirli [4]</td><td>Tospaa unplugged coding activities</td><td>Scratch block-based coding activities</td><td>Computational Thinking Test</td></tr><tr><td>Durán et al. [5]</td><td>unplugged musical activities based on Bebras challenges</td><td>no computational thinking instruction</td><td>Computational Thinking Test using Bebras Problems</td></tr><tr><td>Fanchamps et al. [6]</td><td>unplugged SmartGames</td><td>plugged-in sense-reason-act programming using Lego EV-3</td><td>Computational Thinking Test</td></tr><tr><td>Brackmann et al. [2]</td><td>unplugged computational thinking activities</td><td>no computational thinking instruction</td><td>Computational Thinking Test</td></tr></tbody></table><p class="tnote"><i>Note.</i> Extracted and summarized automatically from the full texts.</p></div>
+<h3>3.3 Overall Effect</h3>
+<p>Fig. 1 shows the forest plot. Each square marks the effect size of one study, with its size proportional to the study’s weight, and each horizontal line marks the 95% confidence interval; the diamond at the bottom is the pooled estimate. 5 of the 6 studies had positive effect sizes, and the confidence intervals of 2 studies did not include zero. The study with the largest weight was Durán et al. [5] (19.5%).</p>
+<div class="wide figure-block"><svg xmlns="http://www.w3.org/2000/svg" width="900" height="334" viewBox="0 0 900 334" font-family="'Noto Sans', 'Noto Sans CJK JP', 'Yu Gothic', 'Meiryo', Arial, sans-serif" font-size="13">
+<rect width="900" height="334" fill="#ffffff"/>
+<text x="12" y="32" font-weight="bold">Study</text>
+<text x="660" y="32" font-weight="bold">g [95% CI]</text>
+<text x="880" y="32" font-weight="bold" text-anchor="end">Weight</text>
+<line x1="12" y1="42" x2="888" y2="42" stroke="#333" stroke-width="1"/>
+<text x="12" y="68">Montes-León et al. [1]</text>
+<line x1="465.3135617224673" y1="64" x2="534.6176410682426" y2="64" stroke="#222" stroke-width="1.4"/>
+<rect x="493.1094455986144" y="57.14384420325945" width="13.712311593481104" height="13.712311593481104" fill="#1f4e79"/>
+<text x="660" y="68">0.69 [0.25, 1.14]</text>
+<text x="880" y="68" text-anchor="end">18.3%</text>
+<text x="12" y="96">Namlı and Aybek [3]</text>
+<line x1="433.4584638448416" y1="92" x2="516.1547340413324" y2="92" stroke="#222" stroke-width="1.4"/>
+<rect x="468.07996484350133" y="85.27336590041432" width="13.45326819917137" height="13.45326819917137" fill="#1f4e79"/>
+<text x="660" y="96">0.37 [−0.17, 0.90]</text>
+<text x="880" y="96" text-anchor="end">17.2%</text>
+<text x="12" y="124">YILMAZ and İzmirli [4]</text>
+<line x1="439.4374637793883" y1="120" x2="540.4903269461599" y2="120" stroke="#222" stroke-width="1.4"/>
+<rect x="483.42858011679016" y="113.46468475401602" width="13.07063049196796" height="13.07063049196796" fill="#1f4e79"/>
+<text x="660" y="124">0.56 [−0.09, 1.22]</text>
+<text x="880" y="124" text-anchor="end">15.7%</text>
+<text x="12" y="152">Durán et al. [5]</text>
+<line x1="523.3815702925687" y1="148" x2="575.7756729585011" y2="148" stroke="#222" stroke-width="1.4"/>
+<rect x="542.5786216255349" y="141" width="14" height="14" fill="#1f4e79"/>
+<text x="660" y="152">1.33 [1.00, 1.67]</text>
+<text x="880" y="152" text-anchor="end">19.5%</text>
+<text x="12" y="180">Fanchamps et al. [6]</text>
+<line x1="332.08254435886687" y1="176" x2="460.6455295742636" y2="176" stroke="#222" stroke-width="1.4"/>
+<rect x="390.12651563341785" y="169.76247866685262" width="12.475042666294748" height="12.475042666294748" fill="#1f4e79"/>
+<text x="660" y="180">−0.64 [−1.47, 0.19]</text>
+<text x="880" y="180" text-anchor="end">13.4%</text>
+<text x="12" y="208">Brackmann et al. [2]</text>
+<line x1="425.26517273027036" y1="204" x2="522.5596664788823" y2="204" stroke="#222" stroke-width="1.4"/>
+<rect x="467.33706065150926" y="197.42464104693286" width="13.150717906134263" height="13.150717906134263" fill="#1f4e79"/>
+<text x="660" y="208">0.36 [−0.27, 0.98]</text>
+<text x="880" y="208" text-anchor="end">16.0%</text>
+<line x1="12" y1="230" x2="888" y2="230" stroke="#999" stroke-width="0.8"/>
+<text x="12" y="250" font-weight="bold">Random-effects model (HKSJ)</text>
+<polygon points="434.8911232257082,246 485.6553710123614,238 536.4196187990145,246 485.6553710123614,254" fill="#c00000"/>
+<text x="660" y="250" font-weight="bold">0.51 [−0.15, 1.16]</text>
+<text x="880" y="250" text-anchor="end" font-weight="bold">100%</text>
+<text x="12" y="278">Prediction interval</text>
+<line x1="355.28178531741855" y1="274" x2="616.0289567073041" y2="274" stroke="#c00000" stroke-width="1.4" stroke-dasharray="5,4"/>
+<text x="660" y="278">[−1.17, 2.19]</text>
+<line x1="446.25" y1="46" x2="446.25" y2="280" stroke="#666" stroke-width="1" stroke-dasharray="2,3"/>
+<line x1="330" y1="280" x2="640" y2="280" stroke="#333" stroke-width="1"/>
+<line x1="330" y1="280" x2="330" y2="285" stroke="#333"/>
+<text x="330" y="299" text-anchor="middle">−1.50</text>
+<line x1="368.75" y1="280" x2="368.75" y2="285" stroke="#333"/>
+<text x="368.75" y="299" text-anchor="middle">−1.00</text>
+<line x1="407.5" y1="280" x2="407.5" y2="285" stroke="#333"/>
+<text x="407.5" y="299" text-anchor="middle">−0.50</text>
+<line x1="446.25" y1="280" x2="446.25" y2="285" stroke="#333"/>
+<text x="446.25" y="299" text-anchor="middle">0.00</text>
+<line x1="485" y1="280" x2="485" y2="285" stroke="#333"/>
+<text x="485" y="299" text-anchor="middle">0.50</text>
+<line x1="523.75" y1="280" x2="523.75" y2="285" stroke="#333"/>
+<text x="523.75" y="299" text-anchor="middle">1.00</text>
+<line x1="562.5" y1="280" x2="562.5" y2="285" stroke="#333"/>
+<text x="562.5" y="299" text-anchor="middle">1.50</text>
+<line x1="601.25" y1="280" x2="601.25" y2="285" stroke="#333"/>
+<text x="601.25" y="299" text-anchor="middle">2.00</text>
+<line x1="640" y1="280" x2="640" y2="285" stroke="#333"/>
+<text x="640" y="299" text-anchor="middle">2.50</text>
+<text x="438.25" y="320" text-anchor="end" fill="#555">← Favors comparison</text>
+<text x="454.25" y="320" fill="#555">Favors intervention →</text>
+</svg><p class="cap"><b>Figure 1.</b> Forest plot of individual and pooled effect sizes</p><p class="tnote">Squares show study effect sizes (size proportional to weight), lines show 95% confidence intervals, the diamond shows the pooled estimate, and the dashed line shows the prediction interval.</p></div>
+<p>The random-effects model yielded a pooled effect of <i>g</i> = 0.51, 95% CI [−0.15, 1.16], <i>t</i>(5) = 2.00, <i>p</i> = .103, which corresponds to a moderate effect by conventional benchmarks. The fixed-effect estimate was <i>g</i> = 0.75. Table 3 summarizes these estimates.</p>
+<h3>3.4 Heterogeneity</h3>
+<p>Heterogeneity was considerable, <i>Q</i>(5) = 26.13, p &lt; .001, <i>I</i>² = 80.9%, <i>τ</i>² = 0.302. The 95% prediction interval ranged from −1.17 to 2.19.</p>
+<h3>3.5 Subgroup and Sensitivity Analyses</h3>
+<p>A subgroup analysis by school level was not conducted because fewer than two studies were available for at least one level. Leave-one-out estimates ranged from 0.35 to 0.70. Publication bias was not tested because fewer than 10 studies were included.</p>
+<div class="wide table-block"><p class="cap"><b>Table 3.</b> Results of the Meta-Analysis</p><table><thead><tr><th>Model</th><th><i>k</i></th><th><i>N</i></th><th><i>g</i></th><th>95% CI</th><th><i>p</i></th><th><i>I</i>² (%)</th><th><i>τ</i>²</th></tr></thead><tbody><tr><td class="nw">Random effects (HKSJ)</td><td class="nw">6</td><td class="nw">450</td><td class="nw">0.51</td><td class="nw">[−0.15, 1.16]</td><td class="nw">.103</td><td class="nw">80.9</td><td class="nw">0.302</td></tr><tr><td class="nw">Fixed effect</td><td class="nw">6</td><td class="nw">450</td><td class="nw">0.75</td><td class="nw">[0.55, 0.96]</td><td class="nw">&lt; .001</td><td class="nw">—</td><td class="nw">—</td></tr></tbody></table><p class="tnote"><i>Note.</i> <i>k</i> = number of studies. HKSJ = Hartung–Knapp–Sidik–Jonkman confidence interval. 95% prediction interval [−1.17, 2.19].</p></div>
+<h2>4. Discussion</h2>
+<p>The meta-analysis pooled data from 6 studies with a total sample size of 450 students. As shown in Table 3, the overall pooled effect size was moderate, with Hedges <i>g</i> = 0.51, but this effect was not statistically significant (95% CI [-0.15, 1.16], <i>p</i> = .103). The forest plot (Fig. 1) reveals substantial heterogeneity among the included studies, as indicated by <i>Q</i>(5) = 26.13, p &lt; .001, I2 = 80.9%, and tau2 = 0.302. This high level of heterogeneity suggests that the effectiveness of unplugged activities varies considerably depending on the specific implementation and context. The wide prediction interval of [-1.17, 2.19] further highlights that future implementations could result in either highly positive or negative outcomes.</p>
+<p>To assess the robustness of the pooled estimate, a leave-one-out sensitivity analysis was conducted, yielding a range of pooled Hedges g from 0.35 to 0.70, indicating that no single study disproportionately dictated the direction of the overall effect. Subgroup analyses based on school levels were not conducted because there were fewer than 2 studies per school level, preventing a reliable comparison. Additionally, publication bias was not assessed due to the small number of included studies (fewer than 10).</p>
+<p>An overview of the studies is presented in Table 1, and the specific interventions and outcomes are detailed in Table 2. The individual study effects varied widely. For instance, [5] reported a very large positive effect (<i>g</i> = 1.33) for unplugged musical activities based on Bebras challenges compared to no instruction. Moderate positive effects were observed in quasi-experimental designs, such as [1] in Ecuador (<i>g</i> = 0.69) and [4] in Turkey (<i>g</i> = 0.56). In contrast, [6] found a negative effect (<i>g</i> = -0.64) when comparing unplugged SmartGames to plugged-in Lego EV-3 programming, although the authors noted equivalent development. Other studies, such as [3] (<i>g</i> = 0.37) and [2] (<i>g</i> = 0.36), showed smaller, non-significant positive trends.</p>
+<p>For teachers of grades 1-9, these findings suggest that unplugged activities can be a viable, low-cost entry point for teaching computational thinking, especially when digital resources are scarce. However, because the overall effect was not statistically significant and highly variable, teachers should not view unplugged activities as a complete replacement for plugged-in programming. Instead, integrating unplugged lessons with physical or musical elements, as seen in [5], or combining them with block-based programming [3], [4] may yield the most balanced educational outcomes.</p>
+<h2>5. Conclusion</h2>
+<p>In conclusion, this meta-analysis indicates that unplugged computer science activities have a moderate but statistically non-significant overall effect (<i>g</i> = 0.51) on students' computational thinking skills. The high heterogeneity and wide prediction interval underscore the diverse outcomes of these interventions in practice. While unplugged activities offer a promising, accessible tool for primary and lower secondary school teachers, further rigorous, large-scale research is essential to identify the specific conditions and designs that maximize their effectiveness.</p>
+<p>Several limitations must be acknowledged when interpreting these results. First, the meta-analysis is based on a very small number of studies (6 studies, <i>N</i> = 450), which limits the statistical power to detect a significant overall effect and prevents robust subgroup or publication bias analyses. Second, the data were extracted automatically, which may introduce minor inaccuracies or overlook nuanced contextual details.</p>
+<p>Additionally, the included studies employed diverse research designs, ranging from randomized controlled trials [3], [6] to quasi-experimental designs [1], [2], [4], [5]. The outcome measures also varied, utilizing different computational thinking tests, such as Bebras tasks [5] or general computational thinking tests [1], [2], [4], [6], which may not capture the same underlying constructs. Finally, the samples were predominantly focused on elementary grades [2], [3], [4], [5], [6], with only one study targeting grade 10 [1], limiting the generalizability of the findings across all K-12 school levels.</p>
+<p>In addition, screening and data extraction were automated with a language model, and extracted numbers were verified only by matching them against the full text. A number can be present in the text yet belong to a different group or measure. Only open-access studies whose full texts could be retrieved were included; subscription-only and unpublished studies were not.</p>
+<h2>Author notes</h2>
+<p class="noind">This is a “Generative AI paper” produced automatically by the Society for Educational Data Analysis (SEDA) with generative AI. Large language models (gemini-3.6-flash, gemini-3.8-flash, gemini-3.5-flash, gemini-3.5-flash-lite) were used to screen records, extract data, and draft the Introduction, Discussion, and Conclusion; all statistics were computed by software. The paper has not been peer reviewed.</p>
+<p>Data and code are available at <span class="q">https://github.com/k518-2026/MetaAnalysisToWP</span>. © 2026 Society for Educational Data Analysis (SEDA).</p>
+<h2>References</h2>
+<p class="noind">References marked with an asterisk indicate studies included in the meta-analysis.</p>
+<p class="ref"><span class="n">[1]</span><span class="t">*H. Montes-León, R. H. Neira, D. Pérez-Marín, and S. R. M. León, “Improving Computational Thinking in Secondary Students with Unplugged Tasks,” <i>Education in the Knowledge Society (EKS)</i>, vol. 21, p. 12, 2020, doi: 10.14201/eks.23002.</span></p>
+<p class="ref"><span class="n">[2]</span><span class="t">*C. P. Brackmann, D. A. C. Barone, R. M. Boucinha, and J. T. Reichert, “Development of Computational Thinking in Brazilian Schools with Social and Economic Vulnerability,” <i>International Journal for Innovation Education and Research</i>, vol. 7, no. 4, pp. 79–96, 2019, doi: 10.31686/ijier.vol7.iss4.1390.</span></p>
+<p class="ref"><span class="n">[3]</span><span class="t">*N. A. Namlı and B. Aybek, “An Investigation of The Effect of Block-Based Programming and Unplugged Coding Activities on Fifth Graders’ Computational Thinking Skills, Self-Efficacy and Academic Performance,” <i>Contemporary Educational Technology</i>, vol. 14, no. 1, p. ep341, 2022, doi: 10.30935/cedtech/11477.</span></p>
+<p class="ref"><span class="n">[4]</span><span class="t">*T. YILMAZ and S. İzmirli, “Effect of unplugged and plugged coding activities on secondary school students’ computational thinking skills,” <i>Journal of Educational Technology and Online Learning</i>, vol. 6, no. 4, pp. 1180–1193, 2023, doi: 10.31681/jetol.1375335.</span></p>
+<p class="ref"><span class="n">[5]</span><span class="t">*C. M. S. Durán, C. M. García-Fernández, and A. A. Galán, “Alfabetización Computacional: Actividades musicales desenchufadas sobre el Desafío Internacional de Bebras,” <i>Revista de Educación a Distancia (RED)</i>, vol. 23, no. 73, 2023, doi: 10.6018/red.540191.</span></p>
+<p class="ref"><span class="n">[6]</span><span class="t">*N. L. J. A. Fanchamps, E. van Gool, L. Slangen, and P. Hennissen, “The effect on computational thinking and identified learning aspects: Comparing unplugged smartGames with SRA-Programming with tangible or On-screen output,” <i>Education and Information Technologies</i>, vol. 29, no. 3, pp. 2999–3024, 2023, doi: 10.1007/s10639-023-11956-6.</span></p>
+<p class="ref"><span class="n">[7]</span><span class="t">L. V. Hedges, “Distribution theory for Glass's estimator of effect size and related estimators,” <i>Journal of Educational Statistics</i>, vol. 6, no. 2, pp. 107–128, 1981, doi: 10.3102/10769986006002107.</span></p>
+<p class="ref"><span class="n">[8]</span><span class="t">R. DerSimonian and N. Laird, “Meta-analysis in clinical trials,” <i>Controlled Clinical Trials</i>, vol. 7, no. 3, pp. 177–188, 1986, doi: 10.1016/0197-2456(86)90046-2.</span></p>
+<p class="ref"><span class="n">[9]</span><span class="t">J. Hartung and G. Knapp, “A refined method for the meta-analysis of controlled clinical trials with binary outcome,” <i>Statistics in Medicine</i>, vol. 20, no. 24, pp. 3875–3889, 2001, doi: 10.1002/sim.1009.</span></p>
+<p class="ref"><span class="n">[10]</span><span class="t">J. IntHout, J. P. A. Ioannidis, and G. F. Borm, “The Hartung-Knapp-Sidik-Jonkman method for random effects meta-analysis is straightforward and considerably outperforms the standard DerSimonian-Laird method,” <i>BMC Medical Research Methodology</i>, vol. 14, Art. no. 25, 2014, doi: 10.1186/1471-2288-14-25.</span></p>
+<p class="ref"><span class="n">[11]</span><span class="t">J. P. T. Higgins and S. G. Thompson, “Quantifying heterogeneity in a meta-analysis,” <i>Statistics in Medicine</i>, vol. 21, no. 11, pp. 1539–1558, 2002, doi: 10.1002/sim.1186.</span></p>
+<p class="ref"><span class="n">[12]</span><span class="t">M. Egger, G. Davey Smith, M. Schneider, and C. Minder, “Bias in meta-analysis detected by a simple, graphical test,” <i>BMJ</i>, vol. 315, no. 7109, pp. 629–634, 1997, doi: 10.1136/bmj.315.7109.629.</span></p>
+<p class="ref"><span class="n">[13]</span><span class="t">J. Cohen, <i>Statistical Power Analysis for the Behavioral Sciences</i>, 2nd ed. Lawrence Erlbaum Associates, 1988.</span></p>
+<p class="ref"><span class="n">[14]</span><span class="t">M. Borenstein, L. V. Hedges, J. P. T. Higgins, and H. R. Rothstein, <i>Introduction to Meta-Analysis</i>, Wiley, 2009, doi: 10.1002/9780470743386.</span></p>
+</div></body></html>

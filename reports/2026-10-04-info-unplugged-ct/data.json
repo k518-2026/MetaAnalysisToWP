@@ -1,0 +1,1453 @@
+{
+ "theme": {
+  "id": "info-unplugged-ct",
+  "domain": "info",
+  "effect": "smd",
+  "titleJa": "アンプラグド活動はプログラミング的思考を育てるか",
+  "titleEn": "Effects of Unplugged Activities on Computational Thinking in School Students",
+  "query": "(unplugged) AND (\"computational thinking\" OR programming OR \"computer science\") AND (elementary OR primary OR \"middle school\" OR \"junior high\" OR secondary OR \"K-12\" OR grade OR children OR pupils)",
+  "jstage": [
+   "アンプラグド プログラミング",
+   "アンプラグド 小学校"
+  ],
+  "population": "students in primary or secondary school (K-12). Primary and lower secondary samples are preferred; upper secondary samples are acceptable. Exclude university, adult, and teacher/pre-service teacher samples.",
+  "intervention": "unplugged (computer-free) computer science or computational thinking activities",
+  "comparison": "no computational thinking instruction, regular lessons, or plugged (computer-based) activities",
+  "outcome": "a computational thinking test or programming concept test",
+  "subfields": [
+   "3304",
+   "3204",
+   "1706",
+   "1710"
+  ]
+ },
+ "search": {
+  "openalex": {
+   "total": 189,
+   "retrieved": 189
+  },
+  "jstage": {
+   "total": 32,
+   "retrieved": 18
+  },
+  "merged": 204,
+  "screened": 194,
+  "passedScreening": 21,
+  "fullTextsTried": 21,
+  "excluded": {
+   "noPdf": 6,
+   "ineligible": 5,
+   "noStats": 3,
+   "unverified": 1,
+   "implausible": 0,
+   "error": 0
+  }
+ },
+ "studies": [
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W3184822985",
+    "doi": "10.14201/eks.23002",
+    "title": "Improving Computational Thinking in Secondary Students with Unplugged Tasks",
+    "titleEn": "",
+    "authors": [
+     "Hernán Montes-León",
+     "Raquel Hijón- Neira",
+     "Diana Pérez-Marín",
+     "Sergio Raul Montes León"
+    ],
+    "venue": "Education in the Knowledge Society (EKS)",
+    "volume": "21",
+    "issue": "",
+    "pages": "12",
+    "year": "2020",
+    "language": "en",
+    "citedBy": 20,
+    "url": "https://doi.org/10.14201/eks.23002",
+    "landing": "https://doi.org/10.14201/eks.23002",
+    "pdfUrls": [
+     "https://revistas.usal.es/index.php/eks/article/download/eks20202124/22859"
+    ],
+    "abstract": "The teaching-learning of programming fundamentals is increasing in secondary schools, however, it is a very difficult task for the teacher because the student has not yet achieved full development of their computational thinking, so they have difficulty in learning programming fundamentals. In this article, we describe the development of computational thinking activities prior to the teaching of programming fundamentals and we analyze the data obtained from a pre- and post-test of computational thinking applied to a control group and an experimental group. Afterwards, we analyze the results obtained from a test of programming fundamentals to both the control group and the experimental group.The activity has been evaluated during the academic year 2017-2018 by 80 high school students from 10th grade (15 and 16 years old), our results indicate that the development of activities of Computational Thinking previous to the teaching of programming fundamentals has allowed the students to assimilate in a better way the learning in the mentioned subject, that is to say, they extended their mathematical logical reasoning to develop the respective flow charts without any difficulty. That is, they expanded their mathematical logical reasoning to develop the respective flow diagrams without any difficulty.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "Meets all criteria, employing a quasi-experimental design with a control group and quantitative CT outcomes."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study evaluated the effect of unplugged computational thinking activities on 10th-grade secondary school students using a quasi-experimental control group design with quantitative post-test outcomes.",
+    "country": "Ecuador",
+    "gradeLevel": "Grade 10",
+    "gradeBand": "other",
+    "design": "quasi-experimental",
+    "intervention": "unplugged computational thinking activities",
+    "comparison": "regular logical and mathematical reasoning instruction",
+    "outcomeMeasure": "computational thinking test",
+    "summaryEn": "This study evaluated the effect of unplugged computational thinking activities on 10th-grade secondary students in Ecuador compared to regular logic instruction. Results showed that students in the experimental group achieved significantly higher post-test scores on computational thinking than those in the control group.",
+    "summaryJa": "本研究では、エクアドルの高校1年生（10年生）を対象に、アンプラグドによるプログラミング思考学習活動の効果を論理的思考指導を行う対照群と比較・検証しました。その結果、アンプラグド活動を行った実験群は対照群と比較して、プログラミング思考の事後テストにおいて優位に高いスコアを示しました。",
+    "evidence": "Control Post-test 5,3 5,33 1,12 0,15 Test Post-test 6 6,06 0,96 -0,28",
+    "ja": {
+     "country": "エクアドル",
+     "gradeLevel": "高校1年",
+     "design": "準実験",
+     "intervention": "アンプラグドなプログラミング思考学習活動",
+     "comparison": "通常の手理・数学的推論指導",
+     "outcomeMeasure": "プログラミング思考テスト"
+    },
+    "stats": {
+     "nTreatment": "40",
+     "nControl": "40",
+     "meanTreatment": "6,06",
+     "meanControl": "5,33",
+     "sdTreatment": "0,96",
+     "sdControl": "1,12",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "80",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.6-flash",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.6931045341336118,
+    "vi": 0.05204248417750387,
+    "n": 80,
+    "method": "means and SDs",
+    "display": 0.6931045341336118
+   },
+   "pdfUrl": "https://revistas.usal.es/index.php/eks/article/download/eks20202124/22859",
+   "sid": "S1"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4206467982",
+    "doi": "10.30935/cedtech/11477",
+    "title": "An Investigation of The Effect of Block-Based Programming and Unplugged Coding Activities on Fifth Graders’ Computational Thinking Skills, Self-Efficacy and Academic Performance",
+    "titleEn": "",
+    "authors": [
+     "Nihan Arslan Namlı",
+     "Birsel Aybek"
+    ],
+    "venue": "Contemporary Educational Technology",
+    "volume": "14",
+    "issue": "1",
+    "pages": "ep341",
+    "year": "2022",
+    "language": "en",
+    "citedBy": 22,
+    "url": "https://doi.org/10.30935/cedtech/11477",
+    "landing": "https://doi.org/10.30935/cedtech/11477",
+    "pdfUrls": [
+     "https://www.cedtech.net/download/an-investigation-of-the-effect-of-block-based-programming-and-unplugged-coding-activities-on-fifth-11477.pdf"
+    ],
+    "abstract": "This paper investigated the effect of block-based programming and unplugged coding teaching activities on fifth graders’ computational thinking skills, self-efficacy, and academic performance. The teaching activities were conducted within the scope of the “Problem-Solving and Programming” unit of the Information Technologies and Software (ITS) course. The sample consisted of 82 fifth graders of three public middle schools in the academic year of 2020-2021. Participants were recruited using random sampling. The study adopted an embedded mixed design. The quantitative stage employed a pretest-posttest randomized control group design, while the qualitative staged employed a case study. Quantitative data were collected using the Computational Thinking Self-efficacy Scale (CTSES), the International Informatics and Computational Thinking Activity Task Test (IICTATT), and a Computational Thinking Performance Test (CTPT) developed by the researcher. Qualitative data were collected using a semi-structured interview questionnaire. The quantitative data were analyzed using the Kruskal Wallis H, paired sample t-test, and ANCOVA test on the Statistical Package for Social Sciences (SPSS). The qualitative data were analyzed inductively using MAXQDA. There was no significant difference in CTSES scores between groups. Experimental 2 had higher IICTATT and CTPT scores than Experimental-1 and control groups. The qualitative findings were grouped into seven categories.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "Meets all criteria, employing a randomized control group design comparing unplugged, plugged, and control groups."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial investigating the effects of unplugged coding activities on fifth-grade students' computational thinking skills compared to a control group.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "unplugged coding activities",
+    "comparison": "regular curriculum instruction without interventions",
+    "outcomeMeasure": "International Informatics and Computational Thinking Activity Task Test",
+    "summaryEn": "This study evaluated the effects of unplugged coding and block-based programming on fifth graders' computational thinking, self-efficacy, and performance using a randomized control group design. While the block-based group showed significant gains on the computational thinking task test, the unplugged group also demonstrated descriptive improvements on post-test measures.",
+    "summaryJa": "本研究は、小学5年生（トルコの中学校1年目）を対象に、アンプラグドコーディングとブロックプログラミングが計算論的思考力、自己効力感、学力に及ぼす影響を無作為化対照群比較デザインにより検証した。計算論的思考力テストにおいてブロックプログラミング群で有意な向上が見られた一方、アンプラグド群でも事後テストにおいて向上が認められました。",
+    "evidence": "Table 7. Paired sample t-test results for IICTATT scores: Experimental 1 Posttest N=24, X̄=6.00, S=1.76; Control Posttest N=30, X̄=5.40, S=1.47.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "無作為化比較試験",
+     "intervention": "アンプラグド・コーディング活動",
+     "comparison": "通常授業（介入なし）",
+     "outcomeMeasure": "国際情報科学・計算論的思考タスクテスト（IICTATT）"
+    },
+    "stats": {
+     "nTreatment": "24",
+     "nControl": "30",
+     "meanTreatment": "6.00",
+     "meanControl": "5.40",
+     "sdTreatment": "1.76",
+     "sdControl": "1.47",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "82",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.3684722444269292,
+    "vi": 0.07409898619878504,
+    "n": 54,
+    "method": "means and SDs",
+    "display": 0.3684722444269292
+   },
+   "pdfUrl": "https://www.cedtech.net/download/an-investigation-of-the-effect-of-block-based-programming-and-unplugged-coding-activities-on-fifth-11477.pdf",
+   "sid": "S2"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4390466253",
+    "doi": "10.31681/jetol.1375335",
+    "title": "Effect of unplugged and plugged coding activities on secondary school students’ computational thinking skills",
+    "titleEn": "",
+    "authors": [
+     "Tunahan YILMAZ",
+     "Serkan İzmirli"
+    ],
+    "venue": "Journal of Educational Technology and Online Learning",
+    "volume": "6",
+    "issue": "4",
+    "pages": "1180–1193",
+    "year": "2023",
+    "language": "en",
+    "citedBy": 11,
+    "url": "https://doi.org/10.31681/jetol.1375335",
+    "landing": "https://doi.org/10.31681/jetol.1375335",
+    "pdfUrls": [
+     "https://dergipark.org.tr/en/download/article-file/3472010",
+     "https://dergipark.org.tr/tr/download/article-file/3472010"
+    ],
+    "abstract": "The objective of this research was to investigate the influence of both unplugged and plugged coding activities on the computational thinking skills of secondary school students. Using an experimental design with a pretest-posttest control group, the study indicated that students enhanced their computational thinking skills through engagement in coding activities. Specifically, students in the experimental group, participating in unplugged coding activities (Tospaa unplugged coding activities), exhibited heightened perception and improved performance in computational thinking skills in the post-test compared to the pre-test. Conversely, the control group, involved in plugged coding activities (Scratch block-based coding), did not show a significant change in perception of computational thinking skills in the post-test compared to the pre-test. However, their performance in computational thinking skills improved significantly in the post-test compared to the pre-test. Furthermore, no significant differences were observed in terms of the perception of computational thinking skills between the unplugged coding group and the plugged coding group, and similarly, no significant differences were found in terms of the computational thinking skills performance between unplugged and plugged groups. In conclusion, the study also shows a high alignment between students' perceptions of computational thinking and their actual performance in computational thinking.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "Meets all criteria, using an experimental pretest-posttest design comparing unplugged and plugged coding activities."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study meets all inclusion criteria, comparing unplugged coding activities with plugged coding activities in fifth-grade students using a quasi-experimental design and measuring computational thinking performance.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Tospaa unplugged coding activities",
+    "comparison": "Scratch block-based coding activities",
+    "outcomeMeasure": "Computational Thinking Test",
+    "summaryEn": "This study investigated the effects of unplugged and plugged coding activities on the computational thinking skills of 5th-grade students in Turkey. The results showed that both the unplugged group (using Tospaa) and the plugged group (using Scratch) significantly improved their computational thinking performance, with no significant difference between the two groups at post-test.",
+    "summaryJa": "本研究では、トルコの5年生を対象に、アンプラグドおよびプラグドコーディング活動がプログラミング的思考力に与える影響を検証しました。その結果、アンプラグド群（Tospaaを使用）とプラグド群（Scratchを使用）の両方でプログラミング的思考のパフォーマンスが有意に向上し、事後テストにおいて両群間に有意な差は見られませんでした。",
+    "evidence": "According to the results of the analysis, there was no significant difference between the CT performances of the group receiving unplugged coding training (x̄=14.50; SD=3.38) and the group receiving plugged coding training (x̄=12.67; SD=2.95) (t(34)= 1.73; p=.092>.05).",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "5年生",
+     "design": "準実験",
+     "intervention": "Tospaaアンプラグドコーディング活動",
+     "comparison": "Scratchブロックベースコーディング活動",
+     "outcomeMeasure": "プログラミング的思考テスト"
+    },
+    "stats": {
+     "nTreatment": "18",
+     "nControl": "18",
+     "meanTreatment": "14.50",
+     "meanControl": "12.67",
+     "sdTreatment": "3.38",
+     "sdControl": "2.95",
+     "t": "1.73",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "36",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.5640502627454727,
+    "vi": 0.11064649667543933,
+    "n": 36,
+    "method": "means and SDs",
+    "display": 0.5640502627454727
+   },
+   "pdfUrl": "https://dergipark.org.tr/en/download/article-file/3472010",
+   "sid": "S3"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4321118322",
+    "doi": "10.6018/red.540191",
+    "title": "Alfabetización Computacional: Actividades musicales desenchufadas sobre el Desafío Internacional de Bebras",
+    "titleEn": "",
+    "authors": [
+     "Carmen María Sepúlveda Durán",
+     "Cristina María García-Fernández",
+     "Azahara Arévalo Galán"
+    ],
+    "venue": "Revista de Educación a Distancia (RED)",
+    "volume": "23",
+    "issue": "73",
+    "pages": "",
+    "year": "2023",
+    "language": "en",
+    "citedBy": 1,
+    "url": "https://doi.org/10.6018/red.540191",
+    "landing": "http://dx.doi.org/10.6018/red.540191",
+    "pdfUrls": [
+     "https://revistas.um.es/red/article/download/540191/336011"
+    ],
+    "abstract": "Computer Literacy is a reality in current educational legislation. Within the STEAM competence approach, music education and the development of Computational Thinking (CT) are located in this discipline. In this work, unplugged musical activities are designed based on the Bebras challenges, and their effectiveness is evaluated in terms of CT development in students. A quasi-experimental study was carried out with pre-post test measures in a group of 220 Primary School students (experimental, N = 170; control, N = 50). The experimental group performed three blocks of unplugged musical activities. Computational Thinking Test using Bebras Problems (Lockwood and Moone, 2018) was used as an instrument. Variables of gender, course, environment and academic ability were taken into account. The results show a significant increase in CT in the experimental group at a general level and in the Bebras activities of medium and advanced levels of difficulty. Schoolchildren from the rural context showed higher scores in CT development compared to the urban one. No significant differences are observed in the rest of the variables. Finally, a higher level of correct answers was observed in \"easy\" activities, greater completion of \"medium\" activities and a decrease in both in \"advanced\" activities. La Alfabetización Computacional es una realidad en las legislaciones educativas actuales. Dentro del enfoque competencial STEAM, se ubica la educación musical y el desarrollo del Pensamiento Computacional (PC) en esta disciplina. En este trabajo se diseñan actividades musicales desenchufadas desde los desafíos de Bebras y se evalúa su eficacia en cuanto al desarrollo del PC en estudiantes. Se realizó un estudio cuasi-experimental con medidas pre-post test en un grupo de 220 escolares de Educación Primaria (experimental, N = 170; control, N = 50). El grupo experimental realizó tres bloques de actividades musicales desenchufadas. Como instrumento se utilizó Computational Thinking Test using Bebras Problems (Lockwood y Moone, 2018). Se tuvieron en cuenta variables de género, curso, entorno y capacidad académica. Los resultados muestran aumento significativo del PC en el grupo experimental a nivel general y en las actividades de Bebras de niveles medio y avanzado de dificultad. Los escolares de contexto rural mostraron puntuaciones mayores en el desarrollo del PC en comparación con el urbano. No se observan diferencias significativas en el resto de variables. Por último, se observó mayor nivel de respuestas correctas en actividades “fáciles”, mayor cumplimentación de actividades “medias” y descenso de ambas en actividades “avanzadas”.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "This is a quasi-experimental study comparing an unplugged intervention group with a control group using a quantitative computational thinking test."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental trial evaluating the effects of unplugged musical activities on primary school students' computational thinking using a Bebras-based test.",
+    "country": "Spain",
+    "gradeLevel": "Grades 3-6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "unplugged musical activities based on Bebras challenges",
+    "comparison": "no computational thinking instruction",
+    "outcomeMeasure": "Computational Thinking Test using Bebras Problems",
+    "summaryEn": "This study evaluated the impact of unplugged musical activities on the computational thinking skills of primary school students in Spain. The experimental group showed significant improvements in their computational thinking post-test scores compared to the control group.",
+    "summaryJa": "本研究は、スペインの小学生を対象に、アンプラグド音楽活動がプログラミング的思考力に与える影響を評価しました。実験群は、対照群と比較して、事後テストにおけるプログラミング的思考力のスコアが有意に向上しました。",
+    "evidence": "Se realizó un estudio cuasi-experimental con medidas pre-post test en un grupo de 220 escolares de Educación Primaria (experimental, N = 170; control, N = 50).",
+    "ja": {
+     "country": "スペイン",
+     "gradeLevel": "小学3〜6年",
+     "design": "準実験",
+     "intervention": "Bebrasチャレンジに基づくアンプラグド音楽活動",
+     "comparison": "プログラミング的思考の指導なし",
+     "outcomeMeasure": "Bebras問題を用いたプログラミング的思考テスト"
+    },
+    "stats": {
+     "nTreatment": "170",
+     "nControl": "50",
+     "meanTreatment": ".4719",
+     "meanControl": ".2262",
+     "sdTreatment": ".203",
+     "sdControl": ".089",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "220",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 1.3332725371036758,
+    "vi": 0.02974440152847451,
+    "n": 220,
+    "method": "means and SDs",
+    "display": 1.3332725371036758
+   },
+   "pdfUrl": "https://revistas.um.es/red/article/download/540191/336011",
+   "sid": "S4"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4380991240",
+    "doi": "10.1007/s10639-023-11956-6",
+    "title": "The effect on computational thinking and identified learning aspects: Comparing unplugged smartGames with SRA-Programming with tangible or On-screen output",
+    "titleEn": "",
+    "authors": [
+     "Nardie L. J. A. Fanchamps",
+     "Emily van Gool",
+     "Lou Slangen",
+     "Paul Hennissen"
+    ],
+    "venue": "Education and Information Technologies",
+    "volume": "29",
+    "issue": "3",
+    "pages": "2999–3024",
+    "year": "2023",
+    "language": "en",
+    "citedBy": 19,
+    "url": "https://doi.org/10.1007/s10639-023-11956-6",
+    "landing": "https://doi.org/10.1007/s10639-023-11956-6",
+    "pdfUrls": [
+     "https://link.springer.com/content/pdf/10.1007/s10639-023-11956-6.pdf"
+    ],
+    "abstract": "Abstract Learning basic concepts of programming resulting in a development on computational thinking (CT) can be reached by means of digital programming environments. As a counterpart, the application of unplugged programming activities seems also to have promising potential regarding the impact on CT. The main characteristic of unplugged programming is that it comprises activities without the use of information and communication technologies (ICT). Since previous research has shown that the application of sense-reason-act (SRA) programming with different types of output demonstrated a better understanding of underlying complex programming concepts with an impact on CT, our research investigates whether the application of unplugged programming, offered via SmartGames, can also generate such a distinctive impact on developing CT. To capture the effects of the different interventions applied, a mixed-methods study was conducted among primary school students aged ten to twelve. Research data were obtained by means of a pretest–posttest questionnaire survey using the validated Computational Thinking Test (CTt), and by conducting interviews to determine the effects of CT and to ascertain identifiable learning effects. Our research indicates that unplugged programming by applying SmartGames can be a consummate regarding the development of CT, similar to SRA-programming using either robotics with tangible output or robot simulations with on-screen output. The research findings identified support our claim that the application of unplugged SmartGames shows equivalent development on CT sub-characteristics in comparison with plugged-in SRA-programming with tangible or on-screen output. A better understanding of complex programming concepts and positive identified learning effects could only be partly demonstrated.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "This is a quasi-experimental study comparing unplugged programming with robotics and simulation groups using a validated CT test."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "This study is eligible as it evaluates the effects of unplugged SmartGames on computational thinking in primary school students compared to plugged-in programming environments using a randomized experimental design.",
+    "country": "Netherlands",
+    "gradeLevel": "Grades 5-6",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "unplugged SmartGames",
+    "comparison": "plugged-in sense-reason-act programming using Lego EV-3",
+    "outcomeMeasure": "Computational Thinking Test",
+    "summaryEn": "This study compared the effects of unplugged SmartGames with plugged-in sense-reason-act (SRA) programming (using Lego EV-3 or Bomberbot) on computational thinking among primary school students in the Netherlands. The results showed that unplugged SmartGames led to equivalent development in computational thinking compared to the plugged-in programming environments.",
+    "summaryJa": "本研究では、オランダの小学生を対象に、アンプラグドのスマートゲーム（SmartGames）と、Lego EV-3またはBomberbotを使用したプラグインのSRA（Sense-Reason-Act）プログラミングが計算論的思考に与える影響を比較しました。その結果、アンプラグドのスマートゲームは、プラグインのプログラミング環境と同等の計算論的思考の発達をもたらすことが示されました。",
+    "evidence": "No significant difference could be measured between the groups that used unplugged SmartGames and applied SRA-programming using either Lego EV-3 (p = 0.233) or Bomberbot (p = 0.200).",
+    "ja": {
+     "country": "オランダ",
+     "gradeLevel": "小学5〜6年",
+     "design": "ランダム化比較試験",
+     "intervention": "アンプラグドのスマートゲーム（SmartGames）",
+     "comparison": "Lego EV-3を使用したプラグインのSRAプログラミング",
+     "outcomeMeasure": "計算論的思考テスト（CTt）"
+    },
+    "stats": {
+     "nTreatment": "12",
+     "nControl": "10",
+     "meanTreatment": "0.64",
+     "meanControl": "0.71",
+     "sdTreatment": "0.10",
+     "sdControl": "0.11",
+     "t": "–1.215",
+     "F": "",
+     "d": "",
+     "g": "0.560",
+     "r": "",
+     "nTotal": "",
+     "direction": "control_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   },
+   "effect": {
+    "yi": -0.6436898455927069,
+    "vi": 0.17909040471135004,
+    "n": 22,
+    "method": "means and SDs",
+    "display": -0.6436898455927069
+   },
+   "pdfUrl": "https://link.springer.com/content/pdf/10.1007/s10639-023-11956-6.pdf",
+   "sid": "S5"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2943027193",
+    "doi": "10.31686/ijier.vol7.iss4.1390",
+    "title": "Development of Computational Thinking in Brazilian Schools with Social and Economic Vulnerability",
+    "titleEn": "",
+    "authors": [
+     "Christian Puhlmann Brackmann",
+     "Dante Augusto Couto Barone",
+     "Rafael Marimon Boucinha",
+     "Janice Teresinha Reichert"
+    ],
+    "venue": "International Journal for Innovation Education and Research",
+    "volume": "7",
+    "issue": "4",
+    "pages": "79–96",
+    "year": "2019",
+    "language": "en",
+    "citedBy": 12,
+    "url": "https://doi.org/10.31686/ijier.vol7.iss4.1390",
+    "landing": "https://doi.org/10.31686/ijier.vol7.iss4.1390",
+    "pdfUrls": [],
+    "abstract": "Computational Thinking (CT) has been placing the focus of educational innovation as a set of troubleshooting skills. Unfortunately, there is not a consensus if the teaching methodology and the available materials attend the expectations of the lecturers. To prove the impact that CT training has in primary school, we attempted to evaluate primary school students with a Quasi-Experimental approach and taking Unplugged CT classes in Brazilian Schools with Social and Economic Vulnerabilities. The research happened in two schools to prove if the activities are effective for students who live in areas where there are no electronic devices, Internet or even electrical power can be also benefited. The results show statistically significant improvement. Our study finds shows that we are able to reinforce the claim that CS unplugged is an effective approach and it is an alternative for students who live in unprivileged areas.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "It is a quasi-experimental study evaluating unplugged CT activities in primary school students with a comparison."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental design evaluating the effects of unplugged computational thinking activities on 5th and 6th-grade students in Brazil compared to a control group using a validated computational thinking test.",
+    "country": "Brazil",
+    "gradeLevel": "Grades 5-6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "unplugged computational thinking activities",
+    "comparison": "no computational thinking instruction",
+    "outcomeMeasure": "Computational Thinking Test",
+    "summaryEn": "This study evaluated the impact of unplugged computational thinking activities on fifth and sixth-grade students in Brazilian public schools using a quasi-experimental design. The results showed that the intervention group significantly improved their computational thinking skills, whereas the control group showed no significant change.",
+    "summaryJa": "この研究は、ブラジルの公立学校の小学5年生と6年生を対象に、アンプラグドな計算論的思考活動の効果を準実験デザインを用いて評価しました。その結果、介入群では計算論的思考力の有意な向上が見られた一方、対照群では有意な変化は見られませんでした。",
+    "evidence": "For the 6th year of School B, a p-value (0.916) was higher than the nominal level in the control group... The opposite occurred in the experimental group, where a p-value lower than the nominal value (0.020) was found",
+    "ja": {
+     "country": "ブラジル",
+     "gradeLevel": "小学5〜6年",
+     "design": "準実験",
+     "intervention": "アンプラグドな計算論的思考活動",
+     "comparison": "計算論的思考の指導なし",
+     "outcomeMeasure": "計算論的思考テスト"
+    },
+    "stats": {
+     "nTreatment": "19",
+     "nControl": "19",
+     "meanTreatment": "11.05",
+     "meanControl": "9.58",
+     "sdTreatment": "4.54",
+     "sdControl": "3.45",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "38",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   },
+   "effect": {
+    "yi": 0.3569344465106625,
+    "vi": 0.10256919497383478,
+    "n": 38,
+    "method": "means and SDs",
+    "display": 0.3569344465106625
+   },
+   "pdfUrl": "https://scholarsjournal.net/ijier/article/download/1390/980",
+   "sid": "S6"
+  }
+ ],
+ "examined": [
+  {
+   "id": "W3184822985",
+   "title": "Improving Computational Thinking in Secondary Students with Unplugged Tasks",
+   "year": "2020",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study evaluated the effect of unplugged computational thinking activities on 10th-grade secondary school students using a quasi-experimental control group design with quantitative post-test outcomes.",
+    "country": "Ecuador",
+    "gradeLevel": "Grade 10",
+    "gradeBand": "other",
+    "design": "quasi-experimental",
+    "intervention": "unplugged computational thinking activities",
+    "comparison": "regular logical and mathematical reasoning instruction",
+    "outcomeMeasure": "computational thinking test",
+    "summaryEn": "This study evaluated the effect of unplugged computational thinking activities on 10th-grade secondary students in Ecuador compared to regular logic instruction. Results showed that students in the experimental group achieved significantly higher post-test scores on computational thinking than those in the control group.",
+    "summaryJa": "本研究では、エクアドルの高校1年生（10年生）を対象に、アンプラグドによるプログラミング思考学習活動の効果を論理的思考指導を行う対照群と比較・検証しました。その結果、アンプラグド活動を行った実験群は対照群と比較して、プログラミング思考の事後テストにおいて優位に高いスコアを示しました。",
+    "evidence": "Control Post-test 5,3 5,33 1,12 0,15 Test Post-test 6 6,06 0,96 -0,28",
+    "ja": {
+     "country": "エクアドル",
+     "gradeLevel": "高校1年",
+     "design": "準実験",
+     "intervention": "アンプラグドなプログラミング思考学習活動",
+     "comparison": "通常の手理・数学的推論指導",
+     "outcomeMeasure": "プログラミング思考テスト"
+    },
+    "stats": {
+     "nTreatment": "40",
+     "nControl": "40",
+     "meanTreatment": "6,06",
+     "meanControl": "5,33",
+     "sdTreatment": "0,96",
+     "sdControl": "1,12",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "80",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.6-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W7172480327",
+   "title": "Engaging caregivers and children in computational thinking: Family-based tangible programming and unplugged activity interventions",
+   "year": "2026",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4210594834",
+   "title": "Unplugged Activities in Cross-Curricular Teaching: Effect on Sixth Graders’ Computational Thinking and Learning Outcomes",
+   "year": "2022",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4206467982",
+   "title": "An Investigation of The Effect of Block-Based Programming and Unplugged Coding Activities on Fifth Graders’ Computational Thinking Skills, Self-Efficacy and Academic Performance",
+   "year": "2022",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial investigating the effects of unplugged coding activities on fifth-grade students' computational thinking skills compared to a control group.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "unplugged coding activities",
+    "comparison": "regular curriculum instruction without interventions",
+    "outcomeMeasure": "International Informatics and Computational Thinking Activity Task Test",
+    "summaryEn": "This study evaluated the effects of unplugged coding and block-based programming on fifth graders' computational thinking, self-efficacy, and performance using a randomized control group design. While the block-based group showed significant gains on the computational thinking task test, the unplugged group also demonstrated descriptive improvements on post-test measures.",
+    "summaryJa": "本研究は、小学5年生（トルコの中学校1年目）を対象に、アンプラグドコーディングとブロックプログラミングが計算論的思考力、自己効力感、学力に及ぼす影響を無作為化対照群比較デザインにより検証した。計算論的思考力テストにおいてブロックプログラミング群で有意な向上が見られた一方、アンプラグド群でも事後テストにおいて向上が認められました。",
+    "evidence": "Table 7. Paired sample t-test results for IICTATT scores: Experimental 1 Posttest N=24, X̄=6.00, S=1.76; Control Posttest N=30, X̄=5.40, S=1.47.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "無作為化比較試験",
+     "intervention": "アンプラグド・コーディング活動",
+     "comparison": "通常授業（介入なし）",
+     "outcomeMeasure": "国際情報科学・計算論的思考タスクテスト（IICTATT）"
+    },
+    "stats": {
+     "nTreatment": "24",
+     "nControl": "30",
+     "meanTreatment": "6.00",
+     "meanControl": "5.40",
+     "sdTreatment": "1.76",
+     "sdControl": "1.47",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "82",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4390466253",
+   "title": "Effect of unplugged and plugged coding activities on secondary school students’ computational thinking skills",
+   "year": "2023",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study meets all inclusion criteria, comparing unplugged coding activities with plugged coding activities in fifth-grade students using a quasi-experimental design and measuring computational thinking performance.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Tospaa unplugged coding activities",
+    "comparison": "Scratch block-based coding activities",
+    "outcomeMeasure": "Computational Thinking Test",
+    "summaryEn": "This study investigated the effects of unplugged and plugged coding activities on the computational thinking skills of 5th-grade students in Turkey. The results showed that both the unplugged group (using Tospaa) and the plugged group (using Scratch) significantly improved their computational thinking performance, with no significant difference between the two groups at post-test.",
+    "summaryJa": "本研究では、トルコの5年生を対象に、アンプラグドおよびプラグドコーディング活動がプログラミング的思考力に与える影響を検証しました。その結果、アンプラグド群（Tospaaを使用）とプラグド群（Scratchを使用）の両方でプログラミング的思考のパフォーマンスが有意に向上し、事後テストにおいて両群間に有意な差は見られませんでした。",
+    "evidence": "According to the results of the analysis, there was no significant difference between the CT performances of the group receiving unplugged coding training (x̄=14.50; SD=3.38) and the group receiving plugged coding training (x̄=12.67; SD=2.95) (t(34)= 1.73; p=.092>.05).",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "5年生",
+     "design": "準実験",
+     "intervention": "Tospaaアンプラグドコーディング活動",
+     "comparison": "Scratchブロックベースコーディング活動",
+     "outcomeMeasure": "プログラミング的思考テスト"
+    },
+    "stats": {
+     "nTreatment": "18",
+     "nControl": "18",
+     "meanTreatment": "14.50",
+     "meanControl": "12.67",
+     "sdTreatment": "3.38",
+     "sdControl": "2.95",
+     "t": "1.73",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "36",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4407538338",
+   "title": "Developing preschool children’s computational thinking and executive functions: unplugged vs. robot programming activities",
+   "year": "2025",
+   "screenScore": 9,
+   "outcome": "適格でない: The study is not eligible because the participants are preschool children, which is outside the target population of primary or secondary school (K-12) students.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The study is not eligible because the participants are preschool children, which is outside the target population of primary or secondary school (K-12) students.",
+    "country": "China",
+    "gradeLevel": "Preschool",
+    "gradeBand": "other",
+    "design": "randomized controlled trial",
+    "intervention": "unplugged programming activities",
+    "comparison": "conventional kindergarten activities",
+    "outcomeMeasure": "TechCheck-K computational thinking test",
+    "summaryEn": "The study compared the effects of robot programming, unplugged programming, and conventional kindergarten activities on preschoolers' computational thinking and executive functions. It found that both programming groups improved in computational thinking compared to the control group, with the robot programming group showing the greatest gains.",
+    "summaryJa": "本研究は、ロボットプログラミング、アンプラグドプログラミング、および通常の幼稚園活動が未就学児のプログラミング的思考と実行機能に与える影響を比較しました。その結果、両方のプログラミング群がコントロール群と比較してプログラミング的思考を向上させ、特にロボットプログラミング群が最も高い効果を示したことが明らかになりました。",
+    "evidence": "the unplugged programming group scored significantly higher than the control group (estimate = 2.06, t = 6.37, p < 0.001).",
+    "ja": {
+     "country": "中国",
+     "gradeLevel": "未就学児",
+     "design": "ランダム化比較試験",
+     "intervention": "アンプラグドプログラミング活動",
+     "comparison": "通常の幼稚園活動",
+     "outcomeMeasure": "TechCheck-Kプログラミング的思考テスト"
+    },
+    "stats": {
+     "nTreatment": "66",
+     "nControl": "66",
+     "meanTreatment": "10.91",
+     "meanControl": "8.82",
+     "sdTreatment": "1.97",
+     "sdControl": "1.60",
+     "t": "6.37",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "198",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W7130438905",
+   "title": "Plugged or Unplugged? A Comparative Study of Computational Thinking Development in Early Childhood",
+   "year": "2026",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4401194146",
+   "title": "Perbandingan Pendekatan Computer Science Unplugged dan Plugged-In Learning pada Pembelajaran Informatika",
+   "year": "2024",
+   "screenScore": 9,
+   "outcome": "適格でない: The study was excluded because the outcome evaluated was general informatics learning achievement rather than a computational thinking or programming concept test.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The study was excluded because the outcome evaluated was general informatics learning achievement rather than a computational thinking or programming concept test.",
+    "country": "Indonesia",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "unplugged computer science activities",
+    "comparison": "plugged-in computer science activities",
+    "outcomeMeasure": "informatics learning achievement test",
+    "summaryEn": "This study compared the effects of unplugged and plugged-in approaches on informatics learning achievement among 40 seventh-grade students in Indonesia. The results showed that students taught with plugged-in learning scored significantly higher on the post-test than those taught with unplugged learning.",
+    "summaryJa": "本研究は、インドネシアの中学1年生40名を対象に、情報科の学習成果に対するアンプラグド学習とプラグド学習の効果を比較しました。その結果、プラグド学習群の事後テストの平均点はアンプラグド学習群を有意に上回ることが示されました。",
+    "evidence": "pada penghitungan post-test kontrol mendapatkan nilai maksimal 88, nilai minimal 70 dengan rata-rata 79,8. Sedangkan post-test eksperimen memperoleh hasil nilai maksimal 90, nilai minimal 82 dengan rata-rata 86,3.",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "アンプラグドCS学習",
+     "comparison": "プラグドCS学習",
+     "outcomeMeasure": "情報科の学習成果テスト"
+    },
+    "stats": {
+     "nTreatment": "20",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "-5,160",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": ""
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W3200565178",
+   "title": "Comparing learners’ knowledge, behaviors, and attitudes between two instructional modes of computer programming in secondary education",
+   "year": "2021",
+   "screenScore": 9,
+   "outcome": "本文で確認できない数値: nTotal=63",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental comparison of unplugged programming and traditional lecturing on programming knowledge among junior high school students.",
+    "country": "China",
+    "gradeLevel": "Junior high school",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "unplugged programming activities",
+    "comparison": "instructor-directed lecturing",
+    "outcomeMeasure": "programming knowledge assessment",
+    "summaryEn": "This quasi-experimental study examined the effects of unplugged programming activities compared to traditional lecturing among 63 Chinese junior high school students. The results revealed that students in the unplugged programming condition scored significantly higher on the post-intervention programming knowledge test than those in the lecturing condition.",
+    "summaryJa": "本研究は、中国の中学生63名を対象にアンプラグドプログラミング活動の効果を従来の講義形式と比較した準実験研究です。その結果、アンプラグドプログラミング群の生徒は講義形式群の生徒と比較して、介入後のプログラミング知識テストで有意に高い得点を示しました。",
+    "evidence": "learners in the IDL class had an average score of 68.70 (SD = 24.14), and learners in the UPP class gained an average score of 83.78 (SD = 10.33).",
+    "ja": {
+     "country": "中国",
+     "gradeLevel": "中学校",
+     "design": "準実験",
+     "intervention": "アンプラグドプログラミング活動",
+     "comparison": "教員主導の講義",
+     "outcomeMeasure": "プログラミング知識テスト"
+    },
+    "stats": {
+     "nTreatment": "32",
+     "nControl": "31",
+     "meanTreatment": "83.78",
+     "meanControl": "68.70",
+     "sdTreatment": "10.33",
+     "sdControl": "24.14",
+     "t": "-3.20",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "63",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [
+     "nTotal=63"
+    ]
+   }
+  },
+  {
+   "id": "W4411110713",
+   "title": "Should We Use Educational Robots to Introduce Students to Computational Thinking? Insights From Two Experimental Studies",
+   "year": "2025",
+   "screenScore": 9,
+   "outcome": "効果量を計算できない: 効果量を計算できる統計量がない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental design comparing unplugged activities with plugged-in Scratch programming in grade 5 students on computational thinking outcomes.",
+    "country": "France",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "unplugged programming activities using paper blocks",
+    "comparison": "block-based programming software Scratch",
+    "outcomeMeasure": "Mastery of computational concepts Test and Algorithmic Test",
+    "summaryEn": "The study compared the effects of unplugged activities, Scratch programming, and Scratch with educational robotics on grade 5 students' computational thinking. The results showed that students using Scratch without a robot performed better on programming concepts and algorithmic problem-solving than those in the unplugged or robotics groups.",
+    "summaryJa": "本研究では、小学5年生を対象に、アンプラグド活動、Scratchプログラミング、およびロボットを組み合わせたScratchプログラミングが計算論的思考に与える影響を比較しました。その結果、ロボットなしでScratchを使用したグループは、アンプラグド活動やロボットを使用したグループよりも、プログラミング概念の理解とアルゴリズム問題解決において優れたパフォーマンスを示しました。",
+    "evidence": "Our first experiment revealed that novice grade 5 students using Scratch without a robot learned better programming concepts and skills, compared to students involved in unplugged activities or using Scratch with a robot.",
+    "ja": {
+     "country": "フランス",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "ペーパーブロックを用いたアンプラグドプログラミング活動",
+     "comparison": "ブロック型プログラミングソフトウェアScratch",
+     "outcomeMeasure": "計算論的概念習得テストおよびアルゴリズムテスト"
+    },
+    "stats": {
+     "nTreatment": "133",
+     "nControl": "84",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "control_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W7155563309",
+   "title": "From drawing to block-based programming: does Ozobot’s pen-and-paper mode support first programming experiences?",
+   "year": "2026",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4321118322",
+   "title": "Alfabetización Computacional: Actividades musicales desenchufadas sobre el Desafío Internacional de Bebras",
+   "year": "2023",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental trial evaluating the effects of unplugged musical activities on primary school students' computational thinking using a Bebras-based test.",
+    "country": "Spain",
+    "gradeLevel": "Grades 3-6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "unplugged musical activities based on Bebras challenges",
+    "comparison": "no computational thinking instruction",
+    "outcomeMeasure": "Computational Thinking Test using Bebras Problems",
+    "summaryEn": "This study evaluated the impact of unplugged musical activities on the computational thinking skills of primary school students in Spain. The experimental group showed significant improvements in their computational thinking post-test scores compared to the control group.",
+    "summaryJa": "本研究は、スペインの小学生を対象に、アンプラグド音楽活動がプログラミング的思考力に与える影響を評価しました。実験群は、対照群と比較して、事後テストにおけるプログラミング的思考力のスコアが有意に向上しました。",
+    "evidence": "Se realizó un estudio cuasi-experimental con medidas pre-post test en un grupo de 220 escolares de Educación Primaria (experimental, N = 170; control, N = 50).",
+    "ja": {
+     "country": "スペイン",
+     "gradeLevel": "小学3〜6年",
+     "design": "準実験",
+     "intervention": "Bebrasチャレンジに基づくアンプラグド音楽活動",
+     "comparison": "プログラミング的思考の指導なし",
+     "outcomeMeasure": "Bebras問題を用いたプログラミング的思考テスト"
+    },
+    "stats": {
+     "nTreatment": "170",
+     "nControl": "50",
+     "meanTreatment": ".4719",
+     "meanControl": ".2262",
+     "sdTreatment": ".203",
+     "sdControl": ".089",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "220",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W7155983927",
+   "title": "Inquiry Science Teaching Integrated with Unplugged Computational Thinking in Middle School: Development of Inquiry and Computational Thinking Skills",
+   "year": "2026",
+   "screenScore": 8,
+   "outcome": "効果量を計算できない: 効果量を計算できる統計量がない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is eligible as it evaluates the effects of unplugged computational thinking activities integrated into inquiry-based science instruction on middle school students' computational thinking skills using a quasi-experimental design.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "inquiry-based science instruction integrated with unplugged computational thinking activities",
+    "comparison": "existing science curriculum",
+    "outcomeMeasure": "computational thinking skills scale",
+    "summaryEn": "This study investigated the effects of inquiry-based science instruction integrated with unplugged computational thinking (CT) activities on 7th-grade students' CT and inquiry learning skills. The findings showed that the integrated instruction had a significant and strong positive effect on both CT and inquiry learning skills.",
+    "summaryJa": "本研究では、アンプラグドなプログラミング的思考（CT）アクティビティを統合した探究型理科授業が、中学7年生のCTスキルおよび探究学習スキルに与える影響を検証しました。その結果、統合された授業はCTスキルと探究学習スキルの双方に対して、有意で強力な正の効果をもたらすことが示されました。",
+    "evidence": "A quasi-experimental pretest–posttest control group design was employed with 28 students (14 experimental, 14 control).",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学7年",
+     "design": "準実験デザイン",
+     "intervention": "アンプラグドなプログラミング的思考活動を統合した探究型理科授業",
+     "comparison": "通常の理科カリキュラム",
+     "outcomeMeasure": "プログラミング的思考スキル尺度"
+    },
+    "stats": {
+     "nTreatment": "14",
+     "nControl": "14",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": ".744",
+     "nTotal": "28",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4386098983",
+   "title": "Combined Unplugged and Educational Robotics Training to Promote Computational Thinking and Cognitive Abilities in Preschoolers",
+   "year": "2023",
+   "screenScore": 8,
+   "outcome": "適格でない: The study is not eligible because the participants are preschoolers, which is outside the target population of primary or secondary school (K-12) students.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The study is not eligible because the participants are preschoolers, which is outside the target population of primary or secondary school (K-12) students.",
+    "country": "Italy",
+    "gradeLevel": "Preschool",
+    "gradeBand": "other",
+    "design": "cluster-randomized controlled trial",
+    "intervention": "combined unplugged coding and educational robotics training",
+    "comparison": "standard school activities",
+    "outcomeMeasure": "computer-based coding tasks on the CoThi platform",
+    "summaryEn": "This study evaluated the effects of a combined unplugged coding and educational robotics intervention on preschoolers' coding and cognitive skills. The intervention group showed significant improvements in computer-based coding and visuo-spatial skills compared to the waiting-list control group.",
+    "summaryJa": "本研究では、アンプラグドプログラミングと教育用ロボットを組み合わせた介入が未就学児のプログラミング能力および認知能力に与える影響を評価しました。その結果、介入群は待機リスト対照群と比較して、コンピュータベースのプログラミングスキルおよび視空間認知スキルにおいて有意な向上を示しました。",
+    "evidence": "Between pretest and posttest, children in the experimental group improved in coding, z = 3.84, p = 0.000, r = 0.87.",
+    "ja": {
+     "country": "イタリア",
+     "gradeLevel": "未就学児",
+     "design": "クラスターランダム化比較試験",
+     "intervention": "アンプラグドプログラミングと教育用ロボットを組み合わせたトレーニング",
+     "comparison": "通常の学校活動",
+     "outcomeMeasure": "CoThiプラットフォームを使用したコンピュータベースのプログラミング課題"
+    },
+    "stats": {
+     "nTreatment": "22",
+     "nControl": "18",
+     "meanTreatment": "3.38",
+     "meanControl": "0.84",
+     "sdTreatment": "2.25",
+     "sdControl": "0.83",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "40",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W4380991240",
+   "title": "The effect on computational thinking and identified learning aspects: Comparing unplugged smartGames with SRA-Programming with tangible or On-screen output",
+   "year": "2023",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "This study is eligible as it evaluates the effects of unplugged SmartGames on computational thinking in primary school students compared to plugged-in programming environments using a randomized experimental design.",
+    "country": "Netherlands",
+    "gradeLevel": "Grades 5-6",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "unplugged SmartGames",
+    "comparison": "plugged-in sense-reason-act programming using Lego EV-3",
+    "outcomeMeasure": "Computational Thinking Test",
+    "summaryEn": "This study compared the effects of unplugged SmartGames with plugged-in sense-reason-act (SRA) programming (using Lego EV-3 or Bomberbot) on computational thinking among primary school students in the Netherlands. The results showed that unplugged SmartGames led to equivalent development in computational thinking compared to the plugged-in programming environments.",
+    "summaryJa": "本研究では、オランダの小学生を対象に、アンプラグドのスマートゲーム（SmartGames）と、Lego EV-3またはBomberbotを使用したプラグインのSRA（Sense-Reason-Act）プログラミングが計算論的思考に与える影響を比較しました。その結果、アンプラグドのスマートゲームは、プラグインのプログラミング環境と同等の計算論的思考の発達をもたらすことが示されました。",
+    "evidence": "No significant difference could be measured between the groups that used unplugged SmartGames and applied SRA-programming using either Lego EV-3 (p = 0.233) or Bomberbot (p = 0.200).",
+    "ja": {
+     "country": "オランダ",
+     "gradeLevel": "小学5〜6年",
+     "design": "ランダム化比較試験",
+     "intervention": "アンプラグドのスマートゲーム（SmartGames）",
+     "comparison": "Lego EV-3を使用したプラグインのSRAプログラミング",
+     "outcomeMeasure": "計算論的思考テスト（CTt）"
+    },
+    "stats": {
+     "nTreatment": "12",
+     "nControl": "10",
+     "meanTreatment": "0.64",
+     "meanControl": "0.71",
+     "sdTreatment": "0.10",
+     "sdControl": "0.11",
+     "t": "–1.215",
+     "F": "",
+     "d": "",
+     "g": "0.560",
+     "r": "",
+     "nTotal": "",
+     "direction": "control_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W2943027193",
+   "title": "Development of Computational Thinking in Brazilian Schools with Social and Economic Vulnerability",
+   "year": "2019",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental design evaluating the effects of unplugged computational thinking activities on 5th and 6th-grade students in Brazil compared to a control group using a validated computational thinking test.",
+    "country": "Brazil",
+    "gradeLevel": "Grades 5-6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "unplugged computational thinking activities",
+    "comparison": "no computational thinking instruction",
+    "outcomeMeasure": "Computational Thinking Test",
+    "summaryEn": "This study evaluated the impact of unplugged computational thinking activities on fifth and sixth-grade students in Brazilian public schools using a quasi-experimental design. The results showed that the intervention group significantly improved their computational thinking skills, whereas the control group showed no significant change.",
+    "summaryJa": "この研究は、ブラジルの公立学校の小学5年生と6年生を対象に、アンプラグドな計算論的思考活動の効果を準実験デザインを用いて評価しました。その結果、介入群では計算論的思考力の有意な向上が見られた一方、対照群では有意な変化は見られませんでした。",
+    "evidence": "For the 6th year of School B, a p-value (0.916) was higher than the nominal level in the control group... The opposite occurred in the experimental group, where a p-value lower than the nominal value (0.020) was found",
+    "ja": {
+     "country": "ブラジル",
+     "gradeLevel": "小学5〜6年",
+     "design": "準実験",
+     "intervention": "アンプラグドな計算論的思考活動",
+     "comparison": "計算論的思考の指導なし",
+     "outcomeMeasure": "計算論的思考テスト"
+    },
+    "stats": {
+     "nTreatment": "19",
+     "nControl": "19",
+     "meanTreatment": "11.05",
+     "meanControl": "9.58",
+     "sdTreatment": "4.54",
+     "sdControl": "3.45",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "38",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W3108215919",
+   "title": "The Effects of a Visual Execution Environment and Makey Makey on Primary School Children Learning Introductory Programming Concepts",
+   "year": "2020",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4411780137",
+   "title": "Unplugged Coding and Tri Hita Karana in Fostering Thinking and Environmental Awareness",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "効果量を計算できない: 群ごとの人数がそろっていない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study meets all inclusion criteria, evaluating the effects of unplugged coding activities on computational thinking in elementary school students using a quasi-experimental design.",
+    "country": "Indonesia",
+    "gradeLevel": "Elementary school",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Unplugged coding learning integrated with Tri Hita Karana values",
+    "comparison": "Conventional learning",
+    "outcomeMeasure": "Multiple-choice assessment of computational thinking",
+    "summaryEn": "This study evaluated the impact of unplugged coding integrated with Tri Hita Karana values on elementary school students' computational thinking. The results indicated that the unplugged coding group achieved significantly higher computational thinking scores than the control group.",
+    "summaryJa": "本研究では、トリ・ヒタ・カラナの価値観を統合したアンプラグド・コーディング学習が小学生のプログラミング的思考に与える影響を評価しました。その結果、アンプラグド・コーディング群は対照群よりも有意に高いプログラミング的思考のスコアを獲得しました。",
+    "evidence": "the learning approach (Unplugged Coding with Tri Hita Karana values) has a statistically significant effect on both Computational Thinking (CT)",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "小学校",
+     "design": "準実験",
+     "intervention": "トリ・ヒタ・カラナの価値観を統合したアンプラグド・コーディング学習",
+     "comparison": "従来の学習",
+     "outcomeMeasure": "プログラミング的思考の多肢選択式テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "21.372",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "80",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W7215715248",
+   "title": "PENGARUH UNPLUGGED CODING BERBASIS MODEL PEMBELAJARAN PROBLEM BASED LEARNING (PBL) TERHADAP KEMAMPUAN PEMECAHAN MASALAH SISWA SEKOLAH DASAR",
+   "year": "2026",
+   "screenScore": 8,
+   "outcome": "適格でない: The study is ineligible because the outcome measure is a mathematical problem-solving test rather than a computational thinking or programming concept test.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The study is ineligible because the outcome measure is a mathematical problem-solving test rather than a computational thinking or programming concept test.",
+    "country": "Indonesia",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "unplugged coding based on Problem Based Learning",
+    "comparison": "conventional instruction",
+    "outcomeMeasure": "mathematical problem-solving test",
+    "summaryEn": "This study examined the effect of unplugged coding based on the Problem Based Learning (PBL) model on the problem-solving skills of fifth-grade students in Indonesia. The results showed that the experimental group significantly outperformed the control group on the post-test of problem-solving skills.",
+    "summaryJa": "本研究では、インドネシアの小学5年生を対象に、問題解決型学習（PBL）モデルに基づくアンプラグド・コーディングが問題解決能力に与える影響を検証しました。その結果、実験群は対照群と比較して、問題解決能力の事後テストにおいて有意に高い得点を示しました。",
+    "evidence": "The experimental group obtained a mean post-test score of 85.42, while the control group achieved 63.42. Furthermore, the Independent Sample t-Test yielded a significance value (Sig. 2-tailed) of 0.000",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "問題解決型学習（PBL）モデルに基づくアンプラグド・コーディング",
+     "comparison": "従来の学習",
+     "outcomeMeasure": "算数の問題解決能力テスト"
+    },
+    "stats": {
+     "nTreatment": "19",
+     "nControl": "19",
+     "meanTreatment": "85.42",
+     "meanControl": "63.42",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "-7.124",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "38",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  },
+  {
+   "id": "W7162104443",
+   "title": "Unplugged coding and game-based learning in primary education: A collaborative design escape room approach to foster computational thinking and cross-curricular learning",
+   "year": "2026",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W7216455821",
+   "title": "PENGEMBANGAN MEDIA QUINOSS DALAM MENINGKATKAN KEMAMPUAN COMPITATIONAL THINKING ANAK USIA DINI",
+   "year": "2026",
+   "screenScore": 6,
+   "outcome": "適格でない: The study is not eligible because it does not include a comparison or control group that did not receive the unplugged coding intervention.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The study is not eligible because it does not include a comparison or control group that did not receive the unplugged coding intervention.",
+    "country": "Indonesia",
+    "gradeLevel": "Kindergarten (aged 5–6 years)",
+    "gradeBand": "other",
+    "design": "Research and Development (without a control group)",
+    "intervention": "QUINOSS (Quiet Book Unplugged Coding Solar System) learning medium",
+    "comparison": "none",
+    "outcomeMeasure": "observation sheet of children's computational thinking abilities",
+    "summaryEn": "The study developed and evaluated the QUINOSS (Quiet Book Unplugged Coding Solar System) medium for teaching computational thinking to 40 kindergarten children across five schools. While the authors reported that the medium was practical and effective based on post-intervention observations, the study did not include a control or comparison group.",
+    "summaryJa": "本研究では、5つの幼稚園の40人の幼児を対象に、コンピューテーショナル・シンキングを指導するためのQUINOSS（Quiet Book Unplugged Coding Solar System）教材を開発・評価しました。著者らは、介入後の観察に基づき、この教材が実用的かつ効果的であると報告していますが、対照群や比較群は設定されていませんでした。",
+    "evidence": "Berdasarkan hasil analisis one-way ANOVA diperoleh F sebesar 85,370 dengan nilai p (Sig.) sebesar P < 0,001.",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "幼稚園（5〜6歳）",
+     "design": "開発研究（対照群なし）",
+     "intervention": "QUINOSS（Quiet Book Unplugged Coding Solar System）学習教材",
+     "comparison": "なし",
+     "outcomeMeasure": "幼児のコンピューテーショナル・シンキング能力の観察シート"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "unclear"
+    },
+    "model": "gemini-3.5-flash",
+    "unverified": []
+   }
+  }
+ ],
+ "models": [
+  "gemini-3.6-flash",
+  "gemini-3.8-flash",
+  "gemini-3.5-flash",
+  "gemini-3.5-flash-lite"
+ ],
+ "date": "2026-10-04",
+ "dateEn": "October 4, 2026",
+ "dateJa": "2026年10月4日",
+ "analysis": {
+  "effectType": "smd",
+  "overall": {
+   "k": 6,
+   "est": 0.5084564001595018,
+   "se": 0.2548148994928669,
+   "ci": [
+    -0.14656615192634548,
+    1.163478952245349
+   ],
+   "test": 1.9953950933459255,
+   "p": 0.10254079238422742,
+   "df": 5,
+   "fixed": {
+    "est": 0.7507996128914595,
+    "se": 0.10500090540663382
+   },
+   "Q": 26.12883239886795,
+   "pQ": 0.00008424566818099333,
+   "I2": 80.86405116128867,
+   "tau2": 0.302407478816586,
+   "pi": [
+    -1.1737834152591156,
+    2.190696215578119
+   ],
+   "weights": [
+    18.254683813618666,
+    17.18528791249784,
+    15.664713054749111,
+    19.480160688791262,
+    13.438007151345127,
+    15.977147378997994
+   ]
+  },
+  "subgroups": null,
+  "leaveOneOut": [
+   {
+    "id": "S1",
+    "est": 0.4491034237442979,
+    "ci": [
+     -0.4177806430117421,
+     1.315987490500338
+    ]
+   },
+   {
+    "id": "S2",
+    "est": 0.5280718560577273,
+    "ci": [
+     -0.33887881641881046,
+     1.3950225285342652
+    ]
+   },
+   {
+    "id": "S3",
+    "est": 0.48793517075628995,
+    "ci": [
+     -0.37624680569280206,
+     1.352117147205382
+    ]
+   },
+   {
+    "id": "S4",
+    "est": 0.3471811474552589,
+    "ci": [
+     -0.23402974912862257,
+     0.9283920440391404
+    ]
+   },
+   {
+    "id": "S5",
+    "est": 0.7023940082548477,
+    "ci": [
+     0.179229188048579,
+     1.2255588284611163
+    ]
+   },
+   {
+    "id": "S6",
+    "est": 0.5299738210880268,
+    "ci": [
+     -0.33030207786050947,
+     1.390249720036563
+    ]
+   }
+  ],
+  "looRange": [
+   0.3471811474552589,
+   0.7023940082548477
+  ],
+  "egger": null,
+  "totalN": 450
+ },
+ "warnings": [],
+ "text": {
+  "en": {
+   "background": "Developing computational thinking skills in early education is increasingly vital, prompting schools to explore diverse pedagogical approaches.",
+   "conclusionAbstract": "Unplugged activities show moderate potential for fostering computational thinking, but further rigorous research is required to confirm their effectiveness in primary and lower secondary classrooms.",
+   "introduction": [
+    "Primary and lower secondary schools are increasingly integrating computer science concepts into their curricula to prepare students for a digital world. Developing computational thinking at an early age is considered essential for fostering problem-solving and logical reasoning skills. However, schools often face resource constraints, such as a lack of computers or internet access, which can hinder the implementation of digital programming lessons.",
+    "To address these challenges, educators have turned to unplugged (computer-free) computer science and computational thinking activities. These activities use physical games, puzzles, cards, or kinesthetic movements to teach core concepts like algorithms, patterns, and debugging without requiring digital devices. Researchers have investigated various unplugged approaches, including general computational thinking activities [S1, S6], coding tasks [S2], specific tools like Tospaa [S3], musical activities based on Bebras challenges [S4], and educational board games like SmartGames [S5].",
+    "While individual studies report positive or mixed outcomes, their findings are often limited by small sample sizes and diverse comparison groups, which range from regular lessons [S1, S2] and no computational thinking instruction [S4, S6] to plugged-in programming [S3, S5]. A quantitative synthesis is useful to systematically pool these disparate findings, estimate the overall effect size, and evaluate the consistency of unplugged activities across different educational contexts.",
+    "The purpose of this meta-analysis is to synthesize the existing empirical evidence on the effectiveness of unplugged activities. Specifically, this study addresses the following research question: What is the overall effect of unplugged computer science and computational thinking activities on the computational thinking test performance of school students compared to control conditions?"
+   ],
+   "discussion": [
+    "The meta-analysis pooled data from 6 studies with a total sample size of 450 students. As shown in Table 3, the overall pooled effect size was moderate, with Hedges g = 0.51, but this effect was not statistically significant (95% CI [-0.15, 1.16], p = .103). The forest plot (Fig. 1) reveals substantial heterogeneity among the included studies, as indicated by Q(5) = 26.13, p < .001, I2 = 80.9%, and tau2 = 0.302. This high level of heterogeneity suggests that the effectiveness of unplugged activities varies considerably depending on the specific implementation and context. The wide prediction interval of [-1.17, 2.19] further highlights that future implementations could result in either highly positive or negative outcomes.",
+    "To assess the robustness of the pooled estimate, a leave-one-out sensitivity analysis was conducted, yielding a range of pooled Hedges g from 0.35 to 0.70, indicating that no single study disproportionately dictated the direction of the overall effect. Subgroup analyses based on school levels were not conducted because there were fewer than 2 studies per school level, preventing a reliable comparison. Additionally, publication bias was not assessed due to the small number of included studies (fewer than 10).",
+    "An overview of the studies is presented in Table 1, and the specific interventions and outcomes are detailed in Table 2. The individual study effects varied widely. For instance, [S4] reported a very large positive effect (g = 1.33) for unplugged musical activities based on Bebras challenges compared to no instruction. Moderate positive effects were observed in quasi-experimental designs, such as [S1] in Ecuador (g = 0.69) and [S3] in Turkey (g = 0.56). In contrast, [S5] found a negative effect (g = -0.64) when comparing unplugged SmartGames to plugged-in Lego EV-3 programming, although the authors noted equivalent development. Other studies, such as [S2] (g = 0.37) and [S6] (g = 0.36), showed smaller, non-significant positive trends.",
+    "For teachers of grades 1-9, these findings suggest that unplugged activities can be a viable, low-cost entry point for teaching computational thinking, especially when digital resources are scarce. However, because the overall effect was not statistically significant and highly variable, teachers should not view unplugged activities as a complete replacement for plugged-in programming. Instead, integrating unplugged lessons with physical or musical elements, as seen in [S4], or combining them with block-based programming [S2, S3] may yield the most balanced educational outcomes."
+   ],
+   "limitations": [
+    "Several limitations must be acknowledged when interpreting these results. First, the meta-analysis is based on a very small number of studies (6 studies, N = 450), which limits the statistical power to detect a significant overall effect and prevents robust subgroup or publication bias analyses. Second, the data were extracted automatically, which may introduce minor inaccuracies or overlook nuanced contextual details.",
+    "Additionally, the included studies employed diverse research designs, ranging from randomized controlled trials [S2, S5] to quasi-experimental designs [S1, S3, S4, S6]. The outcome measures also varied, utilizing different computational thinking tests, such as Bebras tasks [S4] or general computational thinking tests [S1, S3, S5, S6], which may not capture the same underlying constructs. Finally, the samples were predominantly focused on elementary grades [S2, S3, S4, S5, S6], with only one study targeting grade 10 [S1], limiting the generalizability of the findings across all K-12 school levels."
+   ],
+   "conclusion": [
+    "In conclusion, this meta-analysis indicates that unplugged computer science activities have a moderate but statistically non-significant overall effect (g = 0.51) on students' computational thinking skills. The high heterogeneity and wide prediction interval underscore the diverse outcomes of these interventions in practice. While unplugged activities offer a promising, accessible tool for primary and lower secondary school teachers, further rigorous, large-scale research is essential to identify the specific conditions and designs that maximize their effectiveness."
+   ],
+   "keywords": [
+    "unplugged activities",
+    "computational thinking",
+    "elementary education",
+    "computer science education"
+   ]
+  },
+  "ja": {
+   "background": "早期教育におけるプログラミング的思考スキルの育成は重要性を増しており，学校は多様な指導法を模索している．",
+   "conclusionAbstract": "アンプラグド活動はプログラミング的思考の育成に一定の可能性を示すが，小中学校での効果検証にはさらなる厳密な研究が必要である．",
+   "introduction": [
+    "小学校や中学校では，デジタル社会に向けて児童生徒を準備させるために，コンピュータサイエンスの概念をカリキュラムに組み込む動きが強まっている．早期におけるプログラミング的思考（computational thinking）の育成は，問題解決能力や論理的思考力を養うために不可欠であると考えられている．しかし，学校はコンピュータやインターネット環境の不足といった資源の制約に直面することが多く，これがデジタル機器を用いたプログラミング授業の実施を妨げる要因となっている．",
+    "これらの課題に対処するため，教育者はアンプラグド（コンピュータを使わない）コンピュータサイエンスおよびプログラミング的思考活動に注目してきた．これらの活動では，デジタルデバイスを必要とせず，身体的なゲーム，パズル，カード，または身体運動を用いて，アルゴリズム，パターン，デバッグなどの核心的な概念を指導する．研究者は，一般的なプログラミング的思考活動 [S1, S6]，コーディング課題 [S2]，Tospaaなどの特定のツール [S3]，Bebrasチャレンジに基づく音楽活動 [S4]，SmartGamesなどの教育用ボードゲーム [S5] を含む，さまざまなアンプラグドのアプローチを調査してきた．",
+    "個々の研究は肯定的またはまちまちな結果を報告しているが，その知見は小規模なサンプルサイズや多様な対照群によって制限されていることが多い．対照群は，通常の授業 [S1, S2] やプログラミング的思考の指導なし [S4, S6] から，プラグド（コンピュータを用いる）プログラミング [S3, S5] まで多岐にわたる．これらの異なる知見を体系的に統合し，全体的な効果量（effect size）を推定し，異なる教育文脈におけるアンプラグド活動の一貫性を評価するためには，量的な統合が有用である．",
+    "本メタ分析の目的は，アンプラグド活動の効果に関する既存の実証的証拠を統合することである．具体的には，本研究は次のリサーチクエスチョンに対処する：対照群と比較して，アンプラグドのコンピュータサイエンスおよびプログラミング的思考活動は，児童生徒のプログラミング的思考テストの成績にどのような全体的効果をもたらすか？"
+   ],
+   "discussion": [
+    "本メタ分析では，合計サンプルサイズ450名の児童生徒を対象とした6件の研究からデータを統合した．表3に示すように，統合された全体的な効果量は中程度であり，Hedgesのg = 0.51であったが，この効果は統計的に有意ではなかった（95%信頼区間 [-0.15, 1.16]，p = .103）．フォレストプロット（図1）は，Q(5) = 26.13，p < .001，I2 = 80.9%，tau2 = 0.302に示されるように，含まれた研究間に実質的な異質性（heterogeneity）が存在することを明らかにしている．この高い異質性は，アンプラグド活動の効果が，具体的な実施方法や文脈によって大きく異なることを示唆している．[-1.17, 2.19] という広い予測区間は，今後の実施において，非常に肯定的な結果にも否定的な結果にもなり得ることをさらに強調している．",
+    "統合推定値の頑健性を評価するために，1研究除外（leave-one-out）感度分析を実施したところ，統合されたHedgesのgは0.35から0.70の範囲となり，特定の単一研究が全体的な効果の方向に不当に大きな影響を与えていないことが示された．学校段階に基づくサブグループ解析は，学校段階あたりの研究数が2件未満であり，信頼性の高い比較が困難であったため実施しなかった．さらに，含まれた研究数が少なかった（10件未満）ため，公表バイアス（publication bias）の評価は行わなかった．",
+    "研究の概要を表1に示し，具体的な介入とアウトカムの詳細を表2に示す．個々の研究の効果は大きく異なっていた．例えば，[S4] は，指導なしと比較して，Bebrasチャレンジに基づくアンプラグドの音楽活動において非常に大きな正の効果（g = 1.33）を報告した．準実験デザインにおいては，エクアドルの [S1]（g = 0.69）やトルコの [S3]（g = 0.56）のように，中程度の正の効果が観察された．対照的に，[S5] はアンプラグドのSmartGamesとプラグドのLego EV-3プログラミングを比較した際に負の効果（g = -0.64）を示したが，著者らは同等の発達が見られたと言及している．その他の研究，例えば [S2]（g = 0.37）や [S6]（g = 0.36）は，より小さく有意ではない正の傾向を示した．",
+    "1〜9年生（小学校・中学校）の教員にとって，これらの知見は，特にデジタル資源が不足している場合に，アンプラグド活動がプログラミング的思考を指導するための実行可能で低コストな導入部になり得ることを示唆している．しかし，全体的な効果は統計的に有意ではなく，ばらつきが大きいため，教員はアンプラグド活動をプラグドプログラミングの完全な代替物とみなべきではない．むしろ，[S4] に見られるようにアンプラグドの授業に身体的または音楽的な要素を取り入れたり，[S2, S3] のようにブロック型プログラミングと組み合わせたりすることが，最もバランスの取れた教育的成果をもたらす可能性がある．"
+   ],
+   "limitations": [
+    "いくつかの限界を考慮する必要がある．第一に，本メタ分析は非常に少ない研究数（6件，N = 450）に基づいているため，有意な全体的効果を検出するための統計的検出力が制限され，頑健なサブグループ解析や公表バイアス解析の実施が困難であった．第二に，データが自動的に抽出されたため，軽微な不正確さが生じたり，文脈の微妙な詳細が見落とされたりした可能性がある．",
+    "さらに，含まれた研究は，ランダム化比較試験 [S2, S5] から準実験デザイン [S1, S3, S4, S6] に至るまで，多様な研究デザインを採用していた．アウトカムの測定尺度も異なっており，Bebrasタスク [S4] や一般的なプログラミング的思考テスト [S1, S3, S5, S6] など，異なるプログラミング的思考テストが使用されており，これらは同じ潜在的構成概念を捉えていない可能性がある．最後に，標本は主に小学校の学年 [S2, S3, S4, S5, S6] に集中しており，10年生（高校1年生）を対象とした研究は1件のみ [S1] であったため，K-12（幼稚園から高校まで）のすべての学校段階における知見の一般化可能性は制限される．"
+   ],
+   "conclusion": [
+    "結論として，本メタ分析は，アンプラグドのコンピュータサイエンス活動が，児童生徒のプログラミング的思考スキルに対して中程度ではあるが統計的に有意ではない全体的効果（g = 0.51）を持つことを示している．高い異質性と広い予測区間は，実践におけるこれらの介入の多様な成果を強調している．アンプラグド活動は，小中学校の教員にとって有望で取り組みやすいツールを提供するが，その効果を最大化する具体的な条件や設計を特定するためには，さらなる厳密かつ大規模な研究が不可欠である．"
+   ],
+   "keywords": [
+    "アンプラグド活動",
+    "プログラミング的思考",
+    "初等教育",
+    "コンピュータサイエンス教育"
+   ],
+   "criteria": {
+    "population": "初等・中等学校（K-12）の児童生徒．小学校および中学校の標本が望ましいが，高等学校の標本も許容する．大学，成人，教員・教員志望者の標本は除く．",
+    "intervention": "アンプラグド（コンピュータを使わない）コンピュータサイエンスまたはプログラミング的思考活動．",
+    "comparison": "プログラミング的思考の指導なし，通常の授業，またはプラグド（コンピュータを用いる）活動．",
+    "outcome": "プログラミング的思考テストまたはプログラミング概念テスト．"
+   }
+  },
+  "article": {
+   "lead": "学校教育におけるコンピュータを使わない「アンプラグド活動」は、児童生徒のプログラミング的思考（計算論的思考）を育むのでしょうか。本稿では、小中学生を対象にした6つの研究をまとめたメタ分析の結果をご紹介します。コンピュータがなくても思考力を高められる可能性について見ていきましょう。",
+   "question": "この分析が取り上げたのは、コンピュータを使わないアンプラグドなプログラミング学習や計算論的思考の活動が、子どもたちのテストの成績にどのような影響を与えるかという点です。1人1台端末の導入が進む中でも、機器を使わない活動がどれほど学習に役立つのかを知ることは、限られた授業時間を有効に使いたい先生方にとって非常に大切なテーマです。",
+   "reading": [
+    "分析の結果、アンプラグド活動の効果量g（平均の差を標準偏差で割った値）は、統合された全体で0.51となりました。95%信頼区間は−0.15から1.16、p値は.103であり、統計的な有意水準には達していません。効果の大きさの解釈としては中程度（moderate）ですが、データにはまだ不確実性が含まれています。",
+    "一方で、研究ごとの結果にはかなりのばらつき（異質性）が見られ、I2は80.9%、Q(5)＝26.13（p < .001）となりました。個別の研究を見ると、スペインの小学生を対象にした音楽活動を活用した研究[S4]のように大きな効果が示されたものがある一方で、オランダの小学生を対象にロボット等と比較した研究[S5]ではマイナスの値を示すなど、結果は研究によってさまざまでした。",
+    "なお、除外分析（1つの研究を除いて再計算する手法）では、全体の効果量が0.35から0.70の範囲で推移しました。また、学年別のサブグループ分析や出版バイアスの評価については、研究数が少なかったため実施されていません。限られた研究データに基づく自動抽出の結果であることを踏まえて解釈する必要があります。"
+   ],
+   "hints": [
+    "コンピュータを使わないアンプラグド活動は、音楽やゲームなどの様々なアプローチを通じて取り入れることができます。",
+    "機器が十分に用意できない環境や、低学年の発達段階においても、論理的思考やプログラミング的思考を育む工夫として活用できます。",
+    "既存の授業内容や通常の学習指導と組み合わせることで、無理なく計算論的思考に触れる機会を作ることができます。"
+   ],
+   "cautions": [
+    "分析対象となった研究は合計6つ、総参加者数は450人と比較的少ないため、結果の解釈には慎重さが必要です。",
+    "データは自動で抽出されたものであり、効果が必ず一律に発揮されるとは限らない点にご留意ください。",
+    "研究ごとのばらつきが大きいため、自校の児童生徒の実態に合わせて柔軟に活動を検討することが大切です。"
+   ],
+   "sns": "コンピュータを使わないプログラミング学習の効果とは？小中学生を対象にした6つの研究のメタ分析結果をブログで解説します！"
+  }
+ },
+ "dir": "2026-10-04-info-unplugged-ct"
+}

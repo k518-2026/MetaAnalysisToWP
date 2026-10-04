@@ -16,6 +16,23 @@
       ],
       "wpSentAt": "2026-09-28T16:15:55.314Z",
       "note": "WordPress の記事をユーザーが削除（直リンク版で再投稿するため）2026-09-29"
+    },
+    {
+      "date": "2026-10-04",
+      "themeId": "info-unplugged-ct",
+      "status": "done",
+      "dir": "2026-10-04-info-unplugged-ct",
+      "titleJa": "アンプラグド活動はプログラミング的思考を育てるか",
+      "k": 6,
+      "pooled": "g = 0.51 [-0.15, 1.16]",
+      "models": [
+        "gemini-3.6-flash",
+        "gemini-3.8-flash",
+        "gemini-3.5-flash",
+        "gemini-3.5-flash-lite"
+      ],
+      "warnings": [],
+      "wpSentAt": ""
     }
   ]
 }
