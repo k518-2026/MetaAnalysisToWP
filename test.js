@@ -491,6 +491,7 @@ async function pipelineTest() {
   check('英語版: 日本語版へのリンク', en.includes('paper-ja.pdf') && ja.includes('paper-en.pdf'));
   const rawBase = 'https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction';
   const bare = rawBase.replace('https://', '');
+  check('記事: 図は幅を指定して載せる（原画像 1800px のままだと記事からはみ出す）', /<img [^>]*forest-ja\.png"[^>]* width="450"/.test(art) && content.FIGURE_WIDTH === 450, (art.match(/<img [^>]*>/) || [])[0]);
   check('記事: PDF と CSV は頭の https:// を省いた文字（WordPress の自動リンク化を避ける）', art.includes('<li>日本語版（PDF）: ' + bare + '/paper-ja.pdf</li>') && art.includes('<li>English version (PDF): ' + bare + '/paper-en.pdf</li>') && art.includes('<li>抽出データ（CSV）: ' + bare + '/studies.csv</li>') && content.findLinks(art).length === 0 && !art.includes('/blob/'));
   check('記事: <a> も href も無い', !/<a\b/i.test(art) && !/href\s*=/i.test(art), (art.match(/<a\b[^>]*>/i) || [])[0]);
   check('記事: 参考文献の DOI は「DOI: 10.xxxx/...」', /DOI: 10\.9999\/test\.\d/.test(art) && !/https?:\/\/doi\.org/.test(art), (art.match(/.{20}doi\.org.{20}/) || [])[0]);
