@@ -581,6 +581,11 @@ async function pipelineTest() {
     const none = await sendWp.main(['node', 'send-wp.js']);
     console.log = origLog;
     check('送信: 送ったものは二度送らない', none === null && sent.length === 1);
+    // 何も送らずに「成功」で終わらない（Actions で送ったつもりになる事故があった）
+    const failOf = async (args) => { try { console.log = () => {}; await sendWp.main(args); return false; } catch (e) { return !!e.nothingToSend; } finally { console.log = origLog; } };
+    check('送信: --dir が台帳に無ければ失敗', await failOf(['node', 'send-wp.js', '--dir', 'no-such-report']));
+    check('送信: --draft で送るものが無ければ失敗', await failOf(['node', 'send-wp.js', '--draft']));
+    check('送信: 指定なしで送るものが無いのは失敗にしない（定例の実行）', !(await failOf(['node', 'send-wp.js'])));
     sendWp.deps.urlOk = async () => false;
     after.runs[0].wpSentAt = '';
     fs.writeFileSync(realLedger, JSON.stringify(after));

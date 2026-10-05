@@ -42,7 +42,13 @@ async function main(argv = process.argv) {
     ? ledger.runs.find((r) => r.dir === dirArg)
     : ledger.runs.filter((r) => r.status === ledgerLib.STATUS.DONE && !r.wpSentAt).pop();
   if (!run) {
-    console.log(dirArg ? '台帳にその報告がありません: ' + dirArg : '送っていない報告はありません。');
+    // 何も送らずに「成功」で終わると、送れたと思い込む。フォルダを指定した・下書きを頼んだときは失敗にする
+    const msg = dirArg ? '台帳にその報告がありません: ' + dirArg : '送っていない報告はありません。';
+    console.log(msg);
+    const err = new Error(msg + (dirArg ? '' : '（フォルダ名を指定すれば、送信済みの報告も送り直せます: --dir <名前>）'));
+    err.nothingToSend = true;
+    err.mustFail = Boolean(dirArg) || has('--draft');
+    if (err.mustFail) throw err;
     return null;
   }
 
