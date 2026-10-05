@@ -17,9 +17,9 @@ const doc = require('./lib/content');
 const { fetchRetry } = require('./lib/http');
 const { links } = require('./run');
 
-function argValue(name) {
-  const i = process.argv.indexOf(name);
-  return i >= 0 ? process.argv[i + 1] : null;
+function argValue(name, argv = process.argv) {
+  const i = argv.indexOf(name);
+  return i >= 0 ? argv[i + 1] : null;
 }
 
 const deps = {
@@ -37,7 +37,7 @@ async function main(argv = process.argv) {
   const ledgerFile = path.join(root, config.paths.ledger);
   const ledger = ledgerLib.load(ledgerFile);
 
-  const dirArg = argValue('--dir');
+  const dirArg = argValue('--dir', argv);
   const run = dirArg
     ? ledger.runs.find((r) => r.dir === dirArg)
     : ledger.runs.filter((r) => r.status === ledgerLib.STATUS.DONE && !r.wpSentAt).pop();
@@ -47,7 +47,8 @@ async function main(argv = process.argv) {
   }
 
   const file = path.join(root, config.paths.reports, run.dir, 'article-ja.html');
-  let html = fs.readFileSync(file, 'utf8');
+  // --show で見えるものと、実際に送るものを同じにするため、ここでもリンクを外す（送信の直前にも外す）
+  let html = doc.sanitizeForWordPress(fs.readFileSync(file, 'utf8'));
   if (html.length < 3000) throw new Error('記事の HTML が短すぎます（' + html.length + ' 字）: ' + file);
   const wp = { ...config.wordpress, draft: config.wordpress.draft || has('--draft') };
   html += '\n' + doc.shortcodes(wp);

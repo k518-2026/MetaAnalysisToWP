@@ -29,6 +29,7 @@ const review = require('./lib/review');
 const ledgerLib = require('./lib/ledger');
 const content = require('./lib/content');
 const paper = require('./lib/paper');
+const wordpress = require('./lib/wordpress');
 const write = require('./lib/write');
 
 async function unitTests() {
@@ -161,6 +162,19 @@ async function unitTests() {
   check('IEEE: 方法の文献（2名）', ri[3] === '[4] R. DerSimonian and N. Laird, “Meta-analysis in clinical trials,” _Controlled Clinical Trials_, vol. 7, no. 3, pp. 177–188, 1986, doi: 10.1016/0197-2456(86)90046-2.', ri[3]);
   check('IEEE: 7名以上は et al.', plain(cite.ieeeRef({ ...pa, authors: ['A One', 'B Two', 'C Three', 'D Four', 'E Five', 'F Six', 'G Seven'] })).startsWith('A. One et al., '));
   check('引用の印を消す（抄録用）', J.strip('背景である [S1, S2]．') === '背景である．');
+
+  // ---- WordPress 向け: リンクの除去 ----
+  const sz = content.sanitizeForWordPress;
+  check('リンク除去: DOI の URL → 「DOI: 10.xxxx/...」', sz('<a href="https://doi.org/10.1016/0197-2456(86)90046-2" target="_blank" rel="noopener">https://doi.org/10.1016/0197-2456(86)90046-2</a>') === 'DOI: 10.1016/0197-2456(86)90046-2', sz('<a href="https://doi.org/10.1016/0197-2456(86)90046-2">https://doi.org/10.1016/0197-2456(86)90046-2</a>'));
+  check('リンク除去: 表示の文字があれば「文字 (URL)」', sz('<a href="https://example.org/a?x=1&amp;y=2">日本語版（PDF）</a>') === '日本語版（PDF） (https://example.org/a?x=1&amp;y=2)', sz('<a href="https://example.org/a?x=1&amp;y=2">日本語版（PDF）</a>'));
+  check('リンク除去: 表示の文字が URL そのものなら URL だけ', sz('<a href="https://example.org/p.pdf">https://example.org/p.pdf</a>') === 'https://example.org/p.pdf');
+  check('リンク除去: 中の書式を残し、DOI を添える', sz("<a href='https://doi.org/10.1/x'><i>Title</i></a>") === '<i>Title</i> (DOI: 10.1/x)', sz("<a href='https://doi.org/10.1/x'><i>Title</i></a>"));
+  check('リンク除去: 大文字の <A HREF>・属性の順が違うものも', sz('<A HREF="https://doi.org/10.2/y">x</A> と <a target="_blank" href="https://doi.org/10.3/z">https://doi.org/10.3/z</a>') === 'x (DOI: 10.2/y) と DOI: 10.3/z');
+  check('リンク除去: href の無い <a> も外す', sz('<a name="t">本文</a>') === '本文');
+  check('リンク除去: リンクでない本文中の DOI の URL も文字に（末尾の句点は含めない）', sz('詳細は https://doi.org/10.1/abc. を参照') === '詳細は DOI: 10.1/abc. を参照', sz('詳細は https://doi.org/10.1/abc. を参照'));
+  check('リンク除去: 画像・ショートコード・ふつうの本文は変えない', (() => { const s = '<p>本文 <i>g</i> = 0.5</p><img src="https://raw.githubusercontent.com/x/f.png" alt="図" />\n[category 教育メタ分析]\n[end]'; return sz(s) === s; })());
+  check('リンク除去: 何度通しても同じ', (() => { const s = '<a href="https://doi.org/10.1/x">a</a> <a href="https://e.org/">b</a>'; return sz(sz(s)) === sz(s); })());
+  check('リンク除去: 送る前の結果に <a> が残らない（雑多な入力）', !/<a\b/i.test(sz('<p><a href="https://a.org">1</a><a\nhref="https://b.org"\n>2</a><a href=https://c.org>3</a></p>')));
 
   // ---- 表記 ----
   check('p の表記', content.fp(0.0004) === '< .001' && content.fp(0.0234) === '= .023');
@@ -472,7 +486,12 @@ async function pipelineTest() {
   check('分類のない過去の報告には、比較の種類のことを書かない', !/比較条件の種類|受動的|passive|comparison type/.test(legacyText) && !content.table2(legacy, 'en', new cite.Bibliography(report.studies.map((s) => ({ sid: s.sid, paper: s.paper })), 'ieee')).note.includes('passive'));
   check('事実に比較の種類の分析が入る（AI が書けるように）', JSON.stringify(content.buildFacts(report)).includes('difference between comparison types'));
   check('英語版: 日本語版へのリンク', en.includes('paper-ja.pdf') && ja.includes('paper-en.pdf'));
-  check('記事: PDF へのリンク', art.includes('href="https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/paper-ja.pdf"') && art.includes('/paper-en.pdf"') && art.includes('/studies.csv"') && !art.includes('/blob/'));
+  const rawBase = 'https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction';
+  check('記事: PDF と CSV は文字の URL（リンクにしない）', art.includes('<li>日本語版（PDF）: ' + rawBase + '/paper-ja.pdf</li>') && art.includes('<li>English version (PDF): ' + rawBase + '/paper-en.pdf</li>') && art.includes('<li>抽出データ（CSV）: ' + rawBase + '/studies.csv</li>') && !art.includes('/blob/'));
+  check('記事: <a> も href も無い', !/<a\b/i.test(art) && !/href\s*=/i.test(art), (art.match(/<a\b[^>]*>/i) || [])[0]);
+  check('記事: 参考文献の DOI は「DOI: 10.xxxx/...」', /DOI: 10\.9999\/test\.\d/.test(art) && !/https?:\/\/doi\.org/.test(art), (art.match(/.{20}doi\.org.{20}/) || [])[0]);
+  check('記事: 図（img）は残す', /<img src="https:\/\/raw\.githubusercontent\.com\/[^"]+forest-ja\.png"/.test(art));
+  check('論文 PDF は変えない（日本語版は DOI の URL のリンク、英語版は「doi: 10.xxxx/...」の文字）', /<a href="https:\/\/doi\.org\/10\.9999\/test\.\d"/.test(ja) && /doi: 10\.9999\/test\.\d/.test(en) && !/<a href="https:\/\/doi/.test(en));
   check('記事: 図は raw の URL', art.includes('https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/forest-ja.png'));
   check('記事: "--" と <hr> が無い', !art.includes('--') && !/<hr/i.test(art));
   check('記事: 表がある', art.includes('<table>'));
@@ -506,6 +525,28 @@ async function pipelineTest() {
   run.options.force = false;
   run.options.theme = null;
 
+  // ---- 送信（wordpress.js: 送る直前にリンクを外す）----
+  {
+    const envSaved = { ...process.env };
+    const transportSaved = wordpress.createTransport;
+    let mail = null;
+    Object.assign(process.env, { WP_POST_EMAIL: 'post@example.wordpress.com', SMTP_USER: 'u@example.com', SMTP_PASSWORD: 'x' });
+    wordpress.createTransport = () => ({ sendMail: async (m) => { mail = m; return { messageId: 'id' }; } });
+    const warn = console.warn;
+    let warned = '';
+    console.warn = (...a) => { warned += a.join(' '); };
+    try {
+      await wordpress.send('【メタ分析】題', '<p>参考 <a href="https://doi.org/10.1/x">https://doi.org/10.1/x</a> と <a href="https://e.org/f.pdf">日本語版</a></p>\n[category 教育メタ分析]\n[end]');
+    } finally {
+      console.warn = warn;
+      wordpress.createTransport = transportSaved;
+      ['WP_POST_EMAIL', 'SMTP_USER', 'SMTP_PASSWORD'].forEach((k) => { if (envSaved[k] === undefined) delete process.env[k]; else process.env[k] = envSaved[k]; });
+    }
+    check('送信: メールの本文から <a> を外す（DOI は文字に）', mail && !/<a\b/i.test(mail.html) && mail.html.includes('DOI: 10.1/x') && mail.html.includes('日本語版 (https://e.org/f.pdf)'), mail && mail.html);
+    check('送信: ショートコードは残る', mail && /\[category 教育メタ分析\]\n\[end\]$/.test(mail.html));
+    check('送信: リンクを外したことを知らせる', /2 件残っていたので/.test(warned), warned);
+  }
+
   // ---- 送信 ----
   const sendWp = require('./send-wp');
   const sent = [];
@@ -521,10 +562,13 @@ async function pipelineTest() {
     fs.copyFileSync(path.join(tmp, 'ledger.json'), realLedger);
     fs.mkdirSync(realReports, { recursive: true });
     fs.copyFileSync(path.join(outDir, 'article-ja.html'), path.join(realReports, 'article-ja.html'));
+    // 過去の報告の記事ファイルのように、リンクが残っているもの
+    fs.appendFileSync(path.join(realReports, 'article-ja.html'), '\n<p><a href="https://doi.org/10.1/legacy">https://doi.org/10.1/legacy</a></p>');
     console.log = () => {};
     await sendWp.main(['node', 'send-wp.js']);
     console.log = origLog;
     check('送信: 1通送る', sent.length === 1);
+    check('送信: 記事ファイルに残るリンクも、送る前に外す', sent[0] && !/<a\b/i.test(sent[0].html) && sent[0].html.includes('DOI: 10.1/legacy'), sent[0] && (sent[0].html.match(/.{30}legacy.{20}/) || [])[0]);
     check('送信: 件名', sent[0] && sent[0].subject === '【メタ分析】' + report.theme.titleJa, sent[0] && sent[0].subject);
     check('送信: 末尾にショートコード', sent[0] && /\[category 教育メタ分析\][\s\S]*\[publicize off\]\n\[end\]$/.test(sent[0].html));
     const after = JSON.parse(fs.readFileSync(realLedger, 'utf8'));
