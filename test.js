@@ -166,8 +166,11 @@ async function unitTests() {
   // ---- WordPress 向け: リンクの除去 ----
   const sz = content.sanitizeForWordPress;
   check('リンク除去: DOI の URL → 「DOI: 10.xxxx/...」', sz('<a href="https://doi.org/10.1016/0197-2456(86)90046-2" target="_blank" rel="noopener">https://doi.org/10.1016/0197-2456(86)90046-2</a>') === 'DOI: 10.1016/0197-2456(86)90046-2', sz('<a href="https://doi.org/10.1016/0197-2456(86)90046-2">https://doi.org/10.1016/0197-2456(86)90046-2</a>'));
-  check('リンク除去: 表示の文字があれば「文字 (URL)」', sz('<a href="https://example.org/a?x=1&amp;y=2">日本語版（PDF）</a>') === '日本語版（PDF） (https://example.org/a?x=1&amp;y=2)', sz('<a href="https://example.org/a?x=1&amp;y=2">日本語版（PDF）</a>'));
-  check('リンク除去: 表示の文字が URL そのものなら URL だけ', sz('<a href="https://example.org/p.pdf">https://example.org/p.pdf</a>') === 'https://example.org/p.pdf');
+  check('リンク除去: 表示の文字があれば「文字 (URL)」', sz('<a href="https://example.org/a?x=1&amp;y=2">日本語版（PDF）</a>') === '日本語版（PDF） (example.org/a?x=1&amp;y=2)', sz('<a href="https://example.org/a?x=1&amp;y=2">日本語版（PDF）</a>'));
+  check('リンク除去: 表示の文字が URL そのものなら、頭の https:// を落とした文字だけ', sz('<a href="https://example.org/p.pdf">https://example.org/p.pdf</a>') === 'example.org/p.pdf');
+  check('リンク除去: 文字だけの URL も頭の https:// を落とす（WordPress の自動リンク化を避ける）。タグの中の src は残す', sz('<li>PDF: https://example.org/p.pdf</li><img src="https://example.org/f.png" />') === '<li>PDF: example.org/p.pdf</li><img src="https://example.org/f.png" />');
+  check('findLinks: <a>・URL・www. を見つける。画像の src は見ない', content.findLinks('<a href="x">a</a>').length > 0 && content.findLinks('見て https://e.org').length > 0 && content.findLinks('www.e.org').length > 0 && content.findLinks('<img src="https://e.org/f.png" /> DOI: 10.1/x').length === 0);
+  check('記事の組み立て結果にリンクも URL も残らない（実際の記事ファイルで）', (() => { const d = path.join(__dirname, config.paths.reports); return fs.readdirSync(d).filter((n) => fs.existsSync(path.join(d, n, 'article-ja.html'))).every((n) => content.findLinks(sz(fs.readFileSync(path.join(d, n, 'article-ja.html'), 'utf8'))).length === 0); })());
   check('リンク除去: 中の書式を残し、DOI を添える', sz("<a href='https://doi.org/10.1/x'><i>Title</i></a>") === '<i>Title</i> (DOI: 10.1/x)', sz("<a href='https://doi.org/10.1/x'><i>Title</i></a>"));
   check('リンク除去: 大文字の <A HREF>・属性の順が違うものも', sz('<A HREF="https://doi.org/10.2/y">x</A> と <a target="_blank" href="https://doi.org/10.3/z">https://doi.org/10.3/z</a>') === 'x (DOI: 10.2/y) と DOI: 10.3/z');
   check('リンク除去: href の無い <a> も外す', sz('<a name="t">本文</a>') === '本文');
@@ -487,7 +490,8 @@ async function pipelineTest() {
   check('事実に比較の種類の分析が入る（AI が書けるように）', JSON.stringify(content.buildFacts(report)).includes('difference between comparison types'));
   check('英語版: 日本語版へのリンク', en.includes('paper-ja.pdf') && ja.includes('paper-en.pdf'));
   const rawBase = 'https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction';
-  check('記事: PDF と CSV は文字の URL（リンクにしない）', art.includes('<li>日本語版（PDF）: ' + rawBase + '/paper-ja.pdf</li>') && art.includes('<li>English version (PDF): ' + rawBase + '/paper-en.pdf</li>') && art.includes('<li>抽出データ（CSV）: ' + rawBase + '/studies.csv</li>') && !art.includes('/blob/'));
+  const bare = rawBase.replace('https://', '');
+  check('記事: PDF と CSV は頭の https:// を省いた文字（WordPress の自動リンク化を避ける）', art.includes('<li>日本語版（PDF）: ' + bare + '/paper-ja.pdf</li>') && art.includes('<li>English version (PDF): ' + bare + '/paper-en.pdf</li>') && art.includes('<li>抽出データ（CSV）: ' + bare + '/studies.csv</li>') && content.findLinks(art).length === 0 && !art.includes('/blob/'));
   check('記事: <a> も href も無い', !/<a\b/i.test(art) && !/href\s*=/i.test(art), (art.match(/<a\b[^>]*>/i) || [])[0]);
   check('記事: 参考文献の DOI は「DOI: 10.xxxx/...」', /DOI: 10\.9999\/test\.\d/.test(art) && !/https?:\/\/doi\.org/.test(art), (art.match(/.{20}doi\.org.{20}/) || [])[0]);
   check('記事: 図（img）は残す', /<img src="https:\/\/raw\.githubusercontent\.com\/[^"]+forest-ja\.png"/.test(art));
@@ -542,7 +546,7 @@ async function pipelineTest() {
       wordpress.createTransport = transportSaved;
       ['WP_POST_EMAIL', 'SMTP_USER', 'SMTP_PASSWORD'].forEach((k) => { if (envSaved[k] === undefined) delete process.env[k]; else process.env[k] = envSaved[k]; });
     }
-    check('送信: メールの本文から <a> を外す（DOI は文字に）', mail && !/<a\b/i.test(mail.html) && mail.html.includes('DOI: 10.1/x') && mail.html.includes('日本語版 (https://e.org/f.pdf)'), mail && mail.html);
+    check('送信: メールの本文から <a> を外す（DOI は文字に）', mail && !/<a\b/i.test(mail.html) && mail.html.includes('DOI: 10.1/x') && mail.html.includes('日本語版 (e.org/f.pdf)'), mail && mail.html);
     check('送信: ショートコードは残る', mail && /\[category 教育メタ分析\]\n\[end\]$/.test(mail.html));
     check('送信: リンクを外したことを知らせる', /2 件残っていたので/.test(warned), warned);
   }
