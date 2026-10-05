@@ -233,6 +233,7 @@ function links(dir) {
     paperEn: `${raw}/paper-en.pdf`,
     data: `${raw}/studies.csv`,
     figure: `${raw}/forest-ja.png`,
+    figureArticle: `${raw}/forest-article.png`,   // 記事用（文字を大きくした図）
     rawPaperJa: `${raw}/paper-ja.pdf`,
     dir,
     repoPath: `github.com/${owner}/${name}`
@@ -261,11 +262,11 @@ async function build(report, outDir) {
   const bib = newBib();
   const html = {};
   const svg = {};
-  const drawForest = (lang, b) => {
+  const drawForest = (lang, b, large = false) => {
     const rows = report.studies.map((s, i) => ({
       label: b.narrative(s.sid).split(ETAL).join('et al.'), yi: s.effect.yi, vi: s.effect.vi, weight: report.analysis.overall.weights[i]
     }));
-    return forestSvg(rows, report.analysis.overall, { effectType: et, lang });
+    return forestSvg(rows, report.analysis.overall, { effectType: et, lang, large });
   };
   // 英語版: 1回目で引用順を決め、その番号で図を描いて組み直す
   const probe = newBib().en;
@@ -275,6 +276,7 @@ async function build(report, outDir) {
   svg.en = drawForest('en', ordered);
   html.en = paper.buildItelHtml(report, report.text.en, svg.en, bib.en, l);
   svg.ja = drawForest('ja', newBib().ja);
+  svg.jaLarge = drawForest('ja', newBib().ja, true);   // 記事用。幅 600px に縮めても読めるよう、文字を大きくしてある
   html.ja = paper.buildJsetHtml(report, report.text.ja, report.text.en, svg.ja, bib.ja, l);
   report.warnings = (report.warnings || []).filter((w) => !/抄録|Abstract/.test(w))
     .concat(paper.lengthWarnings(report, report.text, newBib()));
@@ -291,7 +293,8 @@ async function build(report, outDir) {
   const sizes = await deps.render([
     { type: 'pdf', html: html.en, file: path.join(outDir, 'paper-en.pdf'), ...paper.margins(report, 'en'), lang: 'en' },
     { type: 'pdf', html: html.ja, file: path.join(outDir, 'paper-ja.pdf'), ...paper.margins(report, 'ja'), lang: 'ja' },
-    { type: 'png', svg: svg.ja, file: path.join(outDir, 'forest-ja.png') }
+    { type: 'png', svg: svg.ja, file: path.join(outDir, 'forest-ja.png') },
+    { type: 'png', svg: svg.jaLarge, file: path.join(outDir, 'forest-article.png') }
   ]);
 
   // 後から作り直せるように、材料をすべて残す（models は Set なので配列にする）

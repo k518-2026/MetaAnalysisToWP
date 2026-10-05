@@ -418,7 +418,7 @@ async function pipelineTest() {
   check('通し: 番号は S1 から', report.studies[0].sid === 'S1');
   check('通し: 日付は日本時間', report.date === '2026-10-04', report.date);
 
-  const files = ['paper-en.pdf', 'paper-ja.pdf', 'forest-ja.png', 'forest-en.svg', 'forest-ja.svg', 'paper-en.html', 'paper-ja.html', 'article-ja.html', 'studies.csv', 'data.json'];
+  const files = ['paper-en.pdf', 'paper-ja.pdf', 'forest-ja.png', 'forest-article.png', 'forest-en.svg', 'forest-ja.svg', 'paper-en.html', 'paper-ja.html', 'article-ja.html', 'studies.csv', 'data.json'];
   files.forEach((f) => check('通し: ' + f + ' がある', fs.existsSync(path.join(outDir, f)) && fs.statSync(path.join(outDir, f)).size > 500));
   const en = fs.readFileSync(path.join(outDir, 'paper-en.html'), 'utf8');
   const ja = fs.readFileSync(path.join(outDir, 'paper-ja.html'), 'utf8');
@@ -491,14 +491,23 @@ async function pipelineTest() {
   check('英語版: 日本語版へのリンク', en.includes('paper-ja.pdf') && ja.includes('paper-en.pdf'));
   const rawBase = 'https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction';
   const bare = rawBase.replace('https://', '');
-  check('記事: 図は幅を指定して載せる（原画像 1800px のままだと記事からはみ出す）', /<img [^>]*forest-ja\.png"[^>]* width="500"/.test(art) && content.FIGURE_WIDTH === 500, (art.match(/<img [^>]*>/) || [])[0]);
+  check('記事: 図は幅を指定して載せる（記事用の図を 600px で）', /<img [^>]*forest-article\.png"[^>]* width="600"/.test(art) && content.FIGURE_WIDTH === 600, (art.match(/<img [^>]*>/) || [])[0]);
+  {
+    // 記事用の図は文字が大きい（600px に縮めても読める）。論文用の図は変わらない
+    const rows = report.studies.map((s, i) => ({ label: 'S' + i, yi: s.effect.yi, vi: s.effect.vi, weight: report.analysis.overall.weights[i] }));
+    const forest = require('./lib/forest');
+    const small = forest.forestSvg(rows, report.analysis.overall, { effectType: report.theme.effect, lang: 'ja' });
+    const large = forest.forestSvg(rows, report.analysis.overall, { effectType: report.theme.effect, lang: 'ja', large: true });
+    const px = (svg) => Number((svg.match(/font-size="(\d+)"/) || [])[1]) / Number((svg.match(/<svg[^>]* width="(\d+)"/) || [])[1]);
+    check('図: 記事用は文字が大きく（幅に対して 1.3 倍以上）、論文用は変えない', px(large) > px(small) * 1.3 && /font-size="13"/.test(small) && /font-size="19"/.test(large), [px(small), px(large)]);
+  }
   check('記事: PDF と CSV は長いアドレスでなく、場所・フォルダ・ファイル名で案内する（リンク・URL なし）', art.includes('<li>場所: github.com/k518-2026/MetaAnalysisToWP</li>') && art.includes('<li>フォルダ: reports/2026-10-04-math-fraction-instruction</li>') && art.includes('<li>日本語版の論文: paper-ja.pdf</li>') && art.includes('<li>英語版の論文: paper-en.pdf</li>') && art.includes('<li>抽出したデータ（CSV）: studies.csv</li>') && content.findLinks(art).length === 0 && !art.replace(/<img[^>]*>/g, '').includes('raw.githubusercontent.com'));
   check('記事: 表は5列に絞り、参考文献は番号つきで DOI を改行する', (art.match(/<th>/g) || []).length === 5 && art.includes('<ol><li>') && /<br \/>DOI: /.test(art) && art.includes('<h2>対象とした研究</h2>') && art.includes('<h2>参考文献（分析した論文）</h2>'));
   check('記事: <a> も href も無い', !/<a\b/i.test(art) && !/href\s*=/i.test(art), (art.match(/<a\b[^>]*>/i) || [])[0]);
   check('記事: 参考文献の DOI は「DOI: 10.xxxx/...」', /DOI: 10\.9999\/test\.\d/.test(art) && !/https?:\/\/doi\.org/.test(art), (art.match(/.{20}doi\.org.{20}/) || [])[0]);
-  check('記事: 図（img）は残す', /<img src="https:\/\/raw\.githubusercontent\.com\/[^"]+forest-ja\.png"/.test(art));
+  check('記事: 図（img）は残す', /<img src="https:\/\/raw\.githubusercontent\.com\/[^"]+forest-article\.png"/.test(art));
   check('論文 PDF は変えない（日本語版は DOI の URL のリンク、英語版は「doi: 10.xxxx/...」の文字）', /<a href="https:\/\/doi\.org\/10\.9999\/test\.\d"/.test(ja) && /doi: 10\.9999\/test\.\d/.test(en) && !/<a href="https:\/\/doi/.test(en));
-  check('記事: 図は raw の URL', art.includes('https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/forest-ja.png'));
+  check('記事: 図は raw の URL', art.includes('https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/forest-article.png'));
   check('記事: "--" と <hr> が無い', !art.includes('--') && !/<hr/i.test(art));
   check('記事: 表がある', art.includes('<table'));
   const csv = fs.readFileSync(path.join(outDir, 'studies.csv'), 'utf8');

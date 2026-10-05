@@ -68,7 +68,7 @@ async function main(argv = process.argv) {
   if (!has('--no-check')) {
     const l = links(run.dir);
     // push の直後は raw.githubusercontent.com に反映されるまで少しかかる
-    for (const url of [l.rawPaperJa, l.rawPaperJa.replace('paper-ja.pdf', 'paper-en.pdf'), l.figure]) {
+    for (const url of [l.rawPaperJa, l.rawPaperJa.replace('paper-ja.pdf', 'paper-en.pdf'), l.figureArticle]) {
       let ok = false;
       for (let i = 0; i < 6 && !ok; i++) {
         ok = await deps.urlOk(url).catch(() => false);
