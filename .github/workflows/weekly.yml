@@ -10,8 +10,8 @@ name: Weekly meta-analysis
 #                 （ANTHROPIC_API_KEY は Gemini が混雑し続けたときだけ使う）
 
 on:
-  schedule:
-    - cron: '0 22 * * 6'   # 毎週日曜 07:00 (Asia/Tokyo) = 土曜 22:00 UTC
+  # schedule:  # 2026-10-05 WordPress 異議申し立ての結果待ちのため一時停止。再開はこの2行のコメントを外す
+  #   - cron: '0 22 * * 6'   # 毎週日曜 07:00 (Asia/Tokyo) = 土曜 22:00 UTC
   workflow_dispatch:
     inputs:
       theme:
