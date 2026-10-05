@@ -492,14 +492,15 @@ async function pipelineTest() {
   const rawBase = 'https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction';
   const bare = rawBase.replace('https://', '');
   check('記事: 図は幅を指定して載せる（原画像 1800px のままだと記事からはみ出す）', /<img [^>]*forest-ja\.png"[^>]* width="500"/.test(art) && content.FIGURE_WIDTH === 500, (art.match(/<img [^>]*>/) || [])[0]);
-  check('記事: PDF と CSV は頭の https:// を省いた文字（WordPress の自動リンク化を避ける）', art.includes('<li>日本語版（PDF）: ' + bare + '/paper-ja.pdf</li>') && art.includes('<li>English version (PDF): ' + bare + '/paper-en.pdf</li>') && art.includes('<li>抽出データ（CSV）: ' + bare + '/studies.csv</li>') && content.findLinks(art).length === 0 && !art.includes('/blob/'));
+  check('記事: PDF と CSV は長いアドレスでなく、場所・フォルダ・ファイル名で案内する（リンク・URL なし）', art.includes('<li>場所: github.com/k518-2026/MetaAnalysisToWP</li>') && art.includes('<li>フォルダ: reports/2026-10-04-math-fraction-instruction</li>') && art.includes('<li>日本語版の論文: paper-ja.pdf</li>') && art.includes('<li>英語版の論文: paper-en.pdf</li>') && art.includes('<li>抽出したデータ（CSV）: studies.csv</li>') && content.findLinks(art).length === 0 && !art.replace(/<img[^>]*>/g, '').includes('raw.githubusercontent.com'));
+  check('記事: 表は5列に絞り、参考文献は番号つきで DOI を改行する', (art.match(/<th>/g) || []).length === 5 && art.includes('<ol><li>') && /<br \/>DOI: /.test(art) && art.includes('<h2>対象とした研究</h2>') && art.includes('<h2>参考文献（分析した論文）</h2>'));
   check('記事: <a> も href も無い', !/<a\b/i.test(art) && !/href\s*=/i.test(art), (art.match(/<a\b[^>]*>/i) || [])[0]);
   check('記事: 参考文献の DOI は「DOI: 10.xxxx/...」', /DOI: 10\.9999\/test\.\d/.test(art) && !/https?:\/\/doi\.org/.test(art), (art.match(/.{20}doi\.org.{20}/) || [])[0]);
   check('記事: 図（img）は残す', /<img src="https:\/\/raw\.githubusercontent\.com\/[^"]+forest-ja\.png"/.test(art));
   check('論文 PDF は変えない（日本語版は DOI の URL のリンク、英語版は「doi: 10.xxxx/...」の文字）', /<a href="https:\/\/doi\.org\/10\.9999\/test\.\d"/.test(ja) && /doi: 10\.9999\/test\.\d/.test(en) && !/<a href="https:\/\/doi/.test(en));
   check('記事: 図は raw の URL', art.includes('https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/forest-ja.png'));
   check('記事: "--" と <hr> が無い', !art.includes('--') && !/<hr/i.test(art));
-  check('記事: 表がある', art.includes('<table>'));
+  check('記事: 表がある', art.includes('<table'));
   const csv = fs.readFileSync(path.join(outDir, 'studies.csv'), 'utf8');
   check('CSV: BOM と行数', csv.charCodeAt(0) === 0xFEFF && csv.trim().split('\r\n').length === report.studies.length + 1);
   const svg = fs.readFileSync(path.join(outDir, 'forest-en.svg'), 'utf8');

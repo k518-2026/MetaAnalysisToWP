@@ -83,6 +83,7 @@ async function main(argv = process.argv) {
   console.log('WordPress に送りました: ' + sent.subject);
   if (!has('--draft')) {
     run.wpSentAt = new Date().toISOString();
+    run.wpDraft = Boolean(wp.draft);
     ledgerLib.save(ledgerFile, ledger);
     require('./run').writeIndex(root, ledger);
   }
