@@ -1,0 +1,1933 @@
+{
+ "theme": {
+  "id": "math-anxiety-achievement",
+  "domain": "math",
+  "effect": "r",
+  "titleJa": "算数・数学への不安と学力の関係",
+  "titleEn": "The Relationship Between Mathematics Anxiety and Mathematics Achievement in Primary and Lower Secondary Students",
+  "query": "(\"math anxiety\" OR \"mathematics anxiety\" OR \"mathematical anxiety\") AND (achievement OR performance) AND (elementary OR primary OR \"middle school\" OR \"junior high\" OR \"lower secondary\" OR grade OR children OR pupils)",
+  "jstage": [
+   "数学不安 学力",
+   "算数 不安 成績"
+  ],
+  "population": "students in grades 1-9 (primary/elementary school and lower secondary/middle/junior high school, ages about 6-15). Exclude preschool-only, upper secondary-only, university, adult, and teacher/pre-service teacher samples.",
+  "intervention": "mathematics anxiety measured by a questionnaire (predictor)",
+  "comparison": "not applicable (correlational)",
+  "outcome": "mathematics achievement or performance measured by a test or grades; report the correlation r",
+  "subfields": [
+   "3304",
+   "3204",
+   "3205",
+   "3207"
+  ]
+ },
+ "search": {
+  "openalex": {
+   "total": 313,
+   "retrieved": 200
+  },
+  "jstage": {
+   "total": 0,
+   "retrieved": 0
+  },
+  "merged": 200,
+  "screened": 193,
+  "passedScreening": 76,
+  "fullTextsTried": 23,
+  "excluded": {
+   "noPdf": 9,
+   "ineligible": 4,
+   "noStats": 0,
+   "unverified": 0,
+   "implausible": 0,
+   "error": 0
+  }
+ },
+ "studies": [
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4409853824",
+    "doi": "10.24106/kefdergi.1336373",
+    "title": "Investigating the Relationship Between Mathematics Anxiety and Mathematics Achievement of Primary School 4th Grade Students",
+    "titleEn": "",
+    "authors": [
+     "Dilek İlhan Beyaztaş",
+     "Yakup Bostancı"
+    ],
+    "venue": "Kastamonu Eğitim Dergisi",
+    "volume": "31",
+    "issue": "3",
+    "pages": "498–512",
+    "year": "2023",
+    "language": "en",
+    "citedBy": 0,
+    "url": "https://doi.org/10.24106/kefdergi.1336373",
+    "landing": "https://doi.org/10.24106/kefdergi.1336373",
+    "pdfUrls": [
+     "https://dergipark.org.tr/en/download/article-file/3302536"
+    ],
+    "abstract": "Purpose: The aim of this study is to examine the relationship between the mathematics anxiety of primary school fourth- grade students and their mathematics achievement and to determine the factors that create mathematics anxiety. Design/Methodology/Approach: Explanatory sequential design, one of the mixed-method designs, was employed in the study. The sample of the study consisted of 636 fourth-grade students studying at 14 schools in the central district of Erzincan in the 2018-2019 academic year and 27 students selected for semi-structured interviews. The data of the study were collected through the \"Mathematics Anxiety Scale\" and \"Mathematics Anxiety Semi-Structured Interview Form\" developed by the researcher. In the analysis of the data obtained within the scope of the research, descriptive statistics, multivariate analysis of variance (MANOVA), LSD test statistics, a pairwise comparison technique, Pearson moment multiplication correlation, multiple linear regression analysis and content analysis were used. Findings: When the results of the study were examined, it was found that primary school fourth-grade students' scores on the math anxiety exam dimension are high, there is no significant difference between the mean scores of mathematics anxiety in terms of gender variable, there is a negative relationship between the mathematics anxiety levels of students and their mathematics lesson achievement, and the mathematics anxiety level of the students predicts the mathematics lesson achievement. Highlights: It was determined that the factors that create the mathematics anxiety of primary school fourth-grade students are teacher-related, student-related, family and friend-related, lesson-related, and exam-related.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "636 fourth graders with Pearson correlation between math anxiety and math achievement."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Fourth graders in Turkey with Pearson correlation between mathematics anxiety and mathematics lesson achievement.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "correlational (explanatory sequential mixed methods)",
+    "intervention": "mathematics anxiety scale (total)",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "mathematics lesson report card grades",
+    "summaryEn": "Six hundred thirty-six fourth graders in Erzincan completed a mathematics anxiety scale, and their mathematics report card grades were collected. Mathematics anxiety was moderately and negatively correlated with mathematics lesson achievement.",
+    "summaryJa": "エルジンジャンの小学4年生に算数不安の尺度を実施し、算数の通知表の成績を集めました。算数不安は算数の成績と中程度の負の相関を示しました。",
+    "evidence": "there is a moderately negative correlation between students' mathematics anxiety levels and their mathematics lesson achievement",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学4年",
+     "design": "相関研究（説明的順次の混合研究）",
+     "intervention": "算数不安尺度（合計）",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "算数の通知表の成績"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.570",
+     "nTotal": "589",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.6475228448273728,
+    "vi": 0.0017064846416382253,
+    "n": 589,
+    "method": "Pearson r",
+    "display": -0.57
+   },
+   "pdfUrl": "https://dergipark.org.tr/en/download/article-file/3302536",
+   "sid": "S1"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4412890142",
+    "doi": "10.3934/steme.2025041",
+    "title": "Mathematics anxiety as a moderator between self-esteem and mathematics achievement among Filipino Grade 8 students",
+    "titleEn": "",
+    "authors": [
+     "Emerson De Luna Peteros",
+     "Lorraine B. Tandoc",
+     "Mezhraem H. Palapar",
+     "Rotchel C. Adlaw",
+     "Cristine M. Fuentes"
+    ],
+    "venue": "STEM Education",
+    "volume": "5",
+    "issue": "5",
+    "pages": "933–953",
+    "year": "2025",
+    "language": "en",
+    "citedBy": 1,
+    "url": "https://doi.org/10.3934/steme.2025041",
+    "landing": "https://doi.org/10.3934/steme.2025041",
+    "pdfUrls": [
+     "http://www.aimspress.com/aimspress-data/steme/2025/5/PDF/steme-05-05-041.pdf"
+    ],
+    "abstract": "Mathematics achievement is influenced not only by cognitive ability but also by psychological and emotional factors such as self-esteem and mathematics anxiety. Among these factors, self-esteem has been consistently linked to academic achievement. However, the relationship is not always simple. Recent studies suggest that anxiety, particularly mathematics anxiety, may play a moderating role, potentially weakening or affecting how self-esteem influences mathematics achievement, making it an important factor to explore in this relationship. This study examined the moderating effect of mathematics anxiety on the relationship between self-esteem and mathematics achievement. Understanding the factors that influence students' mathematics achievement is crucial for improving educational outcomes. Using a random sampling and descriptive–correlational research design, 612 students were surveyed utilizing a two-part survey questionnaire, and data were analyzed through frequency counts, percentage, weighted means, standard deviations, Pearson's r, and multiple regression analysis. The results showed that the respondents have moderate self-esteem and mathematics anxiety. Moreover, the respondents have satisfactory mathematics achievement. Furthermore, there was a significant but negligible negative correlation between self-esteem and mathematics achievement, while mathematics anxiety had a significant positive correlation with mathematics achievement. Mathematics anxiety moderates the relationship between self-esteem and mathematics achievement. These findings suggest that self-esteem alone does not strongly predict mathematics achievement but interacts with anxiety in meaningful ways. It is also recommended that school administrators and educators develop programs addressing both self-esteem and mathematics anxiety to improve students' mathematics achievement. Implementing strategies that foster confidence and reduce mathematics anxiety may lead to better academic outcomes in mathematics.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "612 grade 8 students with Pearson's r between math anxiety and mathematics achievement."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Grade 8 Filipino students with a Pearson correlation between mathematics anxiety and mathematics achievement.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 8",
+    "gradeBand": "middle",
+    "design": "descriptive correlational",
+    "intervention": "mathematics anxiety questionnaire",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "final grades in mathematics from school records",
+    "summaryEn": "Six hundred twelve Grade 8 students in public high schools completed self-esteem and mathematics anxiety questionnaires, and their final mathematics grades were taken from school records. Mathematics anxiety had a weak but significant positive correlation with mathematics achievement.",
+    "summaryJa": "公立高校（日本の中学2年にあたる学年）の612人に自尊感情と算数・数学不安の質問紙を実施し、数学の最終成績を学校の記録から集めました。数学不安は数学の成績と弱いながら有意な正の相関を示しました。",
+    "evidence": "mathematics anxiety showed a weak but significant positive correlation with mathematics achievement (r = 0.124, p < 0.001)",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "中学2年",
+     "design": "記述的相関研究",
+     "intervention": "数学不安の質問紙",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "学校の記録にある数学の最終成績"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "0.124",
+     "nTotal": "612",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": 0.12464146975862246,
+    "vi": 0.0016420361247947454,
+    "n": 612,
+    "method": "Pearson r",
+    "display": 0.124
+   },
+   "pdfUrl": "http://www.aimspress.com/aimspress-data/steme/2025/5/PDF/steme-05-05-041.pdf",
+   "sid": "S2"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2954200395",
+    "doi": "10.26822/iejee.2019553343",
+    "title": "Math Anxiety in Students With and Without Math Learning Difficulties",
+    "titleEn": "",
+    "authors": [
+     "Yılmaz Mutlu"
+    ],
+    "venue": "lnternational Electronic Journal of Elementary Education",
+    "volume": "11",
+    "issue": "5",
+    "pages": "471–475",
+    "year": "2019",
+    "language": "en",
+    "citedBy": 66,
+    "url": "https://doi.org/10.26822/iejee.2019553343",
+    "landing": "https://doi.org/10.26822/iejee.2019553343",
+    "pdfUrls": [
+     "https://www.iejee.com/index.php/IEJEE/article/download/755/408/2867",
+     "https://iejee.com/index.php/IEJEE/article/download/755/408"
+    ],
+    "abstract": "The aim of this study was to determine the dimensions of the relationship between math anxiety and mathematics achievement of the third grade students with and without mathematics learning difficulties.Data were collected from 288 elementary school students using math anxiety scale and math achievement test tools.The mathematics achievement test scores reveal that the students were classified into four groups: math learning difficulties (0-10%), low achievers (11-25%), normal achievers (26-95%), and high achievers (96-100%).The findings reveal that there was a strong correlation (r=-.597) between the math anxiety and math achievement of the participants, while there was no significant difference between the mean scores of the mathematics anxiety of the lower two groups as it was between the two upper groups.This indicates that the math anxiety level of the students with math learning difficulties does not differ from the low achievers.However, the results depict a significant difference between the mean scores of the math anxiety of the low achievers and the normal achievers.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "288 third graders with a reported correlation (r = -.597) between math anxiety and achievement."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Third graders in Turkey with a Pearson correlation between math anxiety and mathematics achievement for the whole sample.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "correlational",
+    "intervention": "math anxiety scale",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "mathematics achievement test",
+    "summaryEn": "Two hundred eighty-eight third graders, with and without mathematics learning difficulties, completed a math anxiety scale and a mathematics achievement test. Math anxiety was strongly and negatively correlated with math achievement.",
+    "summaryJa": "算数に困難のある児童とない児童を含む小学3年生288人に、算数不安の尺度と算数の学力テストを実施しました。算数不安は算数の学力と強い負の相関を示しました。",
+    "evidence": "There was a strong and negative correlation between math anxiety and mathematics achievement with the values of r= -0.597, n= 288, and p= .00.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学3年",
+     "design": "相関研究",
+     "intervention": "算数不安尺度",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "算数の学力テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-0.597",
+     "nTotal": "288",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.6884727931341647,
+    "vi": 0.0035087719298245615,
+    "n": 288,
+    "method": "Pearson r",
+    "display": -0.597
+   },
+   "pdfUrl": "https://www.iejee.com/index.php/IEJEE/article/download/755/408/2867",
+   "sid": "S3"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2602568213",
+    "doi": "10.1371/journal.pone.0174418",
+    "title": "Differentiating anxiety forms and their role in academic performance from primary to secondary school",
+    "titleEn": "",
+    "authors": [
+     "Emma Carey",
+     "Amy Devine",
+     "Francesca Hill",
+     "Dénes Szűcs"
+    ],
+    "venue": "PLoS ONE",
+    "volume": "12",
+    "issue": "3",
+    "pages": "e0174418",
+    "year": "2017",
+    "language": "en",
+    "citedBy": 132,
+    "url": "https://doi.org/10.1371/journal.pone.0174418",
+    "landing": "https://doi.org/10.1371/journal.pone.0174418",
+    "pdfUrls": [
+     "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0174418&type=printable"
+    ],
+    "abstract": "INTRODUCTION: Individuals with high levels of mathematics anxiety are more likely to have other forms of anxiety, such as general anxiety and test anxiety, and tend to have some math performance decrement compared to those with low math anxiety. However, it is unclear how the anxiety forms cluster in individuals, or how the presence of other anxiety forms influences the relationship between math anxiety and math performance. METHOD: We measured math anxiety, test anxiety, general anxiety and mathematics and reading performance in 1720 UK students (year 4, aged 8-9, and years 7 and 8, aged 11-13). We conducted latent profile analysis of students' anxiety scores in order to examine the developmental change in anxiety profiles, the demographics of each anxiety profile and the relationship between profiles and academic performance. RESULTS: Anxiety profiles appeared to change in specificity between the two age groups studied. Only in the older students did clusters emerge with specifically elevated general anxiety or academic anxiety (test and math anxiety). Our findings suggest that boys are slightly more likely than girls to have elevated academic anxieties relative to their general anxiety. Year 7/8 students with specifically academic anxiety show lower academic performance than those who also have elevated general anxiety. CONCLUSIONS: There may be a developmental change in the specificity of anxiety and gender seems to play a strong role in determining one's anxiety profile. The anxiety profiles present in our year 7/8 sample, and their relationships with math performance, suggest a bidirectional relationship between math anxiety and math performance.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "1720 UK students in years 4, 7 and 8 with math anxiety and mathematics performance."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "UK students in years 4, 7 and 8 with a correlation between math anxiety and math performance for the whole sample.",
+    "country": "United Kingdom",
+    "gradeLevel": "Year 4 and Years 7-8",
+    "gradeBand": "mixed",
+    "design": "correlational (latent profile analysis)",
+    "intervention": "math anxiety questionnaire",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "mathematics performance test (MaLT)",
+    "summaryEn": "Of 1849 students tested in English primary and secondary schools, 1720 were analysed for math anxiety, test anxiety, general anxiety and performance in mathematics and reading. Math anxiety was negatively related to math performance.",
+    "summaryJa": "イングランドの小学校・中学校で検査した1849人のうち1720人を分析し、算数・数学の不安、テスト不安、全般的不安と、算数・数学や読みの成績を調べました。算数・数学の不安は数学の成績と負の関係を示しました。",
+    "evidence": "The correlation of -0.29 found in our large sample between MA and math performance reflects that observed in meta-analyses",
+    "ja": {
+     "country": "イギリス",
+     "gradeLevel": "小学4年相当と中学1〜2年相当",
+     "design": "相関研究（潜在プロフィール分析）",
+     "intervention": "算数・数学不安の質問紙",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "数学の成績テスト（MaLT）"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-0.29",
+     "nTotal": "1720",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.29856626366017835,
+    "vi": 0.0005824111822947001,
+    "n": 1720,
+    "method": "Pearson r",
+    "display": -0.29
+   },
+   "pdfUrl": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0174418&type=printable",
+   "sid": "S4"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W3187517500",
+    "doi": "10.1371/journal.pone.0255777",
+    "title": "Assessing math anxiety in elementary schoolchildren through a Spanish version of the Scale for Early Mathematics Anxiety (SEMA)",
+    "titleEn": "",
+    "authors": [
+     "Noelia Sánchez‐Pérez",
+     "Luis J. Fuentes",
+     "Carmen González-Salinas"
+    ],
+    "venue": "PLoS ONE",
+    "volume": "16",
+    "issue": "8",
+    "pages": "e0255777",
+    "year": "2021",
+    "language": "en",
+    "citedBy": 16,
+    "url": "https://doi.org/10.1371/journal.pone.0255777",
+    "landing": "https://doi.org/10.1371/journal.pone.0255777",
+    "pdfUrls": [
+     "https://zaguan.unizar.es/record/107463/files/texto_completo.pdf"
+    ],
+    "abstract": "Math anxiety (MA) affects students of all age groups. Because of its effects on children's academic development, the need to recognize its early manifestations has been highlighted. We designed a European-Spanish version of the Scale for Early Mathematics Anxiety (SEMA; Wu et al. (2012)), and assessed its psychometric properties in a sample of children aged 7 to 12 years. The participants (967 typically developing children) were elementary school students recruited from ten schools. Children reported their general and math anxiety levels in an individual session and performed nonverbal IQ and math abilities subtests in a group session. Teachers reported the final math grades. The psychometric indices obtained, and the resulting factor structure revealed that the European-Spanish version of the SEMA developed in this study is a reliable and valid measure to evaluate MA in children from 3rd to 6th grade. Moreover, we explored gender differences, that resulted in small effect sizes, which disappeared when controlling for trait anxiety. Differences across grades were found for both global MA and the numerical processing anxiety factor but not for the situational and performance anxiety factor. Finally, MA was negatively associated with students' math achievement, although the strength of the associations varied with the MA measure selected, the kind of math achievement analyzed, and the school stage considered. Our findings highlight the relevance of MA in elementary school and highlight the need for an early identification of students at risk of suffering MA to palliate the negative consequences of MA in children's cognitive and academic development.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "967 elementary children in grades 3-6; math anxiety is correlated with math grades and ability tests."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Spanish children in grades 3-6 with a correlation between global math anxiety and math grades.",
+    "country": "Spain",
+    "gradeLevel": "Grades 3-6",
+    "gradeBand": "elementary",
+    "design": "correlational (scale validation)",
+    "intervention": "Scale for Early Mathematics Anxiety (SEMA), global score",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "final math grades reported by teachers",
+    "summaryEn": "Nine hundred sixty-seven elementary children from ten schools completed a Spanish version of the SEMA, and teachers reported their final math grades. Global math anxiety was negatively related to math grades.",
+    "summaryJa": "10校の小学生967人にスペイン語版の早期算数不安尺度（SEMA）を実施し、教師が報告した算数の成績と比べました。算数不安の総合得点は算数の成績と負の関係を示しました。",
+    "evidence": "global MA, the numerical processing anxiety factor, and the situational and performance anxiety factor were significantly and negatively related to math grades, r = -.26, p < .001",
+    "ja": {
+     "country": "スペイン",
+     "gradeLevel": "小学3〜6年",
+     "design": "相関研究（尺度の妥当性検証）",
+     "intervention": "早期算数不安尺度（SEMA）の総合得点",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "教師が報告した算数の成績"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.26",
+     "nTotal": "967",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.2661084068736541,
+    "vi": 0.001037344398340249,
+    "n": 967,
+    "method": "Pearson r",
+    "display": -0.26
+   },
+   "pdfUrl": "https://zaguan.unizar.es/record/107463/files/texto_completo.pdf",
+   "sid": "S5"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4294723753",
+    "doi": "10.26803/ijlter.21.8.19",
+    "title": "Math Anxiety, Math Achievement and Gender Differences among Primary School Children and their Parents from Palestine",
+    "titleEn": "",
+    "authors": [
+     "Nagham Anbar",
+     "Lavinia Cheie",
+     "Laura Visu‐Petra"
+    ],
+    "venue": "International Journal of Learning Teaching and Educational Research",
+    "volume": "21",
+    "issue": "8",
+    "pages": "326–334",
+    "year": "2022",
+    "language": "en",
+    "citedBy": 3,
+    "url": "https://doi.org/10.26803/ijlter.21.8.19",
+    "landing": "https://doi.org/10.26803/ijlter.21.8.19",
+    "pdfUrls": [
+     "https://ijlter.org/index.php/ijlter/article/download/5867/pdf"
+    ],
+    "abstract": "This study explored the math anxiety (MA) level and math achievement of primary school children and the association of these variables to their gender differences and parents’ math anxiety. Also, we investigated the potential interaction between child MA and parental variables on child math outcomes. The sample consisted of 230 students in the 3rd and 4th grades (Mean age = 8.9; SD =.59), including one parent for each child. The Scale for Early Math Anxiety, The Mathematics Anxiety Rating Scale, The Children Test Anxiety Scale and the parental involvement survey was used for data collection. Palestinian children reported lower levels of MA compared to previous research, and the expected negative relation between students’ MA and their math achievements was confirmed. Girls reported higher levels of both MA and test anxiety than boys. A positive correlation was found between mothers’ MA and daughters’ MA, while no association between fathers’ MA and sons’ MA was found. Moreover, child MA, parental MA and trait anxiety were found to significantly predict children’s math achievement. This study contributed to a better understanding of some factors affecting mathematics achievements and future career orientations, such as Math anxiety, Test anxiety, and possible gender differences. We suggest implementing new strategies to reduce math anxiety, improve math achievement, and enhance females' contribution to math-related fields in the Palestinian community.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "230 students in grades 3-4 with the expected negative relation between math anxiety and math achievement."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Third and fourth graders in Palestine with a Pearson correlation between math anxiety and math achievement for the whole sample.",
+    "country": "Palestine",
+    "gradeLevel": "Grades 3-4",
+    "gradeBand": "elementary",
+    "design": "correlational",
+    "intervention": "Scale for Early Math Anxiety (SEMA)",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "math achievement",
+    "summaryEn": "Two hundred thirty third and fourth graders in Ramallah completed math, test and trait anxiety measures, and their parents also reported their own math anxiety. Children's math anxiety was negatively correlated with their math achievement.",
+    "summaryJa": "ラマッラの小学3・4年生230人に、算数不安・テスト不安・特性不安の尺度を実施し、保護者の算数不安も調べました。子どもの算数不安は算数の学力と負の相関を示しました。",
+    "evidence": "Table 3: Correlations among study variables ... 4 Math achievement -.25** -.08 -.14*",
+    "ja": {
+     "country": "パレスチナ",
+     "gradeLevel": "小学3〜4年",
+     "design": "相関研究",
+     "intervention": "早期算数不安尺度（SEMA）",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "算数の学力"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.25",
+     "nTotal": "230",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.25541281188299536,
+    "vi": 0.004405286343612335,
+    "n": 230,
+    "method": "Pearson r",
+    "display": -0.25
+   },
+   "pdfUrl": "https://ijlter.org/index.php/ijlter/article/download/5867/pdf",
+   "sid": "S6"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W7216673526",
+    "doi": "",
+    "title": "Exploring the Relationship between Mathematics Anxiety, Interest, and Academic Achievement among Secondary School Students",
+    "titleEn": "",
+    "authors": [
+     "Venu Balakonda"
+    ],
+    "venue": "Journal of Informatics Education and Research",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "year": "2025",
+    "language": "en",
+    "citedBy": 0,
+    "url": "https://jier.org/index.php/journal/article/view/2800",
+    "landing": "https://jier.org/index.php/journal/article/view/2800",
+    "pdfUrls": [],
+    "abstract": "This study explores the complex relationship between mathematics anxiety, interest, and academic achievement among secondary school students in Telangana, India. Recognizing the significance of affective factors in mathematics learning, the research investigates how students' interest in and anxiety toward mathematics influence their academic performance. A sample of 30 ninth-grade students from both rural and urban schools participated in the study. Two researcher-developed instruments—a Mathematics Interest Questionnaire and a Mathematics Anxiety Scale—were used alongside Summative Assessment-1 scores to assess academic achievement. Results indicated high levels of interest (M = 86.30) and moderate anxiety (M = 57.23) among students. A strong positive correlation was found between mathematics interest and academic achievement (r = .734, p < .001), while a moderate negative correlation was observed between anxiety and performance (r = -.389, p = .000). Regression analysis revealed that mathematics interest significantly predicted academic success (β = .682, p < .001), whereas anxiety, though negatively associated, did not contribute significantly when combined with interest (β = -.149, p = .285). These findings emphasize the dominant role of interest in shaping academic outcomes, suggesting that fostering student engagement and enjoyment can mitigate the adverse effects of anxiety. The study advocates for interest-driven teaching strategies and emotionally supportive learning environments. Limitations include a small sample size and limited generalizability. Future research should consider larger, more diverse populations and longitudinal designs to further examine the interplay of psychological factors influencing mathematics achievement.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Ninth graders with a math anxiety scale and summative assessment scores; the correlation is the focus."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Ninth graders in India with a Pearson correlation between math anxiety and summative assessment marks.",
+    "country": "India",
+    "gradeLevel": "Grade 9",
+    "gradeBand": "middle",
+    "design": "correlational",
+    "intervention": "Mathematics Anxiety Scale",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "Summative Assessment-1 marks",
+    "summaryEn": "Thirty ninth graders from rural and urban schools in Telangana completed math interest and math anxiety scales, and their summative assessment marks were collected. Math anxiety was negatively correlated with academic achievement.",
+    "summaryJa": "テランガーナ州の都市部と農村部の中学3年生30人に、数学への興味と数学不安の尺度を実施し、総括的評価の得点を集めました。数学不安は学力と負の相関を示しました。",
+    "evidence": "The Pearson correlation coefficient between MA and SA Marks is -0.389, which is statistically significant (p = 0.000).",
+    "ja": {
+     "country": "インド",
+     "gradeLevel": "中学3年",
+     "design": "相関研究",
+     "intervention": "数学不安尺度",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "総括的評価-1の得点"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-0.389",
+     "nTotal": "30",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.41062119179137424,
+    "vi": 0.037037037037037035,
+    "n": 30,
+    "method": "Pearson r",
+    "display": -0.389
+   },
+   "pdfUrl": "https://jier.org/index.php/journal/article/download/2800/2288",
+   "sid": "S7"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4297535306",
+    "doi": "10.6007/ijarped/v11-i3/14721",
+    "title": "The Effect of Math Self-Concept and Self-Efficacy on the Math Achievement of Sixth-Grade Primary School Students: The Mediating Role of Math Anxiety",
+    "titleEn": "",
+    "authors": [
+     "Zuo Ruijia",
+     "Othman Talib",
+     "Nur Aimi Nasuha Burhanuddin",
+     "Wenling Li"
+    ],
+    "venue": "International Journal of Academic Research in Progressive Education and Development",
+    "volume": "11",
+    "issue": "3",
+    "pages": "",
+    "year": "2022",
+    "language": "en",
+    "citedBy": 3,
+    "url": "https://doi.org/10.6007/ijarped/v11-i3/14721",
+    "landing": "https://doi.org/10.6007/ijarped/v11-i3/14721",
+    "pdfUrls": [
+     "https://hrmars.com/papers_submitted/14721/the-effect-of-math-self-concept-and-self-efficacy-on-the-math-achievement-of-sixth-grade-primary-school-students-the-mediating-role-of-math-anxiety.pdf"
+    ],
+    "abstract": "The relationship between math self-concept, self-efficacy, math anxiety, and math achievement was investigated using 450 sixth-grade students in Sichuan Province, China as subjects.The results showed that: math self-concept and self-efficacy positively predicted students' math achievement, and math anxiety negatively predicted students' math achievement.Mathematics anxiety played a partial mediating role in the relationship between mathematics self-concept and mathematics achievement, mathematics selfefficacy, and mathematics achievement.Mathematical self-efficacy and math anxiety played a mediating chain role in the relationship between math self-concept and math achievement.To improve students' math achievement, it is necessary to pay attention to the positive significance of math self-concept and self-efficacy and reduce the adverse effects of math anxiety.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "450 sixth graders with math anxiety negatively predicting math achievement; correlations likely reported."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Sixth graders in China with a Pearson correlation between math anxiety and math achievement for the whole sample.",
+    "country": "China",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "correlational",
+    "intervention": "math anxiety scale",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "math achievement",
+    "summaryEn": "Four hundred fifty sixth graders from three elementary schools in Sichuan completed scales of math self-concept, self-efficacy and math anxiety, and their math achievement was measured. Math anxiety was negatively correlated with math achievement.",
+    "summaryJa": "四川省の小学校3校の6年生450人に、数学の自己概念・自己効力感・数学不安の尺度を実施し、数学の学力を測りました。数学不安は数学の学力と負の相関を示しました。",
+    "evidence": "math anxiety was significantly and negatively correlated with math self-concept, self-efficacy (r=-0.653, P<0.01), and math achievement (r=-0.587, P<0.01)",
+    "ja": {
+     "country": "中国",
+     "gradeLevel": "小学6年",
+     "design": "相関研究",
+     "intervention": "数学不安尺度",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "数学の学力"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-0.587",
+     "nTotal": "450",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.6730765637826881,
+    "vi": 0.0022371364653243847,
+    "n": 450,
+    "method": "Pearson r",
+    "display": -0.587
+   },
+   "pdfUrl": "https://hrmars.com/papers_submitted/14721/the-effect-of-math-self-concept-and-self-efficacy-on-the-math-achievement-of-sixth-grade-primary-school-students-the-mediating-role-of-math-anxiety.pdf",
+   "sid": "S8"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4389200099",
+    "doi": "10.5964/jnc.11325",
+    "title": "The link between math anxiety and math achievement: The role of afterschool learning",
+    "titleEn": "",
+    "authors": [
+     "Seowon Song",
+     "Tianyu Li",
+     "Michaela Quintero",
+     "Zhe Wang"
+    ],
+    "venue": "Journal of Numerical Cognition",
+    "volume": "9",
+    "issue": "3",
+    "pages": "418–432",
+    "year": "2023",
+    "language": "en",
+    "citedBy": 7,
+    "url": "https://doi.org/10.5964/jnc.11325",
+    "landing": "https://doi.org/10.5964/jnc.11325",
+    "pdfUrls": [
+     "https://jnc.psychopen.eu/index.php/jnc/article/download/11325/11325.pdf",
+     "https://pada.psycharchives.org/bitstream/f24590a5-8510-47a8-bc64-49ba66cd47d7"
+    ],
+    "abstract": "The present study tested the learning avoidance model by examining the degree to which learning avoidance in various afterschool settings mediated the negative association between math anxiety and math achievement. Participants consisted of 207 third to sixth graders. Using a path model, findings showed that students’ math anxiety was negatively associated with both standardized math achievement test scores and parent-reported math school grades. Additionally, higher math anxiety was associated with more negative homework behaviors and less frequent participation in math-related extracurricular activities. Finally, the association between math anxiety and math achievement was partially mediated by negative math homework behaviors and participation in math extracurricular activities. Effort in math exam preparation did not contribute to explaining the association between math anxiety and math achievement. Overall, these findings support the learning avoidance model and suggest that avoidance behaviors in everyday learning in the afterschool setting may contribute to explaining the undesired math achievement among highly math anxious students.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "207 students in grades 3-6 with math anxiety negatively associated with math achievement and grades."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Students in grades 3-6 with a bivariate correlation between child-reported math anxiety and standardized math achievement.",
+    "country": "United States",
+    "gradeLevel": "Grades 3-6",
+    "gradeBand": "elementary",
+    "design": "correlational (path model)",
+    "intervention": "child-reported math anxiety",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "standardized math achievement test",
+    "summaryEn": "Two hundred seven third to sixth graders reported their math anxiety, parents reported afterschool learning behaviors, and students took a standardized math test. Math anxiety was negatively correlated with standardized math achievement and with parent-reported math grades.",
+    "summaryJa": "小学3〜6年生207人が算数不安を回答し、保護者が放課後の学習行動を報告し、児童は標準化された算数テストを受けました。算数不安は標準化テストの得点とも、保護者が報告した算数の成績とも負の相関を示しました。",
+    "evidence": "Math anxiety was negatively correlated with perseverance in math exam preparation, frequency of math extracurricular activity participation, and math achievement.",
+    "ja": {
+     "country": "アメリカ",
+     "gradeLevel": "小学3〜6年",
+     "design": "相関研究（パス分析）",
+     "intervention": "児童が回答した算数不安",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "標準化された算数テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.28",
+     "nTotal": "207",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.28768207245178096,
+    "vi": 0.004901960784313725,
+    "n": 207,
+    "method": "Pearson r",
+    "display": -0.28
+   },
+   "pdfUrl": "https://jnc.psychopen.eu/index.php/jnc/article/download/11325/11325.pdf",
+   "sid": "S9"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2498055710",
+    "doi": "10.15446/rcp.v25n2.54532",
+    "title": "Examining the link between math anxiety and math performance in Colombian students",
+    "titleEn": "",
+    "authors": [
+     "Florencia Reali",
+     "William Jiménez‐Leal",
+     "Carolina Maldonado‐Carreño",
+     "Amy Devine",
+     "Dénes Szűcs"
+    ],
+    "venue": "Revista Colombiana de Psicología",
+    "volume": "25",
+    "issue": "2",
+    "pages": "",
+    "year": "2016",
+    "language": "en",
+    "citedBy": 34,
+    "url": "https://doi.org/10.15446/rcp.v25n2.54532",
+    "landing": "https://doi.org/10.15446/rcp.v25n2.54532",
+    "pdfUrls": [
+     "http://bdigital.unal.edu.co/67392/1/54532-300100-4-PB.pdf"
+    ],
+    "abstract": "El presente estudio examina la relación entre la ansiedad matemática y el desempeño matemático, en un grupo de estudiantes colombianos. Un total de 296 estudiantes entre 8 y 16 años de edad participaron en la investigación. Se realizaron análisis por género y grado escolar, controlando por otros tipos de ansiedad (i.e., general y relacionada con exámenes). En línea con lo reportado en otros países, se encontró una correlación negativa entre el desempeño en matemática y la ansiedad matemática. Aún más importante, esta tendencia fue mayor en las niñas que en los niños. Dados los pocos estudios que han explorado la relación entre ansiedad matemática y desempeño matemático en Latinoamérica y, particularmente, en Colombia, este estudio llena un vacío importante. Los resultados son particularmente relevantes a la luz del pobre desempeño de los estudiantes colombianos en matemáticas, revelado recientemente por las pruebas pisa.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "296 students aged 8-16 with a negative correlation between math anxiety and math performance."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Colombian students mostly in grades 3-6 and 9 (53 of 296 in grade 10) with a Pearson correlation between math anxiety and math performance for the whole sample.",
+    "country": "Colombia",
+    "gradeLevel": "Grades 3-6, 9 and 10",
+    "gradeBand": "mixed",
+    "design": "correlational",
+    "intervention": "Abbreviated Math Anxiety Scale (AMAS)",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "math performance test",
+    "summaryEn": "Two hundred ninety-six students in grades 3-6, 9 and 10 in a Bogotá public school completed math, general and test anxiety measures and a math test. Math anxiety was negatively correlated with math performance, and the relation was stronger in girls.",
+    "summaryJa": "ボゴタの公立学校の3〜6年生、9年生、10年生296人に、算数・数学不安、全般的不安、テスト不安の尺度と数学の課題を実施しました。数学不安は数学の成績と負の相関を示し、女子でより強く見られました（10年生は53人含まれます）。",
+    "evidence": "Math performance scores were negatively correlated with ma scores (Pearson r=-.174, 95% ci[-.050, -.279], p=.003).",
+    "ja": {
+     "country": "コロンビア",
+     "gradeLevel": "3〜6年、9〜10年",
+     "design": "相関研究",
+     "intervention": "簡易算数不安尺度（AMAS）",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "数学の成績テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.174",
+     "nTotal": "296",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   },
+   "effect": {
+    "yi": -0.17578861343353183,
+    "vi": 0.0034129692832764505,
+    "n": 296,
+    "method": "Pearson r",
+    "display": -0.174
+   },
+   "pdfUrl": "https://revistas.unal.edu.co/index.php/psicologia/article/download/54532/56781",
+   "sid": "S10"
+  }
+ ],
+ "examined": [
+  {
+   "id": "W4409853824",
+   "title": "Investigating the Relationship Between Mathematics Anxiety and Mathematics Achievement of Primary School 4th Grade Students",
+   "year": "2023",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Fourth graders in Turkey with Pearson correlation between mathematics anxiety and mathematics lesson achievement.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "correlational (explanatory sequential mixed methods)",
+    "intervention": "mathematics anxiety scale (total)",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "mathematics lesson report card grades",
+    "summaryEn": "Six hundred thirty-six fourth graders in Erzincan completed a mathematics anxiety scale, and their mathematics report card grades were collected. Mathematics anxiety was moderately and negatively correlated with mathematics lesson achievement.",
+    "summaryJa": "エルジンジャンの小学4年生に算数不安の尺度を実施し、算数の通知表の成績を集めました。算数不安は算数の成績と中程度の負の相関を示しました。",
+    "evidence": "there is a moderately negative correlation between students' mathematics anxiety levels and their mathematics lesson achievement",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学4年",
+     "design": "相関研究（説明的順次の混合研究）",
+     "intervention": "算数不安尺度（合計）",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "算数の通知表の成績"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.570",
+     "nTotal": "589",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W4416296233",
+   "title": "The Relationship Between the Mathematics Anxiety and Mathematics Achievement of Middle School Students: The Moderating Effect of Working Memory",
+   "year": "2025",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4412890142",
+   "title": "Mathematics anxiety as a moderator between self-esteem and mathematics achievement among Filipino Grade 8 students",
+   "year": "2025",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Grade 8 Filipino students with a Pearson correlation between mathematics anxiety and mathematics achievement.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 8",
+    "gradeBand": "middle",
+    "design": "descriptive correlational",
+    "intervention": "mathematics anxiety questionnaire",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "final grades in mathematics from school records",
+    "summaryEn": "Six hundred twelve Grade 8 students in public high schools completed self-esteem and mathematics anxiety questionnaires, and their final mathematics grades were taken from school records. Mathematics anxiety had a weak but significant positive correlation with mathematics achievement.",
+    "summaryJa": "公立高校（日本の中学2年にあたる学年）の612人に自尊感情と算数・数学不安の質問紙を実施し、数学の最終成績を学校の記録から集めました。数学不安は数学の成績と弱いながら有意な正の相関を示しました。",
+    "evidence": "mathematics anxiety showed a weak but significant positive correlation with mathematics achievement (r = 0.124, p < 0.001)",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "中学2年",
+     "design": "記述的相関研究",
+     "intervention": "数学不安の質問紙",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "学校の記録にある数学の最終成績"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "0.124",
+     "nTotal": "612",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W2954200395",
+   "title": "Math Anxiety in Students With and Without Math Learning Difficulties",
+   "year": "2019",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Third graders in Turkey with a Pearson correlation between math anxiety and mathematics achievement for the whole sample.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "correlational",
+    "intervention": "math anxiety scale",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "mathematics achievement test",
+    "summaryEn": "Two hundred eighty-eight third graders, with and without mathematics learning difficulties, completed a math anxiety scale and a mathematics achievement test. Math anxiety was strongly and negatively correlated with math achievement.",
+    "summaryJa": "算数に困難のある児童とない児童を含む小学3年生288人に、算数不安の尺度と算数の学力テストを実施しました。算数不安は算数の学力と強い負の相関を示しました。",
+    "evidence": "There was a strong and negative correlation between math anxiety and mathematics achievement with the values of r= -0.597, n= 288, and p= .00.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学3年",
+     "design": "相関研究",
+     "intervention": "算数不安尺度",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "算数の学力テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-0.597",
+     "nTotal": "288",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W2776346323",
+   "title": "Examining of the relationship between math anxiety and math achievement of elementary school students İlkokul öğrencilerinin matematik kaygısı ile matematik başarıları arasındaki ilişkinin incelenmesi",
+   "year": "2017",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W2602568213",
+   "title": "Differentiating anxiety forms and their role in academic performance from primary to secondary school",
+   "year": "2017",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "UK students in years 4, 7 and 8 with a correlation between math anxiety and math performance for the whole sample.",
+    "country": "United Kingdom",
+    "gradeLevel": "Year 4 and Years 7-8",
+    "gradeBand": "mixed",
+    "design": "correlational (latent profile analysis)",
+    "intervention": "math anxiety questionnaire",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "mathematics performance test (MaLT)",
+    "summaryEn": "Of 1849 students tested in English primary and secondary schools, 1720 were analysed for math anxiety, test anxiety, general anxiety and performance in mathematics and reading. Math anxiety was negatively related to math performance.",
+    "summaryJa": "イングランドの小学校・中学校で検査した1849人のうち1720人を分析し、算数・数学の不安、テスト不安、全般的不安と、算数・数学や読みの成績を調べました。算数・数学の不安は数学の成績と負の関係を示しました。",
+    "evidence": "The correlation of -0.29 found in our large sample between MA and math performance reflects that observed in meta-analyses",
+    "ja": {
+     "country": "イギリス",
+     "gradeLevel": "小学4年相当と中学1〜2年相当",
+     "design": "相関研究（潜在プロフィール分析）",
+     "intervention": "算数・数学不安の質問紙",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "数学の成績テスト（MaLT）"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-0.29",
+     "nTotal": "1720",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W3187517500",
+   "title": "Assessing math anxiety in elementary schoolchildren through a Spanish version of the Scale for Early Mathematics Anxiety (SEMA)",
+   "year": "2021",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Spanish children in grades 3-6 with a correlation between global math anxiety and math grades.",
+    "country": "Spain",
+    "gradeLevel": "Grades 3-6",
+    "gradeBand": "elementary",
+    "design": "correlational (scale validation)",
+    "intervention": "Scale for Early Mathematics Anxiety (SEMA), global score",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "final math grades reported by teachers",
+    "summaryEn": "Nine hundred sixty-seven elementary children from ten schools completed a Spanish version of the SEMA, and teachers reported their final math grades. Global math anxiety was negatively related to math grades.",
+    "summaryJa": "10校の小学生967人にスペイン語版の早期算数不安尺度（SEMA）を実施し、教師が報告した算数の成績と比べました。算数不安の総合得点は算数の成績と負の関係を示しました。",
+    "evidence": "global MA, the numerical processing anxiety factor, and the situational and performance anxiety factor were significantly and negatively related to math grades, r = -.26, p < .001",
+    "ja": {
+     "country": "スペイン",
+     "gradeLevel": "小学3〜6年",
+     "design": "相関研究（尺度の妥当性検証）",
+     "intervention": "早期算数不安尺度（SEMA）の総合得点",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "教師が報告した算数の成績"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.26",
+     "nTotal": "967",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W2149033909",
+   "title": "Math Anxiety in Second and Third Graders and Its Relation to Mathematics Achievement",
+   "year": "2012",
+   "screenScore": 8,
+   "outcome": "適格でない: The paper reports only covariate-adjusted betas and partial rho values, not a Pearson correlation between math anxiety and math achievement for the whole sample.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The paper reports only covariate-adjusted betas and partial rho values, not a Pearson correlation between math anxiety and math achievement for the whole sample.",
+    "country": "United States",
+    "gradeLevel": "Grades 2-3",
+    "gradeBand": "elementary",
+    "design": "correlational",
+    "intervention": "Scale for Early Mathematics Anxiety (SEMA)",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "WIAT-II math composite score",
+    "summaryEn": "One hundred sixty-two second and third graders completed the SEMA and the WIAT-II. Math anxiety was negatively related to math achievement after controlling for trait anxiety and IQ.",
+    "summaryJa": "小学2・3年生162人にSEMAとWIAT-IIを実施しました。特性不安と知能を統制しても、算数不安は算数の学力と負の関係を示しました。",
+    "evidence": "math anxiety was still significantly and negatively correlated with math achievement [Math Composite score; β = −0.26",
+    "ja": {
+     "country": "アメリカ",
+     "gradeLevel": "小学2〜3年",
+     "design": "相関研究",
+     "intervention": "早期算数不安尺度（SEMA）",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "WIAT-IIの算数総合得点"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W4392878992",
+   "title": "Math anxiety and math achievement in primary school children: Longitudinal relationship and predictors",
+   "year": "2024",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4309153008",
+   "title": "Characterizing mathematics anxiety and its relation to performance in routine and adaptive tasks",
+   "year": "2022",
+   "screenScore": 8,
+   "outcome": "適格でない: Correlations are reported separately for five tasks and two anxiety measures, with no overall math achievement correlation, so choosing one cell would be arbitrary.",
+   "extracted": {
+    "eligible": false,
+    "reason": "Correlations are reported separately for five tasks and two anxiety measures, with no overall math achievement correlation, so choosing one cell would be arbitrary.",
+    "country": "Finland",
+    "gradeLevel": "Grades 5-6",
+    "gradeBand": "elementary",
+    "design": "correlational",
+    "intervention": "state and trait mathematics anxiety",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "five mathematics tasks including adaptive rational number knowledge",
+    "summaryEn": "Four hundred six fifth and sixth graders completed state and trait math anxiety measures and five mathematics tasks. Anxiety was related to performance differently depending on the task type.",
+    "summaryJa": "小学5・6年生406人に状態不安と特性不安の尺度と、5つの算数課題を実施しました。不安と成績の関係は課題の種類によって異なりました。",
+    "evidence": "students' self-evaluated state and trait mathematics anxiety had varying negative relations with performance depending on the task type",
+    "ja": {
+     "country": "フィンランド",
+     "gradeLevel": "小学5〜6年",
+     "design": "相関研究",
+     "intervention": "状態・特性の算数不安",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "5つの算数課題"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W4413267234",
+   "title": "Unravelling the Link between Math Anxiety and Math Performance of Grade 6 Pupils",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "適格でない: The reported r = -0.58 with p = 0.049 is inconsistent with a sample of 56 pupils, so the statistic cannot be trusted.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The reported r = -0.58 with p = 0.049 is inconsistent with a sample of 56 pupils, so the statistic cannot be trusted.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "mixed methods (correlational)",
+    "intervention": "math anxiety survey",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "math grades from academic records",
+    "summaryEn": "Fifty-six Grade 6 pupils completed a math anxiety survey and their math grades were taken from records. The paper reports a moderate negative correlation, but the stated p value does not match the stated sample size.",
+    "summaryJa": "小学6年生56人に算数不安の調査を行い、算数の成績を記録から集めました。中程度の負の相関が報告されていますが、報告されたp値が人数と合いません。",
+    "evidence": "The results reveal a moderate negative correlation (r = -0.58, p = 0.049), indicating that higher levels of Math anxiety are significantly associated with lower Math performance.",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "小学6年",
+     "design": "混合研究（相関）",
+     "intervention": "算数不安の調査",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "記録にある算数の成績"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W4200438242",
+   "title": "A multidimensional examination of math anxiety and engagement on math achievement",
+   "year": "2021",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W2921904031",
+   "title": "Sex differences in mathematics anxiety and attitudes: Concurrent and longitudinal relations to mathematical competence",
+   "year": "2019",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4294723753",
+   "title": "Math Anxiety, Math Achievement and Gender Differences among Primary School Children and their Parents from Palestine",
+   "year": "2022",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Third and fourth graders in Palestine with a Pearson correlation between math anxiety and math achievement for the whole sample.",
+    "country": "Palestine",
+    "gradeLevel": "Grades 3-4",
+    "gradeBand": "elementary",
+    "design": "correlational",
+    "intervention": "Scale for Early Math Anxiety (SEMA)",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "math achievement",
+    "summaryEn": "Two hundred thirty third and fourth graders in Ramallah completed math, test and trait anxiety measures, and their parents also reported their own math anxiety. Children's math anxiety was negatively correlated with their math achievement.",
+    "summaryJa": "ラマッラの小学3・4年生230人に、算数不安・テスト不安・特性不安の尺度を実施し、保護者の算数不安も調べました。子どもの算数不安は算数の学力と負の相関を示しました。",
+    "evidence": "Table 3: Correlations among study variables ... 4 Math achievement -.25** -.08 -.14*",
+    "ja": {
+     "country": "パレスチナ",
+     "gradeLevel": "小学3〜4年",
+     "design": "相関研究",
+     "intervention": "早期算数不安尺度（SEMA）",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "算数の学力"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.25",
+     "nTotal": "230",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W7216673526",
+   "title": "Exploring the Relationship between Mathematics Anxiety, Interest, and Academic Achievement among Secondary School Students",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Ninth graders in India with a Pearson correlation between math anxiety and summative assessment marks.",
+    "country": "India",
+    "gradeLevel": "Grade 9",
+    "gradeBand": "middle",
+    "design": "correlational",
+    "intervention": "Mathematics Anxiety Scale",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "Summative Assessment-1 marks",
+    "summaryEn": "Thirty ninth graders from rural and urban schools in Telangana completed math interest and math anxiety scales, and their summative assessment marks were collected. Math anxiety was negatively correlated with academic achievement.",
+    "summaryJa": "テランガーナ州の都市部と農村部の中学3年生30人に、数学への興味と数学不安の尺度を実施し、総括的評価の得点を集めました。数学不安は学力と負の相関を示しました。",
+    "evidence": "The Pearson correlation coefficient between MA and SA Marks is -0.389, which is statistically significant (p = 0.000).",
+    "ja": {
+     "country": "インド",
+     "gradeLevel": "中学3年",
+     "design": "相関研究",
+     "intervention": "数学不安尺度",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "総括的評価-1の得点"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-0.389",
+     "nTotal": "30",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W4365512476",
+   "title": "Relationships of mathematics achievement with self-determined motivation and mathematics anxiety among senior two students in Northern Rwanda",
+   "year": "2023",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W2076172571",
+   "title": "Barriers to Mathematics Achievement in Brunei Secondary School Students: Insights into the Roles of Mathematics Anxiety, Self-Esteem, Proactive Coping, and Test Stress",
+   "year": "2013",
+   "screenScore": 8,
+   "outcome": "適格でない: The correlation table is garbled in the text, the direction of the mixed-item anxiety total is unclear, and the number of students with grades (204 or 135) cannot be read reliably.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The correlation table is garbled in the text, the direction of the mixed-item anxiety total is unclear, and the number of students with grades (204 or 135) cannot be read reliably.",
+    "country": "Brunei",
+    "gradeLevel": "Years 8-10 (Forms 2-4)",
+    "gradeBand": "mixed",
+    "design": "correlational",
+    "intervention": "mathematics anxiety scale",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "continuous assessment math grades",
+    "summaryEn": "Two hundred four secondary school students in Brunei completed scales of math anxiety, self-esteem, proactive coping and test stress, and math grades came from school records. The paper reports that negative dimensions of anxiety were related to lower achievement.",
+    "summaryJa": "ブルネイの中等学校の生徒204人に、数学不安・自尊感情・積極的対処・テストストレスの尺度を実施し、数学の成績を学校の記録から集めました。不安の否定的な面は低い成績と関連しました。",
+    "evidence": "The negative dimensions of mathematics anxiety, self-esteem, and proactive coping correlated negatively with mathematics achievement",
+    "ja": {
+     "country": "ブルネイ",
+     "gradeLevel": "8〜10年（中学2年〜高校1年相当）",
+     "design": "相関研究",
+     "intervention": "数学不安尺度",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "継続評価の数学の成績"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W3200581972",
+   "title": "General academic anxiety and math anxiety in primary school. The impact of math anxiety on calculation skills",
+   "year": "2021",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4297535306",
+   "title": "The Effect of Math Self-Concept and Self-Efficacy on the Math Achievement of Sixth-Grade Primary School Students: The Mediating Role of Math Anxiety",
+   "year": "2022",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Sixth graders in China with a Pearson correlation between math anxiety and math achievement for the whole sample.",
+    "country": "China",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "correlational",
+    "intervention": "math anxiety scale",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "math achievement",
+    "summaryEn": "Four hundred fifty sixth graders from three elementary schools in Sichuan completed scales of math self-concept, self-efficacy and math anxiety, and their math achievement was measured. Math anxiety was negatively correlated with math achievement.",
+    "summaryJa": "四川省の小学校3校の6年生450人に、数学の自己概念・自己効力感・数学不安の尺度を実施し、数学の学力を測りました。数学不安は数学の学力と負の相関を示しました。",
+    "evidence": "math anxiety was significantly and negatively correlated with math self-concept, self-efficacy (r=-0.653, P<0.01), and math achievement (r=-0.587, P<0.01)",
+    "ja": {
+     "country": "中国",
+     "gradeLevel": "小学6年",
+     "design": "相関研究",
+     "intervention": "数学不安尺度",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "数学の学力"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-0.587",
+     "nTotal": "450",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W4409142478",
+   "title": "Understanding the Role of Cognitive Abilities and Math Anxiety in Adolescent Math Achievement",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4389200099",
+   "title": "The link between math anxiety and math achievement: The role of afterschool learning",
+   "year": "2023",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Students in grades 3-6 with a bivariate correlation between child-reported math anxiety and standardized math achievement.",
+    "country": "United States",
+    "gradeLevel": "Grades 3-6",
+    "gradeBand": "elementary",
+    "design": "correlational (path model)",
+    "intervention": "child-reported math anxiety",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "standardized math achievement test",
+    "summaryEn": "Two hundred seven third to sixth graders reported their math anxiety, parents reported afterschool learning behaviors, and students took a standardized math test. Math anxiety was negatively correlated with standardized math achievement and with parent-reported math grades.",
+    "summaryJa": "小学3〜6年生207人が算数不安を回答し、保護者が放課後の学習行動を報告し、児童は標準化された算数テストを受けました。算数不安は標準化テストの得点とも、保護者が報告した算数の成績とも負の相関を示しました。",
+    "evidence": "Math anxiety was negatively correlated with perseverance in math exam preparation, frequency of math extracurricular activity participation, and math achievement.",
+    "ja": {
+     "country": "アメリカ",
+     "gradeLevel": "小学3〜6年",
+     "design": "相関研究（パス分析）",
+     "intervention": "児童が回答した算数不安",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "標準化された算数テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.28",
+     "nTotal": "207",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  },
+  {
+   "id": "W2288339490",
+   "title": "How is anxiety related to math performance in young students? A longitudinal study of Grade 2 to Grade 3 children",
+   "year": "2016",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W2498055710",
+   "title": "Examining the link between math anxiety and math performance in Colombian students",
+   "year": "2016",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Colombian students mostly in grades 3-6 and 9 (53 of 296 in grade 10) with a Pearson correlation between math anxiety and math performance for the whole sample.",
+    "country": "Colombia",
+    "gradeLevel": "Grades 3-6, 9 and 10",
+    "gradeBand": "mixed",
+    "design": "correlational",
+    "intervention": "Abbreviated Math Anxiety Scale (AMAS)",
+    "comparison": "not applicable (correlational)",
+    "outcomeMeasure": "math performance test",
+    "summaryEn": "Two hundred ninety-six students in grades 3-6, 9 and 10 in a Bogotá public school completed math, general and test anxiety measures and a math test. Math anxiety was negatively correlated with math performance, and the relation was stronger in girls.",
+    "summaryJa": "ボゴタの公立学校の3〜6年生、9年生、10年生296人に、算数・数学不安、全般的不安、テスト不安の尺度と数学の課題を実施しました。数学不安は数学の成績と負の相関を示し、女子でより強く見られました（10年生は53人含まれます）。",
+    "evidence": "Math performance scores were negatively correlated with ma scores (Pearson r=-.174, 95% ci[-.050, -.279], p=.003).",
+    "ja": {
+     "country": "コロンビア",
+     "gradeLevel": "3〜6年、9〜10年",
+     "design": "相関研究",
+     "intervention": "簡易算数不安尺度（AMAS）",
+     "comparison": "該当なし（相関研究）",
+     "outcomeMeasure": "数学の成績テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "-.174",
+     "nTotal": "296",
+     "direction": ""
+    },
+    "model": "claude-sonnet-5-5 (Claude Code, local)",
+    "unverified": [],
+    "comparisonType": "unclear",
+    "comparisonEvidence": ""
+   }
+  }
+ ],
+ "models": [
+  "claude-sonnet-5-5 (Claude Code, local)"
+ ],
+ "date": "2026-10-06",
+ "dateEn": "October 6, 2026",
+ "dateJa": "2026年10月6日",
+ "analysis": {
+  "effectType": "r",
+  "overall": {
+   "k": 10,
+   "est": -0.3557100892685731,
+   "se": 0.08243156456399196,
+   "ci": [
+    -0.5421832434876679,
+    -0.1692369350494784
+   ],
+   "test": -4.315217006374226,
+   "p": 0.0019467575265486037,
+   "df": 9,
+   "fixed": {
+    "est": -0.3263756611238406,
+    "se": 0.013660233452652507
+   },
+   "Q": 288.52930850930863,
+   "pQ": 0,
+   "I2": 96.88073282866873,
+   "tau2": 0.06329621910961532,
+   "pi": [
+    -0.9663330157123129,
+    0.2549128371751666
+   ],
+   "weights": [
+    10.493748871089997,
+    10.504163480297288,
+    10.210645020591468,
+    10.678407567450652,
+    10.602895470311733,
+    10.075433988373655,
+    6.798563859130505,
+    10.408776463880042,
+    10.002056508963173,
+    10.225308769911496
+   ]
+  },
+  "subgroups": {
+   "groups": [
+    {
+     "band": "elementary",
+     "key": "elementary",
+     "k": 6,
+     "est": -0.4713055270889297,
+     "se": 0.08966595880236129,
+     "ci": [
+      -0.7017992120611904,
+      -0.24081184211666898
+     ],
+     "test": -5.2562369642169955,
+     "p": 0.0033091326222578488,
+     "df": 5,
+     "fixed": {
+      "est": -0.4606423562206947,
+      "se": 0.019198845032223247
+     },
+     "Q": 107.57626494081804,
+     "pQ": 0,
+     "I2": 95.35213459702221,
+     "tau2": 0.048707360496921384,
+     "pi": [
+      -1.135991334991806,
+      0.19338028081394665
+     ],
+     "weights": [
+      17.07038179691434,
+      16.481182047962665,
+      17.300003813022926,
+      16.20298809339246,
+      16.892572028014968,
+      16.052872220692652
+     ]
+    },
+    {
+     "band": "middle",
+     "key": "middle",
+     "k": 2,
+     "est": -0.10992665349714924,
+     "se": 0.26558116183369845,
+     "ci": [
+      -3.484455269826967,
+      3.264601962832669
+     ],
+     "test": -0.4139098298168568,
+     "p": 0.7501650626411251,
+     "df": 1,
+     "fixed": {
+      "est": 0.10191805488149998,
+      "se": 0.03965257928590721
+     },
+     "Q": 7.407264275719729,
+     "pQ": 0.006496103068833969,
+     "I2": 86.49973913745862,
+     "tau2": 0.12391352184387737,
+     "pi": null,
+     "weights": [
+      56.17700614937034,
+      43.82299385062966
+     ]
+    },
+    {
+     "band": "mixed",
+     "key": "mixed",
+     "k": 2,
+     "est": -0.24870461020943602,
+     "se": 0.060296866935650804,
+     "ci": [
+      -1.0148489464436297,
+      0.5174397260247576
+     ],
+     "test": -4.1246688733405525,
+     "p": 0.15142275593874732,
+     "df": 1,
+     "fixed": {
+      "est": -0.28066882509480157,
+      "se": 0.022304986837273527
+     },
+     "Q": 3.772945161311899,
+     "pQ": 0.05208784209206374,
+     "I2": 73.49550663354228,
+     "tau2": 0.005539485464802802,
+     "pi": null,
+     "weights": [
+      59.388656356675575,
+      40.611343643324425
+     ]
+    }
+   ],
+   "Qbetween": 4.8368515228053806,
+   "df": 2,
+   "p": 0.08906171154355125
+  },
+  "comparatorSubgroups": null,
+  "comparatorUnclear": 0,
+  "leaveOneOut": [
+   {
+    "id": "S1",
+    "est": -0.3211247933993385,
+    "ci": [
+     -0.5163648291499017,
+     -0.12588475764877533
+    ]
+   },
+   {
+    "id": "S2",
+    "est": -0.41244532730323125,
+    "ci": [
+     -0.5725570923649341,
+     -0.25233356224152836
+    ]
+   },
+   {
+    "id": "S3",
+    "est": -0.3177190963109327,
+    "ci": [
+     -0.5075248028019499,
+     -0.12791338981991546
+    ]
+   },
+   {
+    "id": "S4",
+    "est": -0.3629786339506548,
+    "ci": [
+     -0.5744934230946386,
+     -0.15146384480667113
+    ]
+   },
+   {
+    "id": "S5",
+    "est": -0.366596658669945,
+    "ci": [
+     -0.5774388180994646,
+     -0.1557544992404254
+    ]
+   },
+   {
+    "id": "S6",
+    "est": -0.3670498588960507,
+    "ci": [
+     -0.5775303798455288,
+     -0.15656933794657257
+    ]
+   },
+   {
+    "id": "S7",
+    "est": -0.35170770110372646,
+    "ci": [
+     -0.5601695905243708,
+     -0.14324581168308212
+    ]
+   },
+   {
+    "id": "S8",
+    "est": -0.3185140696134179,
+    "ci": [
+     -0.510344129068164,
+     -0.12668401015867184
+    ]
+   },
+   {
+    "id": "S9",
+    "est": -0.3633699199389877,
+    "ci": [
+     -0.5748508963342434,
+     -0.15188894354373209
+    ]
+   },
+   {
+    "id": "S10",
+    "est": -0.3762838978141616,
+    "ci": [
+     -0.5823949855563793,
+     -0.1701728100719439
+    ]
+   }
+  ],
+  "looRange": [
+   -0.41244532730323125,
+   -0.3177190963109327
+  ],
+  "egger": {
+   "intercept": -1.9562781677293204,
+   "se": 4.5706464416801,
+   "t": -0.42800907764159124,
+   "df": 8,
+   "p": 0.6799338240132948
+  },
+  "totalN": 5389
+ },
+ "warnings": [],
+ "text": {
+  "en": {
+   "background": "Mathematics anxiety is a feeling of tension about mathematics, and understanding how it relates to achievement helps teachers in primary and lower secondary schools support their students.",
+   "conclusionAbstract": "Higher mathematics anxiety was generally linked with lower achievement, but the size of the link varied widely, so teachers should treat it as a correlation rather than a proven cause.",
+   "introduction": [
+    "Mathematics is taught to all children in primary and lower secondary schools, yet many students feel tense or worried when they work on it. Such feelings are usually called mathematics anxiety. In school, mathematics anxiety is typically measured by asking students to rate how uneasy they feel in situations that involve numbers, lessons and tests. Because teachers meet students of many ages and backgrounds, they need to know whether students' anxiety goes together with how well they do in mathematics.",
+    "Many studies have examined this question in different countries and school levels. The included studies surveyed students from the early primary grades to the lower secondary grades and used a variety of anxiety scales, tests and school grades [S1, S3, S5, S8]. Some of them reported a clear negative association between anxiety and achievement [S1, S3, S8], whereas others reported weaker associations [S4, S10] or even a small positive one [S2]. These differences make it hard for a teacher or a school leader to judge how much weight the finding deserves.",
+    "A quantitative synthesis is useful in this situation. By converting each result into the same effect size, a meta-analysis can estimate the typical size of the association, show how much the results differ across studies, and ask whether the association looks different for younger and older students. Because the predictor and the outcome were measured at the same time in most studies, the synthesis describes association, not cause and effect.",
+    "The purpose of this meta-analysis was to estimate the overall correlation between mathematics anxiety and mathematics achievement among students in grades 1 to 9. Our research question was: how strong is the relationship between mathematics anxiety and mathematics achievement in primary and lower secondary students, and does this relationship differ across school levels?"
+   ],
+   "discussion": [
+    "The random-effects model gave a pooled correlation of r = −.34, 95% CI [−.49, −.17], which is a moderate negative association by conventional benchmarks (Table 3). In the included studies, students who reported more mathematics anxiety tended to have lower mathematics achievement. Nine of the ten studies showed a negative correlation, and the exception was a study of eighth graders with a weak positive correlation [S2]. The largest negative correlations came from studies of single grades in Turkey and China [S1, S3, S8], while the largest sample showed a smaller correlation [S4] (Fig. 1).",
+    "The results varied widely across studies (Fig. 1). Heterogeneity was very large (I² = 96.9%), and the 95% prediction interval, [−.75, .25], was wide enough to include zero and weak positive values. This means that the pooled value should not be read as the expected correlation in every classroom. Differences in the anxiety scales, in the achievement measures (tests, report card grades or teacher-reported grades), and in the students sampled may all contribute (Table 2), but the present data do not allow us to say which of them explain the differences.",
+    "The subgroup analysis by school level suggested a stronger association in elementary samples (r = −.44, k = 6) than in middle school samples (r = −.11, k = 2) or in mixed-grade samples (r = −.24, k = 2). However, the difference between school levels was not statistically significant, Q(2) = 4.84, p = .089, the middle school estimate had a very wide interval, and the subgroups contained few studies. These results are exploratory, and we do not draw conclusions about why the association might differ by school level. Comparisons between passive and active control conditions did not apply to this correlational question. The sensitivity analysis, in which each study was removed in turn, gave pooled estimates between −.39 and −.31, so no single study determined the overall result. The Egger test did not indicate funnel plot asymmetry (intercept = −1.96, p = .680), although a test with ten studies has little power.",
+    "For teachers of grades 1 to 9, the findings suggest paying attention to students' feelings about mathematics as well as to their scores. Students who look worried during mathematics lessons or tests may benefit from a calm classroom, clear explanations and chances to practise without pressure. At the same time, the data are correlational, so our results do not show that lowering anxiety will raise achievement, or that low achievement does not itself cause anxiety. Schools should therefore regard anxiety as one of several factors to watch, and should not rely on a single anxiety score to judge a student."
+   ],
+   "limitations": [
+    "This synthesis has several limitations. Only ten studies were included, and some had small samples [S7] while others were large [S4]. The studies came from different countries and used different anxiety scales and different achievement measures, which makes the combined estimate a rough summary. Some samples mixed students from several grades [S4, S10], and one included students slightly older than the target range [S10]. Subgroups contained as few as two studies, so subgroup estimates are imprecise. All of the included studies were correlational, so the direction of any relationship cannot be established.",
+    "The studies were found with a limited search of open-access sources, and the data were extracted automatically from the full texts. Every extracted number was checked against the text, but a human did not review the extraction, and several candidate studies could not be included because their full texts or correlations were not available or could not be read reliably. Where a study reported correlations for several outcomes, we used the one for the main achievement measure, and this choice could affect the result. For these reasons, the findings should be treated as provisional."
+   ],
+   "conclusion": [
+    "Across ten studies of students in primary and lower secondary schools, higher mathematics anxiety was associated with lower mathematics achievement, with a moderate pooled correlation of r = −.34. The association varied greatly between studies and may be stronger in elementary samples, although this difference was not statistically significant. Because the evidence is correlational, small in number and automatically extracted, teachers can use it as a reason to attend to students' anxiety, but it does not show that reducing anxiety will by itself raise achievement."
+   ],
+   "keywords": [
+    "mathematics anxiety",
+    "mathematics achievement",
+    "primary education",
+    "lower secondary education",
+    "correlation"
+   ]
+  },
+  "ja": {
+   "background": "算数・数学への不安と学力の関係を知ることは，小・中学校の教師が児童生徒を支える手がかりになる．",
+   "conclusionAbstract": "不安が高いほど学力が低い傾向はあったが，関連の大きさは研究間で大きく異なり，因果ではなく相関として扱うべきである．",
+   "introduction": [
+    "算数・数学は小学校と中学校のすべての子どもが学ぶ教科であるが，取り組むときに緊張や心配を感じる児童生徒は少なくない．こうした気持ちは一般に算数・数学不安（mathematics anxiety）と呼ばれる．学校では，数，授業，テストにかかわる場面でどれだけ落ち着かないかを児童生徒に評定してもらう形で測られることが多い．教師は年齢や背景の異なる多くの児童生徒と接するため，不安が算数・数学の成績と並んで動くのかどうかを知る必要がある．",
+    "この問いは，さまざまな国と学校段階で調べられてきた．採用した研究は，小学校低学年から中学校までの児童生徒を対象とし，多様な不安尺度，テスト，学校の成績を用いていた[S1, S3, S5, S8]．不安と学力のあいだに明確な負の関連を報告した研究[S1, S3, S8]がある一方，関連が弱い研究[S4, S10]や，小さな正の関連を示した研究[S2]もある．こうした違いのため，教師や学校の管理職は，この知見をどの程度重く見るべきかを判断しにくい．",
+    "このような状況では，量的な統合が役に立つ．メタ分析は，各結果を同じ効果量（effect size）に直すことで，関連の典型的な大きさを推定し，研究間で結果がどれだけ異なるかを示し，関連が年少の児童と年長の生徒とで異なるかどうかを問うことができる．採用した研究の多くでは予測変数と結果変数を同時に測っているため，この統合が示すのは関連であり，原因と結果ではない．",
+    "本メタ分析の目的は，1〜9年生の児童生徒における算数・数学不安と算数・数学の学力との全体的な相関を推定することである．研究上の問いは，小・中学校の児童生徒において算数・数学不安と学力の関係はどの程度強いか，またその関係は学校段階によって異なるか，である．"
+   ],
+   "discussion": [
+    "ランダム効果モデルによる統合相関は r = −.34，95%信頼区間 [−.49, −.17] であり，慣例的な目安では中程度の負の関連である（表3）．採用した研究では，算数・数学への不安が高い児童生徒ほど，学力が低い傾向があった．10件のうち9件が負の相関を示し，例外は中学2年生を対象に弱い正の相関を示した研究[S2]であった．負の相関が最も大きかったのは，トルコと中国の単一学年を対象とした研究[S1, S3, S8]であり，最大の標本を持つ研究では相関がより小さかった[S4]（Fig. 1）．",
+    "結果は研究間で大きくばらついた（Fig. 1）．異質性は非常に大きく（I² = 96.9%），95%予測区間 [−.75, .25] は0や弱い正の値を含むほど広かった．このため，統合値をどの教室でも期待できる相関として読むべきではない．不安尺度，学力の測度（テスト，通知表の成績，教師が報告した成績），対象となった児童生徒の違いがいずれも寄与している可能性がある（表2）が，今回のデータからは，そのうちどれが違いを説明するのかを述べることはできない．",
+    "学校段階別の分析では，小学校の標本（r = −.44，k = 6）のほうが，中学校の標本（r = −.11，k = 2）や学年が混在した標本（r = −.24，k = 2）よりも関連が強い可能性が示された．しかし，学校段階間の差は統計的に有意でなく（Q(2) = 4.84，p = .089），中学校の推定値の区間は非常に広く，各下位集団の研究数も少なかった．これらの結果は探索的なものであり，学校段階によって関連が異なる理由については結論を述べない．受動的な比較条件と能動的な比較条件の比較は，この相関の問いには当てはまらなかった．1件ずつ研究を除いた感度分析では統合推定値は −.39 から −.31 の範囲にあり，全体の結果を単独で決めた研究はなかった．Egger の検定では，ファンネルプロットの非対称性は示されなかった（切片 = −1.96，p = .680）が，10件の研究では検定の検出力は小さい．",
+    "1〜9年生を担当する教師にとって，これらの知見は，成績だけでなく算数・数学に対する児童生徒の気持ちにも目を配ることを示唆する．授業やテストで不安そうに見える児童生徒には，落ち着いた教室，分かりやすい説明，圧力のない練習の機会が役立つかもしれない．同時に，データは相関的なものであるため，不安を下げれば学力が上がることや，学力の低さがそれ自体で不安を生まないことを，今回の結果が示しているわけではない．したがって学校は，不安を注意すべき要因の一つとして捉え，一つの不安得点だけで児童生徒を判断してはならない．"
+   ],
+   "limitations": [
+    "本統合にはいくつかの限界がある．採用した研究は10件にとどまり，標本が小さいもの[S7]もあれば大きいもの[S4]もあった．研究は異なる国で行われ，不安尺度も学力の測度も異なっていたため，統合推定値は大まかな要約にとどまる．複数の学年を混ぜた標本があり[S4, S10]，そのうち1件には対象範囲よりやや年長の生徒が含まれていた[S10]．下位集団には2件しか研究が含まれないものもあり，その推定値は精度が低い．採用した研究はすべて相関的な研究であったため，関係の向きは確かめられない．",
+    "研究はオープンアクセスの情報源に限った検索で見つけたものであり，データは本文から自動で抽出した．抽出した数値はすべて本文と照合したが，人による確認は経ていない．また，本文や相関が入手できない，あるいは確実に読み取れないために採用できなかった候補研究も複数あった．研究が複数の結果変数について相関を報告している場合は，主たる学力の測度に対するものを用いており，この選択が結果に影響した可能性がある．以上の理由から，この知見は暫定的なものとして扱うべきである．"
+   ],
+   "conclusion": [
+    "小・中学校の児童生徒を対象とした10件の研究を通じて，算数・数学への不安が高いほど学力が低い傾向がみられ，統合した相関は r = −.34 と中程度であった．関連の大きさは研究間で大きく異なり，小学校の標本でより強い可能性があるが，この差は統計的に有意ではなかった．証拠は相関的で，件数が少なく，自動で抽出されたものであるため，教師はこれを児童生徒の不安に目を向ける理由として使うことはできるが，不安を減らすだけで学力が上がることを示すものではない．"
+   ],
+   "keywords": [
+    "算数・数学不安",
+    "算数・数学の学力",
+    "初等教育",
+    "前期中等教育",
+    "相関"
+   ],
+   "criteria": {
+    "population": "1〜9年生（小学校・中学校）の児童生徒（年齢はおよそ6〜15歳）．幼児のみ，高校生のみ，大学生，成人，教員・教員養成課程の学生の標本は除く",
+    "intervention": "質問紙で測定した算数・数学不安（予測変数）",
+    "comparison": "該当なし（相関研究）",
+    "outcome": "テストまたは成績で測定した算数・数学の学力・成績（相関係数 r を報告しているもの）"
+   }
+  },
+  "article": {
+   "lead": "算数・数学への不安が強い子ほど、算数・数学の成績が低い傾向があるのでしょうか。小学校から中学校までの児童生徒を対象とした10件の研究をまとめて調べたところ、全体としては中程度の負の関連がみられました。ただし、研究によって結果は大きく異なります。",
+   "question": "教室では「算数が苦手だから不安になる」のか、「不安だから力が出しきれない」のか、判断に迷う場面があります。そこで今回は、算数・数学への不安（質問紙で測ったもの）と、テストや通知表で測った算数・数学の成績との関係を、1〜9年生を対象にした研究を集めて調べました。不安と成績がどの程度ともに動くのかを知ることは、先生が子どもの様子を見守る手がかりになります。",
+   "reading": [
+    "10件の研究（参加者は合計5389人）をまとめると、不安と成績の関係を表す相関係数（-1から1までの値で、負なら不安が高いほど成績が低いことを表します）は r = −.34 でした。信頼区間は [−.49, −.17] で、一般的な目安では中程度の関連です。10件のうち9件は負の関連でしたが、中学2年生を対象にした1件[S2]は弱い正の関連でした。また、トルコと中国の研究[S1, S3, S8]では関連が強く、最も参加者の多い研究[S4]では、より小さな関連でした。",
+    "結果は研究ごとに大きくばらつきました。ばらつきの大きさを表す I² は 96.9% と非常に大きく、「次の研究で見つかる関連の幅」を表す予測区間は [−.75, .25] と、0や弱い正の値も含むほど広くなっています。そのため、r = −.34 という値を、どの教室にもあてはまる平均的な姿として受け取るのは適切ではありません。1件ずつ研究を外して計算し直しても、統合した値は −.39 から −.31 の範囲に収まり、特定の1件だけで結果が決まっているわけではありませんでした。",
+    "学校段階で分けると、小学校の研究（6件）では r = −.44、中学校の研究（2件）では r = −.11、学年が混ざった研究（2件）では r = −.24 でした。小学校のほうが関連が強いように見えますが、段階の違いは統計的に有意ではなく（p = .089）、中学校の推定値の幅は非常に広く、研究の数も少ないため、あくまで探索的な結果です。この問いは相関を調べるものなので、受動的・能動的といった比較条件による分析は行っていません。"
+   ],
+   "hints": [
+    "算数・数学の点数だけでなく、「授業やテストで落ち着かない様子はないか」にも目を向けると、子どもの状態をつかみやすくなります。",
+    "間違いを恐れずに発言できる雰囲気づくりや、分からないことを気軽に質問できる機会は、不安の強い子にとって安心につながるかもしれません。",
+    "テストの形式や時間の使い方を事前に伝えるなど、見通しを持たせる工夫は、不安を和らげる方法の一つとして考えられますが、この分析からその効果までは分かりません。"
+   ],
+   "cautions": [
+    "この分析が示すのは「関連」であり、不安が成績を下げている、あるいは成績の低さが不安を生んでいる、とまでは言えません。",
+    "研究数は10件と少なく、結果は大きくばらつきました。学年別の違いも探索的なものです。",
+    "論文の選別と数値の抽出は生成 AI で自動化しています。数値は論文の本文と照合しましたが、人による確認は経ていません。"
+   ],
+   "sns": "算数・数学への不安と成績の関係を、10件の研究から分析しました。不安が強いほど成績が低い傾向（r = −.34）はありますが、結果は研究ごとに大きくばらつきます。"
+  }
+ },
+ "dir": "2026-10-06-math-anxiety-achievement"
+}

@@ -33,6 +33,20 @@
       ],
       "warnings": [],
       "wpSentAt": "2026-10-04T11:05:45.081Z"
+    },
+    {
+      "date": "2026-10-06",
+      "themeId": "math-anxiety-achievement",
+      "status": "done",
+      "dir": "2026-10-06-math-anxiety-achievement",
+      "titleJa": "算数・数学への不安と学力の関係",
+      "k": 10,
+      "pooled": "r = -0.34 [-0.49, -0.17]",
+      "models": [
+        "claude-sonnet-5-5 (Claude Code, local)"
+      ],
+      "warnings": [],
+      "wpSentAt": ""
     }
   ]
 }

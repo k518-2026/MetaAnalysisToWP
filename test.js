@@ -299,6 +299,35 @@ async function llmTest() {
   }
 }
 
+async function localLlmTest() {
+  const fs = require('fs');
+  const os = require('os');
+  const llm = require('./lib/llm');
+  const saved = { primary: process.env.LLM_PRIMARY, dir: process.env.LOCAL_LLM_DIR, fetch: global.fetch };
+  const d = fs.mkdtempSync(path.join(os.tmpdir(), 'local-llm-'));
+  process.env.LLM_PRIMARY = 'local';
+  process.env.LOCAL_LLM_DIR = d;
+  let netCalls = 0;
+  global.fetch = async () => { netCalls++; throw new Error('network'); };
+  const log = console.log;
+  console.log = () => {};
+  try {
+    llm._reset();
+    const p = llm.generateJson('hello', null);
+    await new Promise((r) => setTimeout(r, 300));
+    const req = JSON.parse(fs.readFileSync(path.join(d, '001.request.json'), 'utf8'));
+    fs.writeFileSync(path.join(d, '001.response.json'), '```json\n{"ok":true}\n```', 'utf8');
+    const r = await p;
+    check('LLM(local): 依頼をファイルに書き、応答を読む。通信しない', req.prompt === 'hello' && r.ok === true && netCalls === 0 && /local/.test(llm.usedModel()), JSON.stringify({ req, r, netCalls }));
+  } finally {
+    console.log = log;
+    global.fetch = saved.fetch;
+    if (saved.primary === undefined) delete process.env.LLM_PRIMARY; else process.env.LLM_PRIMARY = saved.primary;
+    if (saved.dir === undefined) delete process.env.LOCAL_LLM_DIR; else process.env.LOCAL_LLM_DIR = saved.dir;
+    llm._reset();
+  }
+}
+
 // ============================================================
 // 通しの検査（偽物）
 // ============================================================
@@ -638,6 +667,7 @@ async function liveTest() {
 (async () => {
   await unitTests();
   await llmTest();
+  await localLlmTest();
   await pipelineTest();
   if (LIVE) await liveTest();
   const ng = checks.filter((c) => !c[1]);
