@@ -91,6 +91,7 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LLM_PRIMARY: ${{ inputs.llm || 'gemini' }}
+          PAPER_ENGINE: chrome   # Actions には LuaLaTeX を入れていない。LuaLaTeX の論文は手元で作って push する（2026-10-09）
         run: |
           args=""
           [ -n "${{ inputs.theme }}" ] && args="$args --theme ${{ inputs.theme }}"

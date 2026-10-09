@@ -42,7 +42,9 @@ const deps = {
       for (const j of jobs) {
         sizes[j.file] = j.type === 'pdf'
           ? await r.htmlToPdf(browser, j.html, j.file, j)
-          : await r.svgToPng(browser, j.svg, j.file);
+          : j.type === 'svgpdf'
+            ? await r.svgToPdf(browser, j.svg, j.file)
+            : await r.svgToPng(browser, j.svg, j.file);
       }
       return sizes;
     });
@@ -241,6 +243,63 @@ function links(dir) {
 }
 
 /**
+ * 論文 PDF を作る方法。既定は LuaLaTeX（ユーザー指示 2026-10-09）。
+ * PAPER_ENGINE=chrome にすると、従来どおり HTML を Chrome で PDF にする（LuaLaTeX の無い GitHub Actions 用）
+ */
+function paperEngine() {
+  const v = String(process.env.PAPER_ENGINE || config.paperEngine || 'lualatex').trim().toLowerCase();
+  if (!['lualatex', 'chrome'].includes(v)) throw new Error('PAPER_ENGINE は lualatex か chrome（' + v + '）');
+  return v;
+}
+
+/**
+ * 論文（日本語版・英語版）を LuaLaTeX で組む。outDir に paper-*.tex と forest-*.pdf と paper-*.pdf を書く。
+ * svg を渡さなければ、ここで図を描く（rebuild-tex.js 用）。
+ */
+async function buildTexPapers(report, outDir, svgIn) {
+  const { Bibliography, ETAL } = require('./lib/cite');
+  const paper = require('./lib/paper');
+  const tex = require('./lib/tex');
+  const { forestSvg } = require('./lib/forest');
+  if (!tex.available()) throw new Error('lualatex が見つかりません（TeX Live を入れるか、PAPER_ENGINE=chrome にしてください）');
+  fs.mkdirSync(outDir, { recursive: true });
+  const l = links(report.dir || path.basename(outDir));
+  const et = report.theme.effect;
+  const bibStudies = report.studies.map((s) => ({ sid: s.sid, paper: s.paper }));
+  const newBib = () => ({ en: new Bibliography(bibStudies, 'ieee'), ja: new Bibliography(bibStudies, 'jset') });
+  let svg = svgIn;
+  if (!svg) {
+    const draw = (lang, b) => forestSvg(report.studies.map((s, i) => ({
+      label: b.narrative(s.sid).split(ETAL).join('et al.'), yi: s.effect.yi, vi: s.effect.vi, weight: report.analysis.overall.weights[i]
+    })), report.analysis.overall, { effectType: et, lang });
+    const probe = newBib().en;
+    paper.buildItelHtml(report, report.text.en, '', probe, l);
+    const ordered = new Bibliography(bibStudies, 'ieee');
+    probe.order.forEach((k) => ordered.use(k));
+    svg = { en: draw('en', ordered), ja: draw('ja', newBib().ja) };
+  }
+  const figSizes = await deps.render([
+    { type: 'svgpdf', svg: svg.en, file: path.join(outDir, 'forest-en.pdf') },
+    { type: 'svgpdf', svg: svg.ja, file: path.join(outDir, 'forest-ja.pdf') }
+  ]);
+  const sizes = { ...figSizes };
+  const warnings = [];
+  const files = {
+    ja: tex.buildJsetTex(report, report.text.ja, report.text.en, newBib().ja, l, 'forest-ja.pdf'),
+    en: tex.buildItelTex(report, report.text.en, newBib().en, l, 'forest-en.pdf')
+  };
+  for (const lang of ['ja', 'en']) {
+    const texFile = path.join(outDir, `paper-${lang}.tex`);
+    fs.writeFileSync(texFile, files[lang], 'utf8');
+    const r = tex.compile(texFile);
+    sizes[r.pdf] = fs.statSync(r.pdf).size;
+    if (r.missing.length) throw new Error(`paper-${lang}.tex: 書体に無い文字があります\n  ` + r.missing.join('\n  '));
+    if (r.overfull) warnings.push(`paper-${lang}.tex: 行がはみ出している箇所が ${r.overfull} か所（8pt 超）`);
+  }
+  return { sizes, warnings };
+}
+
+/**
  * report から全ファイルを作る（rebuild.js からも呼ぶ）
  *   日本語版 = JSET の体裁（参考文献は JSET の形）、英語版 = ITEL の体裁（参考文献は IEEE の形）
  */
@@ -283,19 +342,31 @@ async function build(report, outDir) {
 
   ['en', 'ja'].forEach((lang) => {
     fs.writeFileSync(path.join(outDir, `forest-${lang}.svg`), svg[lang], 'utf8');
-    fs.writeFileSync(path.join(outDir, `paper-${lang}.html`), html[lang], 'utf8');
+    if (paperEngine() === 'chrome') fs.writeFileSync(path.join(outDir, `paper-${lang}.html`), html[lang], 'utf8');
   });
 
   const articleHtml = content.buildArticleHtml(report, report.text.article, newBib().ja, l, false);
   fs.writeFileSync(path.join(outDir, 'article-ja.html'), articleHtml, 'utf8');
   fs.writeFileSync(path.join(outDir, 'studies.csv'), content.buildCsv(report), 'utf8');
 
-  const sizes = await deps.render([
-    { type: 'pdf', html: html.en, file: path.join(outDir, 'paper-en.pdf'), ...paper.margins(report, 'en'), lang: 'en' },
-    { type: 'pdf', html: html.ja, file: path.join(outDir, 'paper-ja.pdf'), ...paper.margins(report, 'ja'), lang: 'ja' },
-    { type: 'png', svg: svg.ja, file: path.join(outDir, 'forest-ja.png') },
-    { type: 'png', svg: svg.jaLarge, file: path.join(outDir, 'forest-article.png') }
-  ]);
+  let sizes;
+  if (paperEngine() === 'chrome') {
+    sizes = await deps.render([
+      { type: 'pdf', html: html.en, file: path.join(outDir, 'paper-en.pdf'), ...paper.margins(report, 'en'), lang: 'en' },
+      { type: 'pdf', html: html.ja, file: path.join(outDir, 'paper-ja.pdf'), ...paper.margins(report, 'ja'), lang: 'ja' },
+      { type: 'png', svg: svg.ja, file: path.join(outDir, 'forest-ja.png') },
+      { type: 'png', svg: svg.jaLarge, file: path.join(outDir, 'forest-article.png') }
+    ]);
+  } else {
+    // 論文は LuaLaTeX で組む（図は Chrome で SVG からベクターの PDF にして読み込む）。記事用の PNG は従来どおり
+    const png = await deps.render([
+      { type: 'png', svg: svg.ja, file: path.join(outDir, 'forest-ja.png') },
+      { type: 'png', svg: svg.jaLarge, file: path.join(outDir, 'forest-article.png') }
+    ]);
+    const tex = await buildTexPapers(report, outDir, svg);
+    sizes = { ...png, ...tex.sizes };
+    report.warnings = (report.warnings || []).concat(tex.warnings);
+  }
 
   // 後から作り直せるように、材料をすべて残す（models は Set なので配列にする）
   const data = { ...report, models: [...report.models], dir };
@@ -410,4 +481,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main, collect, analyzeAndWrite, build, links, writeIndex, dedupe, dates, deps, options };
+module.exports = { main, collect, analyzeAndWrite, build, buildTexPapers, paperEngine, links, writeIndex, dedupe, dates, deps, options };

@@ -14,6 +14,8 @@ const path = require('path');
 
 const RENDER = process.argv.includes('--render');
 const LIVE = process.argv.includes('--live');
+// 既定の論文の組み方は LuaLaTeX。通しの検査は偽の描画に差し替えるので、従来の HTML → PDF の経路で動かす（LuaLaTeX は texTest で別に確かめる）
+process.env.PAPER_ENGINE = 'chrome';
 const checks = [];
 function check(name, ok, detail) {
   checks.push([name, !!ok]);
@@ -652,6 +654,43 @@ async function pipelineTest() {
   fs.rmSync(tmp, { recursive: true, force: true });
 }
 
+// ============================================================
+// LuaLaTeX（論文の組み方）
+// ============================================================
+
+async function texTest() {
+  const tex = require('./lib/tex');
+  check('TeX: <i> <b> <sup> を命令にし、記号を逃がす',
+    tex.htmlToTex('<i>r</i> = &lt;5% &amp; a_b <b>x</b><sup>2</sup>') === '\\textit{r} = <5\\% \\& a\\_b \\textbf{x}\\textsuperscript{2}',
+    tex.htmlToTex('<i>r</i> = &lt;5% &amp; a_b <b>x</b><sup>2</sup>'));
+  check('TeX: リンクは \\url にし、& を戻す',
+    tex.htmlToTex('<a href="https://x.org/a?b=1&amp;c=2">https://x.org/a?b=1&amp;c=2</a>') === '\\url{https://x.org/a?b=1&c=2}');
+  const e = tex.escText('−.34 と "ab" と\u3000と\u2011');
+  check('TeX: 負号は数式の負号、直線の引用符は “ ”、全角空白と非改行ハイフンを置き換える',
+    e.includes('\\ensuremath{-}.34') && e.includes('\u201cab\u201d') && e.includes('\\hspace{1em}') && !e.includes('\u2011'), e);
+  check('TeX: 論文の組み方は既定で lualatex、PAPER_ENGINE で chrome に切り替えられる',
+    (() => { const s = process.env.PAPER_ENGINE; delete process.env.PAPER_ENGINE; const a = require('./run').paperEngine(); process.env.PAPER_ENGINE = 'chrome'; const b = require('./run').paperEngine(); process.env.PAPER_ENGINE = s; return a === 'lualatex' && b === 'chrome'; })());
+
+  // 本物の LuaLaTeX（--render のときだけ。保存済みの報告を日英とも組み、PDF の中身を確かめる）
+  if (RENDER && tex.available()) {
+    const src = path.join(__dirname, 'reports', '2026-10-06-math-anxiety-achievement', 'data.json');
+    if (fs.existsSync(src)) {
+      const report = JSON.parse(fs.readFileSync(src, 'utf8'));
+      report.models = new Set(report.models || []);
+      const out = path.join(__dirname, '.cache', 'test-render', 'tex');
+      fs.mkdirSync(out, { recursive: true });
+      const r = await require('./run').buildTexPapers(report, out);
+      const pdfs = ['paper-ja.pdf', 'paper-en.pdf'].map((f) => path.join(out, f));
+      check('TeX: 日英の PDF ができる（%PDF で始まり 50KB 以上）',
+        pdfs.every((f) => fs.existsSync(f) && fs.statSync(f).size > 50000 && fs.readFileSync(f).slice(0, 4).toString() === '%PDF'), JSON.stringify(r.sizes));
+      const text = (f) => require('child_process').spawnSync('pdftotext', ['-enc', 'UTF-8', f, '-'], { encoding: 'utf8' }).stdout || '';
+      check('TeX: 日本語版に抄録・表3・参考文献・Summary があり、英語版に Abstract・Table 3・References がある',
+        /キーワード/.test(text(pdfs[0])) && /表３/.test(text(pdfs[0])) && /参考文献/.test(text(pdfs[0])) && /Summary/.test(text(pdfs[0])) &&
+        /Abstract/.test(text(pdfs[1])) && /Table 3/.test(text(pdfs[1])) && /References/.test(text(pdfs[1])));
+    }
+  }
+}
+
 async function liveTest() {
   const theme = config.themes[0];
   const oa = await require('./lib/openalex').search(theme);
@@ -669,6 +708,7 @@ async function liveTest() {
   await llmTest();
   await localLlmTest();
   await pipelineTest();
+  await texTest();
   if (LIVE) await liveTest();
   const ng = checks.filter((c) => !c[1]);
   console.log(`\n${checks.length - ng.length} / ${checks.length} 項目 OK`);

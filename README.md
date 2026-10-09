@@ -35,7 +35,8 @@ GitHub Actions だけで動きます。
    1研究ずつ除いた感度分析。**計算はすべてプログラムで行い、言語モデルには計算させない**
 6. **文章** — 英語版の「はじめに・考察・まとめ」を言語モデルが書き、日本語に訳す（日英で同じ内容にするため）。
    方法と結果の文、表、図、参考文献はプログラムが書く。文献は書誌データから組み立て、言語モデルには書かせない
-7. **PDF** — Chrome で HTML から PDF を作る
+7. **PDF** — **LuaLaTeX** で組む（日本語版は B5・2段組の JSET 風、英語版は A4・2段組の ITEL 風。`paper-ja.tex` と `paper-en.tex` も残る）。
+   図は Chrome で SVG からベクターの PDF にして読み込む。LuaLaTeX の無い環境（GitHub Actions）では `PAPER_ENGINE=chrome` で従来どおり HTML から Chrome で PDF を作る
 8. **投稿** — PDF をリポジトリに push し、リンク先が実際に開けることを確かめてから、記事を WordPress へメールで送る
 
 効果量を計算できた研究が5本に満たなければ、そのテーマはあきらめて次のテーマで作り直します（1回に3テーマまで）。
@@ -68,7 +69,9 @@ node test.js            # 自己検査（通信と言語モデルは偽物）
 node test.js --render   # 本物の Chrome / Edge で PDF を作って .cache/test-render/ に残す（見た目の確認用）
 node test.js --live     # OpenAlex と J-STAGE にだけ本物で当てる
 node run.js --dry-run --theme math-fraction-instruction   # .cache/dry-run/ に書き出す（台帳は触らない）
-node rebuild.js reports/<フォルダ>                        # 書式を直したとき、保存した材料から PDF を作り直す
+node rebuild.js reports/<フォルダ>                        # 書式を直したとき、保存した材料から PDF を作り直す（論文は LuaLaTeX）
+node rebuild-tex.js reports/<フォルダ> [出力先]            # 論文（日英）だけを LuaLaTeX で組み直す。出力先を指定すると reports に触れず試し組みできる
+LLM_PRIMARY=local node run.js --force                      # 外部の LLM API を使わず、手元の Claude Code が応答する（lib/local.js）
 node send-wp.js --show  # 送る記事の件名と本文を見る
 ```
 
