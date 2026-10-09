@@ -1,6 +1,6 @@
 \documentclass[
   lualatex, ja=standard, paper={182mm,257mm}, twocolumn, fontsize=8.5pt, baselineskip=13.5pt,
-  line_length=24zw, column_gap=6.1mm, number_of_lines=45, head_space=24.5mm, gutter=0mm
+  line_length=24zw, column_gap=6.1mm, number_of_lines=45, head_space=24.5mm, gutter=16.25mm
 ]{jlreq}
 \usepackage[haranoaji]{luatexja-preset}
 \usepackage{luatexja-fontspec}
@@ -39,7 +39,7 @@
 \begin{center}\parbox{\dimexpr\textwidth-12mm\relax}{\setlength{\parindent}{1\zw}早期教育におけるプログラミング的思考スキルの育成は重要性を増しており，学校は多様な指導法を模索している．国内外のオープンアクセス論文から条件に合う６本 (参加者450人) を自動で選別・抽出し，数値を本文と照合したうえでランダム効果モデルにより統合した．統合値は \textit{g} = 0.51，95\%信頼区間 [\ensuremath{-}0.15, 1.16]，\textit{I}² = 80.9\% であった．アンプラグド活動はプログラミング的思考の育成に一定の可能性を示すが，小中学校での効果検証にはさらなる厳密な研究が必要である．\par
 {\gtfamily キーワード}：メタ分析，アンプラグド活動，プログラミング的思考，初等教育，コンピュータサイエンス教育\par}\end{center}\vspace{4pt}
 }]
-\footnotetext[0]{\fontsize{7.5pt}{11pt}\selectfont 2026年10月4日公開}
+{\makeatletter\renewcommand{\thefootnote}{}\let\@makefnmark\@empty\footnotetext{\fontsize{7.5pt}{11pt}\selectfont 2026年10月4日公開}\makeatother}
 \renewcommand{\thefootnote}{†}\footnotetext{\fontsize{7.5pt}{11pt}\selectfont Society for Educational Data Analysis (SEDA)：Effects of Unplugged Activities on Computational Thinking in School Students: A Meta-Analysis}
 \chap{1}{はじめに}
 小学校や中学校では，デジタル社会に向けて児童生徒を準備させるために，コンピュータサイエンスの概念をカリキュラムに組み込む動きが強まっている．早期におけるプログラミング的思考 (computational thinking) の育成は，問題解決能力や論理的思考力を養うために不可欠であると考えられている．しかし，学校はコンピュータやインターネット環境の不足といった資源の制約に直面することが多く，これがデジタル機器を用いたプログラミング授業の実施を妨げる要因となっている．

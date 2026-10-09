@@ -1,6 +1,6 @@
 \documentclass[
   lualatex, ja=standard, paper={182mm,257mm}, twocolumn, fontsize=8.5pt, baselineskip=13.5pt,
-  line_length=24zw, column_gap=6.1mm, number_of_lines=45, head_space=24.5mm, gutter=0mm
+  line_length=24zw, column_gap=6.1mm, number_of_lines=45, head_space=24.5mm, gutter=16.25mm
 ]{jlreq}
 \usepackage[haranoaji]{luatexja-preset}
 \usepackage{luatexja-fontspec}
@@ -39,7 +39,7 @@
 \begin{center}\parbox{\dimexpr\textwidth-12mm\relax}{\setlength{\parindent}{1\zw}分数は数学学習における根強い難点であり，その理解を促す指導法の特定は初等・中等教育の教師にとって重要である．国内外のオープンアクセス論文から条件に合う10本 (参加者687人) を自動で選別・抽出し，数値を本文と照合したうえでランダム効果モデルにより統合した．統合値は \textit{g} = 0.92，95\%信頼区間 [0.50, 1.35]，\textit{I}² = 84.5\% であった．標的を絞った分数指導は１〜９年生の分数理解を有意に改善しうるが，研究間の異質性には慎重な解釈を要する．\par
 {\gtfamily キーワード}：メタ分析，分数指導，数学教育，小学校，中学校，指導的介入\par}\end{center}\vspace{4pt}
 }]
-\footnotetext[0]{\fontsize{7.5pt}{11pt}\selectfont 2026年9月29日公開}
+{\makeatletter\renewcommand{\thefootnote}{}\let\@makefnmark\@empty\footnotetext{\fontsize{7.5pt}{11pt}\selectfont 2026年9月29日公開}\makeatother}
 \renewcommand{\thefootnote}{†}\footnotetext{\fontsize{7.5pt}{11pt}\selectfont Society for Educational Data Analysis (SEDA)：Effects of Fraction Instruction Interventions on Students' Fraction Understanding: A Meta-Analysis}
 \chap{1}{はじめに}
 分数は初等・中等教育の数学において概念的に最も難解な単元の一つとして広く認識されており，これらの学年段階における分数理解の困難は，後の代数などの高度な数学的内容における困難と関連することが多い．１〜９年生は，分数の正式な指導が導入され定着する時期にあたるため，分数の概念的・手続き的理解を支える指導実践を特定する上で重要な時期である．

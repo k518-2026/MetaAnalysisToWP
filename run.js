@@ -266,18 +266,13 @@ async function buildTexPapers(report, outDir, svgIn) {
   const l = links(report.dir || path.basename(outDir));
   const et = report.theme.effect;
   const bibStudies = report.studies.map((s) => ({ sid: s.sid, paper: s.paper }));
-  const newBib = () => ({ en: new Bibliography(bibStudies, 'ieee'), ja: new Bibliography(bibStudies, 'jset') });
-  let svg = svgIn;
-  if (!svg) {
-    const draw = (lang, b) => forestSvg(report.studies.map((s, i) => ({
-      label: b.narrative(s.sid).split(ETAL).join('et al.'), yi: s.effect.yi, vi: s.effect.vi, weight: report.analysis.overall.weights[i]
-    })), report.analysis.overall, { effectType: et, lang });
-    const probe = newBib().en;
-    paper.buildItelHtml(report, report.text.en, '', probe, l);
-    const ordered = new Bibliography(bibStudies, 'ieee');
-    probe.order.forEach((k) => ordered.use(k));
-    svg = { en: draw('en', ordered), ja: draw('ja', newBib().ja) };
-  }
+  // 英語版は APA 第7版（本文は「著者, 年」、参考文献は姓のアルファベット順）、日本語版は JSET
+  const newBib = () => ({ en: new Bibliography(bibStudies, 'apa'), ja: new Bibliography(bibStudies, 'jset') });
+  const draw = (lang, b) => forestSvg(report.studies.map((s, i) => ({
+    label: b.narrative(s.sid).split(ETAL).join('et al.'), yi: s.effect.yi, vi: s.effect.vi, weight: report.analysis.overall.weights[i]
+  })), report.analysis.overall, { effectType: et, lang });
+  // 図の研究名は様式に合わせる（英語版 Lee et al. (2021)、日本語版 LEE et al. (2021)）。build() が渡す英語版の図は IEEE の番号つきなので使わない
+  const svg = { en: draw('en', newBib().en), ja: (svgIn && svgIn.ja) || draw('ja', newBib().ja) };
   const figSizes = await deps.render([
     { type: 'svgpdf', svg: svg.en, file: path.join(outDir, 'forest-en.pdf') },
     { type: 'svgpdf', svg: svg.ja, file: path.join(outDir, 'forest-ja.pdf') }
@@ -286,7 +281,7 @@ async function buildTexPapers(report, outDir, svgIn) {
   const warnings = [];
   const files = {
     ja: tex.buildJsetTex(report, report.text.ja, report.text.en, newBib().ja, l, 'forest-ja.pdf'),
-    en: tex.buildItelTex(report, report.text.en, newBib().en, l, 'forest-en.pdf')
+    en: tex.buildApaTex(report, report.text.en, newBib().en, l, 'forest-en.pdf')
   };
   for (const lang of ['ja', 'en']) {
     const texFile = path.join(outDir, `paper-${lang}.tex`);

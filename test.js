@@ -668,6 +668,26 @@ async function texTest() {
   const e = tex.escText('−.34 と "ab" と\u3000と\u2011');
   check('TeX: 負号は数式の負号、直線の引用符は “ ”、全角空白と非改行ハイフンを置き換える',
     e.includes('\\ensuremath{-}.34') && e.includes('\u201cab\u201d') && e.includes('\\hspace{1em}') && !e.includes('\u2011'), e);
+  // APA 第7版の引用と参考文献
+  {
+    const mk = (key, authors, year, title, extra = {}) => ({ sid: key, paper: { authors, authorsEn: authors, year, title, venue: 'Journal of Testing', volume: '4', issue: '2', pages: '96-114', doi: '10.1/x' + key, ...extra } });
+    const b = new cite.Bibliography([
+      mk('S1', ['Ömer KARAMERT', 'Ayşe Vardar'], '2021', 'The Effect of Gamification on Young Learners and Mathematics in Turkey'),
+      mk('S2', ['Ann Lee', 'Bo Kim', 'Cy Park'], '2019', 'Fractions Instruction'),
+      mk('S3', ['Dee White'], '2019', 'Hubungan Math Anxiety Dengan Hasil Belajar Siswa Kelas Tinggi')
+    ], 'apa');
+    check('APA: 括弧の引用は「姓 & 姓, 年」、3名以上は et al.、姓の順に並べ、すべて大文字の姓は直す',
+      b.cite(['S2', 'S1']) === '(Karamert & Vardar, 2021; Lee et al., 2019)', b.cite(['S2', 'S1']));
+    check('APA: 文頭で動詞が続く [S] は「姓 and 姓 (年)」の文中の形にする',
+      b.resolve('[S1] reported a result. See [S3].') === 'Karamert and Vardar (2021) reported a result. See (White, 2019).', b.resolve('[S1] reported a result. See [S3].'));
+    const refs = b.references().map((r) => r.segs.map((s) => s.text).join(''));
+    check('APA: 参考文献は姓のアルファベット順で「姓, 名の頭文字 (年). 題名. 誌名, 巻(号), 頁. https://doi.org/…」、題名は文頭だけ大文字',
+      refs.length === 3 && /^\*Karamert, Ö\., & Vardar, A\. \(2021\)\. The effect of gamification on young learners and mathematics in Turkey\. Journal of Testing, 4\(2\), 96–114\. https:\/\/doi\.org\/10\.1\/xS1$/.test(refs[0]), refs[0]);
+    check('APA: 英語でない題名（インドネシア語など）は大文字小文字を直さない',
+      cite.sentenceCase('Hubungan Math Anxiety Dengan Hasil Belajar Siswa Kelas Tinggi') === 'Hubungan Math Anxiety Dengan Hasil Belajar Siswa Kelas Tinggi');
+    check('APA: すでに文頭だけ大文字の題名は触らない',
+      cite.sentenceCase('Assessing math anxiety in elementary schoolchildren through a Spanish version of the Scale for Early Mathematics Anxiety (SEMA)') === 'Assessing math anxiety in elementary schoolchildren through a Spanish version of the Scale for Early Mathematics Anxiety (SEMA)');
+  }
   check('TeX: 論文の組み方は既定で lualatex、PAPER_ENGINE で chrome に切り替えられる',
     (() => { const s = process.env.PAPER_ENGINE; delete process.env.PAPER_ENGINE; const a = require('./run').paperEngine(); process.env.PAPER_ENGINE = 'chrome'; const b = require('./run').paperEngine(); process.env.PAPER_ENGINE = s; return a === 'lualatex' && b === 'chrome'; })());
 
