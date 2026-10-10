@@ -655,6 +655,67 @@ async function pipelineTest() {
 }
 
 // ============================================================
+// Ollama に下書きを作らせ、Claude Code が確認・修正する（LLM_PRIMARY=ollama）
+// ============================================================
+
+async function ollamaTest() {
+  const fs2 = require('fs');
+  const os2 = require('os');
+  const llm = require('./lib/llm');
+  const ollama = require('./lib/ollama');
+  const saved = { fetch: global.fetch, primary: process.env.LLM_PRIMARY, dir: process.env.LOCAL_LLM_DIR, host: process.env.OLLAMA_HOST, model: process.env.OLLAMA_MODEL };
+  const d = fs2.mkdtempSync(path.join(os2.tmpdir(), 'ollama-test-'));
+  process.env.LLM_PRIMARY = 'ollama';
+  process.env.LOCAL_LLM_DIR = d;
+  process.env.OLLAMA_HOST = 'http://ollama.test:11434/';
+  process.env.OLLAMA_MODEL = 'fake-model:1b';
+  const calls = [];
+  global.fetch = async (url, opts) => {
+    const body = JSON.parse(opts.body);
+    calls.push({ url, body });
+    const lead = body.format && body.format.properties && body.format.properties.lead;
+    const content = lead ? '{"lead":"下書きのリード"}' : '{"decisions":[{"n":1,"include":true,"score":8,"reason":"ok"}]}';
+    return { ok: true, status: 200, json: async () => ({ message: { content }, done: true, done_reason: 'stop' }), text: async () => content };
+  };
+  const log = console.log;
+  console.log = () => {};
+  try {
+    llm._reset();
+    const screenSchema = { type: 'OBJECT', properties: { decisions: { type: 'ARRAY', items: { type: 'OBJECT', properties: { n: { type: 'INTEGER' } } } } } };
+    const a = await llm.generateJson('screen prompt', screenSchema);
+    check('Ollama: 要旨の選別（screen）は下書きをそのまま使い、確認の依頼は作らない',
+      a.decisions[0].n === 1 && fs2.readdirSync(d).length === 0, JSON.stringify({ a, files: fs2.readdirSync(d) }));
+    const c0 = calls[0];
+    check('Ollama: ホスト（末尾の / を除く）とモデルを使い、型の大文字を JSON スキーマの小文字にし、思考は切る',
+      c0.url === 'http://ollama.test:11434/api/chat' && c0.body.model === 'fake-model:1b' && c0.body.think === false &&
+      c0.body.format.type === 'object' && c0.body.format.properties.decisions.items.properties.n.type === 'integer', JSON.stringify(c0.body.format));
+    const articleSchema = { type: 'OBJECT', properties: { lead: { type: 'STRING' } } };
+    const p = llm.generateJson('article prompt', articleSchema);
+    await new Promise((r) => setTimeout(r, 400));
+    const req = JSON.parse(fs2.readFileSync(path.join(d, '001.request.json'), 'utf8'));
+    fs2.writeFileSync(path.join(d, '001.response.json'), '{"lead":"確認・修正したリード"}', 'utf8');
+    const b = await p;
+    check('Ollama: 記事などは、下書きと種類を添えた依頼を書き、Claude Code が確認・修正した答えを使う',
+      req.kind === 'article' && req.draft.lead === '下書きのリード' && b.lead === '確認・修正したリード', JSON.stringify({ req, b }));
+    check('Ollama: 記録するモデル名に、下書き（Ollama）と確認（Claude Code）の両方が入る',
+      /fake-model:1b \(Ollama; drafts\) and claude-sonnet-5-5 \(Claude Code; review and revision\)/.test(llm.usedModel()), llm.usedModel());
+    // つながらないときは API に切り替えず、はっきり失敗にする
+    global.fetch = async () => { throw new Error('connect ECONNREFUSED'); };
+    let msg = '';
+    try { await ollama.generateJson('x', null, llm.parseJson); } catch (e) { msg = e.message; }
+    check('Ollama: つながらないときは、他の API に切り替えず、接続先を示して失敗にする', /Ollama（http:\/\/ollama\.test:11434）につながりません/.test(msg), msg);
+  } finally {
+    console.log = log;
+    global.fetch = saved.fetch;
+    ['primary:LLM_PRIMARY', 'dir:LOCAL_LLM_DIR', 'host:OLLAMA_HOST', 'model:OLLAMA_MODEL'].forEach((x) => {
+      const [k, name] = x.split(':');
+      if (saved[k] === undefined) delete process.env[name]; else process.env[name] = saved[k];
+    });
+    llm._reset();
+  }
+}
+
+// ============================================================
 // LuaLaTeX（論文の組み方）
 // ============================================================
 
@@ -727,6 +788,7 @@ async function liveTest() {
   await unitTests();
   await llmTest();
   await localLlmTest();
+  await ollamaTest();
   await pipelineTest();
   await texTest();
   if (LIVE) await liveTest();

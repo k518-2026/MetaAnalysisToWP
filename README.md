@@ -55,9 +55,25 @@ GitHub Actions だけで動きます。
 
 **リポジトリは公開にしてください。** 記事の図と PDF へのリンクは GitHub の URL を使うので、非公開だと開けません。
 
+## 毎週の作り方（2026-10-18 の回から）
+
+**定例（Actions の schedule）は 2026-10-11 の回まで**（Gemini → Claude API）。それ以降は、手元で次の方式で作って push します。
+LAN の Ollama には GitHub から届かないため、Actions では動かせません（`weekly.yml` の `gate` が、10/12 以降の定例を何もせず終わらせます。手動実行は動きます）。
+
+1. **Ollama が下書きを作る**（`http://192.168.128.62:11434`、既定モデル gemma4:12b）。`LLM_PRIMARY=ollama node run.js --force`
+   - 要旨の選別は Ollama だけ。データの抽出・英語の文章・日本語訳・記事は、Ollama が下書きを作る
+2. **Claude Code（Sonnet 5.5 または Opus 5.5）が確認・修正する**。下書きごとに `.cache/local-llm/NNN.request.json`（`kind` と `draft` つき）が作られ、
+   確認・修正した答えを `NNN.response.json` に書くと次へ進む。見るのは、数値が事実と合っているか・引用 [S#] が正しい研究を指しているか・
+   因果の断定や言い過ぎが無いか・本文に無いことを書いていないか（抽出は、本文の該当箇所と照らす）
+3. 日本語版（JSET 風）・英語版（APA 第7版）の論文を **LuaLaTeX** で組み、記事（`article-ja.html`）を作る。余白と表の欠落を検査してから push
+4. WordPress へは、push のあとに Actions の「WordPress だけ送る」（既定は下書き）で送る（SMTP の秘密情報は GitHub にだけある）
+
+記録するモデル名は「gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)」。論文の方法・著者注記と台帳に入る。
+Ollama につながらないときは、他の API に切り替えず、接続先を示して止まる。
+
 ## 動かし方
 
-- **自動**: 毎週日曜 7:00（日本時間）に「Weekly meta-analysis」が動きます
+- **自動**: （2026-10-11 の回で終了）毎週日曜 7:00（日本時間）に「Weekly meta-analysis」が動きます
 - **手動**: Actions → Weekly meta-analysis → Run workflow。テーマの id を入れると、そのテーマで作ります
 - **WordPress だけ送り直す**: Actions → WordPress だけ送る（既定は下書き）
 

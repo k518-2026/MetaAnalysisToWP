@@ -41,7 +41,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 定例（schedule）は 2026-10-11 の回まで。それ以降は、LAN の Ollama に下書きを作らせ Claude Code が確認する方式で、
+  # 手元で作って push する（GitHub からは LAN の Ollama に届かない）。手動実行（workflow_dispatch）は日付に関係なく動く。
+  # 日付は UTC。10/11 の定例は土曜 22:00 UTC（10/10）に動き、遅れて日付をまたいでも 10/11 のうちは動かす。次の定例は 10/17 22:00 UTC
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [[ "$(date -u +%F)" > "2026-10-11" ]]; then
+            echo "go=false" >> "$GITHUB_OUTPUT"
+            echo "定例（スケジュール）は 2026-10-11 の回で終わりました。以降は手元（Ollama + Claude Code）で作ります。"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
   run:
+    needs: gate
+    if: ${{ needs.gate.outputs.go == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
 
