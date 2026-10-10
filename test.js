@@ -699,6 +699,14 @@ async function ollamaTest() {
       req.kind === 'article' && req.draft.lead === '下書きのリード' && b.lead === '確認・修正したリード', JSON.stringify({ req, b }));
     check('Ollama: 記録するモデル名に、下書き（Ollama）と確認（Claude Code）の両方が入る',
       /fake-model:1b \(Ollama; drafts\) and claude-sonnet-5-5 \(Claude Code; review and revision\)/.test(llm.usedModel()), llm.usedModel());
+    check('Ollama: num_ctx は入力の長さに合わせて増やし（上限 131072）、日本語は英語より多く見積もる',
+      ollama.contextFor('a'.repeat(2000)) === config.ollama.numCtx && ollama.contextFor('a'.repeat(90000)) > config.ollama.numCtx &&
+      ollama.contextFor('あ'.repeat(90000)) === 131072 && ollama.contextFor('あ'.repeat(30000)) > ollama.contextFor('a'.repeat(30000)));
+    // 入力が num_ctx を超えると Ollama は黙って前を切り捨てる。読み込んだ長さが枠いっぱいなら失敗にする
+    global.fetch = async () => ({ ok: true, status: 200, json: async () => ({ message: { content: '{"lead":"x"}' }, done: true, done_reason: 'stop', prompt_eval_count: config.ollama.numCtx }), text: async () => '' });
+    let cut = '';
+    try { await ollama.generateJson('短い依頼', null, llm.parseJson); } catch (e) { cut = e.message; }
+    check('Ollama: 入力が枠いっぱいまで読まれていたら、切り捨てとして失敗にする', /切り捨てられた可能性/.test(cut), cut);
     // つながらないときは API に切り替えず、はっきり失敗にする
     global.fetch = async () => { throw new Error('connect ECONNREFUSED'); };
     let msg = '';
