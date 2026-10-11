@@ -316,8 +316,8 @@ module.exports = {
     titlePrefix: '【メタ分析】',
     category: '教育メタ分析',
     tags: 'メタ分析,算数・数学教育,情報教育,教育研究',
-    // true: 下書きとして送る。見た目を確かめてから人が公開する（2026-10-06 に決めた。封鎖の再発を避けるため）。自動で公開するなら false
-    draft: true,
+    // true: 下書きとして送る。false: 公開する（2026-10-11 ユーザー指示。確認済みの印（ledger の ready）がある記事だけ、毎週日曜 5:00 JST に1本ずつ）
+    draft: false,
     publicize: false
   },
 

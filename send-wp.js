@@ -38,12 +38,13 @@ async function main(argv = process.argv) {
   const ledger = ledgerLib.load(ledgerFile);
 
   const dirArg = argValue('--dir', argv);
-  const run = dirArg
-    ? ledger.runs.find((r) => r.dir === dirArg)
-    : ledger.runs.filter((r) => r.status === ledgerLib.STATUS.DONE && !r.wpSentAt).pop();
+  // 指定なしのときは、確認済み（ready）で未送信のもののうち、最も古いものを送る（1回に1本）。
+  // 確認していない記事は、指定なしでは送らない（2026-10-11 ユーザー指示）
+  const dueRuns = ledger.runs.filter((r) => r.status === ledgerLib.STATUS.DONE && !r.wpSentAt && r.ready === true);
+  const run = dirArg ? ledger.runs.find((r) => r.dir === dirArg) : dueRuns[0];
   if (!run) {
     // 何も送らずに「成功」で終わると、送れたと思い込む。フォルダを指定した・下書きを頼んだときは失敗にする
-    const msg = dirArg ? '台帳にその報告がありません: ' + dirArg : '送っていない報告はありません。';
+    const msg = dirArg ? '台帳にその報告がありません: ' + dirArg : '送る報告（確認済みで未送信）はありません。';
     console.log(msg);
     const err = new Error(msg + (dirArg ? '' : '（フォルダ名を指定すれば、送信済みの報告も送り直せます: --dir <名前>）'));
     err.nothingToSend = true;

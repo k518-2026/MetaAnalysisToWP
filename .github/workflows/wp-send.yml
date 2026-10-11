@@ -20,6 +20,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: wordpress-send
+  cancel-in-progress: false
+
 jobs:
   send:
     runs-on: ubuntu-latest

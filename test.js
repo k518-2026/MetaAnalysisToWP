@@ -617,7 +617,8 @@ async function pipelineTest() {
   const hadLedger = fs.existsSync(realLedger) ? fs.readFileSync(realLedger) : null;
   const realReports = path.join(cwdRoot, config.paths.reports, '2026-10-04-math-fraction-instruction');
   try {
-    fs.copyFileSync(path.join(tmp, 'ledger.json'), realLedger);
+    // 送るのは確認済み（ready）のものだけ。テストの台帳には確認済みの印を付けて送る
+    { const tl = JSON.parse(fs.readFileSync(path.join(tmp, 'ledger.json'), 'utf8')); tl.runs.forEach((r) => { r.ready = true; }); fs.writeFileSync(realLedger, JSON.stringify(tl)); }
     fs.mkdirSync(realReports, { recursive: true });
     fs.copyFileSync(path.join(outDir, 'article-ja.html'), path.join(realReports, 'article-ja.html'));
     // 過去の報告の記事ファイルのように、リンクが残っているもの
@@ -646,6 +647,31 @@ async function pipelineTest() {
     let threw = false;
     try { console.log = () => {}; await sendWp.main(['node', 'send-wp.js']); } catch { threw = true; } finally { console.log = origLog; }
     check('送信: PDF がリポジトリに無ければ送らない', threw && sent.length === 1);
+    // 確認していない記事は、指定なしでは送らない。確認済みで未送信のうち、最も古いものを選ぶ
+    sendWp.deps.urlOk = async () => true;
+    // 送信の処理は一覧（reports/README.md）も作り直すので、本物の一覧を退避して、終わったら戻す
+    const realIndex = path.join(cwdRoot, config.paths.reports, 'README.md');
+    const indexBefore = fs.existsSync(realIndex) ? fs.readFileSync(realIndex) : null;
+    try {
+      const rec = (title, extra) => ({ date: '2026-10-0' + title.length, themeId: 'x-' + title, status: 'done', dir: '2026-10-04-math-fraction-instruction', titleJa: title, k: 6, pooled: '', models: [], warnings: [], wpSentAt: '', ...extra });
+      const syn = { runs: [rec('未確認でより古い', {}), rec('確認済みで古い', { ready: true }), rec('確認済みで新しい', { ready: true })] };
+      fs.writeFileSync(realLedger, JSON.stringify(syn));
+      sent.length = 0;
+      console.log = () => {};
+      try { await sendWp.main(['node', 'send-wp.js']); } finally { console.log = origLog; }
+      check('送信: 指定なしでは、確認済みで未送信の最も古いものを選ぶ（未確認は送らない）', sent.length === 1 && sent[0].subject === '【メタ分析】確認済みで古い', sent.map((s) => s.subject).join(' / '));
+      const after2 = JSON.parse(fs.readFileSync(realLedger, 'utf8'));
+      check('送信: 送った1本だけに送信日時が付き、ほかは付かない', !!after2.runs[1].wpSentAt && !after2.runs[0].wpSentAt && !after2.runs[2].wpSentAt);
+      const onlyUnready = { runs: [rec('未確認だけ', {})] };
+      fs.writeFileSync(realLedger, JSON.stringify(onlyUnready));
+      sent.length = 0;
+      console.log = () => {};
+      let nothing = null;
+      try { nothing = await sendWp.main(['node', 'send-wp.js']); } finally { console.log = origLog; }
+      check('送信: 確認済みが無ければ何も送らない（未確認は送らない）', nothing === null && sent.length === 0);
+    } finally {
+      if (indexBefore) fs.writeFileSync(realIndex, indexBefore); else if (fs.existsSync(realIndex)) fs.rmSync(realIndex);
+    }
   } finally {
     console.log = origLog;
     if (hadLedger) fs.writeFileSync(realLedger, hadLedger); else fs.rmSync(realLedger, { force: true });
@@ -828,13 +854,20 @@ async function liveTest() {
 }
 
 (async () => {
-  await unitTests();
-  await llmTest();
-  await localLlmTest();
-  await ollamaTest();
-  await pipelineTest();
-  await texTest();
-  if (LIVE) await liveTest();
+  // 試験の途中で、本物の一覧（reports/README.md）が試験用の台帳で書き換わることがあるので、最初に退避して最後に戻す
+  const realIndexAll = path.join(__dirname, config.paths.reports, 'README.md');
+  const indexAtStart = fs.existsSync(realIndexAll) ? fs.readFileSync(realIndexAll) : null;
+  try {
+    await unitTests();
+    await llmTest();
+    await localLlmTest();
+    await ollamaTest();
+    await pipelineTest();
+    await texTest();
+    if (LIVE) await liveTest();
+  } finally {
+    if (indexAtStart) fs.writeFileSync(realIndexAll, indexAtStart);
+  }
   const ng = checks.filter((c) => !c[1]);
   console.log(`\n${checks.length - ng.length} / ${checks.length} 項目 OK`);
   if (ng.length) {

@@ -55,10 +55,14 @@ GitHub Actions だけで動きます。
 
 **リポジトリは公開にしてください。** 記事の図と PDF へのリンクは GitHub の URL を使うので、非公開だと開けません。
 
-## 毎週の作り方（2026-10-18 の回から）
+## 毎週の作り方（2026-10-11 の決定）
 
-**定例（Actions の schedule）は 2026-10-11 の回まで**（Gemini → Claude API）。それ以降は、手元で次の方式で作って push します。
-LAN の Ollama には GitHub から届かないため、Actions では動かせません（`weekly.yml` の `gate` が、10/12 以降の定例を何もせず終わらせます。手動実行は動きます）。
+作成と公開を分けています。
+
+- **手元（不定期・Claude Code が起動しているとき）**: Ollama の空きを見て論文と記事を作り、Claude（Sonnet 5.5 か Opus 5.5）が確認・修正して、GitHub に push する。確認が済んだものには、台帳に **確認済みの印（ready）** を付けて push する。
+- **GitHub（毎週日曜 5:00 JST）**: 確認済み（ready）で未送信の記事のうち最も古いものを1本、WordPress に**公開**する。作成は行わない（Gemini も外部の言語モデル API も使わない）。
+
+手元で作るときは、LAN の Ollama にだけ届く PC で実行します（Actions からは届きません）。
 
 1. **Ollama が下書きを作る**（手元の LAN にある Ollama サーバー。接続先は環境変数 `OLLAMA_HOST`（`http://<ホスト>:11434` の形）で渡し、アドレスはリポジトリに書かない。
    使うモデルは下の「使っている AI モデル」）。`LLM_PRIMARY=ollama node run.js --force`
@@ -74,7 +78,9 @@ LAN の Ollama には GitHub から届かないため、Actions では動かせ�
      ③ N と p が矛盾していないか（例: N=56 で r=−.58 なのに p=.049）
      ④ 対象が 1〜9 年生か（高校生・大学生・教員を含む主な標本は不適格）
 3. 日本語版（JSET 風）・英語版（APA 第7版）の論文を **LuaLaTeX** で組み、記事（`article-ja.html`）を作る。余白と表の欠落を検査してから push
-4. WordPress へは、push のあとに Actions の「WordPress だけ送る」（既定は下書き）で送る（SMTP の秘密情報は GitHub にだけある）
+4. 確認が済んだら、台帳（ledger.json）の該当の報告に `"ready": true` を付けて push する（確認した人・時刻・確認の内容を `readyBy`・`readyAt` に書く）。
+   公開は、毎週日曜 5:00 JST の送信（`weekly.yml`）が行う。1回に1本（古い順）。今すぐ送るときは Actions の「WordPress だけ送る」（`wp-send.yml`）を使う。
+   SMTP の秘密情報は GitHub にだけある。
 
 ## 使っている AI モデル
 
@@ -89,9 +95,9 @@ Ollama につながらないときは、他の API に切り替えず、接続�
 
 ## 動かし方
 
-- **自動**: （2026-10-11 の回で終了）毎週日曜 7:00（日本時間）に「Weekly meta-analysis」が動きます
-- **手動**: Actions → Weekly meta-analysis → Run workflow。テーマの id を入れると、そのテーマで作ります
-- **WordPress だけ送り直す**: Actions → WordPress だけ送る（既定は下書き）
+- **自動**: 毎週日曜 5:00（日本時間）に、確認済みで未送信の記事を1本、WordPress に公開します（`weekly.yml`）
+- **手動で作る**: 手元で `LLM_PRIMARY=ollama node --env-file=.env run.js --force --theme <id>`（`OLLAMA_HOST` を `.env` に書く）。作成後に確認し、ready を付けて push する
+- **WordPress だけ送り直す**: Actions → WordPress だけ送る（既定は確認済みの最も古い1本を公開。`draft` を選ぶと下書き）
 
 手元では次のように使えます（Node.js 20 以上と pdftotext が必要）。
 

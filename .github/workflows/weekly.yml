@@ -1,69 +1,36 @@
-name: Weekly meta-analysis
+name: 週1回の WordPress 公開（確認済みのものだけ）
 
-# 週1回のメタ分析 → WordPress
+# 毎週日曜 5:00（日本時間）に、確認済み（ledger の ready）で未送信の記事を1本、WordPress へ公開する。
+# 記事の作成はしない（作成は手元で行い、確認したものだけを GitHub に push して ready を付ける）。
+# Gemini と外部の言語モデル API は使わない。
 #
-#   テーマを決める → OpenAlex / J-STAGE で検索 → 要旨で選別 → 本文 PDF からデータを抽出（数値は本文と照合）
-#   → 効果量を統合 → 日本語版（JSET の体裁）と英語版（ITEL の体裁）の論文 PDF → 記事
-#   → reports/ をコミットして push → PDF がリポジトリに上がったのを確かめてから WordPress へメールで投稿
-#
-# 必要な Secrets: GEMINI_API_KEY, OPENALEX_API_KEY, WP_POST_EMAIL, SMTP_USER, SMTP_PASSWORD
-#                 （ANTHROPIC_API_KEY は Gemini が混雑し続けたときだけ使う）
+# 必要な Secrets: WP_POST_EMAIL, SMTP_USER, SMTP_PASSWORD
 
 on:
-  # 2026-10-05 に一時停止し、2026-10-06（封鎖の解除後）に再開した。WordPress へは下書きで送る（config.js の wordpress.draft）
   schedule:
-    - cron: '0 22 * * 6'   # 毎週日曜 07:00 (Asia/Tokyo) = 土曜 22:00 UTC
+    - cron: '0 20 * * 6'   # 土曜 20:00 UTC = 日曜 05:00 (Asia/Tokyo)
   workflow_dispatch:
     inputs:
-      theme:
-        description: 'テーマの id（空なら自動。config.js の themes を参照）'
+      dir:
+        description: 'reports/ の下のフォルダ名（空なら、確認済みで未送信の最も古いもの）'
         type: string
         default: ''
-      force:
-        description: '前回から3日たっていなくても作る'
+      draft:
+        description: '下書きとして送る（見え方の確認用。台帳は更新しない）'
         type: boolean
         default: false
-      send:
-        description: 'WordPress へ送る'
-        type: boolean
-        default: true
-      llm:
-        description: '最初に使う AI（gemini は無料だが混雑すると Claude に切り替わる。claude は従量課金）'
-        type: choice
-        options: [gemini, claude]
-        default: gemini
 
 permissions:
   contents: write
 
 concurrency:
-  group: weekly-meta-analysis
+  group: wordpress-send
   cancel-in-progress: false
 
 jobs:
-  # 定例（schedule）は 2026-10-11 の回まで。それ以降は、LAN の Ollama に下書きを作らせ Claude Code が確認する方式で、
-  # 手元で作って push する（GitHub からは LAN の Ollama に届かない）。手動実行（workflow_dispatch）は日付に関係なく動く。
-  # 日付は UTC。10/11 の定例は土曜 22:00 UTC（10/10）に動き、遅れて日付をまたいでも 10/11 のうちは動かす。次の定例は 10/17 22:00 UTC
-  gate:
+  send:
     runs-on: ubuntu-latest
-    outputs:
-      go: ${{ steps.g.outputs.go }}
-    steps:
-      - id: g
-        run: |
-          if [ "${{ github.event_name }}" = "schedule" ] && [[ "$(date -u +%F)" > "2026-10-11" ]]; then
-            echo "go=false" >> "$GITHUB_OUTPUT"
-            echo "定例（スケジュール）は 2026-10-11 の回で終わりました。以降は手元（Ollama + Claude Code）で作ります。"
-          else
-            echo "go=true" >> "$GITHUB_OUTPUT"
-          fi
-
-  run:
-    needs: gate
-    if: ${{ needs.gate.outputs.go == 'true' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 180
-
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -71,75 +38,23 @@ jobs:
         with:
           node-version: '20'
 
-      # 値は出さず、登録されているかどうかだけを出す（失敗の原因を切り分けるため）
-      - name: Secrets の登録状況
+      - run: npm install --no-audit --no-fund
+
+      - name: 公開（確認済みの記事）
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           WP_POST_EMAIL: ${{ secrets.WP_POST_EMAIL }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: |
-          for k in GEMINI_API_KEY OPENALEX_API_KEY ANTHROPIC_API_KEY WP_POST_EMAIL SMTP_USER SMTP_PASSWORD; do
-            if [ -n "${!k}" ]; then echo "$k: 登録あり"; else echo "$k: 未登録"; fi
-          done
-
-      - name: 自己検査（通信は偽物）
-        run: node test.js
-
-      - name: 依存パッケージを入れる
-        run: npm install --no-audit --no-fund
-
-      # pdftotext（本文の文字起こし）、日本語フォント（論文 PDF）、Times / Arial 互換フォント
-      - name: pdftotext とフォントを入れる
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq poppler-utils fonts-noto-cjk fonts-liberation
-          fc-list | grep -ci "noto serif cjk" || true
-
-      - name: Chrome の場所
-        run: |
-          which google-chrome || which google-chrome-stable
-          google-chrome --version
-
-      - name: メタ分析
-        id: meta
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          LLM_PRIMARY: ${{ inputs.llm || 'gemini' }}
-          PAPER_ENGINE: chrome   # Actions には LuaLaTeX を入れていない。LuaLaTeX の論文は手元で作って push する（2026-10-09）
-        run: |
           args=""
-          [ -n "${{ inputs.theme }}" ] && args="$args --theme ${{ inputs.theme }}"
-          [ "${{ inputs.force }}" = "true" ] && args="$args --force"
-          node run.js $args
+          [ -n "${{ inputs.dir }}" ] && args="$args --dir ${{ inputs.dir }}"
+          [ "${{ inputs.draft }}" = "true" ] && args="$args --draft"
+          node send-wp.js $args
 
-      # テーマをあきらめた記録も残す（次の回で後回しにするため）
-      - name: コミットして push
-        if: ${{ always() }}
+      - name: 台帳と一覧を更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for p in reports ledger.json; do [ -e "$p" ] && git add "$p"; done
-          if git diff --cached --quiet; then
-            echo "変更はありません。"
-          else
-            dir=$(git diff --cached --name-only -- reports | grep -v README | head -1 | cut -d/ -f2)
-            git commit -m "Add meta-analysis ${dir:-(no report)}"
-            git push
-          fi
-
-      - name: WordPress へ送る
-        if: ${{ success() && (github.event_name == 'schedule' || inputs.send) }}
-        env:
-          WP_POST_EMAIL: ${{ secrets.WP_POST_EMAIL }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-        run: |
-          node send-wp.js
           for p in ledger.json reports/README.md; do [ -e "$p" ] && git add "$p"; done
           if ! git diff --cached --quiet; then
             git commit -m "Record WordPress post"
