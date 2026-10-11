@@ -711,6 +711,19 @@ async function ollamaTest() {
     global.fetch = async () => { throw new Error('connect ECONNREFUSED'); };
     let msg = '';
     try { await ollama.generateJson('x', null, llm.parseJson); } catch (e) { msg = e.message; }
+    // 方法の節と限界の文は、確認の工程があるときだけ、その手順（Ollama が下書き・Claude Code が確認）を書く
+    {
+      const rep = (models) => ({ theme: config.themes[0], models: new Set(models), dateEn: 'October 11, 2026', dateJa: '2026年10月11日', studies: [] });
+      const plain = content.methodBlocks(rep(['gemini-3.5-flash']), 'en').join(' ');
+      const rev = content.methodBlocks(rep(['gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)']), 'en').join(' ');
+      const revJa = content.methodBlocks(rep(['gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)']), 'ja').join(' ');
+      check('方法: 確認の工程があるときは、Ollama の選別（確認なし）と、Claude Code が全文と照らして確認・修正したことを書く（日英）',
+        /second model \(Claude Code\) then checked each draft against the full text/.test(rev) && /this screening was not reviewed/.test(rev) &&
+        /2つ目のモデル（Claude Code）が，下書きを全文と照らして確認・修正し/.test(revJa) && !/second model/.test(plain), rev.slice(0, 200));
+      check('限界: 確認の工程があるときは「2つ目のモデルによる全文との突き合わせ」と、人による確認は無いことを書く',
+        /second model that compared each draft with the full text, but a person did not review/.test(content.automationLimitation('en', rep(['x (Claude Code; review and revision)']))) &&
+        /only by matching them against the full text/.test(content.automationLimitation('en', rep(['gemini']))));
+    }
     check('Ollama: つながらないときは、他の API に切り替えず、接続先を示して失敗にする', /Ollama（http:\/\/ollama\.test:11434）につながりません/.test(msg), msg);
   } finally {
     console.log = log;

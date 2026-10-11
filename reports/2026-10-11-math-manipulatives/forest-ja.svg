@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" font-family="'Noto Sans', 'Noto Sans CJK JP', 'Yu Gothic', 'Meiryo', Arial, sans-serif" font-size="13">
+<rect width="900" height="390" fill="#ffffff"/>
+<text x="12" y="32" font-weight="bold">研究</text>
+<text x="660" y="32" font-weight="bold">g [95% CI]</text>
+<text x="880" y="32" font-weight="bold" text-anchor="end">重み</text>
+<line x1="12" y1="42" x2="888" y2="42" stroke="#333" stroke-width="1"/>
+<text x="12" y="68">UKDEM and ÇETİN (2022)</text>
+<line x1="426.36617146965034" y1="64" x2="530.8960137524402" y2="64" stroke="#222" stroke-width="1.4"/>
+<rect x="471.95031583826983" y="57.319223227224626" width="13.361553545550752" height="13.361553545550752" fill="#1f4e79"/>
+<text x="660" y="68">1.42 [0.74, 2.09]</text>
+<text x="880" y="68" text-anchor="end">11.9%</text>
+<text x="12" y="96">SCIPPO et al. (2025)</text>
+<line x1="369.94288579008463" y1="92" x2="473.3468431057313" y2="92" stroke="#222" stroke-width="1.4"/>
+<rect x="414.95319823680074" y="85.30833378889281" width="13.383332422214394" height="13.383332422214394" fill="#1f4e79"/>
+<text x="660" y="96">0.68 [0.02, 1.35]</text>
+<text x="880" y="96" text-anchor="end">11.9%</text>
+<text x="12" y="124">MAHMUTI and ARIFI (2025)</text>
+<line x1="394.15669415958746" y1="120" x2="506.20140324413234" y2="120" stroke="#222" stroke-width="1.4"/>
+<rect x="443.57169977099505" y="113.39265106913517" width="13.214697861729658" height="13.214697861729658" fill="#1f4e79"/>
+<text x="660" y="124">1.05 [0.33, 1.77]</text>
+<text x="880" y="124" text-anchor="end">11.4%</text>
+<text x="12" y="152">LIGGETT (2017)</text>
+<line x1="439.8317978162578" y1="148" x2="544.7271592134491" y2="148" stroke="#222" stroke-width="1.4"/>
+<rect x="485.60224399027464" y="141.32276547542114" width="13.354469049157746" height="13.354469049157746" fill="#1f4e79"/>
+<text x="660" y="152">1.59 [0.92, 2.27]</text>
+<text x="880" y="152" text-anchor="end">11.8%</text>
+<text x="12" y="180">TEMÜR and SEVIMLI (2024)</text>
+<line x1="449.0590065926383" y1="176" x2="538.4752899833696" y2="176" stroke="#222" stroke-width="1.4"/>
+<rect x="486.94356118366306" y="169.1764128956591" width="13.647174208681779" height="13.647174208681779" fill="#1f4e79"/>
+<text x="660" y="180">1.61 [1.04, 2.19]</text>
+<text x="880" y="180" text-anchor="end">12.7%</text>
+<text x="12" y="208">MAGTO and SALAZAR (2025)</text>
+<line x1="398.39489564486155" y1="204" x2="467.3335745942502" y2="204" stroke="#222" stroke-width="1.4"/>
+<rect x="425.8642351195558" y="197" width="14" height="14" fill="#1f4e79"/>
+<text x="660" y="208">0.83 [0.38, 1.27]</text>
+<text x="880" y="208" text-anchor="end">13.7%</text>
+<text x="12" y="236">EJIOFOR-CHIMA (2025)</text>
+<line x1="513.8687121227397" y1="232" x2="585.5426677167195" y2="232" stroke="#222" stroke-width="1.4"/>
+<rect x="542.7277487191798" y="225.0220587994502" width="13.955882401099604" height="13.955882401099604" fill="#1f4e79"/>
+<text x="660" y="236">2.33 [1.87, 2.80]</text>
+<text x="880" y="236" text-anchor="end">13.6%</text>
+<text x="12" y="264">CARCUEVA et al. (2025)</text>
+<line x1="505.0423893894536" y1="260" x2="590.1290644160465" y2="260" stroke="#222" stroke-width="1.4"/>
+<rect x="540.7228945289381" y="253.1371676261881" width="13.725664747623812" height="13.725664747623812" fill="#1f4e79"/>
+<text x="660" y="264">2.31 [1.76, 2.86]</text>
+<text x="880" y="264" text-anchor="end">12.9%</text>
+<line x1="12" y1="286" x2="888" y2="286" stroke="#999" stroke-width="0.8"/>
+<text x="12" y="306" font-weight="bold">ランダム効果モデル（HKSJ）</text>
+<polygon points="443.57805153117727,302 484.40295212286566,294 525.227852714554,302 484.40295212286566,310" fill="#c00000"/>
+<text x="660" y="306" font-weight="bold">1.49 [0.97, 2.02]</text>
+<text x="880" y="306" text-anchor="end" font-weight="bold">100%</text>
+<text x="12" y="334">予測区間</text>
+<line x1="360.27817378133875" y1="330" x2="608.5277304643926" y2="330" stroke="#c00000" stroke-width="1.4" stroke-dasharray="5,4"/>
+<text x="660" y="334">[−0.11, 3.09]</text>
+<line x1="368.75" y1="46" x2="368.75" y2="336" stroke="#666" stroke-width="1" stroke-dasharray="2,3"/>
+<line x1="330" y1="336" x2="640" y2="336" stroke="#333" stroke-width="1"/>
+<line x1="330" y1="336" x2="330" y2="341" stroke="#333"/>
+<text x="330" y="355" text-anchor="middle">−0.50</text>
+<line x1="368.75" y1="336" x2="368.75" y2="341" stroke="#333"/>
+<text x="368.75" y="355" text-anchor="middle">0.00</text>
+<line x1="407.5" y1="336" x2="407.5" y2="341" stroke="#333"/>
+<text x="407.5" y="355" text-anchor="middle">0.50</text>
+<line x1="446.25" y1="336" x2="446.25" y2="341" stroke="#333"/>
+<text x="446.25" y="355" text-anchor="middle">1.00</text>
+<line x1="485" y1="336" x2="485" y2="341" stroke="#333"/>
+<text x="485" y="355" text-anchor="middle">1.50</text>
+<line x1="523.75" y1="336" x2="523.75" y2="341" stroke="#333"/>
+<text x="523.75" y="355" text-anchor="middle">2.00</text>
+<line x1="562.5" y1="336" x2="562.5" y2="341" stroke="#333"/>
+<text x="562.5" y="355" text-anchor="middle">2.50</text>
+<line x1="601.25" y1="336" x2="601.25" y2="341" stroke="#333"/>
+<text x="601.25" y="355" text-anchor="middle">3.00</text>
+<line x1="640" y1="336" x2="640" y2="341" stroke="#333"/>
+<text x="640" y="355" text-anchor="middle">3.50</text>
+<text x="360.75" y="376" text-anchor="end" fill="#555">← 比較群が上</text>
+<text x="376.75" y="376" fill="#555">介入群が上 →</text>
+</svg>

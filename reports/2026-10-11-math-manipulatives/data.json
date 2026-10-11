@@ -1,0 +1,1786 @@
+{
+ "theme": {
+  "id": "math-manipulatives",
+  "domain": "math",
+  "effect": "smd",
+  "titleJa": "具体物（操作教材）を使った算数・数学指導の効果",
+  "titleEn": "Effects of Concrete and Virtual Manipulatives on Mathematics Learning in Primary and Lower Secondary Students",
+  "query": "(manipulatives OR \"concrete materials\" OR \"virtual manipulatives\" OR \"hands-on\") AND (mathematics OR math OR arithmetic OR geometry) AND (elementary OR primary OR \"middle school\" OR \"junior high\" OR \"lower secondary\" OR grade OR children OR pupils)",
+  "jstage": [
+   "具体物 算数",
+   "操作活動 算数 効果"
+  ],
+  "population": "students in grades 1-9 (primary/elementary school and lower secondary/middle/junior high school, ages about 6-15). Exclude preschool-only, upper secondary-only, university, adult, and teacher/pre-service teacher samples.",
+  "intervention": "instruction using concrete or virtual manipulatives",
+  "comparison": "instruction without manipulatives (e.g., symbolic or textbook-only instruction)",
+  "outcome": "a mathematics achievement test",
+  "subfields": [
+   "3304",
+   "3204"
+  ]
+ },
+ "search": {
+  "openalex": {
+   "total": 1009,
+   "retrieved": 200
+  },
+  "jstage": {
+   "total": 11,
+   "retrieved": 11
+  },
+  "merged": 206,
+  "screened": 200,
+  "passedScreening": 27,
+  "fullTextsTried": 27,
+  "excluded": {
+   "noPdf": 12,
+   "ineligible": 6,
+   "noStats": 0,
+   "unverified": 0,
+   "implausible": 1,
+   "error": 0
+  }
+ },
+ "studies": [
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W7218150908",
+    "doi": "",
+    "title": "INVESTIGATING THE IMPACT OF INTERVENTIONS USING CONCRETE AND VIRTUAL MANIPULATIVES ON 3 TH GRADE STUDENTS' FRACTION CONCEPT AND MOTIVATION:",
+    "titleEn": "",
+    "authors": [
+     "Serife Ukdem",
+     "Hatice ÇETİN"
+    ],
+    "venue": "International online journal of education and teaching",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "year": "2022",
+    "language": "en",
+    "citedBy": 0,
+    "url": "https://iojet.org/index.php/IOJET/article/view/1674",
+    "landing": "https://iojet.org/index.php/IOJET/article/view/1674",
+    "pdfUrls": [
+     "https://iojet.org/index.php/IOJET/article/download/1674/806"
+    ],
+    "abstract": "The purpose of this study is to examine the effect of using concrete and virtual manipulatives relevant fraction subject to 3rd grade students' understanding of fractions and motivation towards mathematics lesson. The study group consists of 61 students studying in three different classes at the 3rd grade level of a private primary school in Turkey. Quantitative research method, pretest and posttest, and a quasi-experimental research design including two experimental and one control group was adopted. The study was carried out by the experimental-1 group with concrete manipulative-assisted training, the experiment-2 group with virtual manipulative-assisted training, and the control group with the traditional teaching in the mathematics curriculum. Data collection tools, the Fraction Comprehension Test (FCT) developed originally with a cronbach alpha reliability coefficient of 0.874 and the Mathematics Lesson Motivation Scale (MLMS) for primary schools was used. One-way MANOVA was used for analysing the data. As far as the research findings; using manipulatives makes a statistically significant difference in the understanding of fractions of 3rd grade students (F(2-60) = 9.171, p<.05), but it was detected that there was not statistically important difference (F(2-60)= 0.163, p>.05) in motivation for mathematics lessons. It is seen that 24% of the change in comprehension is caused by using manipulative. Concrete manipulative using and virtual manipulative using have no superiority in terms of both fraction comprehension and mathematics motivation when compared to each other. It can be suggested that using manipulatives as complementary to each other may give better results.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "Quasi-experimental study on 3rd graders comparing concrete, virtual, and traditional manipulatives with MANOVA."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Third graders in Turkey in a quasi-experiment comparing concrete manipulative instruction with traditional instruction on a fraction comprehension post-test with group means and SDs.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (two experimental groups and one control group)",
+    "intervention": "concrete manipulative-assisted fraction instruction (Experiment 1)",
+    "comparison": "traditional teaching in the mathematics curriculum",
+    "outcomeMeasure": "Fraction Comprehension Test (post-test)",
+    "summaryEn": "Sixty-one third graders in a private primary school were taught fractions with concrete manipulatives, with virtual manipulatives, or by traditional teaching. The concrete manipulative group scored higher on the fraction comprehension post-test than the control group.",
+    "summaryJa": "私立小学校の3年生61人が、具体物の操作教材、仮想の操作教材、従来の指導のいずれかで分数を学びました。具体物の操作教材を使った群は、分数理解の事後テストで統制群より高い得点でした。",
+    "evidence": "looking at the average values of the groups' \"Fraction Comprehension Test (FCT)\" posttest score, it appears to be higher Experiment 1 using concrete manipulative (X̅ = 41.809; sd = 13.463)",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学3年",
+     "design": "準実験（実験群2・統制群1）",
+     "intervention": "具体物の操作教材を使った分数指導（実験1）",
+     "comparison": "算数の教育課程にそった従来の指導",
+     "outcomeMeasure": "分数理解テスト（事後）"
+    },
+    "stats": {
+     "nTreatment": "21",
+     "nControl": "20",
+     "meanTreatment": "41.809",
+     "meanControl": "26.250",
+     "sdTreatment": "13.463",
+     "sdControl": "6.850",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group with the traditional teaching in the mathematics curriculum",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 1.417820549819939,
+    "vi": 0.11839163325865204,
+    "n": 41,
+    "method": "means and SDs",
+    "display": 1.417820549819939
+   },
+   "pdfUrl": "https://iojet.org/index.php/IOJET/article/download/1674/806",
+   "sid": "S1"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4409012987",
+    "doi": "10.28945/5473",
+    "title": "Digital Tessellation for Geometry Learning in Primary School: A Quasi-Experimental Study",
+    "titleEn": "",
+    "authors": [
+     "Stefano Scippo",
+     "Serena Madiai",
+     "Stefano Cuomo"
+    ],
+    "venue": "Journal of Information Technology Education Research",
+    "volume": "24",
+    "issue": "",
+    "pages": "009",
+    "year": "2025",
+    "language": "en",
+    "citedBy": 3,
+    "url": "https://doi.org/10.28945/5473",
+    "landing": "https://doi.org/10.28945/5473",
+    "pdfUrls": [
+     "https://www.jite.org/documents/Vol24/JITE-Rv24Art009Scippo10988.pdf"
+    ],
+    "abstract": "Aim/Purpose: This study aims to assess the effectiveness of a tessellation-based instructional program supported by digital technologies for enhancing geometric learning in primary school pupils. Background: Digital education offers various benefits, including increased motivation and engagement, and has been shown to be effective in teaching geometry. Although tessellation activities have been shown to effectively support geometry learning at both secondary and primary school levels, in the current literature, their implementation in digital environments has been explored exclusively in secondary education. Methodology: A quasi-experimental research design was used, using 3D printers and GeoGebra software with an experimental group and a control group, including pre-tests and post-tests. The students were in Grade 4. The instructional activities were designed according to recent recommendations in geometry education, using real-life contexts, drawing, prediction and imagining shapes, and technological tools. Contribution: This paper makes two contributions to the field of primary geometry education and educational technology. First, it extends research on the effectiveness of tessellation activities in digital environments for learning geometry from secondary to primary school. Second, it provides new empirical evidence for the effectiveness of digital teaching in enhancing geometric learning outcomes at the primary level. Specifically, the study demonstrates how technological tools like 3D printers and GeoGebra software can be used effectively in primary education, positively impacting geometry learning and promoting high levels of student engagement. Findings: The results indicated that the experimental group showed significant improvements in post-test scores compared to the pre-test, while the control group did not. This supports the hypothesis that a tessellation-based program, implemented digitally, can enhance geometric learning in primary students. Additionally, a questionnaire revealed high satisfaction with the activities, particularly with the use of a 3D printer and GeoGebra software, suggesting that these tools increased student engagement. Recommendations for Practitioners: Primary school teachers should consider integrating digital tessellation activities into their geometry curriculum. Exploiting digital technologies like GeoGebra software can enhance students’ understanding of geometric concepts and increase engagement; moreover, 3D printing can provide tangible outcomes, reinforcing learning through hands-on experiences. Therefore, professional development in these technologies may be necessary. Recommendation for Researchers: Researchers could aim to isolate the specific effects of educational technologies, particularly 3D printers and GeoGebra software, on geometric learning outcomes. A design with multiple experimental groups would be beneficial: one with tessellation activities using technologies, one with tessellation activities without technologies, one with different activities aimed at achieving the same geometric learning outcomes, and a control group engaged in activities targeting different geometric learning outcomes. Impact on Society: The findings of this study could have broad implications for primary education and educational technology. They suggest a potential shift in how geometry is taught at the primary level, emphasizing the integration of digital tools and manipulative approaches like tessellation. If teacher training organizations begin to incorporate this program into their curriculum, many educators might adopt it, potentially fostering a better understanding of a fundamental subject like geometry and improving digital literacy in future generations. Future Research: While digital tessellation activities have been explored in secondary schools, their integration into primary education remains under-researched, highlighting the need for more studies examining their potential to enhance younger students’ geometric understanding through digital tools. Additionally, longitudinal studies could explore the long-term impact of digital tessellation activities on students’ geometric understanding and spatial skills. Future research could also investigate the transferability of skills acquired through these activities to other areas of mathematics. Comparative studies across different age groups and educational levels could provide insights into the optimal timing for introducing such interventions. Finally, exploring the potential of augmented or virtual reality in tessellation-based geometry learning could open new avenues for research in educational technology and mathematics education.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "Quasi-experimental study on digital (virtual) manipulatives for 4th graders with pre/post-tests."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "Fourth graders in Italy in a quasi-experiment comparing a tessellation program using GeoGebra and 3D-printed tiles with the standard geometry curriculum, with post-test means and SDs by group.",
+    "country": "Italy",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "tessellation program with GeoGebra and 3D-printed materials",
+    "comparison": "standard geometry curriculum (plane figures and angles)",
+    "outcomeMeasure": "geometry learning test (post-test)",
+    "summaryEn": "Two fourth-grade classes in Florence took part: one learned tessellations with GeoGebra and 3D-printed materials, and the other followed the standard geometry curriculum. The experimental class scored higher on the geometry post-test.",
+    "summaryJa": "フィレンツェの小学4年生の2学級が参加し、一方はGeoGebraと3Dプリントの教材で敷き詰め（テッセレーション）を学び、もう一方は通常の幾何の授業を受けました。実験学級のほうが幾何の事後テストで高い得点でした。",
+    "evidence": "Experimental Group (N = 17) Control Group (N = 18) ... Average 13.47 13.94 16.65 14.22 ... Standard deviation 4.40 3.72 3.64 3.32",
+    "ja": {
+     "country": "イタリア",
+     "gradeLevel": "小学4年",
+     "design": "準実験",
+     "intervention": "GeoGebraと3Dプリント教材によるテッセレーションの指導",
+     "comparison": "通常の幾何の授業（平面図形と角）",
+     "outcomeMeasure": "幾何の学習テスト（事後）"
+    },
+    "stats": {
+     "nTreatment": "17",
+     "nControl": "18",
+     "meanTreatment": "16.65",
+     "meanControl": "14.22",
+     "sdTreatment": "3.64",
+     "sdControl": "3.32",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group follows the standard geometry curriculum, specifically covering plane figures and angles.",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 0.6825143799730059,
+    "vi": 0.11585498919860417,
+    "n": 35,
+    "method": "means and SDs",
+    "display": 0.6825143799730059
+   },
+   "pdfUrl": "https://www.jite.org/documents/Vol24/JITE-Rv24Art009Scippo10988.pdf",
+   "sid": "S2"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4413818094",
+    "doi": "10.15649/2346075x.5051",
+    "title": "Integration of Virtual Manipulatives for Teaching and Learning Perimeter and Area in Lower Secondary Education",
+    "titleEn": "",
+    "authors": [
+     "Agon Mahmuti",
+     "Arbër Arifi"
+    ],
+    "venue": "Innovaciencia Facultad de Ciencias Exactas Físicas y Naturales",
+    "volume": "13",
+    "issue": "1",
+    "pages": "",
+    "year": "2025",
+    "language": "en",
+    "citedBy": 3,
+    "url": "https://doi.org/10.15649/2346075x.5051",
+    "landing": "https://doi.org/10.15649/2346075x.5051",
+    "pdfUrls": [
+     "https://revistas.udes.edu.co/innovaciencia/article/download/5051/3516"
+    ],
+    "abstract": "Introduction. The integration of digital resources in mathematics education has shown promise in improving students’ conceptual understanding. Virtual manipulatives, in particular, are designed to support abstract reasoning through interactive and visual learning environments. Objective. This study aimed to evaluate the impact of virtual manipulatives on seventh-grade students’ learning outcomes and engagement during the instruction of perimeter and area. Materials and Methods. A quasi-experimental, mixed methods design was employed involving two intact seventh-grade classes (N=32) from a public school in Mitrovica, Kosovo. One class served as the experimental group, receiving instruction with virtual manipulatives, while the control group followed traditional methods. The intervention spanned two weeks and included pre- and post-tests, a student questionnaire, and an observation checklist. Quantitative data were analyzed using SPSS software, including paired and independent samples t-tests, while qualitative insights were gathered through observation. Results. The experimental group demonstrated significantly higher post-test scores compared to the control group (p =0 .005), indicating improved understanding of perimeter and area. Questionnaire results revealed high levels of motivation, enjoyment, and perceived learning benefits among students exposed to virtual manipulatives. Observation data supported these findings, showing increased engagement, collaboration, and positive behavioral changes. Conclusions. The findings confirm that virtual manipulatives positively influence students’ academic performance and attitudes in mathematics. They support both cognitive and affective domains of learning, offering an effective strategy for teaching geometric concepts. Further research is encouraged to explore long-term effects across broader student populations.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Quasi-experimental study on 7th graders comparing virtual manipulatives to traditional methods with t-tests."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental study involving 7th-grade students comparing virtual manipulatives to traditional methods on a mathematics post-test.",
+    "country": "Kosovo",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "instruction with virtual manipulatives",
+    "comparison": "traditional methods",
+    "outcomeMeasure": "post-test scores on perimeter and area",
+    "summaryEn": "The study compared the effects of virtual manipulatives against traditional methods on 7th-grade students' understanding of perimeter and area. The experimental group showed significantly higher post-test scores and higher levels of motivation and engagement.",
+    "summaryJa": "この研究では、7年生の生徒の周りと面積の理解に対する仮想操作用具と伝統的な指導法の効果を比較しました。実験群は、事後テストで有意に高いスコアを記録し、より高いモチベーションとエンゲージメントを示しました。",
+    "evidence": "In the post-test, the control group achieved a mean score of 43.44, while the experimental group scored significantly higher, with a mean of 49.69. This 6.25-point difference was statistically significant (p = .005)",
+    "ja": {
+     "country": "コソボ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "仮想操作用具を用いた指導",
+     "comparison": "伝統的な指導法",
+     "outcomeMeasure": "周りと面積に関する事後テストのスコア"
+    },
+    "stats": {
+     "nTreatment": "16",
+     "nControl": "16",
+     "meanTreatment": "49.69",
+     "meanControl": "43.44",
+     "sdTreatment": "6.18",
+     "sdControl": "5.39",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group followed traditional methods",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 1.0506974026046436,
+    "vi": 0.13602637615622162,
+    "n": 32,
+    "method": "means and SDs",
+    "display": 1.0506974026046436
+   },
+   "pdfUrl": "https://revistas.udes.edu.co/innovaciencia/article/download/5051/3516",
+   "sid": "S3"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2777612279",
+    "doi": "10.26522/brocked.v26i2.607",
+    "title": "The Impact of Use of Manipulatives on the Math Scores of Grade 2 Students",
+    "titleEn": "",
+    "authors": [
+     "Robert Liggett"
+    ],
+    "venue": "Brock Education Journal",
+    "volume": "26",
+    "issue": "2",
+    "pages": "",
+    "year": "2017",
+    "language": "en",
+    "citedBy": 31,
+    "url": "https://doi.org/10.26522/brocked.v26i2.607",
+    "landing": "https://doi.org/10.26522/brocked.v26i2.607",
+    "pdfUrls": [
+     "https://journals.library.brocku.ca/brocked/index.php/home/article/download/607/321"
+    ],
+    "abstract": "Today’s society places a lot of pressure on schools, teachers, and students to improve test scores.This paper discusses the possibility of using mathematical manipulatives to improve student testscores and students’ attitudes towards mathematics. Forty-three Grade 2 students with age rangesbetween six and eight from a rural town in Saskatchewan were selected. They were dividedrandomly into two groups: the treatment group (n=22) and the control group (n=21) and theirpre- and post-test scores compared. Findings supported the hypothesis that students in thetreatment group who received the math intervention obtained higher post-test scores incomparison to their classmates in the control group.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Experimental study on Grade 2 students comparing a math intervention with manipulatives against a control group."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a true experimental design comparing Grade 2 students using concrete manipulatives (unifix cubes) against a control group without them on a math achievement test.",
+    "country": "Canada",
+    "gradeLevel": "Grade 2",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "instruction using plastic unifix cubes",
+    "comparison": "instruction without manipulatives",
+    "outcomeMeasure": "math achievement test scores",
+    "summaryEn": "The study randomly assigned Grade 2 students to a treatment group using plastic unifix cubes and a control group without them during a post-test. Results showed the treatment group achieved significantly higher post-test scores (97%) compared to the control group (79%).",
+    "summaryJa": "この研究では、小学2年生を、事後テスト中にプラスチック製のユニフィックス・キューブを使用する実験群と、使用しない対照群にランダムに割り当てました。その結果、実験群の事後テストの平均スコア（97%）は、対照群（79%）よりも有意に高いことが示されました。",
+    "evidence": "The one-way ANCOVA indicates that treatment (use of math manipulatives) had a significant effect on post-test scores F (1, 42 = 28.33, p = <0.001)",
+    "ja": {
+     "country": "カナダ",
+     "gradeLevel": "小学2年",
+     "design": "ランダム化比較試験",
+     "intervention": "プラスチック製のユニフィックス・キューブを使用した指導",
+     "comparison": "マニピュラティブ（操作用具）を使用しない指導",
+     "outcomeMeasure": "算数の学力テストのスコア"
+    },
+    "stats": {
+     "nTreatment": "22",
+     "nControl": "21",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "28.33",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group were not allowed to use manipulatives during the post-test",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 1.5939287550303678,
+    "vi": 0.11922106272665195,
+    "n": 43,
+    "method": "F statistic (1 df)",
+    "display": 1.5939287550303678
+   },
+   "pdfUrl": "https://journals.library.brocku.ca/brocked/index.php/home/article/download/607/321",
+   "sid": "S4"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4401058128",
+    "doi": "10.46778/goputeb.1434000",
+    "title": "Investigation of the Effect of Virtual Manipulatives Usage on the Process of Eliminating Misconceptions about Algebraic Expressions and Equations",
+    "titleEn": "",
+    "authors": [
+     "Tuğba Temür",
+     "Eyüp Sevimli"
+    ],
+    "venue": "Uluslararası Türk Eğitim Bilimleri Dergisi",
+    "volume": "12",
+    "issue": "2",
+    "pages": "805–852",
+    "year": "2024",
+    "language": "en",
+    "citedBy": 1,
+    "url": "https://doi.org/10.46778/goputeb.1434000",
+    "landing": "https://doi.org/10.46778/goputeb.1434000",
+    "pdfUrls": [
+     "https://dergipark.org.tr/en/download/article-file/3716123",
+     "https://dergipark.org.tr/tr/pub/goputeb/issue/86376/1434000"
+    ],
+    "abstract": "In this study, the effect of activity-based mathematics content enriched with virtual manipulatives on the process of eliminating misconceptions about algebraic expressions and equations was examined. The virtual manipulative, developed by the researchers and examined for its effects, was also evaluated in terms of suitability for student needs regarding algebraic expressions and equations and compatibility with program achievements. In this research, a pretest-posttest control group quasi-experimental design was used. The study group of the research consisted of a total of 60 students studying at the 7th grade level in a public school. In the experimental group, virtual manipulatives developed by the researchers were used, and in the control group, activities in the current secondary school mathematics textbook were used to explain algebraic expressions and equations. Testing was used to determine misconceptions, and interview techniques were used to describe the effectiveness of the teaching process. The study results showed that activity-based teaching practices applied in both the experimental and control groups were effective in eliminating initial misconceptions. In the teaching of the experimental group, the order of operations and the representation of algebraic expressions, it was determined that the teaching in the control group was more useful in terms of eliminating misconceptions about the relationships between letters and objects. The results regarding the post-test scores showed that there was a statistically significant difference in favor of the experimental group compared to the control group in terms of eliminating misconceptions. Suggestions for the effective use of virtual manipulatives more in mathematics teaching are discussed.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Quasi-experimental design with virtual manipulatives, a control group, and quantitative results on misconceptions/achievement."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare the effect of virtual manipulatives on algebraic misconceptions in 7th-grade students against a control group using textbook-based instruction.",
+    "country": "Türkiye",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "activity-based teaching enriched with virtual manipulatives",
+    "comparison": "activities in the current secondary school mathematics textbook",
+    "outcomeMeasure": "Algebra Misconception Identification Test",
+    "summaryEn": "The study compared the effectiveness of virtual manipulatives against textbook-based instruction in reducing algebraic misconceptions among 7th-grade students. Results showed that the virtual manipulatives group achieved significantly higher post-test scores in eliminating misconceptions.",
+    "summaryJa": "この研究では、中学1年生（7年生）を対象に、仮想操作用具（バーチャル・マニピュラティブ）を用いた活動ベースの指導と、教科書を用いた指導が代数的な誤概念の解消に与える影響を比較しました。その結果、仮想操作用具を使用したグループの方が、誤概念を解消するテストにおいて有意に高いスコアを記録しました。",
+    "evidence": "the difference between the average of the post-test scores of the experimental group and the average of the post-test scores of the control group was compared with the independent t-test and a significant difference was found (t = 6.310; p < .05).",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "仮想操作用具を用いた活動ベースの指導",
+     "comparison": "教科書を用いた活動",
+     "outcomeMeasure": "代数誤概念特定テスト"
+    },
+    "stats": {
+     "nTreatment": "30",
+     "nControl": "30",
+     "meanTreatment": "25.45",
+     "meanControl": "20.69",
+     "sdTreatment": "2.25",
+     "sdControl": "3.45",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "in the control group, activities in the current secondary school mathematics textbook were used to explain algebraic expressions and equations.",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 1.6131244940387612,
+    "vi": 0.08663106437938499,
+    "n": 60,
+    "method": "means and SDs",
+    "display": 1.6131244940387612
+   },
+   "pdfUrl": "https://dergipark.org.tr/en/download/article-file/3716123",
+   "sid": "S5"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4409277385",
+    "doi": "10.71097/ijsat.v16.i2.3255",
+    "title": "Tangible Mathematics for Grade 7 Learners: Design and Validation of Manipulatives for Rational Number Concepts",
+    "titleEn": "",
+    "authors": [
+     "Ronna Y. Magto",
+     "Ph.D - Douglas A. Salazar"
+    ],
+    "venue": "International Journal on Science and Technology",
+    "volume": "16",
+    "issue": "2",
+    "pages": "",
+    "year": "2025",
+    "language": "en",
+    "citedBy": 0,
+    "url": "https://doi.org/10.71097/ijsat.v16.i2.3255",
+    "landing": "https://doi.org/10.71097/ijsat.v16.i2.3255",
+    "pdfUrls": [
+     "https://www.ijsat.org/papers/2025/2/3255.pdf"
+    ],
+    "abstract": "This study presents the development and evaluation of tangible mathematics, investigating how these materials enhance grade 7 learners' engagement, understanding, and problem-solving skills in number and algebra. Following a needs assessment that identified rational numbers as the most challenging topic, this phase focused on designing and validating physical manipulatives grounded in established learning theories. The development followed a design-based research approach with iterative refinement cycles. Tangible Mathematics —including fraction circles, bars, tiles, and operational tiles manufactured from clear acrylic—were developed with systematic color-coding, clear fraction markings, and movable connections. Validation involved five mathematics education experts using Department of Education assessment rubrics, yielding exceptional scores across content quality (37.8/40), technical accuracy (16/16), and instructional design (22/24). Teacher feedback highlighted the materials' effectiveness in supporting concept visualization and improving attitudes toward mathematics, while recommending physical enhancements. Preliminary testing with 84 grade 7 learners showed significant performance improvements in the experimental group using the manipulatives compared to the control group. Both quantitative assessment data and qualitative classroom observations confirmed that the tangible materials successfully enhanced learner understanding, engagement, and problem-solving abilities in rational number operations. These findings provide a strong foundation for subsequent implementation of the tangible mathematics approach in grade 7 classrooms.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Experimental study on grade 7 students using tangible manipulatives with a control group and quantitative post-test."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare a group using physical manipulatives with a control group on a mathematics achievement test for grade 7 students.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "instruction using tangible mathematics manipulatives (fraction circles, bars, tiles, and operational tiles)",
+    "comparison": "control group (instruction not described)",
+    "outcomeMeasure": "mathematics achievement test (rational number operations)",
+    "summaryEn": "The study evaluated the effectiveness of physical manipulatives (fraction circles, bars, and tiles) on grade 7 students' understanding of rational numbers. Results showed the experimental group significantly outperformed the control group in post-test scores.",
+    "summaryJa": "この研究では、中学1年生の生徒の有理数の理解に対する物理的な操作教材（分数円、棒、タイル）の有効性を評価しました。結果として、実験群は事後テストにおいて対照群よりも有意に高い成績を収めました。",
+    "evidence": "the experimental group achieved a higher posttest mean score of 22.23 (SD = 4.02) compared to the control group's mean of 19.35 (SD = 2.54)",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "物理的な操作教材（分数円、棒、タイル、および演算タイル）を用いた指導",
+     "comparison": "対照群",
+     "outcomeMeasure": "数学の達成度テスト（有理数の演算）"
+    },
+    "stats": {
+     "nTreatment": "47",
+     "nControl": "37",
+     "meanTreatment": "22.23",
+     "meanControl": "19.35",
+     "sdTreatment": "4.02",
+     "sdControl": "2.54",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "84",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonType": "unclear"
+   },
+   "effect": {
+    "yi": 0.8272804531555594,
+    "vi": 0.05149515093466174,
+    "n": 84,
+    "method": "means and SDs",
+    "display": 0.8272804531555594
+   },
+   "pdfUrl": "https://www.ijsat.org/papers/2025/2/3255.pdf",
+   "sid": "S6"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W7217761552",
+    "doi": "",
+    "title": "Effect of Visual Manipulatives on Junior Secondary School Students’ Interest and Achievement in Geometry",
+    "titleEn": "",
+    "authors": [
+     "NGOZI ANN EJIOFOR-CHIMA"
+    ],
+    "venue": "Faculty of Natural and Applied Sciences Journal of Mathematics and Science Education",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "year": "2025",
+    "language": "en",
+    "citedBy": 0,
+    "url": "https://fnasjournals.com/index.php/FNAS-JMSE/article/view/701",
+    "landing": "https://fnasjournals.com/index.php/FNAS-JMSE/article/view/701",
+    "pdfUrls": [
+     "https://fnasjournals.com/index.php/FNAS-JMSE/article/download/701/608"
+    ],
+    "abstract": "The research investigated the impact of virtual manipulatives on the interest and academic performance of junior secondary school pupils in geometry. The research used a quasi-experimental approach, informed by two research questions and two hypotheses. The study population consists of 1,375 JSS3 pupils. A sample of 120 intact JSS3 pupils was used. The instruments used for data collection were the Geometry Interest Inventory (GII) and the Geometry Achievement Test (GAT), both of which received validation from specialists in measurement and assessment. A reliability index of 0.76 for GII was determined using Cronbach's alpha, whereas GAT exhibited an index coefficient of 0.81, estimated by Kuder-Richardson (KR-20). Descriptive statistics, including mean and standard deviation, were used to address research issues, while hypotheses were evaluated using ANCOVA at a significance level of 0.05. ANCOVA was used to account for individual variations in the covariate attributable to the intact class. The study's results indicated that the use of virtual manipulatives in geometry instruction enhances students' interest in mathematics and elevates their academic performance. It was proposed that mathematics instructors use virtual manipulatives to enhance student engagement and increase academic performance in mathematics.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Quasi-experimental study on virtual manipulatives and achievement in junior secondary students."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare virtual manipulatives with a lecture-based method on the geometry achievement of JSS3 (lower secondary) students.",
+    "country": "Nigeria",
+    "gradeLevel": "Grade 9 (JSS3)",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "instruction using virtual manipulatives (Right Triangle Solver and Pythagorean theory applets)",
+    "comparison": "lecture-based instruction",
+    "outcomeMeasure": "Geometry Achievement Test (GAT)",
+    "summaryEn": "The study compared the effects of virtual manipulatives against a traditional lecture method on the geometry achievement and interest of JSS3 students. Results showed that students taught with virtual manipulatives achieved significantly higher scores and higher interest levels than those in the lecture-based group.",
+    "summaryJa": "この研究では、JSS3の生徒の幾何学の成績と興味に対する、バーチャル・マニピュラティブの使用と従来の講義形式の比較を行いました。その結果、バーチャル・マニピュラティブを用いて学習した生徒は、講義形式で学習した生徒よりも有意に高い成績と高い興味を示しました。",
+    "evidence": "the experimental group had an average score of 16.71 and a standard deviation of 1.66, but the control group had an average score of 11.93 and a standard deviation of 2.37",
+    "ja": {
+     "country": "ナイジェリア",
+     "gradeLevel": "中学3年",
+     "design": "準実験",
+     "intervention": "バーチャル・マニピュラティブを用いた指導（Right Triangle SolverおよびPythagorean theoryアプリレット）",
+     "comparison": "講義形式の指導",
+     "outcomeMeasure": "幾何学達成度テスト（GAT）"
+    },
+    "stats": {
+     "nTreatment": "62",
+     "nControl": "58",
+     "meanTreatment": "16.71",
+     "meanControl": "11.93",
+     "sdTreatment": "1.66",
+     "sdControl": "2.37",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "taught geometry (Pythagorean theory and right angle triangle) using a well-designed lesson plan for two weeks in a lecture-based setting",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 2.3349121279965113,
+    "vi": 0.05566255896435724,
+    "n": 120,
+    "method": "means and SDs",
+    "display": 2.3349121279965113
+   },
+   "pdfUrl": "https://fnasjournals.com/index.php/FNAS-JMSE/article/download/701/608",
+   "sid": "S7"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W7110786639",
+    "doi": "10.46827/ejes.v12i11.6409",
+    "title": "IMPACT OF MANIPULATIVE-BASED INSTRUCTION ON STUDENTS’ CONCEPTUAL UNDERSTANDING OF BASIC GEOMETRY IN A SECONDARY SCHOOL",
+    "titleEn": "",
+    "authors": [
+     "Catherine E. Carcueva",
+     "Braian B. Basmayor",
+     "Roselyn D. Boiser",
+     "Grace F. Rabadon",
+     "Ritchie T. Saavedra"
+    ],
+    "venue": "European Journal of Education Studies",
+    "volume": "12",
+    "issue": "11",
+    "pages": "",
+    "year": "2025",
+    "language": "en",
+    "citedBy": 0,
+    "url": "https://doi.org/10.46827/ejes.v12i11.6409",
+    "landing": "https://doi.org/10.46827/ejes.v12i11.6409",
+    "pdfUrls": [
+     "https://oapub.org/edu/index.php/ejes/article/download/6409/9032"
+    ],
+    "abstract": "This research assessed the impact of manipulative-based instruction on students’ understanding of basic geometry using a quasi-experimental design with 84 Grade 7 students at a public high school in Cebu, Philippines, during the school year 2025-2026. The participants were divided into two groups: 42 participants in the experimental group were taught using manipulative-based instruction, while 42 participants in the control group were taught traditionally. Pretest and posttest scores were collected and analyzed using mean, standard deviation, paired t-test and t-test for independent samples. Results showed that both groups had fairly satisfactory performance during the pretest. During the posttest, the control group had satisfactory performance, while the experimental group had very satisfactory performance. Moreover, both groups showed a significant difference between the pretest and posttest scores of the participants. On the other hand, there was a significant mean gain difference on the pretest and posttest scores between the two groups, which indicates that the experimental group performs better than the control group. This means manipulative-based instruction helped students understand geometry concepts better than the traditional method. The study concludes that using manipulatives is an effective way to teach geometry because it gives students concrete and hands-on experiences with abstract ideas. It is recommended that teachers use manipulative-based strategies in teaching geometry and other math topics to improve students’ learning and participation. Article visualizations:",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "Meets all criteria: quasi-experimental, Grade 7, manipulative-based vs. traditional, with mean/SD and t-test results."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare manipulative-based instruction with traditional instruction on geometry achievement among Grade 7 students.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "manipulative-based instruction",
+    "comparison": "traditional teaching",
+    "outcomeMeasure": "40-item Achievement Test",
+    "summaryEn": "The study compared the effects of manipulative-based instruction versus traditional teaching on Grade 7 students' understanding of basic geometry. Results showed that students using manipulatives achieved significantly higher mean gains and better post-test performance than those in the traditional group.",
+    "summaryJa": "本研究は、小学7年生を対象に、幾何学の基礎概念の理解における操作用具を用いた指導と伝統的な指導の効果を比較しました。その結果、操作用具を使用したグループは、伝統的な指導を受けたグループよりも有意に高い平均獲得スコアと良好な事後テストの成績を収めました。",
+    "evidence": "The group that used hands-on tools in their lessons showed a larger gain of 18.29, while the group that followed regular teaching methods had a smaller gain of 10.50. The results (t = 8.268, p = 0.000) show that this difference is meaningful",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "操作用具を用いた指導",
+     "comparison": "伝統的な指導",
+     "outcomeMeasure": "40項目の達成度テスト"
+    },
+    "stats": {
+     "nTreatment": "42",
+     "nControl": "42",
+     "meanTreatment": "30.00",
+     "meanControl": "20.33",
+     "sdTreatment": "3.52",
+     "sdControl": "4.70",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the group that received regular classroom instruction before and after the lessons",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 2.307557766487097,
+    "vi": 0.07844468570740383,
+    "n": 84,
+    "method": "means and SDs",
+    "display": 2.307557766487097
+   },
+   "pdfUrl": "https://oapub.org/edu/index.php/ejes/article/download/6409/9032",
+   "sid": "S8"
+  }
+ ],
+ "examined": [
+  {
+   "id": "W2103564288",
+   "title": "Predictors of Achievement When Virtual Manipulatives are Used for Mathematics Instruction",
+   "year": "2014",
+   "screenScore": 9,
+   "outcome": "適格でない: The comparison group also used manipulatives (physical ones), so it does not match the instruction-without-manipulatives comparison, and the paper reports predictors of achievement rather than group means or test statistics.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The comparison group also used manipulatives (physical ones), so it does not match the instruction-without-manipulatives comparison, and the paper reports predictors of achievement rather than group means or test statistics.",
+    "country": "United States",
+    "gradeLevel": "Grades 3-4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "computer lab instruction using virtual manipulatives",
+    "comparison": "classroom instruction using physical manipulatives and text-based materials",
+    "outcomeMeasure": "fraction knowledge tests (pre-test and post-tests)",
+    "summaryEn": "Third and fourth graders learned fractions with virtual manipulatives in a computer lab or with physical manipulatives and text-based materials in the classroom. The paper examines which student characteristics predicted achievement in each condition and does not report group means for the comparison.",
+    "summaryJa": "小学3・4年生が、コンピュータ室で仮想の操作教材を使う指導と、教室で物理的な操作教材と教科書類を使う指導で分数を学びました。この論文は、各条件で成績を予測する児童の特性を調べており、群ごとの平均は報告していません。",
+    "evidence": "",
+    "ja": {
+     "country": "アメリカ",
+     "gradeLevel": "小学3〜4年",
+     "design": "準実験",
+     "intervention": "コンピュータ室での仮想の操作教材を使った指導",
+     "comparison": "教室での物理的な操作教材と教科書類を使った指導",
+     "outcomeMeasure": "分数の知識テスト（事前・事後）"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "unclear"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonNote": "比較の種類（active）の根拠の引用が本文に見つからないため unclear にした",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W7218150908",
+   "title": "INVESTIGATING THE IMPACT OF INTERVENTIONS USING CONCRETE AND VIRTUAL MANIPULATIVES ON 3 TH GRADE STUDENTS' FRACTION CONCEPT AND MOTIVATION:",
+   "year": "2022",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Third graders in Turkey in a quasi-experiment comparing concrete manipulative instruction with traditional instruction on a fraction comprehension post-test with group means and SDs.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (two experimental groups and one control group)",
+    "intervention": "concrete manipulative-assisted fraction instruction (Experiment 1)",
+    "comparison": "traditional teaching in the mathematics curriculum",
+    "outcomeMeasure": "Fraction Comprehension Test (post-test)",
+    "summaryEn": "Sixty-one third graders in a private primary school were taught fractions with concrete manipulatives, with virtual manipulatives, or by traditional teaching. The concrete manipulative group scored higher on the fraction comprehension post-test than the control group.",
+    "summaryJa": "私立小学校の3年生61人が、具体物の操作教材、仮想の操作教材、従来の指導のいずれかで分数を学びました。具体物の操作教材を使った群は、分数理解の事後テストで統制群より高い得点でした。",
+    "evidence": "looking at the average values of the groups' \"Fraction Comprehension Test (FCT)\" posttest score, it appears to be higher Experiment 1 using concrete manipulative (X̅ = 41.809; sd = 13.463)",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学3年",
+     "design": "準実験（実験群2・統制群1）",
+     "intervention": "具体物の操作教材を使った分数指導（実験1）",
+     "comparison": "算数の教育課程にそった従来の指導",
+     "outcomeMeasure": "分数理解テスト（事後）"
+    },
+    "stats": {
+     "nTreatment": "21",
+     "nControl": "20",
+     "meanTreatment": "41.809",
+     "meanControl": "26.250",
+     "sdTreatment": "13.463",
+     "sdControl": "6.850",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group with the traditional teaching in the mathematics curriculum",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4311232128",
+   "title": "Effectiveness of Instruction with Manipulative Materials on Fourth Graders’ Geometry Learning Achievement",
+   "year": "2022",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W3015233359",
+   "title": "The Comparative Effects of Concrete Manipulatives and Dynamic Software on the Geometry Achievement of Fifth-Grade Students",
+   "year": "2019",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4382176498",
+   "title": "LOCALIZED MANIPULATIVES AND NON-MANIPULATIVES IN TEACHING MATHEMATICS AND LEARNERS’ MATHEMATICAL SKILLS",
+   "year": "2023",
+   "screenScore": 9,
+   "outcome": "適格でない: The sample is Grade 10 students, outside the grade 1-9 population, and the paper does not report post-test means and SDs by group.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The sample is Grade 10 students, outside the grade 1-9 population, and the paper does not report post-test means and SDs by group.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 10",
+    "gradeBand": "other",
+    "design": "quasi-experimental",
+    "intervention": "localized manipulatives in mathematics teaching",
+    "comparison": "teaching without manipulatives",
+    "outcomeMeasure": "mathematical skills test",
+    "summaryEn": "One hundred eighty Grade 10 students were taught with localized manipulatives or without manipulatives. Gains were larger with manipulatives, but the sample is above the target grade range.",
+    "summaryJa": "高校1年相当（Grade 10）の180人が、地域の素材を使った操作教材ありと、なしで学びました。操作教材ありのほうが伸びが大きかったのですが、対象学年の範囲を超えています。",
+    "evidence": "",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "10年生（高校1年相当）",
+     "design": "準実験",
+     "intervention": "地域の素材を使った操作教材による指導",
+     "comparison": "操作教材を使わない指導",
+     "outcomeMeasure": "数学のスキルテスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "unclear"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonNote": "比較の種類（active）の根拠の引用が本文に見つからないため unclear にした",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W3139303149",
+   "title": "Differential Effects of Virtual and Concrete Manipulatives in a Fraction Intervention on Fourth and Fifth Grade Students’ Fraction Skills",
+   "year": "2021",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4409012987",
+   "title": "Digital Tessellation for Geometry Learning in Primary School: A Quasi-Experimental Study",
+   "year": "2025",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "Fourth graders in Italy in a quasi-experiment comparing a tessellation program using GeoGebra and 3D-printed tiles with the standard geometry curriculum, with post-test means and SDs by group.",
+    "country": "Italy",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "tessellation program with GeoGebra and 3D-printed materials",
+    "comparison": "standard geometry curriculum (plane figures and angles)",
+    "outcomeMeasure": "geometry learning test (post-test)",
+    "summaryEn": "Two fourth-grade classes in Florence took part: one learned tessellations with GeoGebra and 3D-printed materials, and the other followed the standard geometry curriculum. The experimental class scored higher on the geometry post-test.",
+    "summaryJa": "フィレンツェの小学4年生の2学級が参加し、一方はGeoGebraと3Dプリントの教材で敷き詰め（テッセレーション）を学び、もう一方は通常の幾何の授業を受けました。実験学級のほうが幾何の事後テストで高い得点でした。",
+    "evidence": "Experimental Group (N = 17) Control Group (N = 18) ... Average 13.47 13.94 16.65 14.22 ... Standard deviation 4.40 3.72 3.64 3.32",
+    "ja": {
+     "country": "イタリア",
+     "gradeLevel": "小学4年",
+     "design": "準実験",
+     "intervention": "GeoGebraと3Dプリント教材によるテッセレーションの指導",
+     "comparison": "通常の幾何の授業（平面図形と角）",
+     "outcomeMeasure": "幾何の学習テスト（事後）"
+    },
+    "stats": {
+     "nTreatment": "17",
+     "nControl": "18",
+     "meanTreatment": "16.65",
+     "meanControl": "14.22",
+     "sdTreatment": "3.64",
+     "sdControl": "3.32",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group follows the standard geometry curriculum, specifically covering plane figures and angles.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W2626473865",
+   "title": "Effect of Physical and Virtual Manipulatives on the Mathematical Achievement of Junior High School Students in the Topic of Transformation in Ghana",
+   "year": "2017",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4405738790",
+   "title": "The Effect of Concrete and Virtual Manipulative Blended Instruction on Mathematical Achievement for Elementary School Students",
+   "year": "2024",
+   "screenScore": 8,
+   "outcome": "g が大きすぎる（抽出の誤りの疑い）",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental study on grade 5 students comparing blended concrete and virtual manipulatives to traditional instruction on a mathematics achievement test.",
+    "country": "Pakistan",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "blended use of concrete and virtual manipulatives",
+    "comparison": "traditional instruction",
+    "outcomeMeasure": "mathematics achievement test (MAT)",
+    "summaryEn": "The study investigated the effect of combining concrete and virtual manipulatives on the mathematical achievement of fifth-grade students in Pakistan. Results showed that the blended manipulative approach significantly improved post-test scores compared to traditional instruction.",
+    "summaryJa": "この研究は、パキスタンの小学5年生を対象に、具体物と仮想操作ツールを組み合わせた指導が数学の学力に与える影響を調査しました。結果として、この混合操作ツールを用いたアプローチは、従来の指導法と比較して事後テストのスコアを大幅に向上させることが示されました。",
+    "evidence": "F(1, 84) = 429.415, p < 0.001, with a large effect size indicated by a partial eta squared of 0.836. ... experimental group students (M = 41.33, SD = 4.14) showed a significant improvement in their posttest scores as compared to their counterpart control group students (M = 23.95, SD = 3.65)",
+    "ja": {
+     "country": "パキスタン",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "具体物と仮想操作ツールの混合利用",
+     "comparison": "伝統的な指導",
+     "outcomeMeasure": "数学学力テスト"
+    },
+    "stats": {
+     "nTreatment": "45",
+     "nControl": "42",
+     "meanTreatment": "41.33",
+     "meanControl": "23.95",
+     "sdTreatment": "4.14",
+     "sdControl": "3.65",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group continued with traditional instruction. This instruction was delivered by an experienced elementary school teacher",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4413818094",
+   "title": "Integration of Virtual Manipulatives for Teaching and Learning Perimeter and Area in Lower Secondary Education",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental study involving 7th-grade students comparing virtual manipulatives to traditional methods on a mathematics post-test.",
+    "country": "Kosovo",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "instruction with virtual manipulatives",
+    "comparison": "traditional methods",
+    "outcomeMeasure": "post-test scores on perimeter and area",
+    "summaryEn": "The study compared the effects of virtual manipulatives against traditional methods on 7th-grade students' understanding of perimeter and area. The experimental group showed significantly higher post-test scores and higher levels of motivation and engagement.",
+    "summaryJa": "この研究では、7年生の生徒の周りと面積の理解に対する仮想操作用具と伝統的な指導法の効果を比較しました。実験群は、事後テストで有意に高いスコアを記録し、より高いモチベーションとエンゲージメントを示しました。",
+    "evidence": "In the post-test, the control group achieved a mean score of 43.44, while the experimental group scored significantly higher, with a mean of 49.69. This 6.25-point difference was statistically significant (p = .005)",
+    "ja": {
+     "country": "コソボ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "仮想操作用具を用いた指導",
+     "comparison": "伝統的な指導法",
+     "outcomeMeasure": "周りと面積に関する事後テストのスコア"
+    },
+    "stats": {
+     "nTreatment": "16",
+     "nControl": "16",
+     "meanTreatment": "49.69",
+     "meanControl": "43.44",
+     "sdTreatment": "6.18",
+     "sdControl": "5.39",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group followed traditional methods",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W2777612279",
+   "title": "The Impact of Use of Manipulatives on the Math Scores of Grade 2 Students",
+   "year": "2017",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a true experimental design comparing Grade 2 students using concrete manipulatives (unifix cubes) against a control group without them on a math achievement test.",
+    "country": "Canada",
+    "gradeLevel": "Grade 2",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "instruction using plastic unifix cubes",
+    "comparison": "instruction without manipulatives",
+    "outcomeMeasure": "math achievement test scores",
+    "summaryEn": "The study randomly assigned Grade 2 students to a treatment group using plastic unifix cubes and a control group without them during a post-test. Results showed the treatment group achieved significantly higher post-test scores (97%) compared to the control group (79%).",
+    "summaryJa": "この研究では、小学2年生を、事後テスト中にプラスチック製のユニフィックス・キューブを使用する実験群と、使用しない対照群にランダムに割り当てました。その結果、実験群の事後テストの平均スコア（97%）は、対照群（79%）よりも有意に高いことが示されました。",
+    "evidence": "The one-way ANCOVA indicates that treatment (use of math manipulatives) had a significant effect on post-test scores F (1, 42 = 28.33, p = <0.001)",
+    "ja": {
+     "country": "カナダ",
+     "gradeLevel": "小学2年",
+     "design": "ランダム化比較試験",
+     "intervention": "プラスチック製のユニフィックス・キューブを使用した指導",
+     "comparison": "マニピュラティブ（操作用具）を使用しない指導",
+     "outcomeMeasure": "算数の学力テストのスコア"
+    },
+    "stats": {
+     "nTreatment": "22",
+     "nControl": "21",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "28.33",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the control group were not allowed to use manipulatives during the post-test",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W2531077242",
+   "title": "HOW AFFORDANCES AND CONSTRAINTS OF PHYSICAL AND VIRTUAL MANIPULATIVES SUPPORT THE DEVELOPMENT OF PROCEDURAL FLUENCY AND ALGORITHMIC THINKING IN MATHEMATICS",
+   "year": "2016",
+   "screenScore": 8,
+   "outcome": "適格でない: Both conditions used manipulatives (virtual versus physical) in a crossover design, so there is no comparison with instruction without manipulatives.",
+   "extracted": {
+    "eligible": false,
+    "reason": "Both conditions used manipulatives (virtual versus physical) in a crossover design, so there is no comparison with instruction without manipulatives.",
+    "country": "United States",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (crossover)",
+    "intervention": "virtual manipulatives",
+    "comparison": "physical manipulatives (Hands-On Equations)",
+    "outcomeMeasure": "algebra and fraction posttests",
+    "summaryEn": "Thirty-six third graders learned algebra and fraction content with virtual and with physical manipulatives in a crossover design. Both conditions used manipulatives, so the study compares two kinds of manipulatives rather than manipulatives with no manipulatives.",
+    "summaryJa": "小学3年生36人が、代数と分数の内容を、仮想の操作教材と物理的な操作教材の両方で学ぶ交差デザインでした。どちらの条件も操作教材を使っており、操作教材なしとの比較ではありません。",
+    "evidence": "",
+    "ja": {
+     "country": "アメリカ",
+     "gradeLevel": "小学3年",
+     "design": "準実験（交差デザイン）",
+     "intervention": "仮想の操作教材",
+     "comparison": "物理的な操作教材（Hands-On Equations）",
+     "outcomeMeasure": "代数と分数の事後テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "unclear"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonNote": "比較の種類（active）の根拠の引用が本文に見つからないため unclear にした",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W4415015173",
+   "title": "Effect of Virtual Manipulatives on Students Academic Success in Teaching Integers",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "適格でない: Two separate post-tests (multiplication and division of integers) are reported with no overall achievement score, so choosing one (the significant one) would be arbitrary.",
+   "extracted": {
+    "eligible": false,
+    "reason": "Two separate post-tests (multiplication and division of integers) are reported with no overall achievement score, so choosing one (the significant one) would be arbitrary.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental (post-test control group)",
+    "intervention": "virtual manipulatives for teaching integers",
+    "comparison": "traditional teacher-centered instruction",
+    "outcomeMeasure": "post-tests on multiplication and on division of integers",
+    "summaryEn": "Thirty seventh graders were taught integers with virtual manipulatives or with traditional teacher-centered methods. The experimental group scored higher on the multiplication post-test but not on the division post-test.",
+    "summaryJa": "中学1年生30人が、整数を仮想の操作教材で学ぶ群と、従来の教師中心の指導で学ぶ群に分かれました。実験群は掛け算の事後テストで高い得点でしたが、割り算の事後テストでは差がありませんでした。",
+    "evidence": "",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験（事後テストのみの統制群デザイン）",
+     "intervention": "整数の指導での仮想の操作教材",
+     "comparison": "従来の教師中心の指導",
+     "outcomeMeasure": "整数の掛け算と割り算の事後テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "unclear"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonNote": "比較の種類（passive）の根拠の引用が本文に見つからないため unclear にした",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W4386180667",
+   "title": "Hands-On Equations Balance Model Enhances Algebraic Equation Solving in Upper Elementary and Middle School Students",
+   "year": "2023",
+   "screenScore": 8,
+   "outcome": "適格でない: The same students were tested before and after lessons with and without the balance model (a within-group repeated design), so there is no independent comparison group.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The same students were tested before and after lessons with and without the balance model (a within-group repeated design), so there is no independent comparison group.",
+    "country": "United States",
+    "gradeLevel": "Grades 4 and 8",
+    "gradeBand": "mixed",
+    "design": "quasi-experimental (repeated measures within classes)",
+    "intervention": "Hands-On Equations balance model (manipulatives)",
+    "comparison": "none (same students tested with and without manipulatives)",
+    "outcomeMeasure": "algebraic equation-solving test",
+    "summaryEn": "Fourth and eighth graders solved algebraic equations before and after lessons with the Hands-On Equations balance model. Scores were compared within the same students rather than against a separate control group.",
+    "summaryJa": "小学4年生と中学2年生が、Hands-On Equationsの天びんモデルを使った授業の前後で方程式を解きました。得点は、別の統制群ではなく、同じ児童生徒の中で比べられています。",
+    "evidence": "",
+    "ja": {
+     "country": "アメリカ",
+     "gradeLevel": "小学4年と中学2年",
+     "design": "準実験（学級内の反復測定）",
+     "intervention": "Hands-On Equations の天びんモデル（操作教材）",
+     "comparison": "なし（同じ児童生徒を操作教材あり・なしで測定）",
+     "outcomeMeasure": "方程式を解くテスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "unclear"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W4401058128",
+   "title": "Investigation of the Effect of Virtual Manipulatives Usage on the Process of Eliminating Misconceptions about Algebraic Expressions and Equations",
+   "year": "2024",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare the effect of virtual manipulatives on algebraic misconceptions in 7th-grade students against a control group using textbook-based instruction.",
+    "country": "Türkiye",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "activity-based teaching enriched with virtual manipulatives",
+    "comparison": "activities in the current secondary school mathematics textbook",
+    "outcomeMeasure": "Algebra Misconception Identification Test",
+    "summaryEn": "The study compared the effectiveness of virtual manipulatives against textbook-based instruction in reducing algebraic misconceptions among 7th-grade students. Results showed that the virtual manipulatives group achieved significantly higher post-test scores in eliminating misconceptions.",
+    "summaryJa": "この研究では、中学1年生（7年生）を対象に、仮想操作用具（バーチャル・マニピュラティブ）を用いた活動ベースの指導と、教科書を用いた指導が代数的な誤概念の解消に与える影響を比較しました。その結果、仮想操作用具を使用したグループの方が、誤概念を解消するテストにおいて有意に高いスコアを記録しました。",
+    "evidence": "the difference between the average of the post-test scores of the experimental group and the average of the post-test scores of the control group was compared with the independent t-test and a significant difference was found (t = 6.310; p < .05).",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "仮想操作用具を用いた活動ベースの指導",
+     "comparison": "教科書を用いた活動",
+     "outcomeMeasure": "代数誤概念特定テスト"
+    },
+    "stats": {
+     "nTreatment": "30",
+     "nControl": "30",
+     "meanTreatment": "25.45",
+     "meanControl": "20.69",
+     "sdTreatment": "2.25",
+     "sdControl": "3.45",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "in the control group, activities in the current secondary school mathematics textbook were used to explain algebraic expressions and equations.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4409597762",
+   "title": "Developing Tangible Mathematics: Design and Validation of Rational Number Manipulatives for Grade 7",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4409277385",
+   "title": "Tangible Mathematics for Grade 7 Learners: Design and Validation of Manipulatives for Rational Number Concepts",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare a group using physical manipulatives with a control group on a mathematics achievement test for grade 7 students.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "instruction using tangible mathematics manipulatives (fraction circles, bars, tiles, and operational tiles)",
+    "comparison": "control group (instruction not described)",
+    "outcomeMeasure": "mathematics achievement test (rational number operations)",
+    "summaryEn": "The study evaluated the effectiveness of physical manipulatives (fraction circles, bars, and tiles) on grade 7 students' understanding of rational numbers. Results showed the experimental group significantly outperformed the control group in post-test scores.",
+    "summaryJa": "この研究では、中学1年生の生徒の有理数の理解に対する物理的な操作教材（分数円、棒、タイル）の有効性を評価しました。結果として、実験群は事後テストにおいて対照群よりも有意に高い成績を収めました。",
+    "evidence": "the experimental group achieved a higher posttest mean score of 22.23 (SD = 4.02) compared to the control group's mean of 19.35 (SD = 2.54)",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "物理的な操作教材（分数円、棒、タイル、および演算タイル）を用いた指導",
+     "comparison": "対照群",
+     "outcomeMeasure": "数学の達成度テスト（有理数の演算）"
+    },
+    "stats": {
+     "nTreatment": "47",
+     "nControl": "37",
+     "meanTreatment": "22.23",
+     "meanControl": "19.35",
+     "sdTreatment": "4.02",
+     "sdControl": "2.54",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "84",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W7217761552",
+   "title": "Effect of Visual Manipulatives on Junior Secondary School Students’ Interest and Achievement in Geometry",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare virtual manipulatives with a lecture-based method on the geometry achievement of JSS3 (lower secondary) students.",
+    "country": "Nigeria",
+    "gradeLevel": "Grade 9 (JSS3)",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "instruction using virtual manipulatives (Right Triangle Solver and Pythagorean theory applets)",
+    "comparison": "lecture-based instruction",
+    "outcomeMeasure": "Geometry Achievement Test (GAT)",
+    "summaryEn": "The study compared the effects of virtual manipulatives against a traditional lecture method on the geometry achievement and interest of JSS3 students. Results showed that students taught with virtual manipulatives achieved significantly higher scores and higher interest levels than those in the lecture-based group.",
+    "summaryJa": "この研究では、JSS3の生徒の幾何学の成績と興味に対する、バーチャル・マニピュラティブの使用と従来の講義形式の比較を行いました。その結果、バーチャル・マニピュラティブを用いて学習した生徒は、講義形式で学習した生徒よりも有意に高い成績と高い興味を示しました。",
+    "evidence": "the experimental group had an average score of 16.71 and a standard deviation of 1.66, but the control group had an average score of 11.93 and a standard deviation of 2.37",
+    "ja": {
+     "country": "ナイジェリア",
+     "gradeLevel": "中学3年",
+     "design": "準実験",
+     "intervention": "バーチャル・マニピュラティブを用いた指導（Right Triangle SolverおよびPythagorean theoryアプリレット）",
+     "comparison": "講義形式の指導",
+     "outcomeMeasure": "幾何学達成度テスト（GAT）"
+    },
+    "stats": {
+     "nTreatment": "62",
+     "nControl": "58",
+     "meanTreatment": "16.71",
+     "meanControl": "11.93",
+     "sdTreatment": "1.66",
+     "sdControl": "2.37",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "taught geometry (Pythagorean theory and right angle triangle) using a well-designed lesson plan for two weeks in a lecture-based setting",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W2611657437",
+   "title": "Effects of Instructional Guidance and Sequencing of Manipulatives and Written Symbols on Second Graders’ Numeration Knowledge",
+   "year": "2017",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W7110786639",
+   "title": "IMPACT OF MANIPULATIVE-BASED INSTRUCTION ON STUDENTS’ CONCEPTUAL UNDERSTANDING OF BASIC GEOMETRY IN A SECONDARY SCHOOL",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare manipulative-based instruction with traditional instruction on geometry achievement among Grade 7 students.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 7",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "manipulative-based instruction",
+    "comparison": "traditional teaching",
+    "outcomeMeasure": "40-item Achievement Test",
+    "summaryEn": "The study compared the effects of manipulative-based instruction versus traditional teaching on Grade 7 students' understanding of basic geometry. Results showed that students using manipulatives achieved significantly higher mean gains and better post-test performance than those in the traditional group.",
+    "summaryJa": "本研究は、小学7年生を対象に、幾何学の基礎概念の理解における操作用具を用いた指導と伝統的な指導の効果を比較しました。その結果、操作用具を使用したグループは、伝統的な指導を受けたグループよりも有意に高い平均獲得スコアと良好な事後テストの成績を収めました。",
+    "evidence": "The group that used hands-on tools in their lessons showed a larger gain of 18.29, while the group that followed regular teaching methods had a smaller gain of 10.50. The results (t = 8.268, p = 0.000) show that this difference is meaningful",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "操作用具を用いた指導",
+     "comparison": "伝統的な指導",
+     "outcomeMeasure": "40項目の達成度テスト"
+    },
+    "stats": {
+     "nTreatment": "42",
+     "nControl": "42",
+     "meanTreatment": "30.00",
+     "meanControl": "20.33",
+     "sdTreatment": "3.52",
+     "sdControl": "4.70",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "the group that received regular classroom instruction before and after the lessons",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W7215601028",
+   "title": "Effectiveness of Modern Technique in Teaching Mathematics for Grade One Pupils",
+   "year": "2019",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W2095879392",
+   "title": "Effects of Worked Examples Using Manipulatives on Fifth Graders' Learning Performance and Attitude toward Mathematics",
+   "year": "2015",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W7215546881",
+   "title": "ICT-Based Instruction in Enhancing Pupils' Academic Performance in Teaching Elementary Mathematics V",
+   "year": "2019",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4412410805",
+   "title": "Manipulative and visual instructional tools: their influence on the mathematics linear measurement skills among Grade 3 learners of San Vicente Elementary School",
+   "year": "2025",
+   "screenScore": 7,
+   "outcome": "適格でない: The group sizes are not stated (26 and 24 are the male and female counts), and the reported critical t value of 2.068 does not match two groups of about 25, so the statistics cannot be read reliably.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The group sizes are not stated (26 and 24 are the male and female counts), and the reported critical t value of 2.068 does not match two groups of about 25, so the statistics cannot be read reliably.",
+    "country": "Philippines",
+    "gradeLevel": "Grade 3",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental (mixed methods)",
+    "intervention": "manipulative instructional tools for linear measurement",
+    "comparison": "visual instructional aids (PowerPoint, charts, pictures, diagrams)",
+    "outcomeMeasure": "linear measurement test (mean percentage score)",
+    "summaryEn": "Fifty Grade 3 learners were taught linear measurement with manipulatives or with visual aids. The manipulative group scored higher after the intervention, but the group sizes and test statistics are not reported consistently.",
+    "summaryJa": "小学3年生50人が、長さの測定を、操作教材または視覚教材で学びました。操作教材の群のほうが介入後に高い得点でしたが、群の人数と検定の統計量が一貫して報告されていません。",
+    "evidence": "",
+    "ja": {
+     "country": "フィリピン",
+     "gradeLevel": "小学3年",
+     "design": "準実験（混合研究）",
+     "intervention": "長さの測定での操作教材",
+     "comparison": "視覚教材（PowerPoint・図表・絵・図）",
+     "outcomeMeasure": "長さの測定テスト（平均正答率）"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "unclear"
+    },
+    "model": "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonNote": "比較の種類（active）の根拠の引用が本文に見つからないため unclear にした",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W4200228299",
+   "title": "Children building and having fun while they learn geometry",
+   "year": "2021",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W7215622682",
+   "title": "Effectiveness of Using Manipulatives in Teaching 2Fsfor Kindergarten of Ovidio S. Dela Rosa Elementary School S.Y. 2018-2019",
+   "year": "2019",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W7215474362",
+   "title": "Enhancing the Fourth Graders' Participation in Mathematics through the Utilization of E-Games",
+   "year": "2019",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  }
+ ],
+ "models": [
+  "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)"
+ ],
+ "date": "2026-10-11",
+ "dateEn": "October 11, 2026",
+ "dateJa": "2026年10月11日",
+ "analysis": {
+  "effectType": "smd",
+  "overall": {
+   "k": 8,
+   "est": 1.4922961564240729,
+   "se": 0.22277235400325157,
+   "ci": [
+    0.9655232455635779,
+    2.0190690672845677
+   ],
+   "test": 6.698749326867962,
+   "p": 0.0002777571912613297,
+   "df": 7,
+   "fixed": {
+    "est": 1.5346138839609436,
+    "se": 0.10287267804946687
+   },
+   "Q": 37.04291227501061,
+   "pQ": 0.000004603678581016624,
+   "I2": 81.10299765841509,
+   "tau2": 0.37045793591139703,
+   "pi": [
+    -0.10931388669240327,
+    3.093906199540549
+   ],
+   "weights": [
+    11.858279505934268,
+    11.920133165826838,
+    11.44539858284903,
+    11.838193681364789,
+    12.682245304276012,
+    13.73829226112257,
+    13.603933388053113,
+    12.913524110573391
+   ]
+  },
+  "subgroups": {
+   "groups": [
+    {
+     "band": "elementary",
+     "key": "elementary",
+     "k": 3,
+     "est": 1.2290154914974811,
+     "se": 0.27961287675306007,
+     "ci": [
+      0.02593838406285931,
+      2.432092598932103
+     ],
+     "test": 4.395418071474889,
+     "p": 0.04805984973845234,
+     "df": 2,
+     "fixed": {
+      "est": 1.2265984749565233,
+      "se": 0.19816242983394128
+     },
+     "Q": 3.9957866735551306,
+     "pQ": 0.13562068962252039,
+     "I2": 49.94727788556939,
+     "tau2": 0.11756566667889223,
+     "pi": [
+      -4.39662701043985,
+      6.854657993434813
+     ],
+     "weights": [
+      33.25170693015653,
+      33.61306203197367,
+      33.1352310378698
+     ]
+    },
+    {
+     "band": "middle",
+     "key": "middle",
+     "k": 5,
+     "est": 1.6354885934467724,
+     "se": 0.3133976734931349,
+     "ci": [
+      0.7653571568963957,
+      2.505620029997149
+     ],
+     "test": 5.2185728605372,
+     "p": 0.00643374830801724,
+     "df": 4,
+     "fixed": {
+      "est": 1.6482481187304556,
+      "se": 0.12036208242564708
+     },
+     "Q": 29.739765039538952,
+     "pQ": 0.0000055292444021137754,
+     "I2": 86.54999461266083,
+     "tau2": 0.4782497224069928,
+     "pi": [
+      -0.8088221188405347,
+      4.079799305734079
+     ],
+     "weights": [
+      18.178621244147468,
+      19.768228618007864,
+      21.079378200818198,
+      20.91484486258997,
+      20.0589270744365
+     ]
+    }
+   ],
+   "Qbetween": 0.9366157183498276,
+   "df": 1,
+   "p": 0.3331497147277158
+  },
+  "comparatorSubgroups": null,
+  "comparatorUnclear": 1,
+  "leaveOneOut": [
+   {
+    "id": "S1",
+    "est": 1.5006964659341593,
+    "ci": [
+     0.8749913596369611,
+     2.1264015722313574
+    ]
+   },
+   {
+    "id": "S2",
+    "est": 1.6026037906283155,
+    "ci": [
+     1.0603564206428637,
+     2.1448511606137672
+    ]
+   },
+   {
+    "id": "S3",
+    "est": 1.5488385914721694,
+    "ci": [
+     0.9466964662180553,
+     2.1509807167262833
+    ]
+   },
+   {
+    "id": "S4",
+    "est": 1.4768354022349721,
+    "ci": [
+     0.8518556220790519,
+     2.1018151823908924
+    ]
+   },
+   {
+    "id": "S5",
+    "est": 1.4726077889982465,
+    "ci": [
+     0.8459040003437323,
+     2.099311577652761
+    ]
+   },
+   {
+    "id": "S6",
+    "est": 1.603284167622467,
+    "ci": [
+     1.0365113784382727,
+     2.170056956806661
+    ]
+   },
+   {
+    "id": "S7",
+    "est": 1.3602881145768841,
+    "ci": [
+     0.8365888450652577,
+     1.8839873840885106
+    ]
+   },
+   {
+    "id": "S8",
+    "est": 1.3726082997993276,
+    "ci": [
+     0.8373298515680463,
+     1.907886748030609
+    ]
+   }
+  ],
+  "looRange": [
+   1.3602881145768841,
+   1.603284167622467
+  ],
+  "egger": null,
+  "totalN": 499
+ },
+ "warnings": [],
+ "text": {
+  "en": {
+   "background": "Manipulatives are objects and digital tools that students handle to represent mathematical ideas, and teachers need to know whether using them is linked to higher achievement.",
+   "conclusionAbstract": "In these eight small studies, instruction with manipulatives was associated with higher post-test scores, but the effects varied widely, so the evidence is preliminary.",
+   "introduction": [
+    "Mathematics in primary and lower secondary school moves from concrete quantities to symbolic notation, and many students find the abstract ideas hard to grasp. Teachers therefore often look for ways to make mathematical ideas visible and easy to act on.",
+    "Manipulatives are objects or digital tools that students handle or move to represent mathematical ideas. Concrete manipulatives include plastic cubes and fraction tiles [S4, S6], whereas virtual manipulatives are interactive digital tools, such as applets for geometry and algebra [S3, S5, S7]. The included studies examined them in topics such as fractions [S1, S6], geometry [S2, S3, S7, S8] and algebra [S5].",
+    "Each study involves a small number of classes and a particular topic, so a single study gives only a limited picture. A quantitative synthesis can put the results on the same scale, estimate the typical size of the difference between groups, show how much the results differ across studies, and ask whether the difference looks different in primary and lower secondary school.",
+    "The purpose of this meta-analysis was to estimate the overall difference in mathematics achievement between students taught with concrete or virtual manipulatives and students taught without them in grades 1 to 9. Our research question was: how large is the difference in post-test mathematics achievement between instruction with manipulatives and instruction without them, and does it differ between school levels?"
+   ],
+   "discussion": [
+    "The random-effects model gave a large pooled difference favoring instruction with manipulatives, g = 1.49, 95% CI [0.97, 2.02], p < .001 (Table 3). All eight studies had positive effects, ranging from g = 0.68 [S2] to g = 2.33 [S7] (Fig. 1). An effect of this size should be read with caution. The studies were small (N from 32 to 120), only one was randomized [S4], and the others compared intact classes at post-test, so differences between the groups before the lessons, and other differences between classes, may have contributed to the results.",
+    "The results varied widely across studies (Fig. 1). Heterogeneity was substantial (I² = 81.1%, τ² = 0.370), and the 95% prediction interval, [−0.11, 3.09], includes values close to zero as well as very large values. This means that the pooled value should not be taken as the benefit to expect in a particular classroom. The studies differed in the kind of manipulative (concrete, virtual, or a digital and 3D-printed program [S2]), the topic and grade, and the outcome test (Table 2), and the present data do not tell us which of these differences explains the variation.",
+    "The subgroup analysis by school level gave g = 1.23, 95% CI [0.03, 2.43] for elementary samples (k = 3) and g = 1.64, 95% CI [0.77, 2.51] for lower secondary samples (k = 5). The difference between school levels was not statistically significant, Q(1) = 0.94, p = .333, and these results are exploratory and based on few studies. A comparison of passive and active comparison conditions was not possible, because seven studies compared manipulatives with regular or traditional instruction [S1, S2, S3, S4, S5, S7, S8] and one did not describe the comparison [S6]. Removing each study in turn gave pooled estimates between 1.36 and 1.60, so no single study determined the overall result. Publication bias could not be assessed with fewer than 10 studies.",
+    "For teachers of grades 1 to 9, these results suggest that concrete and virtual manipulatives are worth trying, for example in fractions [S1, S6], geometry [S2, S3, S7, S8] and algebra [S5]. However, the studies do not show that manipulatives alone raise achievement, and the size of the differences reported here is unlikely to be repeated in every class. It is sensible to try manipulatives together with clear explanations, and to check in one's own class whether students' understanding improves."
+   ],
+   "limitations": [
+    "This synthesis has several limitations. Only eight studies were included, with sample sizes from 32 to 120, and seven of the eight were quasi-experimental studies of intact classes; only one was randomized [S4]. We used post-test scores, so differences between groups before the lessons were not adjusted for. The interventions, comparison conditions (often described only as traditional or regular instruction, and not described at all in one study [S6]), topics and outcome tests differed, which makes the pooled value a rough summary. Small studies can give large effects, and publication bias could not be assessed.",
+    "The data were extracted automatically from the full texts, and a person did not review every extraction. Several candidate studies could not be included because their full texts could not be retrieved or their statistics could not be read reliably. In addition, one study with an implausibly large effect was excluded by the software as a probable extraction error. For these reasons, the findings should be treated as provisional."
+   ],
+   "conclusion": [
+    "In eight small studies of students in grades 2 to 9, instruction with concrete or virtual manipulatives was associated with higher post-test mathematics scores than instruction without them (g = 1.49), with large differences among studies and a prediction interval that includes values close to zero. Because most studies were quasi-experimental and small, the result is preliminary: it is a reason for teachers to try manipulatives and check the effect in their own classes, not proof that manipulatives will raise achievement by this amount."
+   ],
+   "keywords": [
+    "manipulatives",
+    "mathematics achievement",
+    "virtual manipulatives",
+    "primary education",
+    "lower secondary education"
+   ]
+  },
+  "ja": {
+   "background": "操作教材とは、児童生徒が数学の考えを表すために手で扱う具体物やデジタル教具であり、その使用が学力の高さと関連するかを教師は知る必要がある．",
+   "conclusionAbstract": "小規模な8件の研究では、操作教材を使った指導は事後テストの得点の高さと関連したが、効果のばらつきは大きく、証拠は予備的である．",
+   "introduction": [
+    "小学校・中学校の算数・数学は、具体的な量から記号による表記へと進むが、抽象的な考えをつかみにくい児童生徒は多い．そのため教師は、数学の考えを目に見えて扱いやすくする方法をしばしば探している．",
+    "操作教材（manipulatives）とは、児童生徒が数学の考えを表すために手で扱い動かす具体物やデジタル教具である．具体的な操作教材にはプラスチックのキューブや分数のタイルがあり [S4, S6]、仮想操作教材（virtual manipulatives）は、幾何や代数のアプレットなどの対話的なデジタル教具である [S3, S5, S7]．採用した研究は、分数 [S1, S6]、幾何 [S2, S3, S7, S8]、代数 [S5] などの内容でこれらを調べていた．",
+    "各研究は少数の学級と特定の内容を対象としているため、1件の研究からは限られた姿しか分からない．量的な統合（quantitative synthesis）では、結果を同じ尺度にそろえ、群間の差の典型的な大きさを推定し、研究間で結果がどれだけ異なるかを示し、その差が小学校と中学校で異なるかを調べることができる．",
+    "本メタ分析の目的は、1〜9年生において、具体的または仮想的な操作教材を使って学んだ児童生徒と、使わずに学んだ児童生徒との間の算数・数学の学力の差を、全体として推定することであった．研究上の問いは、操作教材を使った指導と使わない指導とで事後テストの学力の差はどの程度か、またその差は学校段階によって異なるか、である．"
+   ],
+   "discussion": [
+    "ランダム効果モデルによる統合した差は、操作教材を使った指導に有利な大きなものであった（g = 1.49，95% 信頼区間 [0.97, 2.02]，p < .001）（表3）．8件すべての研究で効果は正であり，その範囲は g = 0.68 [S2] から g = 2.33 [S7] であった（図1）．この大きさの効果は慎重に読む必要がある．研究の規模は小さく（N は32から120），無作為に割り付けた研究は1件だけであり [S4]，ほかは既存の学級どうしを事後テストで比べていたため，授業の前からあった群間の差や学級間のその他の違いが結果に影響した可能性がある．",
+    "結果は研究間で大きくばらついた（図1）．異質性は大きく（I² = 81.1%，τ² = 0.370），95% 予測区間 [−0.11, 3.09] には，0に近い値も非常に大きな値も含まれる．このため，統合値を特定の教室で期待できる利益とみなしてはならない．研究間では，操作教材の種類（具体物，仮想，またはデジタルと3Dプリントを組み合わせたプログラム [S2]），内容と学年，成果指標のテストが異なっており（表2），今回のデータからは，これらのうちどれが違いを説明するのかは分からない．",
+    "学校段階別の分析では，小学校の標本（k = 3）で g = 1.23，95% 信頼区間 [0.03, 2.43]，中学校の標本（k = 5）で g = 1.64，95% 信頼区間 [0.77, 2.51] であった．学校段階間の差は統計的に有意ではなく（Q(1) = 0.94，p = .333），これらの結果は探索的で，少数の研究に基づく．受動的な比較条件と能動的な比較条件の比較はできなかった．7件の研究は操作教材を通常の指導または従来の指導と比べており [S1, S2, S3, S4, S5, S7, S8]，1件は比較の内容を述べていなかったためである [S6]．1件ずつ研究を除いて統合し直した推定値は1.36から1.60の間であり，1件の研究だけが全体の結果を決めたわけではなかった．出版バイアスは，研究が10件未満のため評価できなかった．",
+    "1〜9年生の教師にとって，これらの結果は，たとえば分数 [S1, S6]，幾何 [S2, S3, S7, S8]，代数 [S5] で，具体的な操作教材や仮想の操作教材を試す価値があることを示している．ただし，これらの研究は操作教材だけで学力が上がることを示してはおらず，ここで報告された差の大きさがどの学級でも再現されるとは考えにくい．分かりやすい説明とあわせて操作教材を使い，自分の学級で児童生徒の理解が深まるかを確かめるのが妥当である．"
+   ],
+   "limitations": [
+    "本統合にはいくつかの限界がある．採用した研究は8件のみで，標本の大きさは32から120であり，8件のうち7件は既存の学級を対象とした準実験研究で，無作為化した研究は1件だけであった [S4]．事後テストの得点を用いたため，授業前の群間差は調整していない．介入，比較条件（多くは「従来の指導」「通常の指導」としか書かれておらず，1件ではまったく書かれていなかった [S6]），内容，成果指標のテストが異なるため，統合値はおおまかな要約にとどまる．小規模な研究は大きな効果を示しやすく，出版バイアスは評価できなかった．",
+    "データは全文から自動で抽出し，すべての抽出を人が確かめたわけではない．全文を入手できなかった，または統計量を確実に読み取れなかったために，採用できなかった候補の研究もいくつかあった．加えて，効果が不自然に大きかった1件の研究は，抽出の誤りの可能性が高いとしてソフトウェアが除外した．これらの理由から，本知見は暫定的なものとして扱うべきである．"
+   ],
+   "conclusion": [
+    "2〜9年生を対象とした小規模な8件の研究では，具体的または仮想的な操作教材を使った指導は，使わない指導より事後テストの算数・数学の得点が高いことと関連していた（g = 1.49）．ただし研究間の差は大きく，予測区間には0に近い値も含まれる．多くの研究が小規模な準実験であるため，この結果は予備的である．これは，教師が操作教材を試して自分の学級での効果を確かめる理由にはなるが，操作教材がこの大きさだけ学力を高めることを証明するものではない．"
+   ],
+   "keywords": [
+    "操作教材",
+    "算数・数学の学力",
+    "仮想操作教材",
+    "初等教育",
+    "前期中等教育"
+   ],
+   "criteria": {
+    "population": "1〜9年生（小学校・中学校）の児童生徒（年齢はおよそ6〜15歳）．幼児のみ，高校生のみ，大学生，成人，教員・教員養成課程の学生の標本は除く",
+    "intervention": "具体的または仮想的な操作教材を使った指導",
+    "comparison": "操作教材を使わない指導（例：記号的な指導，教科書のみの指導）",
+    "outcome": "算数・数学の学力テスト"
+   }
+  },
+  "article": {
+   "lead": "算数・数学の授業で、ブロックなどの具体物やパソコン上の教具（操作教材）を使うことは、成績とどう関係するのでしょうか。小学校2年から中学校3年に当たる児童生徒を対象とした8件の研究をまとめて調べたところ、操作教材を使った授業のほうが、使わない授業より事後テストの得点が高い傾向がありました。ただし、研究の数は少なく、結果のばらつきも大きいものでした。",
+   "question": "「手で動かせる教材を使うと、算数・数学の考えがつかみやすくなるのか」は、授業づくりで多くの先生が気にすることです。そこで今回は、ブロックやタイルなどの具体物と、パソコンやタブレットで動かす仮想の操作教材を使った授業を、使わない授業と比べた研究を集め、事後テストの得点の差を調べました。結果をそろえて眺めることで、1つの研究だけでは分からない全体の傾向が見えてきます。",
+   "reading": [
+    "8件の研究（参加者は合計499人）をまとめると、操作教材を使った群と使わない群の得点の差は g = 1.49（95% 信頼区間 [0.97, 2.02]）でした。g は「平均の差を標準偏差で割った値」で、1.49 は一般的な目安では「大きい」差です。8件すべてで、操作教材を使った群のほうが得点は高くなっていました（g は 0.68 [S2] から 2.33 [S7]）。ただし、研究が小さいことや、授業の前からあった学級の違いが混じっていることで、実際より大きく見えている可能性があります。",
+    "研究によって結果は大きく異なりました。ばらつきを表す I² は 81.1% と大きく、「次の研究で見つかる差の幅」を表す予測区間は [−0.11, 3.09] と、0に近い値も含んでいます。ですから、1.49 という値を、どの教室でも期待できる効果として受け取るのは適切ではありません。学校段階で分けると、小学校の研究（3件）は g = 1.23、中学校の研究（5件）は g = 1.64 でしたが、この差は統計的に有意ではなく（p = .333）、研究の数も少ないため、あくまで探索的な結果です。",
+    "比べた相手は、7件が通常の授業や従来の授業で、1件は内容が書かれていませんでした [S6]。そのため、受動的な比較（何もしない・通常の授業）と能動的な比較（別の教え方）に分けた分析はできませんでした。内容は分数 [S1, S6]、幾何 [S2, S3, S7, S8]、代数 [S5] などさまざまで、児童生徒を無作為に分けた研究は1件だけです [S4]。1件ずつ研究を除いて計算し直しても 1.36 から 1.60 の間で、1件の研究が結果を決めているわけではありませんでした。"
+   ],
+   "hints": [
+    "分数 [S1, S6]、図形 [S2, S3, S7, S8]、文字式 [S5] など、目に見えにくい考えを扱う場面で、具体物やデジタル教具を試してみる価値があります。",
+    "自分の学級で試すときは、使う前と後で同じような課題を解かせて、理解が深まったかを確かめてみましょう。効果の大きさは学級によって大きく変わりえます。",
+    "仮想の操作教材 [S3, S5, S7] でも、具体物 [S1, S4, S6] でも、得点が高い傾向がありました。どちらか一方が優れているとは、この分析からは言えません。"
+   ],
+   "cautions": [
+    "分かるのは「操作教材を使った授業のほうが、得点が高い傾向がある」ことまでです。操作教材が得点を上げたとまでは言えません。",
+    "研究は8件と少なく、参加者も1研究あたり32人から120人の小規模なものです。多くは既存の学級を比べた準実験で、差は実際より大きく出ている可能性があります。",
+    "論文の選別・数値の抽出・文章の下書きは生成 AI（Ollama）が行い、Claude Code が確認・修正しました。数値は本文と照合しましたが、人による確認は経ていません。"
+   ],
+   "sns": "操作教材（具体物・デジタル教具）を使った算数・数学の授業を、8件の研究で比べました。使った授業のほうが得点が高い傾向がありましたが、研究が少なく、ばらつきも大きい結果です。"
+  }
+ },
+ "dir": "2026-10-11-math-manipulatives"
+}
