@@ -178,6 +178,14 @@ async function unitTests() {
   check('リンク除去: href の無い <a> も外す', sz('<a name="t">本文</a>') === '本文');
   check('リンク除去: リンクでない本文中の DOI の URL も文字に（末尾の句点は含めない）', sz('詳細は https://doi.org/10.1/abc. を参照') === '詳細は DOI: 10.1/abc. を参照', sz('詳細は https://doi.org/10.1/abc. を参照'));
   check('リンク除去: 画像・ショートコード・ふつうの本文は変えない', (() => { const s = '<p>本文 <i>g</i> = 0.5</p><img src="https://raw.githubusercontent.com/x/f.png" alt="図" />\n[category 教育メタ分析]\n[end]'; return sz(s) === s; })());
+  {
+    const ok = '<a href="https://cdn.jsdelivr.net/gh/k518-2026/MetaAnalysisToWP@main/reports/2026-10-11-x/paper-ja.pdf">日本語版の論文（PDF）</a>';
+    check('リンク除去: 自分の論文 PDF の直リンク（jsDelivr）だけは残し、https:// も落とさない。findLinks も見逃す', sz('<ul><li>' + ok + '</li></ul>') === '<ul><li>' + ok + '</li></ul>' && content.findLinks(sz(ok)).length === 0, sz(ok));
+    check('リンク除去: raw.githubusercontent.com・GitHub の blob・jsDelivr の PDF 以外・別のリポジトリの外部 URL は、論文 PDF でないので外す',
+      !/<a\b/i.test(sz('<a href="https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/x/paper-ja.pdf">a</a><a href="https://github.com/k518-2026/MetaAnalysisToWP/blob/main/reports/x/paper-ja.pdf">b</a><a href="https://cdn.jsdelivr.net/gh/o/r@main/reports/x/studies.csv">c</a><a href="https://example.org/paper-ja.pdf">d</a>')));
+    check('リンク除去: 論文 PDF の直リンクと、ほかのリンクが混ざっても、直リンクだけが残る。何度通しても同じ',
+      (() => { const s = ok + ' と <a href="https://doi.org/10.1/x">https://doi.org/10.1/x</a>'; const r = sz(s); return r === ok + ' と DOI: 10.1/x' && sz(r) === r; })());
+  }
   check('リンク除去: 何度通しても同じ', (() => { const s = '<a href="https://doi.org/10.1/x">a</a> <a href="https://e.org/">b</a>'; return sz(sz(s)) === sz(s); })());
   check('リンク除去: 送る前の結果に <a> が残らない（雑多な入力）', !/<a\b/i.test(sz('<p><a href="https://a.org">1</a><a\nhref="https://b.org"\n>2</a><a href=https://c.org>3</a></p>')));
 
@@ -532,9 +540,13 @@ async function pipelineTest() {
     const px = (svg) => Number((svg.match(/font-size="(\d+)"/) || [])[1]) / Number((svg.match(/<svg[^>]* width="(\d+)"/) || [])[1]);
     check('図: 記事用は文字が大きく（幅に対して 1.3 倍以上）、論文用は変えない', px(large) > px(small) * 1.3 && /font-size="13"/.test(small) && /font-size="19"/.test(large), [px(small), px(large)]);
   }
-  check('記事: PDF と CSV は長いアドレスでなく、場所・フォルダ・ファイル名で案内する（リンク・URL なし）', art.includes('<li>場所: github.com/k518-2026/MetaAnalysisToWP</li>') && art.includes('<li>フォルダ: reports/2026-10-04-math-fraction-instruction</li>') && art.includes('<li>日本語版の論文: paper-ja.pdf</li>') && art.includes('<li>英語版の論文: paper-en.pdf</li>') && art.includes('<li>抽出したデータ（CSV）: studies.csv</li>') && content.findLinks(art).length === 0 && !art.replace(/<img[^>]*>/g, '').includes('raw.githubusercontent.com'));
+  check('記事: 論文 PDF（日本語版・英語版）への直リンクを付ける。PDF として配信される jsDelivr の URL で、GitHub の raw やビューアーの URL は使わない',
+    /<li><a href="https:\/\/cdn\.jsdelivr\.net\/gh\/k518-2026\/MetaAnalysisToWP@main\/reports\/2026-10-04-math-fraction-instruction\/paper-ja\.pdf">日本語版の論文（PDF）<\/a><\/li>/.test(art) &&
+    /<li><a href="https:\/\/cdn\.jsdelivr\.net\/gh\/k518-2026\/MetaAnalysisToWP@main\/reports\/2026-10-04-math-fraction-instruction\/paper-en\.pdf">英語版の論文（PDF）<\/a><\/li>/.test(art) &&
+    art.includes('場所: github.com/k518-2026/MetaAnalysisToWP、フォルダ: reports/2026-10-04-math-fraction-instruction、ファイル名: studies.csv') &&
+    content.findLinks(art).length === 0 && !art.replace(/<img[^>]*>/g, '').includes('raw.githubusercontent.com') && !art.includes('github.com/k518-2026/MetaAnalysisToWP/blob'));
+  check('記事: リンクは論文 PDF の直リンク2つだけ（ほかの <a> は無い）', (art.match(/<a\b/gi) || []).length === 2 && (art.match(/href\s*=/gi) || []).length === 2, (art.match(/<a\b[^>]*>/gi) || []).join(' | '));
   check('記事: 表は5列に絞り、参考文献は番号つきで DOI を改行する', (art.match(/<th>/g) || []).length === 5 && art.includes('<ol><li>') && /<br \/>DOI: /.test(art) && art.includes('<h2>対象とした研究</h2>') && art.includes('<h2>参考文献（分析した論文）</h2>'));
-  check('記事: <a> も href も無い', !/<a\b/i.test(art) && !/href\s*=/i.test(art), (art.match(/<a\b[^>]*>/i) || [])[0]);
   check('記事: 参考文献の DOI は「DOI: 10.xxxx/...」', /DOI: 10\.9999\/test\.\d/.test(art) && !/https?:\/\/doi\.org/.test(art), (art.match(/.{20}doi\.org.{20}/) || [])[0]);
   check('記事: 図（img）は残す', /<img src="https:\/\/raw\.githubusercontent\.com\/[^"]+forest-article\.png"/.test(art));
   check('論文 PDF は変えない（日本語版は DOI の URL のリンク、英語版は「doi: 10.xxxx/...」の文字）', /<a href="https:\/\/doi\.org\/10\.9999\/test\.\d"/.test(ja) && /doi: 10\.9999\/test\.\d/.test(en) && !/<a href="https:\/\/doi/.test(en));
@@ -614,7 +626,7 @@ async function pipelineTest() {
     await sendWp.main(['node', 'send-wp.js']);
     console.log = origLog;
     check('送信: 1通送る', sent.length === 1);
-    check('送信: 記事ファイルに残るリンクも、送る前に外す', sent[0] && !/<a\b/i.test(sent[0].html) && sent[0].html.includes('DOI: 10.1/legacy'), sent[0] && (sent[0].html.match(/.{30}legacy.{20}/) || [])[0]);
+    check('送信: 記事ファイルに残るリンクも、送る前に外す（論文 PDF の直リンク2つだけを残す）', sent[0] && (sent[0].html.match(/<a\b/gi) || []).length === 2 && sent[0].html.includes('DOI: 10.1/legacy') && !/doi\.org/.test(sent[0].html), sent[0] && (sent[0].html.match(/.{30}legacy.{20}/) || [])[0]);
     check('送信: 件名', sent[0] && sent[0].subject === '【メタ分析】' + report.theme.titleJa, sent[0] && sent[0].subject);
     check('送信: 末尾にショートコード', sent[0] && /\[category 教育メタ分析\][\s\S]*\[publicize off\]\n\[end\]$/.test(sent[0].html));
     const after = JSON.parse(fs.readFileSync(realLedger, 'utf8'));

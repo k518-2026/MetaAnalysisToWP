@@ -230,7 +230,12 @@ async function analyzeAndWrite(report) {
 function links(dir) {
   const { owner, name, branch } = config.repo;
   const raw = `https://raw.githubusercontent.com/${owner}/${name}/${branch}/${config.paths.reports}/${dir}`;
+  // ブラウザで全文を開ける PDF の URL。raw は application/octet-stream で、クリックするとダウンロードになる。
+  // jsDelivr は application/pdf で返す（@main の内容は最大12時間キャッシュされる）
+  const view = `https://cdn.jsdelivr.net/gh/${owner}/${name}@${branch}/${config.paths.reports}/${dir}`;
   return {
+    viewJa: `${view}/paper-ja.pdf`,
+    viewEn: `${view}/paper-en.pdf`,
     paperJa: `${raw}/paper-ja.pdf`,
     paperEn: `${raw}/paper-en.pdf`,
     data: `${raw}/studies.csv`,
@@ -381,7 +386,8 @@ async function build(report, outDir) {
 function writeIndex(root, ledger) {
   const { owner, name, branch } = config.repo;
   const rows = ledger.runs.filter((r) => r.status === ledgerLib.STATUS.DONE).slice().reverse().map((r) => {
-    const base = `https://raw.githubusercontent.com/${owner}/${name}/${branch}/${config.paths.reports}/${r.dir}`;
+    // ブラウザの PDF 表示で全文が開く URL（raw はダウンロードになる）
+    const base = `https://cdn.jsdelivr.net/gh/${owner}/${name}@${branch}/${config.paths.reports}/${r.dir}`;
     return `| ${r.date} | ${r.titleJa} | ${r.k} | ${r.pooled} | [日本語](${base}/paper-ja.pdf) / [English](${base}/paper-en.pdf) | ${r.wpSentAt ? (r.wpDraft ? '下書きに送信' : '送信済み') : '未送信'} |`;
   });
   const md = ['# メタ分析の一覧', '', '新しい順。台帳（ledger.json）から自動で作っています。', '',
