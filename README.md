@@ -60,7 +60,9 @@ GitHub Actions だけで動きます。
 **定例（Actions の schedule）は 2026-10-11 の回まで**（Gemini → Claude API）。それ以降は、手元で次の方式で作って push します。
 LAN の Ollama には GitHub から届かないため、Actions では動かせません（`weekly.yml` の `gate` が、10/12 以降の定例を何もせず終わらせます。手動実行は動きます）。
 
-1. **Ollama が下書きを作る**（`http://192.168.128.62:11434`、既定モデル gemma4:12b）。`LLM_PRIMARY=ollama node run.js --force`
+1. **Ollama が下書きを作る**（手元の LAN にある Ollama サーバー。接続先は環境変数 `OLLAMA_HOST`（`http://<ホスト>:11434` の形）で渡し、アドレスはリポジトリに書かない。
+   使うモデルは下の「使っている AI モデル」）。`LLM_PRIMARY=ollama node run.js --force`
+   （`OLLAMA_HOST` は Git の対象外のファイル（例: `.cache/ollama.env`）に書いて `node --env-file=.cache/ollama.env run.js --force` と渡せます）
    - 要旨の選別は Ollama だけ。データの抽出・英語の文章・日本語訳・記事は、Ollama が下書きを作る
 2. **Claude Code（Sonnet 5.5 または Opus 5.5）が確認・修正する**。下書きごとに `.cache/local-llm/NNN.request.json`（`kind` と `draft` つき）が作られ、
    確認・修正した答えを `NNN.response.json` に書くと次へ進む。見るのは、数値が事実と合っているか・引用 [S#] が正しい研究を指しているか・
@@ -73,6 +75,14 @@ LAN の Ollama には GitHub から届かないため、Actions では動かせ�
      ④ 対象が 1〜9 年生か（高校生・大学生・教員を含む主な標本は不適格）
 3. 日本語版（JSET 風）・英語版（APA 第7版）の論文を **LuaLaTeX** で組み、記事（`article-ja.html`）を作る。余白と表の欠落を検査してから push
 4. WordPress へは、push のあとに Actions の「WordPress だけ送る」（既定は下書き）で送る（SMTP の秘密情報は GitHub にだけある）
+
+## 使っている AI モデル
+
+| 用途 | モデル（名前・バージョン） | 補足 |
+|---|---|---|
+| 下書き（Ollama） | **`gemma4:12b`**（Google の **Gemma 4**、12B 版） | パラメータ数 約119億（11.9B）、量子化 Q4_K_M（GGUF）、ライセンス Apache-2.0。Ollama 上の ID（ダイジェスト）は `6114515d63c1`、Ollama サーバーは 0.40.2（2026-10-11 時点） |
+| 確認・修正（Claude Code） | **`claude-sonnet-5-5`**（Claude Sonnet 5.5） | 必要に応じて Claude Opus 5.5 |
+| 定例（〜2026-10-11、Actions） | `gemini-3.6-flash` を最初に使い、混んでいれば `gemini-3.8-flash` など別の flash 系、それでも駄目なら Claude API | 実際に使ったモデルは、各報告の論文の方法・付記と `ledger.json` に記録される |
 
 記録するモデル名は「gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)」。論文の方法・著者注記と台帳に入る。
 Ollama につながらないときは、他の API に切り替えず、接続先を示して止まる。

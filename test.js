@@ -719,6 +719,16 @@ async function ollamaTest() {
     let cut = '';
     try { await ollama.generateJson('短い依頼', null, llm.parseJson); } catch (e) { cut = e.message; }
     check('Ollama: 入力が枠いっぱいまで読まれていたら、切り捨てとして失敗にする', /切り捨てられた可能性/.test(cut), cut);
+    // 接続先（アドレス）はリポジトリに書かない。環境変数 OLLAMA_HOST が無ければ、はっきり失敗にする
+    check('Ollama: 接続先の既定値は空（アドレスはリポジトリに書かない）', config.ollama.host === '');
+    {
+      const savedHost = process.env.OLLAMA_HOST;
+      delete process.env.OLLAMA_HOST;
+      let noHost = '';
+      try { await ollama.generateJson('x', null, llm.parseJson); } catch (e) { noHost = e.message; }
+      process.env.OLLAMA_HOST = savedHost;
+      check('Ollama: OLLAMA_HOST が無いときは、環境変数の指定を促して失敗にする（アドレスは出さない）', /環境変数 OLLAMA_HOST/.test(noHost) && !/\d+\.\d+\.\d+\.\d+/.test(noHost), noHost);
+    }
     // つながらないときは API に切り替えず、はっきり失敗にする
     global.fetch = async () => { throw new Error('connect ECONNREFUSED'); };
     let msg = '';

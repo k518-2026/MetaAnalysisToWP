@@ -286,9 +286,10 @@ module.exports = {
   geminiRoundWaitMs: 90 * 1000,
   temperature: 0.2,
   maxOutputTokens: 16384,
-  // 手元の Ollama（Mac mini、LAN）。LLM_PRIMARY=ollama のとき、ここに内容を作らせ、Claude Code が確認・修正する（lib/ollama.js）
+  // 手元の Ollama（LAN）。LLM_PRIMARY=ollama のとき、ここに内容を作らせ、Claude Code が確認・修正する（lib/ollama.js）
+  // 接続先（アドレス）は環境変数 OLLAMA_HOST で渡す。公開リポジトリには書かない（2026-10-11 ユーザー指示）
   ollama: {
-    host: 'http://192.168.128.62:11434',
+    host: '',
     model: 'gemma4:12b',
     numCtx: 32768,
     numPredict: 8192,
