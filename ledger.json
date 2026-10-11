@@ -64,6 +64,20 @@
       "warnings": [],
       "wpSentAt": "2026-10-11T01:00:17.328Z",
       "wpDraft": true
+    },
+    {
+      "date": "2026-10-11",
+      "themeId": "math-manipulatives",
+      "status": "done",
+      "dir": "2026-10-11-math-manipulatives",
+      "titleJa": "具体物（操作教材）を使った算数・数学指導の効果",
+      "k": 8,
+      "pooled": "g = 1.49 [0.97, 2.02]",
+      "models": [
+        "gemma4:12b (Ollama; drafts) and claude-sonnet-5-5 (Claude Code; review and revision)"
+      ],
+      "warnings": [],
+      "wpSentAt": ""
     }
   ]
 }

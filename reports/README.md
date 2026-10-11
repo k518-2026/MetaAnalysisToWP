@@ -4,7 +4,4 @@
 
 | 日付 | テーマ | 研究数 | 統合値 | 論文 PDF | WordPress |
 |---|---|---|---|---|---|
-| 2026-10-11 | ブロック型プログラミング（Scratch など）の学習効果 | 9 | g = 1.47 [0.87, 2.06] | [日本語](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-11-info-block-programming-ct/paper-ja.pdf) / [English](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-11-info-block-programming-ct/paper-en.pdf) | 下書きに送信 |
-| 2026-10-06 | 算数・数学への不安と学力の関係 | 10 | r = -0.34 [-0.49, -0.17] | [日本語](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-06-math-anxiety-achievement/paper-ja.pdf) / [English](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-06-math-anxiety-achievement/paper-en.pdf) | 未送信 |
-| 2026-10-04 | アンプラグド活動はプログラミング的思考を育てるか | 6 | g = 0.51 [-0.15, 1.16] | [日本語](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-info-unplugged-ct/paper-ja.pdf) / [English](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-info-unplugged-ct/paper-en.pdf) | 送信済み |
-| 2026-09-29 | 分数の指導法は理解を高めるか | 10 | g = 0.92 [0.50, 1.35] | [日本語](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-09-29-math-fraction-instruction/paper-ja.pdf) / [English](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-09-29-math-fraction-instruction/paper-en.pdf) | 送信済み |
+| 2026-10-04 | 分数の指導法は理解を高めるか | 7 | g = 1.02 [0.71, 1.33] | [日本語](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/paper-ja.pdf) / [English](https://raw.githubusercontent.com/k518-2026/MetaAnalysisToWP/main/reports/2026-10-04-math-fraction-instruction/paper-en.pdf) | 下書きに送信 |
