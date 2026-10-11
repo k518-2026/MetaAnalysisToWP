@@ -47,6 +47,22 @@
       ],
       "warnings": [],
       "wpSentAt": ""
+    },
+    {
+      "date": "2026-10-11",
+      "themeId": "info-block-programming-ct",
+      "status": "done",
+      "dir": "2026-10-11-info-block-programming-ct",
+      "titleJa": "ブロック型プログラミング（Scratch など）の学習効果",
+      "k": 9,
+      "pooled": "g = 1.47 [0.87, 2.06]",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini-3.6-flash",
+        "gemini-3.7-flash"
+      ],
+      "warnings": [],
+      "wpSentAt": ""
     }
   ]
 }

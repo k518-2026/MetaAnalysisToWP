@@ -1,0 +1,2258 @@
+{
+ "theme": {
+  "id": "info-block-programming-ct",
+  "domain": "info",
+  "effect": "smd",
+  "titleJa": "ブロック型プログラミング（Scratch など）の学習効果",
+  "titleEn": "Effects of Block-Based Programming Instruction on Computational Thinking in School Students",
+  "query": "(Scratch OR \"block-based programming\" OR \"visual programming\" OR \"block-based coding\") AND (\"computational thinking\" OR \"problem solving\" OR programming) AND (elementary OR primary OR \"middle school\" OR \"junior high\" OR secondary OR \"K-12\" OR grade OR children OR pupils)",
+  "jstage": [
+   "Scratch 小学校",
+   "ビジュアルプログラミング 授業"
+  ],
+  "population": "students in primary or secondary school (K-12). Primary and lower secondary samples are preferred; upper secondary samples are acceptable. Exclude university, adult, and teacher/pre-service teacher samples.",
+  "intervention": "block-based or visual programming instruction (e.g., Scratch, ScratchJr, Code.org, Blockly)",
+  "comparison": "regular lessons, no programming instruction, or text-based/alternative instruction",
+  "outcome": "a computational thinking, programming, or problem-solving test",
+  "subfields": [
+   "3304",
+   "3204",
+   "1706",
+   "1710"
+  ]
+ },
+ "search": {
+  "openalex": {
+   "total": 612,
+   "retrieved": 200
+  },
+  "jstage": {
+   "total": 37,
+   "retrieved": 37
+  },
+  "merged": 233,
+  "screened": 200,
+  "passedScreening": 31,
+  "fullTextsTried": 30,
+  "excluded": {
+   "noPdf": 8,
+   "ineligible": 6,
+   "noStats": 5,
+   "unverified": 2,
+   "implausible": 0,
+   "error": 0
+  }
+ },
+ "studies": [
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4206467982",
+    "doi": "10.30935/cedtech/11477",
+    "title": "An Investigation of The Effect of Block-Based Programming and Unplugged Coding Activities on Fifth Graders’ Computational Thinking Skills, Self-Efficacy and Academic Performance",
+    "titleEn": "",
+    "authors": [
+     "Nihan Arslan Namlı",
+     "Birsel Aybek"
+    ],
+    "venue": "Contemporary Educational Technology",
+    "volume": "14",
+    "issue": "1",
+    "pages": "ep341",
+    "year": "2022",
+    "language": "en",
+    "citedBy": 22,
+    "url": "https://doi.org/10.30935/cedtech/11477",
+    "landing": "https://doi.org/10.30935/cedtech/11477",
+    "pdfUrls": [
+     "https://www.cedtech.net/download/an-investigation-of-the-effect-of-block-based-programming-and-unplugged-coding-activities-on-fifth-11477.pdf"
+    ],
+    "abstract": "This paper investigated the effect of block-based programming and unplugged coding teaching activities on fifth graders’ computational thinking skills, self-efficacy, and academic performance. The teaching activities were conducted within the scope of the “Problem-Solving and Programming” unit of the Information Technologies and Software (ITS) course. The sample consisted of 82 fifth graders of three public middle schools in the academic year of 2020-2021. Participants were recruited using random sampling. The study adopted an embedded mixed design. The quantitative stage employed a pretest-posttest randomized control group design, while the qualitative staged employed a case study. Quantitative data were collected using the Computational Thinking Self-efficacy Scale (CTSES), the International Informatics and Computational Thinking Activity Task Test (IICTATT), and a Computational Thinking Performance Test (CTPT) developed by the researcher. Qualitative data were collected using a semi-structured interview questionnaire. The quantitative data were analyzed using the Kruskal Wallis H, paired sample t-test, and ANCOVA test on the Statistical Package for Social Sciences (SPSS). The qualitative data were analyzed inductively using MAXQDA. There was no significant difference in CTSES scores between groups. Experimental 2 had higher IICTATT and CTPT scores than Experimental-1 and control groups. The qualitative findings were grouped into seven categories.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "Randomized pretest-posttest control group design assessing block-based programming on fifth graders' CT performance."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial evaluating the effect of block-based programming on fifth-grade students' computational thinking skills compared to a business-as-usual control group.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "block-based programming activities",
+    "comparison": "regular curriculum lessons with no interventions",
+    "outcomeMeasure": "International Informatics and Computational Thinking Activity Task Test",
+    "summaryEn": "This study evaluated the effects of block-based programming and unplugged coding activities on the computational thinking skills and performance of fifth-grade students compared to a regular curriculum control group. Students participating in block-based programming showed significant gains and scored significantly higher on computational thinking tasks than the control group.",
+    "summaryJa": "本研究は、通常カリキュラムの対照群と比較して、ブロック型プログラミングおよびアンプラグドコーディング活動が小学5年生の計算論的思考力および学習成果に与える影響を検証しました。その結果、ブロック型プログラミングを実施したグループは計算論的思考課題において対照群よりも有意に高い得点を示しました。",
+    "evidence": "Table 7. Paired sample t-test results for IICTATT scores: Experimental 2 Posttest N=28, X̄=6.92, S=1.77; Control Posttest N=30, X̄=5.40, S=1.47",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "ランダム化比較試験",
+     "intervention": "ブロック型プログラミング活動",
+     "comparison": "介入なしの通常カリキュラム授業",
+     "outcomeMeasure": "国際情報科学・計算論的思考タスクテスト"
+    },
+    "stats": {
+     "nTreatment": "28",
+     "nControl": "30",
+     "meanTreatment": "6.92",
+     "meanControl": "5.40",
+     "sdTreatment": "1.77",
+     "sdControl": "1.47",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "82",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "The control group was lectured based on the ITS course curriculum with no interventions.",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 0.924743482170145,
+    "vi": 0.07457431901321411,
+    "n": 58,
+    "method": "means and SDs",
+    "display": 0.924743482170145
+   },
+   "pdfUrl": "https://www.cedtech.net/download/an-investigation-of-the-effect-of-block-based-programming-and-unplugged-coding-activities-on-fifth-11477.pdf",
+   "sid": "S1"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W2791936313",
+    "doi": "10.16949/turkbilmat.399588",
+    "title": "Effect of Scratch on 5th Graders’ Algorithm Development and Computational Thinking Skills",
+    "titleEn": "",
+    "authors": [
+     "Ali Oluk",
+     "Özgen Korkmaz",
+     "Hayriye Ayşe Oluk"
+    ],
+    "venue": "Türk bilgisayar ve matematik eğitimi dergisi",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "year": "2018",
+    "language": "en",
+    "citedBy": 32,
+    "url": "https://doi.org/10.16949/turkbilmat.399588",
+    "landing": "https://doi.org/10.16949/turkbilmat.399588",
+    "pdfUrls": [
+     "https://dergipark.org.tr/en/download/article-file/432160"
+    ],
+    "abstract": "Öz: Bu çalışmanın amacı Scratch kullanımının algoritma geliştirme ve bilgi-işlemsel düşünme becerilerini geliştirmede etkisini incelemektir.Araştırma öntest sontest kontrol gruplu yarı deneysel bir çalışma olup 31 deney 31 kontrol grubu olmak üzere 62 tane 5. Sınıf öğrencisi ile yürütülmüştür.Araştırma 5. sınıf bilişim teknolojileri ve yazılım dersinde 6 haftalık bir süreci kapsayacak şekilde tasarlanmıştır.Bu süreçte deney grubu öğrencilerine Scratch programı kullanılarak algoritma anlatılırken, kontrol grubu öğrencilerine mevcut müfredata göre algoritma anlatılmıştır.Öğrencilere öntest ve sontest olarak bilgi-işlemsel düşünme ölçeği ve algoritma geliştirme başarı testi uygulanmıştır.Bilgi-işlemsel düşünme ölçeğinin gerekli faktör ve güvenirlik analizleri yapılmış ve Cronbach Alpha güvenirlik katsayısı 0.809 olarak belirlenmiştir.Algoritma geliştirme başarı testinin Kr-20 iç tutarlılık kat sayısı ise 0.85 olarak bulunmuştur.Grupların başarı testleri arasında istatistiksel olarak bir fark olup olmadığını anlamak için bağımsız t testi uygulanmıştır.Çalışma sonucu olarak deney grubu öğrencilerinin algoritma geliştirme ve bilgi-işlemsel düşünme becerilerinin kontrol grubuna göre anlamlı derecede daha fazla yükseldiği bulunmuştur.Bu durumda Scratch programının algoritma geliştirme ve bilgiişlemsel düşünme becerilerini geliştirmek için kullanılabilir bir öğrenme aracı olduğu söylenebilir.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "It uses a quasi-experimental control group design with 5th-grade students to test the effect of Scratch on computational thinking and algorithm skills."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental pretest-posttest control group design to evaluate the effects of Scratch programming instruction on 5th graders' algorithm development and computational thinking skills.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Scratch visual programming instruction",
+    "comparison": "regular curriculum-based algorithm instruction",
+    "outcomeMeasure": "Algorithm Development Achievement Test",
+    "summaryEn": "This quasi-experimental study investigated the effects of a 6-week Scratch programming instruction on 5th-grade students' algorithm development and computational thinking skills compared to regular curriculum instruction. The findings showed that students in the Scratch intervention group achieved significantly higher gains in algorithm development and computational thinking than those in the control group.",
+    "summaryJa": "本研究は、小学5年生を対象に、6週間のScratchプログラミング指導がアルゴリズム開発および情報的思考力に及ぼす効果を、通常カリキュラムに基づく指導を受けた対照群と比較検証した準実験研究です。その結果、Scratchを用いた実験群は対照群と比較して、アルゴリズム開発達成度テストおよび情報的思考尺度の得点が有意に大きく向上したことが示されました。",
+    "evidence": "deney ve kontrol grubu arasından istatistiksel olarak anlamlı bir farklılık bulunmaktadır, 𝑡(60) = 10.63, 𝑝 < .01. Deney grubunun AGBT öntest sontest puan farklarının (𝑋̅ = 42.58), kontrol grubuna (𝑋̅ = 23.87) göre daha yüksek olduğu görülmektedir.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "Scratchを用いたプログラミング指導",
+     "comparison": "現行カリキュラムに基づくアルゴリズム指導",
+     "outcomeMeasure": "アルゴリズム開発達成度テスト"
+    },
+    "stats": {
+     "nTreatment": "31",
+     "nControl": "31",
+     "meanTreatment": "42.58",
+     "meanControl": "23.87",
+     "sdTreatment": "7.83",
+     "sdControl": "5.87",
+     "t": "10.63",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "62",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "kontrol grubu öğrencilerine mevcut müfredata göre algoritma anlatılmıştır.",
+    "comparisonType": "active"
+   },
+   "effect": {
+    "yi": 2.669916423624264,
+    "vi": 0.12039417234830092,
+    "n": 62,
+    "method": "means and SDs",
+    "display": 2.669916423624264
+   },
+   "pdfUrl": "https://dergipark.org.tr/en/download/article-file/432160",
+   "sid": "S2"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4306969737",
+    "doi": "10.15388/infedu.2023.19",
+    "title": "Effects of Scratch-based activities on 4th-grade students’ computational thinking skills",
+    "titleEn": "",
+    "authors": [
+     "João Piedade",
+     "Nuno Miguel Taborda Cid Dorotea"
+    ],
+    "venue": "Informatics in Education",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "year": "2022",
+    "language": "en",
+    "citedBy": 19,
+    "url": "https://doi.org/10.15388/infedu.2023.19",
+    "landing": "https://doi.org/10.15388/infedu.2023.19",
+    "pdfUrls": [
+     "https://infedu.vu.lt/journal/INFEDU/article/743/file/pdf"
+    ],
+    "abstract": "Computational Thinking (CT) has emerged in recent years as a thematic trend in education in many countries. initiatives have been developed for its inclusion in school curricula. There are many pedagogical strategies to promote the development of elementary school students’ CT skills and knowledge. Unplugged learning tasks, block-based programming projects, and educational robotics are 3 of the most used strategies. This paper aimed to analyze the effect of Scratch-based activities, developed during one scholar year, on the computational thinking skills developed and concepts achieved by 4th-grade students. The study involved 189 students from two school clusters organized into an experimental group and a control group. To assess students’ computational knowledge, the Beginners Computational Thinking Test developed by Several Zapata-Cáceres et al. (2020) was used. The results indicate statistically significant differences between the groups, in which students in the experimental group (who performed activities with scratch) scored higher on the test than students in the control group (who did not use Scratch).",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "It is a controlled study evaluating the effects of Scratch on 4th-grade students' computational thinking skills using a validated test."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study evaluated the impact of Scratch block-based programming instruction on 4th-grade students' computational thinking skills using a quasi-experimental post-test comparison group design.",
+    "country": "Portugal",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Scratch-based programming activities",
+    "comparison": "no programming instruction",
+    "outcomeMeasure": "Beginners Computational Thinking Test score",
+    "summaryEn": "This study evaluated the effects of year-long Scratch programming activities on the computational thinking skills of 4th-grade students using a quasi-experimental design. The experimental group scored significantly higher on the Beginners Computational Thinking Test than the control group, which received no programming instruction.",
+    "summaryJa": "本研究では、小学4年生を対象に1年間のScratchプログラミング学習活動が計算的思考力に与える影響を準実験デザインを用いて検証した。プログラミング指導を受けなかった対照群と比較して、実験群の児童はBeginners Computational Thinking Testにおいて統計的に有意に高いスコアを示した。",
+    "evidence": "The students in the experimental group scored higher (M = 20,91; SD = 3,96) than the students in the control group (M = 16,25; SD = 4,06)",
+    "ja": {
+     "country": "ポルトガル",
+     "gradeLevel": "小学4年",
+     "design": "準実験",
+     "intervention": "Scratchプログラミング学習",
+     "comparison": "プログラミング指導なし",
+     "outcomeMeasure": "Beginners Computational Thinking Testスコア"
+    },
+    "stats": {
+     "nTreatment": "96",
+     "nControl": "93",
+     "meanTreatment": "20,91",
+     "meanControl": "16,25",
+     "sdTreatment": "3,96",
+     "sdControl": "4,06",
+     "t": "7,99",
+     "F": "",
+     "d": "1.16",
+     "g": "",
+     "r": "",
+     "nTotal": "189",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.6-flash",
+    "unverified": [],
+    "comparisonEvidence": "a control group consisting of students who did not have contact with introductory programming activities during their schooling.",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 1.1575692938880793,
+    "vi": 0.024544546666559478,
+    "n": 189,
+    "method": "means and SDs",
+    "display": 1.1575692938880793
+   },
+   "pdfUrl": "https://infedu.vu.lt/journal/INFEDU/article/743/file/pdf",
+   "sid": "S3"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W7155008338",
+    "doi": "10.1007/s10956-026-10317-5",
+    "title": "Coding Science: The Role of Block-Based Programming Activities in Enhancing Computational Thinking and Science Achievement",
+    "titleEn": "",
+    "authors": [
+     "Sukran Sungur",
+     "Gülbin Özkan"
+    ],
+    "venue": "Journal of Science Education and Technology",
+    "volume": "35",
+    "issue": "5",
+    "pages": "1376–1393",
+    "year": "2026",
+    "language": "en",
+    "citedBy": 1,
+    "url": "https://doi.org/10.1007/s10956-026-10317-5",
+    "landing": "https://doi.org/10.1007/s10956-026-10317-5",
+    "pdfUrls": [],
+    "abstract": "In the digital era, fostering computational thinking (CT) skills is essential for scientific literacy and engaging students in authentic scientific practices. Block-based programming environments (BBPEs), such as Scratch, effectively integrate these skills into K-12 science by lowering the syntax barrier, allowing a focus on scientific logic. This study investigated the impact of a Scratch-integrated science intervention on sixth-grade students’ CT and science achievement using a quasi-experimental design. Participants ( n = 51) were assigned to either an experimental group receiving BBPEs or a control group following the standard curriculum. To ensure methodological rigor, CT test was first adapted and validated for the Turkish context ( n = 353). Despite the benefits of BBPEs, implementation poses unique challenges for science teachers, necessitating new technical and pedagogical demands. Therefore, this research supported the quantitative data with the lived experiences of the teacher who underwent this integration process. Quantitative results indicate that the intervention significantly enhanced students’ CT ( p < .05). While both groups showed gains in science achievement, the experimental group achieved higher mean scores, though the difference was not statistically significant. Qualitative findings revealed that the instructor successfully navigated the liminal space of teacher re-novicing, fostering a collaborative environment that empowered lower-achieving students to emerge as programming experts. Furthermore, the integration promoted epistemic synergy and an iterative debugging mindset, transforming experimental failures into productive inquiry steps that strengthened student persistence and understanding. This research provides empirical evidence for using BBPEs to bridge computer science and science education while highlighting the support needed for teachers during this transition.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "It uses a quasi-experimental design comparing Scratch-integrated instruction against a control group in 6th-grade students measuring computational thinking."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study evaluates the effects of Scratch block-based programming on computational thinking in sixth-grade students using a quasi-experimental control group design.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Scratch-integrated science instruction",
+    "comparison": "standard science curriculum",
+    "outcomeMeasure": "Computational Thinking Test (CTt)",
+    "summaryEn": "This quasi-experimental study evaluated the effect of a 6-week Scratch-integrated science intervention on sixth-grade students' computational thinking and science achievement. The results showed that the experimental group achieved significantly higher computational thinking scores at post-test compared to the control group.",
+    "summaryJa": "本研究は、中学1年生（第6学年）を対象に、6週間のScratchを統合した理科授業が計算論的思考力および理科学力に及ぼす影響を準実験デザインにより検証しました。その結果、実験群は標準的なカリキュラムを実施した対照群と比較して、計算論的思考力テストの事後スコアが有意に高いことが示されました。",
+    "evidence": "An independent samples t-test revealed a statistically significant difference between the groups in favor of experimental group, t(22) = 5.99, p <.05, with a large effect size (d = 1.68) according to Cohen’s (1988) criteria.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "Scratchを統合した理科授業",
+     "comparison": "標準的な理科カリキュラム",
+     "outcomeMeasure": "計算論的思考力テスト（CTt）"
+    },
+    "stats": {
+     "nTreatment": "23",
+     "nControl": "28",
+     "meanTreatment": "17.0",
+     "meanControl": "12.0",
+     "sdTreatment": "2.98",
+     "sdControl": "2.91",
+     "t": "5.99",
+     "F": "",
+     "d": "1.68",
+     "g": "",
+     "r": "",
+     "nTotal": "51",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "The control group followed the standard curriculum using materials (textbooks, worksheets, physical experiments) and did not engage in informal use of BBPEs or similar technologies during the instructional hours.",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 1.6735854534459882,
+    "vi": 0.1042342855622489,
+    "n": 51,
+    "method": "means and SDs",
+    "display": 1.6735854534459882
+   },
+   "pdfUrl": "https://link.springer.com/content/pdf/10.1007/s10956-026-10317-5.pdf",
+   "sid": "S4"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W7130415950",
+    "doi": "10.3389/fpsyg.2026.1734482",
+    "title": "Enhancing computational thinking through coding education in primary school students: an experimental study on the impact of early programming exposure on problem-solving skills",
+    "titleEn": "",
+    "authors": [
+     "Xin Wang",
+     "Feixue Wan",
+     "JiaMin Dai"
+    ],
+    "venue": "Frontiers in Psychology",
+    "volume": "17",
+    "issue": "",
+    "pages": "1734482",
+    "year": "2026",
+    "language": "en",
+    "citedBy": 2,
+    "url": "https://doi.org/10.3389/fpsyg.2026.1734482",
+    "landing": "https://doi.org/10.3389/fpsyg.2026.1734482",
+    "pdfUrls": [
+     "https://public-pages-files-2025.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1734482/pdf",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12990067/pdf/fpsyg-17-1734482.pdf"
+    ],
+    "abstract": "Introduction This research paper presents an empirical investigation of the effectiveness of early coding instruction in improving problem-solving skills and computational thinking (CT) among primary school students. The primary research question was to determine whether a structured six-month coding intervention yields greater cognitive gains in children aged 8–12 than instruction without coding. Methods The study employed a quasi-experimental pre-test/post-test design with 200 students randomly assigned to an experimental group ( n = 100) and a control group ( n = 100). The experimental group participated in a 24-week curriculum using Scratch and Python, while the control group followed the standard school curriculum. To assess skill acquisition and practice intensity, paired-sample t -tests, independent-sample t -tests, and Pearson correlation analyses were conducted. Results The findings indicate statistically significant effects for the experimental group, with problem-solving scores increasing to 23.5 from a mean of 17.8 ( p < 0.001) and computational thinking scores increasing to 30.6 from a mean of 20.4 ( p < 0.001), reflecting large effect sizes. In contrast, the control group exhibited no significant gains. Conclusion From a theoretical perspective, the study contributes to the literature by demonstrating that the concrete operational stage of development (ages 7–11) represents a critical period for the development of abstract algorithmic thinking through programming. From a practical standpoint, the results provide evidence-based support for integrating coding into primary education not merely as a professional competency, but as a cognitive development opportunity essential for 21st-century digital literacy.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "Quasi-experimental study comparing block-based programming with a control group on computational thinking."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial evaluating the impact of a coding curriculum including block-based programming on primary school students' computational thinking compared to a standard curriculum control group.",
+    "country": "China",
+    "gradeLevel": "Grades 3-6",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "24-week coding curriculum using Scratch and Python",
+    "comparison": "regular school curriculum with basic ICT literacy",
+    "outcomeMeasure": "computational thinking assessment",
+    "summaryEn": "This study evaluated a 24-week coding curriculum transitioning from Scratch to Python among 200 primary school students randomly assigned to an intervention or control condition. The experimental group showed significantly higher post-test computational thinking scores compared to the control group.",
+    "summaryJa": "本研究では、小学3〜6年生200名を対象に、ScratchからPythonへと移行する24週間のプログラミング学習カリキュラムの効果を無作為化比較試験により検証しました。その結果、通常カリキュラムを受けた統制群と比較して、介入群の計算論的思考力スコアが有意に向上しました。",
+    "evidence": "In the post-test between-group comparing conditions, the experimental group rated much higher [t(198) = 7.12, p < 0.001, Cohen d = 1.01]",
+    "ja": {
+     "country": "中国",
+     "gradeLevel": "小学3〜6年",
+     "design": "ランダム化比較試験",
+     "intervention": "ScratchおよびPythonを用いた24週間のプログラミング指導",
+     "comparison": "基本的なICTリテラシーを含む通常授業",
+     "outcomeMeasure": "計算論的思考力テスト"
+    },
+    "stats": {
+     "nTreatment": "100",
+     "nControl": "100",
+     "meanTreatment": "30.6",
+     "meanControl": "24.9",
+     "sdTreatment": "3.5",
+     "sdControl": "3.6",
+     "t": "7.12",
+     "F": "",
+     "d": "1.01",
+     "g": "",
+     "r": "",
+     "nTotal": "200",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "Control Group (n = 100) maintained the regular school curriculum, including basic ICT literacy (e.g., typing, word processors) but not any deliberate instruction in coding or algorithms.",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 1.5993855378029866,
+    "vi": 0.026243666232490852,
+    "n": 200,
+    "method": "means and SDs",
+    "display": 1.5993855378029866
+   },
+   "pdfUrl": "https://public-pages-files-2025.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1734482/pdf",
+   "sid": "S5"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4387769514",
+    "doi": "10.21585/ijcses.v6i2.170",
+    "title": "The Effect of the Modality on Students’ Computational Thinking, Programming Attitude, and Programming Achievement",
+    "titleEn": "",
+    "authors": [
+     "İbrahim Çetin",
+     "Tarık OTU"
+    ],
+    "venue": "International Journal of Computer Science Education in Schools",
+    "volume": "6",
+    "issue": "2",
+    "pages": "",
+    "year": "2023",
+    "language": "en",
+    "citedBy": 2,
+    "url": "https://doi.org/10.21585/ijcses.v6i2.170",
+    "landing": "https://doi.org/10.21585/ijcses.v6i2.170",
+    "pdfUrls": [
+     "https://ijcses.org/index.php/ijcses/article/download/170/123"
+    ],
+    "abstract": "The purpose of the current study was to explore the effect of modality (constructionist mBlock, Scratch, and Python interventions) on six-grade students’ computational thinking, programming attitude, and achievement. The pre-test and post-test quasi-experimental design was used to explore the research questions. The study group consisted of 105 six grade students from three different classes. A constructionist learning environment was formed for Scratch, mBlock, and Python groups. All groups were given 8 week-instruction. Instruction included two forty-minute sessions each week. The data were collected through the programming achievement test, computational thinking test, and computer programming attitude scale. The results of the study showed that mBlock group outperformed the Scratch and Python groups with respect to computer programming attitude. Students who attended mBlock and Scratch groups had higher levels of programming achievement than those of the students who attended the Python group. No significant differences with respect to computational thinking were observed between the groups. This study has implications for educators who are teaching computational thinking and programming. Further research was recommended to explore the effect of modality.",
+    "screen": {
+     "include": true,
+     "score": 9,
+     "reason": "Quasi-experimental study comparing block-based and text-based programming modalities on computational thinking in sixth-grade students."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental study comparing 6th-grade students learning block-based programming (Scratch/mBlock) versus text-based programming (Python) on programming achievement and computational thinking.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Scratch block-based programming instruction",
+    "comparison": "Python text-based programming instruction",
+    "outcomeMeasure": "Programming Achievement Test (PAT)",
+    "summaryEn": "This quasi-experimental study examined the effects of three programming modalities (Scratch, mBlock with MBot, and Python) on 105 sixth-grade students over eight weeks. Results indicated that students in the Scratch and mBlock groups scored significantly higher on the programming achievement test than those in the Python group, while no significant differences were observed on the computational thinking test.",
+    "summaryJa": "本研究は準実験デザインを用い、小学6年生（トルコの中学校第6学年）105名を対象に、8週間にわたり3つの指導形態（Scratch、mBlock、Python）の効果を検証しました。その結果、プログラミング達成度テストにおいてScratch群およびmBlock群がPython群を有意に上回った一方、コンピュテーショナル・シンキングテストでは群間に有意差は見られませんでした。",
+    "evidence": "difference was significant between Scratch (M=54.57, SD=9.58) and Python (M=27.58, SD=12.44) groups and mBlock (M=53.09, SD=9.05) and Python (M=27.58, SD=12.44) groups",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "Scratchによるブロック型プログラミング指導",
+     "comparison": "Pythonによるテキスト型プログラミング指導",
+     "outcomeMeasure": "プログラミング達成度テスト（PAT）"
+    },
+    "stats": {
+     "nTreatment": "35",
+     "nControl": "31",
+     "meanTreatment": "54.57",
+     "meanControl": "27.58",
+     "sdTreatment": "9.58",
+     "sdControl": "12.44",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "turtle library of Python was used in the Python group. The students studied in pairs in the computer laboratory. Interventions lasted eight weeks, two 40-minute sessions each week.",
+    "comparisonType": "active"
+   },
+   "effect": {
+    "yi": 2.4218000407748916,
+    "vi": 0.1038393229125765,
+    "n": 66,
+    "method": "means and SDs",
+    "display": 2.4218000407748916
+   },
+   "pdfUrl": "https://ijcses.org/index.php/ijcses/article/download/170/123",
+   "sid": "S6"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W7166065383",
+    "doi": "10.17522/balikesirnef.1785932",
+    "title": "Do We Really Need Block-Based Programming to Enhance Computational Thinking in Science Classes?",
+    "titleEn": "",
+    "authors": [
+     "Sinem KARATAŞ ÖZTÜRK",
+     "Taner Arabacıoğlu"
+    ],
+    "venue": "Necatibey Eğitim Fakültesi Elektronik Fen ve Matematik Eğitimi Dergisi",
+    "volume": "20",
+    "issue": "1",
+    "pages": "149–173",
+    "year": "2026",
+    "language": "en",
+    "citedBy": 0,
+    "url": "https://doi.org/10.17522/balikesirnef.1785932",
+    "landing": "https://doi.org/10.17522/balikesirnef.1785932",
+    "pdfUrls": [
+     "https://dergipark.org.tr/en/download/article-file/5250170"
+    ],
+    "abstract": "As a result of technological developments, digital technologies are increasing their impact in all areas of life. This impact complicates the problems that need to be solved while diversifying the ways to solve them. This research addresses the use of computational thinking, one of the diversified problem-solving approaches, in science education. In this context, the research aims to determine the effect of a block-based coding tool on the enhancement of computational thinking skills. To this objective, the study, designed with a quasi-experimental design, aims to determine the effect of block-based coding and the algorithmic explanation approach on academic achievement and computational thinking skills. In the study conducted with sixth-grade middle school students, five different computational thinking activities were carried out over sixteen class hours. The results of the study showed no significant difference in science achievement between the experimental and control groups. However, significant differences in favor of the control group were found in the overall computational thinking scale and in the cooperativity and problem solving sub-dimensions. Based on this result, it can be argued that block-based coding contributes more positively to the development of computational thinking than the algorithmic explanation approach. However, the science achievement, creativity, algorithmic thinking, and critical thinking sub-dimensions, which did not show significant differences, indicate the potential positive effect of the algorithmic explanation approach. Therefore, it can be considered an important alternative, especially in situations where a digital divide can be observed.",
+    "screen": {
+     "include": true,
+     "score": 8,
+     "reason": "It is a quasi-experimental study comparing block-based coding to an algorithmic approach in middle school students on computational thinking."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare block-based programming instruction (Scratch) with an unplugged algorithmic explanation approach on middle school students' computational thinking skills.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Scratch block-based coding activities integrated into science lessons",
+    "comparison": "unplugged algorithmic explanation activities integrated into science lessons",
+    "outcomeMeasure": "Computational Thinking Scale",
+    "summaryEn": "This quasi-experimental study investigated the effects of block-based programming with Scratch compared to an unplugged algorithmic explanation approach among sixth-grade students in science classes. Students who learned using block-based coding demonstrated significantly higher scores on the overall computational thinking scale than those in the unplugged algorithmic explanation group.",
+    "summaryJa": "本研究は準実験デザインを用い、理科の授業においてScratchを用いたブロックプログラミングとアンプラグドなアルゴリズム説明アプローチが中学1年生（第6学年）の計算論的思考力に与える効果を比較しました。その結果、ブロックプログラミング群の生徒はアルゴリズム説明群と比較して、計算論的思考尺度全体の得点が有意に高かったことが示されました。",
+    "evidence": "CT scale Experimental N 20 X 82.30 sd 9.48; Control N 21 X 88.52 sd 9.28 df 39 t 2.12 p .04 d=.33",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "理科授業に統合されたScratchブロックプログラミング活動",
+     "comparison": "理科授業に統合されたアンプラグドなアルゴリズム説明活動",
+     "outcomeMeasure": "計算論的思考尺度"
+    },
+    "stats": {
+     "nTreatment": "21",
+     "nControl": "20",
+     "meanTreatment": "88.52",
+     "meanControl": "82.30",
+     "sdTreatment": "9.28",
+     "sdControl": "9.48",
+     "t": "2.12",
+     "F": "",
+     "d": ".33",
+     "g": "",
+     "r": "",
+     "nTotal": "41",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "experimental group students completed these scenarios as activities in the classroom without using a computer. Peel et al.'s (2022) computational thinking through algorithmic explanation (CT-AE) approach was used",
+    "comparisonType": "active"
+   },
+   "effect": {
+    "yi": 0.6504194118248573,
+    "vi": 0.09903590520727253,
+    "n": 41,
+    "method": "means and SDs",
+    "display": 0.6504194118248573
+   },
+   "pdfUrl": "https://dergipark.org.tr/en/download/article-file/5250170",
+   "sid": "S7"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W3176038768",
+    "doi": "10.1007/s10639-021-10578-0",
+    "title": "The Impact of SRA-Programming on Computational Thinking in a Visual Oriented Programming Environment",
+    "titleEn": "",
+    "authors": [
+     "Nardie L. J. A. Fanchamps",
+     "Lou Slangen",
+     "Marcus M. Specht",
+     "Paul Hennissen"
+    ],
+    "venue": "Education and Information Technologies",
+    "volume": "26",
+    "issue": "5",
+    "pages": "6479–6498",
+    "year": "2021",
+    "language": "en",
+    "citedBy": 19,
+    "url": "https://doi.org/10.1007/s10639-021-10578-0",
+    "landing": "https://doi.org/10.1007/s10639-021-10578-0",
+    "pdfUrls": [
+     "https://link.springer.com/content/pdf/10.1007/s10639-021-10578-0.pdf"
+    ],
+    "abstract": "Abstract Visual programming environments are popular instruments in teaching Computational Thinking (CT) in schools today. Applying Sense-Reason-Act (SRA) programming can influence the development of computational thinking when forcing pupils to anticipate the unforeseen in their computer programs. SRA-programming originates from the programming of tangible robots, but can also be of equal value in visual programming with on-screen output. The underlying rationale is that programming in a visual programming environment using SRA leads to more understanding of the computational concepts addressed, resulting in a higher level of computational skill compared to visual programming without the application of SRA. Furthermore, it has been hypothesised that if pupils in a visual programming environment can anticipate unforeseen events and solve programming tasks by applying SRA, they will be better able to solve complex computational thinking tasks. To establish if characteristic differences in the development of computational thinking can be measured when SRA-programming is applied in a visual programming environment with an on-screen output, we assessed the applicability of SRA-programming with visual output as the main component of the execution of developed code. This research uses a pre-test post-test design that reveals significant differences in the development of computational thinking in two treatment conditions. To assess CT, the Computational Thinking Test (CTt) was used. Results show that when using SRA-programming in a visual programming environment it leads to an increased understanding of complex computational concepts, which results in a significant increase in the development of computational thinking.",
+    "screen": {
+     "include": true,
+     "score": 7,
+     "reason": "It uses a pre-test post-test design comparing two visual programming conditions in school pupils using a computational thinking test."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial investigating the effects of visual block-based programming on computational thinking among primary school students.",
+    "country": "Netherlands",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "Visual programming with Sense-Reason-Act (SRA) concepts",
+    "comparison": "Visual programming using linear, sequential programming without SRA concepts",
+    "outcomeMeasure": "Computational Thinking Test (CTt)",
+    "summaryEn": "This study evaluated the effects of visual programming incorporating Sense-Reason-Act (SRA) concepts versus linear-only visual programming among fifth-grade primary students in the Netherlands. Students who learned with SRA programming showed significantly greater gains and higher post-test scores on the Computational Thinking Test than those in the linear condition.",
+    "summaryJa": "本研究は、オランダの小学5年生を対象に、SRA（Sense-Reason-Act）の概念を取り入れた視覚的プログラミング学習と、順次処理のみに制限された視覚的プログラミング学習の効果を比較検証しました。その結果、SRAプログラミングを行った児童は計算論的思考力テスト（CTt）の事後テストにおいて統制群を有意に上回る成績を示しました。",
+    "evidence": "Total (28) t = 5.93 df = 20.92 p = 0.000 CI 0.14 – 0.30 d = 2.18; Post-test group without SRA M = 0.45 SD = 0.13; Post-test group with SRA M = 0.67 SD = 0.07",
+    "ja": {
+     "country": "オランダ",
+     "gradeLevel": "小学5年",
+     "design": "ランダム化比較試験",
+     "intervention": "SRA概念を取り入れた視覚的プログラミング",
+     "comparison": "順次処理のみに制限された視覚的プログラミング",
+     "outcomeMeasure": "計算論的思考力テスト（CTt）"
+    },
+    "stats": {
+     "nTreatment": "15",
+     "nControl": "15",
+     "meanTreatment": "0.67",
+     "meanControl": "0.45",
+     "sdTreatment": "0.07",
+     "sdControl": "0.13",
+     "t": "5.93",
+     "F": "",
+     "d": "2.18",
+     "g": "",
+     "r": "",
+     "nTotal": "30",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.7-flash",
+    "unverified": [],
+    "comparisonEvidence": "Bomberbot can be used without the application of SRA. To make this possible, the application of loops, conditionals and functions can be disabled. In this condition linear, sequential programming must be used",
+    "comparisonType": "active"
+   },
+   "effect": {
+    "yi": 2.050265994311222,
+    "vi": 0.1962833649419318,
+    "n": 30,
+    "method": "means and SDs",
+    "display": 2.050265994311222
+   },
+   "pdfUrl": "https://link.springer.com/content/pdf/10.1007/s10639-021-10578-0.pdf",
+   "sid": "S8"
+  },
+  {
+   "paper": {
+    "source": "openalex",
+    "id": "W4284975437",
+    "doi": "10.1007/s40692-022-00236-w",
+    "title": "Effect of SRA-programming on computational thinking through different output modalities",
+    "titleEn": "",
+    "authors": [
+     "Nardie L. J. A. Fanchamps",
+     "Lou Slangen",
+     "Marcus M. Specht",
+     "Paul Hennissen"
+    ],
+    "venue": "Journal of Computers in Education",
+    "volume": "10",
+    "issue": "2",
+    "pages": "433–462",
+    "year": "2022",
+    "language": "en",
+    "citedBy": 11,
+    "url": "https://doi.org/10.1007/s40692-022-00236-w",
+    "landing": "https://doi.org/10.1007/s40692-022-00236-w",
+    "pdfUrls": [
+     "https://link.springer.com/content/pdf/10.1007/s40692-022-00236-w.pdf"
+    ],
+    "abstract": "Abstract The application of sense-reason-act (SRA) programming in contemporary education can ensure the development of computational thinking (CT) at a more advanced level. SRA-programming has been identified as an instrumental way of thinking for learning to program robots and encourages the development of the more complex concepts of programming. Visual programming environments are diverse in appearance and prove to be an excellent way to teach pupils the basic ideas of programming. It is important to investigate whether the type of output has a characteristic influence on the level of development of CT in visual programming environments. In this research, we therefore explore whether characteristic differences in the development of CT can be measured when SRA-programming is applied in a visual programming environment with an on-screen output or a tangible output. It was expected that the observed effect of pupils' programming actions through the application of SRA would show that the type of output influences the understanding of complex programming concepts at a higher level. Our results indicate that SRA-programming with visual, on-screen output yields a significant increase in the development of CT, as opposed to SRA-programming with a tangible output. The development of complex programming concepts can also be demonstrated.",
+    "screen": {
+     "include": true,
+     "score": 7,
+     "reason": "Experimental study comparing different output modalities in visual programming on students' computational thinking skills."
+    }
+   },
+   "data": {
+    "eligible": true,
+    "reason": "The study evaluated the effects of block-based programming on computational thinking using a randomized controlled trial with primary school students and an active/passive control group.",
+    "country": "Netherlands",
+    "gradeLevel": "Grades 5-6",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "visual SRA-programming instruction using Bomberbot",
+    "comparison": "regular curriculum without programming instruction",
+    "outcomeMeasure": "Computational Thinking test (CTt)",
+    "summaryEn": "This study examined the effects of sense-reason-act (SRA) visual programming using screen-based (Bomberbot) or tangible (Lego EV3) modalities compared to a regular-curriculum control group on elementary students' computational thinking. The results showed that students in the screen-based visual programming group achieved significantly higher computational thinking scores than the control group.",
+    "summaryJa": "本研究では、画面上での視覚的プログラミング（Bomberbot）またはタンジブルロボット（Lego EV3）を用いたSRAプログラミング指導が、小学生のコンピュテーショナル・シンキングに与える効果を統制群と比較検証しました。その結果、画面上の視覚的プログラミングを実施した群は、通常授業を受けた統制群と比較して計算論的思考テストのスコアが有意に向上しました。",
+    "evidence": "there was a significant difference, with a medium measurable effect, between the group that programmed using Bomberbot and the control group t (153) = 2.527, p = 0.013, d = 0.409",
+    "ja": {
+     "country": "オランダ",
+     "gradeLevel": "小学5〜6年",
+     "design": "ランダム化比較試験",
+     "intervention": "Bomberbotを用いた視覚的SRAプログラミング指導",
+     "comparison": "プログラミング指導を行わない通常カリキュラム",
+     "outcomeMeasure": "計算論的思考テスト（CTt）"
+    },
+    "stats": {
+     "nTreatment": "50",
+     "nControl": "59",
+     "meanTreatment": "0.61",
+     "meanControl": "0.55",
+     "sdTreatment": "0.14",
+     "sdControl": "0.15",
+     "t": "2.527",
+     "F": "",
+     "d": "0.409",
+     "g": "",
+     "r": "",
+     "nTotal": "156",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.7-flash",
+    "unverified": [],
+    "comparisonEvidence": "The control group did not receive any programming offerings and followed the regular curriculum during the implementation of the study.",
+    "comparisonType": "passive"
+   },
+   "effect": {
+    "yi": 0.409457351269035,
+    "vi": 0.037200845674712386,
+    "n": 109,
+    "method": "means and SDs",
+    "display": 0.409457351269035
+   },
+   "pdfUrl": "https://link.springer.com/content/pdf/10.1007/s40692-022-00236-w.pdf",
+   "sid": "S9"
+  }
+ ],
+ "examined": [
+  {
+   "id": "W4206467982",
+   "title": "An Investigation of The Effect of Block-Based Programming and Unplugged Coding Activities on Fifth Graders’ Computational Thinking Skills, Self-Efficacy and Academic Performance",
+   "year": "2022",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial evaluating the effect of block-based programming on fifth-grade students' computational thinking skills compared to a business-as-usual control group.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "block-based programming activities",
+    "comparison": "regular curriculum lessons with no interventions",
+    "outcomeMeasure": "International Informatics and Computational Thinking Activity Task Test",
+    "summaryEn": "This study evaluated the effects of block-based programming and unplugged coding activities on the computational thinking skills and performance of fifth-grade students compared to a regular curriculum control group. Students participating in block-based programming showed significant gains and scored significantly higher on computational thinking tasks than the control group.",
+    "summaryJa": "本研究は、通常カリキュラムの対照群と比較して、ブロック型プログラミングおよびアンプラグドコーディング活動が小学5年生の計算論的思考力および学習成果に与える影響を検証しました。その結果、ブロック型プログラミングを実施したグループは計算論的思考課題において対照群よりも有意に高い得点を示しました。",
+    "evidence": "Table 7. Paired sample t-test results for IICTATT scores: Experimental 2 Posttest N=28, X̄=6.92, S=1.77; Control Posttest N=30, X̄=5.40, S=1.47",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "ランダム化比較試験",
+     "intervention": "ブロック型プログラミング活動",
+     "comparison": "介入なしの通常カリキュラム授業",
+     "outcomeMeasure": "国際情報科学・計算論的思考タスクテスト"
+    },
+    "stats": {
+     "nTreatment": "28",
+     "nControl": "30",
+     "meanTreatment": "6.92",
+     "meanControl": "5.40",
+     "sdTreatment": "1.77",
+     "sdControl": "1.47",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "82",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "The control group was lectured based on the ITS course curriculum with no interventions.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W2791936313",
+   "title": "Effect of Scratch on 5th Graders’ Algorithm Development and Computational Thinking Skills",
+   "year": "2018",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental pretest-posttest control group design to evaluate the effects of Scratch programming instruction on 5th graders' algorithm development and computational thinking skills.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Scratch visual programming instruction",
+    "comparison": "regular curriculum-based algorithm instruction",
+    "outcomeMeasure": "Algorithm Development Achievement Test",
+    "summaryEn": "This quasi-experimental study investigated the effects of a 6-week Scratch programming instruction on 5th-grade students' algorithm development and computational thinking skills compared to regular curriculum instruction. The findings showed that students in the Scratch intervention group achieved significantly higher gains in algorithm development and computational thinking than those in the control group.",
+    "summaryJa": "本研究は、小学5年生を対象に、6週間のScratchプログラミング指導がアルゴリズム開発および情報的思考力に及ぼす効果を、通常カリキュラムに基づく指導を受けた対照群と比較検証した準実験研究です。その結果、Scratchを用いた実験群は対照群と比較して、アルゴリズム開発達成度テストおよび情報的思考尺度の得点が有意に大きく向上したことが示されました。",
+    "evidence": "deney ve kontrol grubu arasından istatistiksel olarak anlamlı bir farklılık bulunmaktadır, 𝑡(60) = 10.63, 𝑝 < .01. Deney grubunun AGBT öntest sontest puan farklarının (𝑋̅ = 42.58), kontrol grubuna (𝑋̅ = 23.87) göre daha yüksek olduğu görülmektedir.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "Scratchを用いたプログラミング指導",
+     "comparison": "現行カリキュラムに基づくアルゴリズム指導",
+     "outcomeMeasure": "アルゴリズム開発達成度テスト"
+    },
+    "stats": {
+     "nTreatment": "31",
+     "nControl": "31",
+     "meanTreatment": "42.58",
+     "meanControl": "23.87",
+     "sdTreatment": "7.83",
+     "sdControl": "5.87",
+     "t": "10.63",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "62",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "kontrol grubu öğrencilerine mevcut müfredata göre algoritma anlatılmıştır.",
+    "comparisonType": "active"
+   }
+  },
+  {
+   "id": "W4306969737",
+   "title": "Effects of Scratch-based activities on 4th-grade students’ computational thinking skills",
+   "year": "2022",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study evaluated the impact of Scratch block-based programming instruction on 4th-grade students' computational thinking skills using a quasi-experimental post-test comparison group design.",
+    "country": "Portugal",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Scratch-based programming activities",
+    "comparison": "no programming instruction",
+    "outcomeMeasure": "Beginners Computational Thinking Test score",
+    "summaryEn": "This study evaluated the effects of year-long Scratch programming activities on the computational thinking skills of 4th-grade students using a quasi-experimental design. The experimental group scored significantly higher on the Beginners Computational Thinking Test than the control group, which received no programming instruction.",
+    "summaryJa": "本研究では、小学4年生を対象に1年間のScratchプログラミング学習活動が計算的思考力に与える影響を準実験デザインを用いて検証した。プログラミング指導を受けなかった対照群と比較して、実験群の児童はBeginners Computational Thinking Testにおいて統計的に有意に高いスコアを示した。",
+    "evidence": "The students in the experimental group scored higher (M = 20,91; SD = 3,96) than the students in the control group (M = 16,25; SD = 4,06)",
+    "ja": {
+     "country": "ポルトガル",
+     "gradeLevel": "小学4年",
+     "design": "準実験",
+     "intervention": "Scratchプログラミング学習",
+     "comparison": "プログラミング指導なし",
+     "outcomeMeasure": "Beginners Computational Thinking Testスコア"
+    },
+    "stats": {
+     "nTreatment": "96",
+     "nControl": "93",
+     "meanTreatment": "20,91",
+     "meanControl": "16,25",
+     "sdTreatment": "3,96",
+     "sdControl": "4,06",
+     "t": "7,99",
+     "F": "",
+     "d": "1.16",
+     "g": "",
+     "r": "",
+     "nTotal": "189",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.6-flash",
+    "unverified": [],
+    "comparisonEvidence": "a control group consisting of students who did not have contact with introductory programming activities during their schooling.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W7155008338",
+   "title": "Coding Science: The Role of Block-Based Programming Activities in Enhancing Computational Thinking and Science Achievement",
+   "year": "2026",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study evaluates the effects of Scratch block-based programming on computational thinking in sixth-grade students using a quasi-experimental control group design.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Scratch-integrated science instruction",
+    "comparison": "standard science curriculum",
+    "outcomeMeasure": "Computational Thinking Test (CTt)",
+    "summaryEn": "This quasi-experimental study evaluated the effect of a 6-week Scratch-integrated science intervention on sixth-grade students' computational thinking and science achievement. The results showed that the experimental group achieved significantly higher computational thinking scores at post-test compared to the control group.",
+    "summaryJa": "本研究は、中学1年生（第6学年）を対象に、6週間のScratchを統合した理科授業が計算論的思考力および理科学力に及ぼす影響を準実験デザインにより検証しました。その結果、実験群は標準的なカリキュラムを実施した対照群と比較して、計算論的思考力テストの事後スコアが有意に高いことが示されました。",
+    "evidence": "An independent samples t-test revealed a statistically significant difference between the groups in favor of experimental group, t(22) = 5.99, p <.05, with a large effect size (d = 1.68) according to Cohen’s (1988) criteria.",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "Scratchを統合した理科授業",
+     "comparison": "標準的な理科カリキュラム",
+     "outcomeMeasure": "計算論的思考力テスト（CTt）"
+    },
+    "stats": {
+     "nTreatment": "23",
+     "nControl": "28",
+     "meanTreatment": "17.0",
+     "meanControl": "12.0",
+     "sdTreatment": "2.98",
+     "sdControl": "2.91",
+     "t": "5.99",
+     "F": "",
+     "d": "1.68",
+     "g": "",
+     "r": "",
+     "nTotal": "51",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "The control group followed the standard curriculum using materials (textbooks, worksheets, physical experiments) and did not engage in informal use of BBPEs or similar technologies during the instructional hours.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4410605416",
+   "title": "Effectiveness of Project-Based Scratch Programming to Improve Problem-Solving Skills of Elementary School Students",
+   "year": "2025",
+   "screenScore": 9,
+   "outcome": "本文で確認できない数値: nTotal=54",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study evaluated the effects of project-based Scratch programming on elementary school students' problem-solving skills using a quasi-experimental pretest-posttest control group design.",
+    "country": "Indonesia",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "project-based Scratch programming",
+    "comparison": "non-project-based Scratch programming",
+    "outcomeMeasure": "problem-solving skills test",
+    "summaryEn": "This study evaluated the effect of project-based Scratch programming instruction on fifth-grade students' problem-solving skills using a quasi-experimental pretest-posttest design. The results demonstrated that the project-based Scratch group achieved significantly higher problem-solving posttest scores than the comparison group.",
+    "summaryJa": "本研究は、小学5年生を対象にプロジェクト型Scratchプログラミング指導が問題解決能力に与える効果を準実験事前・事後テストデザインによって検証しました。その結果、プロジェクト型Scratch群は非プロジェクト型の比較群に比べて事後テストの問題解決スコアが有意に高いことが示されました。",
+    "evidence": "The mean value of the Class 5A Posttest was 7.41 and the mean value of the Class 5C Posttest was 6.26.",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "プロジェクト型Scratchプログラミング",
+     "comparison": "非プロジェクト型Scratchプログラミング",
+     "outcomeMeasure": "問題解決能力テスト"
+    },
+    "stats": {
+     "nTreatment": "27",
+     "nControl": "27",
+     "meanTreatment": "7.41",
+     "meanControl": "6.26",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "-2,735",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "54",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [
+     "nTotal=54"
+    ],
+    "comparisonEvidence": "practice using Project-based Scratch Programming in Class 5A and not project-based in Class 5C.",
+    "comparisonType": "active"
+   }
+  },
+  {
+   "id": "W2799689462",
+   "title": "Effects of Using the Scratch Program in 6th Grade Information Technologies Courses on Algorithm Development and Problem Solving Skills",
+   "year": "2015",
+   "screenScore": 9,
+   "outcome": "効果量を計算できない: 群ごとの人数がそろっていない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study evaluated the effects of Scratch programming instruction compared to a regular curriculum control group on algorithm development skills in 6th-grade students using a quasi-experimental design.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Scratch programming instruction",
+    "comparison": "regular curriculum instruction on algorithms and flowcharts",
+    "outcomeMeasure": "Algorithm Development Test",
+    "summaryEn": "This study evaluated the impact of a 6-week Scratch programming intervention compared to the regular curriculum on algorithm development and problem-solving skills among 6th-grade students. The results revealed no statistically significant difference between the experimental and control groups on the posttest algorithm development scores.",
+    "summaryJa": "本研究では、6年生を対象に6週間のScratchプログラミング授業がアルゴリズム開発力と問題解決力に与える効果を既存カリキュラムによる授業と比較検証しました。その結果、事後テストのアルゴリズム開発スコアにおいて実験群と統制群の間に統計的な有意差は認められませんでした。",
+    "evidence": "differences between the arithmetic means of 6th grade control group taught with the help of the regular program (X=27,17) and the arithmetic means of 6th grade experimental group taught with the help of the scratch (X=32,25).",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学6年",
+     "design": "準実験",
+     "intervention": "Scratchプログラミング指導",
+     "comparison": "既存カリキュラムに基づくアルゴリズム指導",
+     "outcomeMeasure": "アルゴリズム開発テスト"
+    },
+    "stats": {
+     "nTreatment": "31",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "Control group students learned algorithm as presented in the curriculum whereas control group students learned algorithm with the help of the scratch program.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W7130415950",
+   "title": "Enhancing computational thinking through coding education in primary school students: an experimental study on the impact of early programming exposure on problem-solving skills",
+   "year": "2026",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial evaluating the impact of a coding curriculum including block-based programming on primary school students' computational thinking compared to a standard curriculum control group.",
+    "country": "China",
+    "gradeLevel": "Grades 3-6",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "24-week coding curriculum using Scratch and Python",
+    "comparison": "regular school curriculum with basic ICT literacy",
+    "outcomeMeasure": "computational thinking assessment",
+    "summaryEn": "This study evaluated a 24-week coding curriculum transitioning from Scratch to Python among 200 primary school students randomly assigned to an intervention or control condition. The experimental group showed significantly higher post-test computational thinking scores compared to the control group.",
+    "summaryJa": "本研究では、小学3〜6年生200名を対象に、ScratchからPythonへと移行する24週間のプログラミング学習カリキュラムの効果を無作為化比較試験により検証しました。その結果、通常カリキュラムを受けた統制群と比較して、介入群の計算論的思考力スコアが有意に向上しました。",
+    "evidence": "In the post-test between-group comparing conditions, the experimental group rated much higher [t(198) = 7.12, p < 0.001, Cohen d = 1.01]",
+    "ja": {
+     "country": "中国",
+     "gradeLevel": "小学3〜6年",
+     "design": "ランダム化比較試験",
+     "intervention": "ScratchおよびPythonを用いた24週間のプログラミング指導",
+     "comparison": "基本的なICTリテラシーを含む通常授業",
+     "outcomeMeasure": "計算論的思考力テスト"
+    },
+    "stats": {
+     "nTreatment": "100",
+     "nControl": "100",
+     "meanTreatment": "30.6",
+     "meanControl": "24.9",
+     "sdTreatment": "3.5",
+     "sdControl": "3.6",
+     "t": "7.12",
+     "F": "",
+     "d": "1.01",
+     "g": "",
+     "r": "",
+     "nTotal": "200",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "Control Group (n = 100) maintained the regular school curriculum, including basic ICT literacy (e.g., typing, word processors) but not any deliberate instruction in coding or algorithms.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W7160496786",
+   "title": "CTMath: enhancing elementary mathematics and computational thinking skills through a structured scratch-based model",
+   "year": "2026",
+   "screenScore": 9,
+   "outcome": "適格でない: The study is excluded because the quantitative outcome compared between groups was mathematics achievement rather than a computational thinking, programming, or problem-solving test.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The study is excluded because the quantitative outcome compared between groups was mathematics achievement rather than a computational thinking, programming, or problem-solving test.",
+    "country": "Indonesia",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "CTMath five-phase model using Scratch",
+    "comparison": "conventional mathematics instruction",
+    "outcomeMeasure": "mathematics achievement test",
+    "summaryEn": "This study developed and evaluated the CTMath model, which integrates Scratch programming into elementary mathematics lessons. In a quasi-experimental comparison, students receiving CTMath instruction significantly outperformed those receiving conventional instruction on a geometry achievement test.",
+    "summaryJa": "本研究では、Scratchを活用したプログラミングを小学校の算数に統合するCTMathモデルを開発・評価しました。準実験による比較の結果、CTMath群の児童は通常の授業を受けた対照群に比べて幾何の学力テストで有意に高い成績を示しました。",
+    "evidence": "t(41) = 3.247, p = .002. The CTMath mean (M = 16.27, SD = 2.31, n = 22) exceeded the control mean (M = 13.38, SD = 3.44, n = 21), with a mean difference of Δ = 2.89",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "Scratchを活用した5段階のCTMathモデル",
+     "comparison": "通常の算数指導",
+     "outcomeMeasure": "算数学力テスト"
+    },
+    "stats": {
+     "nTreatment": "22",
+     "nControl": "21",
+     "meanTreatment": "16.27",
+     "meanControl": "13.38",
+     "sdTreatment": "2.31",
+     "sdControl": "3.44",
+     "t": "3.247",
+     "F": "",
+     "d": "",
+     "g": "0.97",
+     "r": "",
+     "nTotal": "43",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "The comparison class studied the same plane-geometry topic for the same overall duration using the school's regular mathematics materials and routine classroom instruction.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4387769514",
+   "title": "The Effect of the Modality on Students’ Computational Thinking, Programming Attitude, and Programming Achievement",
+   "year": "2023",
+   "screenScore": 9,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental study comparing 6th-grade students learning block-based programming (Scratch/mBlock) versus text-based programming (Python) on programming achievement and computational thinking.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Scratch block-based programming instruction",
+    "comparison": "Python text-based programming instruction",
+    "outcomeMeasure": "Programming Achievement Test (PAT)",
+    "summaryEn": "This quasi-experimental study examined the effects of three programming modalities (Scratch, mBlock with MBot, and Python) on 105 sixth-grade students over eight weeks. Results indicated that students in the Scratch and mBlock groups scored significantly higher on the programming achievement test than those in the Python group, while no significant differences were observed on the computational thinking test.",
+    "summaryJa": "本研究は準実験デザインを用い、小学6年生（トルコの中学校第6学年）105名を対象に、8週間にわたり3つの指導形態（Scratch、mBlock、Python）の効果を検証しました。その結果、プログラミング達成度テストにおいてScratch群およびmBlock群がPython群を有意に上回った一方、コンピュテーショナル・シンキングテストでは群間に有意差は見られませんでした。",
+    "evidence": "difference was significant between Scratch (M=54.57, SD=9.58) and Python (M=27.58, SD=12.44) groups and mBlock (M=53.09, SD=9.05) and Python (M=27.58, SD=12.44) groups",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "Scratchによるブロック型プログラミング指導",
+     "comparison": "Pythonによるテキスト型プログラミング指導",
+     "outcomeMeasure": "プログラミング達成度テスト（PAT）"
+    },
+    "stats": {
+     "nTreatment": "35",
+     "nControl": "31",
+     "meanTreatment": "54.57",
+     "meanControl": "27.58",
+     "sdTreatment": "9.58",
+     "sdControl": "12.44",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "turtle library of Python was used in the Python group. The students studied in pairs in the computer laboratory. Interventions lasted eight weeks, two 40-minute sessions each week.",
+    "comparisonType": "active"
+   }
+  },
+  {
+   "id": "W4410029933",
+   "title": "Introducing computational thinking to second and third graders. Programming whole paths outperforms step-by-step navigation in maze tasks",
+   "year": "2025",
+   "screenScore": 9,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4413951187",
+   "title": "The impact of using visual programming environments on the development of computational thinking and transdisciplinary competencies in middle school education",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "効果量を計算できない: 効果量を計算できる統計量がない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study evaluated the impact of Scratch visual programming instruction on computational thinking and algorithmic problem-solving in 9th-grade students using a quasi-experimental design with a control group.",
+    "country": "Moldova",
+    "gradeLevel": "Grade 9",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Scratch visual programming instruction with a modular textbook",
+    "comparison": "control group receiving unspecified instruction",
+    "outcomeMeasure": "post-test on algorithmic concepts and practical problem solving",
+    "summaryEn": "This study evaluated the effects of a modular Scratch programming curriculum on the computational thinking skills of 9th-grade secondary school students. The experimental group scored higher on the final post-test than the control group.",
+    "summaryJa": "本研究は、Scratchを用いたモジュール型指導法が中学3年生（第9学年）の計算論的思考力に与える影響を準実験デザインにより検証しました。その結果、実験群は対照群と比較して事後テストにおいて高い得点を示しました。",
+    "evidence": "Media obținută de elevii din eșantionul experimental este de 8,40, în timp ce media eșantionului de control este de 7,97, diferența de 0,43 puncte fiind semnificativă în favoarea grupului experimental",
+    "ja": {
+     "country": "モルドバ",
+     "gradeLevel": "中学3年",
+     "design": "準実験",
+     "intervention": "Scratchを用いた視覚的プログラミング指導とモジュール型教科書",
+     "comparison": "指導内容不明の対照群",
+     "outcomeMeasure": "アルゴリズム概念と実践的問題解決の事後テスト"
+    },
+    "stats": {
+     "nTreatment": "60",
+     "nControl": "32",
+     "meanTreatment": "8,40",
+     "meanControl": "7,97",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W7166065383",
+   "title": "Do We Really Need Block-Based Programming to Enhance Computational Thinking in Science Classes?",
+   "year": "2026",
+   "screenScore": 8,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design to compare block-based programming instruction (Scratch) with an unplugged algorithmic explanation approach on middle school students' computational thinking skills.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "Scratch block-based coding activities integrated into science lessons",
+    "comparison": "unplugged algorithmic explanation activities integrated into science lessons",
+    "outcomeMeasure": "Computational Thinking Scale",
+    "summaryEn": "This quasi-experimental study investigated the effects of block-based programming with Scratch compared to an unplugged algorithmic explanation approach among sixth-grade students in science classes. Students who learned using block-based coding demonstrated significantly higher scores on the overall computational thinking scale than those in the unplugged algorithmic explanation group.",
+    "summaryJa": "本研究は準実験デザインを用い、理科の授業においてScratchを用いたブロックプログラミングとアンプラグドなアルゴリズム説明アプローチが中学1年生（第6学年）の計算論的思考力に与える効果を比較しました。その結果、ブロックプログラミング群の生徒はアルゴリズム説明群と比較して、計算論的思考尺度全体の得点が有意に高かったことが示されました。",
+    "evidence": "CT scale Experimental N 20 X 82.30 sd 9.48; Control N 21 X 88.52 sd 9.28 df 39 t 2.12 p .04 d=.33",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "中学1年",
+     "design": "準実験",
+     "intervention": "理科授業に統合されたScratchブロックプログラミング活動",
+     "comparison": "理科授業に統合されたアンプラグドなアルゴリズム説明活動",
+     "outcomeMeasure": "計算論的思考尺度"
+    },
+    "stats": {
+     "nTreatment": "21",
+     "nControl": "20",
+     "meanTreatment": "88.52",
+     "meanControl": "82.30",
+     "sdTreatment": "9.28",
+     "sdControl": "9.48",
+     "t": "2.12",
+     "F": "",
+     "d": ".33",
+     "g": "",
+     "r": "",
+     "nTotal": "41",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "experimental group students completed these scenarios as activities in the classroom without using a computer. Peel et al.'s (2022) computational thinking through algorithmic explanation (CT-AE) approach was used",
+    "comparisonType": "active"
+   }
+  },
+  {
+   "id": "W4313576678",
+   "title": "Effectiveness of AR Board Game on Computational Thinking and Programming Skills for Elementary School Students",
+   "year": "2023",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4414028106",
+   "title": "Design and Application of an Online Judge-Based Learning Environment for Enhancing Computational Thinking in Block-Based Programming Language Education",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W7154585796",
+   "title": "Computational Thinking and Mathematical Problem Solving in Madrasah Tsanawiyah Students",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "適格でない: The paper is a conceptual and methodological framework paper lacking an experimental or quasi-experimental design with a control group.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The paper is a conceptual and methodological framework paper lacking an experimental or quasi-experimental design with a control group.",
+    "country": "United States",
+    "gradeLevel": "",
+    "gradeBand": "mixed",
+    "design": "qualitative / framework development",
+    "intervention": "Scratch programming activities",
+    "comparison": "",
+    "outcomeMeasure": "computational thinking assessment framework",
+    "summaryEn": "This paper presents a framework for computational thinking consisting of concepts, practices, and perspectives developed through young people's activities with Scratch. It explores three assessment approaches—portfolio analysis, artifact-based interviews, and design scenarios—offering suggestions for evaluating computational learning.",
+    "summaryJa": "本研究は、Scratchを用いた青少年の活動から導き出された概念・実践・視点からなるコンピュテーショナル・シンキングの枠組みを提案しています。ポートフォリオ分析、作品に基づくインタビュー、デザインシナリオという3つの評価手法を検討し、学習評価のための提案を行っています。",
+    "evidence": "",
+    "ja": {
+     "country": "アメリカ合衆国",
+     "gradeLevel": "",
+     "design": "質的研究／フレームワーク開発",
+     "intervention": "Scratchプログラミング活動",
+     "comparison": "",
+     "outcomeMeasure": "コンピュテーショナル・シンキング評価枠組み"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "unclear"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "",
+    "comparisonType": "unclear"
+   }
+  },
+  {
+   "id": "W2922606687",
+   "title": "Computational Thinking and Tinkering: Exploration Study of Primary School Students’ in Robotic and Graphical Programming",
+   "year": "2017",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4410945306",
+   "title": "Assessing the Efficacy of Coding with Scratch and AI Interaction Using ChatGPT on 5th Graders’ Math Performance and Computational Thinking",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W7165896915",
+   "title": "Pengaruh Computational Thinking Based Learning Berbantuan Scratch Terhadap Computational Thinking Skills dan Persistence Siswa Sekolah Dasar",
+   "year": "2026",
+   "screenScore": 8,
+   "outcome": "効果量を計算できない: 群ごとの人数がそろっていない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental evaluation of Scratch-assisted computational thinking instruction compared to conventional instruction on elementary students' computational thinking skills.",
+    "country": "Indonesia",
+    "gradeLevel": "Elementary school",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Scratch-assisted Computational Thinking-Based Learning",
+    "comparison": "conventional instruction",
+    "outcomeMeasure": "computational thinking skills test",
+    "summaryEn": "This study examined the impact of Scratch-assisted Computational Thinking-Based Learning on elementary school students' computational thinking skills compared to conventional instruction. The statistical analysis revealed that students receiving the Scratch-assisted intervention achieved significantly better computational thinking skills than the control group.",
+    "summaryJa": "本研究は、小学生のプログラミング的思考力に対するScratchを活用したプログラミング的思考に基づく学習（CTBL）の効果を従来の授業と比較検証した。統計解析の結果、Scratchを活用した指導を受けたグループは、対照群と比較してプログラミング的思考力が有意に向上したことが示された。",
+    "evidence": "Hasil uji statistik menunjukkan adanya perbedaan yang signifikan antara kelas eksperimen dan kelas kontrol pada computational thinking skills dan persistence.",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "小学校",
+     "design": "準実験",
+     "intervention": "Scratchを活用したプログラミング的思考に基づく学習",
+     "comparison": "従来の授業",
+     "outcomeMeasure": "プログラミング的思考力テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.6-flash",
+    "unverified": [],
+    "comparisonEvidence": "Pada kelas kontrol, guru menggunakan pembelajaran konvensional berupa penjelasan materi, pemberian contoh soal, latihan tertulis, dan pembahasan bersama tanpa penggunaan Scratch.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4394570509",
+   "title": "Fostering computational thinking with simulated 3D robots in secondary education",
+   "year": "2024",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4407862989",
+   "title": "Effects of digital badges on pupils' computational thinking and learning motivation in computer science",
+   "year": "2025",
+   "screenScore": 8,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W4220690751",
+   "title": "Block-Based Visual Programming as a Tool for Learning the Concepts of Programming for Novices",
+   "year": "2022",
+   "screenScore": 8,
+   "outcome": "本文で確認できない数値: t=5.460",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study uses a quasi-experimental design with a control group to evaluate the effect of ScratchJr block-based programming on middle school students' understanding of programming concepts.",
+    "country": "Indonesia",
+    "gradeLevel": "Grade 8",
+    "gradeBand": "middle",
+    "design": "quasi-experimental",
+    "intervention": "project-based learning using ScratchJr block-based visual programming",
+    "comparison": "regular lessons using the standard method",
+    "outcomeMeasure": "programming concepts test",
+    "summaryEn": "This study investigated the impact of project-based block-based visual programming instruction with ScratchJr on eighth-grade students' understanding of programming concepts. The experimental group significantly outperformed the control group on the post-test.",
+    "summaryJa": "本研究では、中学2年生を対象にScratchJrを用いたプロジェクト型ブロックプログラミング指導がプログラミング概念の理解に与える影響を検証しました。事後テストにおいて、実験群は通常授業を受けた統制群よりも有意に高い得点を示しました。",
+    "evidence": "the mean score of the pretest in the experimental group is 55.33, and the posttest score is 81.00. Meanwhile, the mean score of the pretest in the control group is 57.67, and the posttest score is 63.67.",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "中学2年",
+     "design": "準実験",
+     "intervention": "ScratchJrを用いたプロジェクト型ビジュアルプログラミング学習",
+     "comparison": "標準的な方法による通常授業",
+     "outcomeMeasure": "プログラミング概念テスト"
+    },
+    "stats": {
+     "nTreatment": "30",
+     "nControl": "30",
+     "meanTreatment": "81.00",
+     "meanControl": "63.67",
+     "sdTreatment": "10.289",
+     "sdControl": "14.016",
+     "t": "5.460",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "60",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [
+     "t=5.460"
+    ],
+    "comparisonEvidence": "In contrast, the control group had no particular intervention, which means that the students had no distinctive handling and the learning processes were running like usual using the standard method.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4390466253",
+   "title": "Effect of unplugged and plugged coding activities on secondary school students’ computational thinking skills",
+   "year": "2023",
+   "screenScore": 8,
+   "outcome": "効果量を計算できない: 群ごとの人数がそろっていない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a quasi-experimental study comparing block-based programming instruction (Scratch) to unplugged coding instruction on middle/primary school students' computational thinking performance.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Scratch block-based coding instruction",
+    "comparison": "Tospaa unplugged coding game activities",
+    "outcomeMeasure": "Computational Thinking Test",
+    "summaryEn": "This quasi-experimental study evaluated the effects of 5-week unplugged coding (Tospaa) versus plugged block-based coding (Scratch) on 5th-grade students' computational thinking. While both groups significantly improved their computational thinking performance from pretest to posttest, no statistically significant difference was found between the two groups on the posttest.",
+    "summaryJa": "本研究は、小学5年生を対象に、5週間のアンプラグド・コーディング（Tospaa）とプラグド・ブロックプログラミング（Scratch）が計算論的思考力に与える影響を準実験デザインで検証しました。両グループともに事前テストから事後テストにかけて計算論的思考パフォーマンスが有意に向上したものの、事後テストにおいて両群間に統計的な有意差は見られませんでした。",
+    "evidence": "there was no significant difference between the CT performances of the group receiving unplugged coding training (x̄=14.50; SD=3.38) and the group receiving plugged coding training (x̄=12.67; SD=2.95) (t(34)= 1.73; p=.092>.05).",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "Scratchによるブロック型プログラミング指導",
+     "comparison": "Tospaaによるアンプラグド・コーディング学習活動",
+     "outcomeMeasure": "計算論的思考力テスト"
+    },
+    "stats": {
+     "nTreatment": "18",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "2.95",
+     "sdControl": "",
+     "t": "1.73",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": ""
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "In the experimental group, the subject of that week was covered with the Tospaa unplugged coding game. Tospaa is a coding game made with various cards without using a computer",
+    "comparisonType": "active"
+   }
+  },
+  {
+   "id": "W4380995114",
+   "title": "Development of E-Module Based on Problem Based Learning Assisted with Scratch Applications to Improve Students Computational Thinking Skills",
+   "year": "2023",
+   "screenScore": 8,
+   "outcome": "適格でない: The intervention did not involve block-based programming instruction for students, as Scratch was only used by developers to create animations for a science e-module.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The intervention did not involve block-based programming instruction for students, as Scratch was only used by developers to create animations for a science e-module.",
+    "country": "Indonesia",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "PBL-based e-module with Scratch animations",
+    "comparison": "regular textbook-based instruction",
+    "outcomeMeasure": "computational thinking test",
+    "summaryEn": "This study evaluated the effect of a problem-based learning e-module featuring Scratch animations on fifth-grade students' computational thinking skills in a science unit on heat transfer. The findings indicated that students using the e-module had higher posttest and N-gain scores than those taught using conventional textbooks.",
+    "summaryJa": "本研究では、Scratchのアニメーションを活用した課題解決型学習（PBL）電子モジュールが、小学5年生の熱と伝熱に関する理科単元における計算論的思考力に与える効果を検証しました。その結果、電子モジュールを使用した実験群は、従来の教科書を使用した対照群よりも事後テストおよびN-gainスコアが高いことが示されました。",
+    "evidence": "posttest results for students in the experimental class using the scratch application-assisted e-module obtained an average score of 83.12 and a standard deviation of 6,078... Meanwhile, the control class obtained a posttest average of 77.28 and a standard deviation of 6.242",
+    "ja": {
+     "country": "インドネシア",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "Scratchアニメーションを活用したPBL電子モジュール",
+     "comparison": "教科書を用いた通常授業",
+     "outcomeMeasure": "計算論的思考力テスト"
+    },
+    "stats": {
+     "nTreatment": "25",
+     "nControl": "25",
+     "meanTreatment": "83.12",
+     "meanControl": "77.28",
+     "sdTreatment": "6.078",
+     "sdControl": "6.242",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "50",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.8-flash",
+    "unverified": [],
+    "comparisonEvidence": "Meanwhile, for control class students, the learning process uses textbooks available at school.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4403275913",
+   "title": "Improving Elementary Students’ Computational Thinking Skills through an Educational Robot Intervention: A Quasi-Experimental Study",
+   "year": "2024",
+   "screenScore": 8,
+   "outcome": "適格でない: Both the intervention and comparison groups received block-based programming instruction (robot-based block programming vs. Code.org), lacking an eligible non-block-based comparison condition.",
+   "extracted": {
+    "eligible": false,
+    "reason": "Both the intervention and comparison groups received block-based programming instruction (robot-based block programming vs. Code.org), lacking an eligible non-block-based comparison condition.",
+    "country": "Taiwan",
+    "gradeLevel": "Grade 4",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "block-based programmable educational robot instruction",
+    "comparison": "computer-based block programming using Code.org",
+    "outcomeMeasure": "computational thinking achievement test",
+    "summaryEn": "This quasi-experimental study evaluated the effect of an Arduino-based educational robot versus Code.org on elementary students' computational thinking skills. The results indicated that students using the educational robot achieved significantly higher computational thinking post-test scores than those in the control group.",
+    "summaryJa": "本研究は、Arduinoを用いた教育用ロボットとCode.orgが小学生の計算論的思考力に与える影響を準実験デザインで検証しました。その結果、教育用ロボットを使用した群はCode.orgを使用した対照群に比べて計算論的思考達成度テストのスコアが有意に高いことが示されました。",
+    "evidence": "the experimental group averaging 36.36, with a standard deviation of 21.94, and the control group averaging 24.55, with a standard deviation of 24.64. The analysis indicated significant differences between the groups (F(1, 41) = 4.264",
+    "ja": {
+     "country": "台湾",
+     "gradeLevel": "小学4年",
+     "design": "準実験",
+     "intervention": "ブロックベースの教育用ロボットプログラミング指導",
+     "comparison": "Code.orgを用いたコンピュータプログラミング指導",
+     "outcomeMeasure": "計算論的思考達成度テスト"
+    },
+    "stats": {
+     "nTreatment": "22",
+     "nControl": "22",
+     "meanTreatment": "36.36",
+     "meanControl": "24.55",
+     "sdTreatment": "21.94",
+     "sdControl": "24.64",
+     "t": "",
+     "F": "4.264",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "44",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.7-flash",
+    "unverified": [],
+    "comparisonEvidence": "the control group of 22 students engaged in CT learning activities using Minecraft Adventurer on Code.org.",
+    "comparisonType": "active"
+   }
+  },
+  {
+   "id": "W4304175678",
+   "title": "The Effectiveness and Impact of Teaching Coding through Scratch on Moroccan Pupils’ Competencies",
+   "year": "2022",
+   "screenScore": 8,
+   "outcome": "効果量を計算できない: 効果量を計算できる統計量がない",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study meets all inclusion criteria as it uses an experimental design with a control group to examine the effects of Scratch instruction on sixth-grade pupils' programming competencies.",
+    "country": "Morocco",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "practical Scratch coding initiation lessons",
+    "comparison": "no Scratch coding instruction",
+    "outcomeMeasure": "Scratch programming competency test",
+    "summaryEn": "This study evaluated the impact of an eight-week Scratch programming initiation course on sixth-grade pupils in a rural Moroccan school compared to a control group receiving no coding instruction. The experimental group demonstrated high mastery across programming tasks on the post-test, whereas the control group scored below 10 percent.",
+    "summaryJa": "本研究では、モロッコの農村部の小学6年生を対象に、8週間のScratchプログラミング入門授業が児童のコーディング能力に与える効果を、指導を受けない対照群と比較して検証しました。事後テストにおいて、対照群の得点率は10％未満にとどまったのに対し、実験群は高い習熟度を達成しました。",
+    "evidence": "The control failed the post-test, as well, with a rating of less than 10% (failed). However, the experimental group showed outstanding coding skills within the scope of the study with a total MPS of 94.32%",
+    "ja": {
+     "country": "モロッコ",
+     "gradeLevel": "小学6年",
+     "design": "ランダム化比較試験",
+     "intervention": "Scratchによる実践的なプログラミング入門授業",
+     "comparison": "Scratchプログラミング指導なし",
+     "outcomeMeasure": "Scratchプログラミング能力テスト"
+    },
+    "stats": {
+     "nTreatment": "19",
+     "nControl": "19",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "38",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.7-flash",
+    "unverified": [],
+    "comparisonEvidence": "The control group (19 participants) was not taught the basics of Scratch coding",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4390061682",
+   "title": "Computational Thinking with Scratch: A Tool to Work on Geometry in the Fifth Grade of Primary Education",
+   "year": "2023",
+   "screenScore": 7,
+   "outcome": "PDF を取得できない"
+  },
+  {
+   "id": "W3176038768",
+   "title": "The Impact of SRA-Programming on Computational Thinking in a Visual Oriented Programming Environment",
+   "year": "2021",
+   "screenScore": 7,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study is a randomized controlled trial investigating the effects of visual block-based programming on computational thinking among primary school students.",
+    "country": "Netherlands",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "Visual programming with Sense-Reason-Act (SRA) concepts",
+    "comparison": "Visual programming using linear, sequential programming without SRA concepts",
+    "outcomeMeasure": "Computational Thinking Test (CTt)",
+    "summaryEn": "This study evaluated the effects of visual programming incorporating Sense-Reason-Act (SRA) concepts versus linear-only visual programming among fifth-grade primary students in the Netherlands. Students who learned with SRA programming showed significantly greater gains and higher post-test scores on the Computational Thinking Test than those in the linear condition.",
+    "summaryJa": "本研究は、オランダの小学5年生を対象に、SRA（Sense-Reason-Act）の概念を取り入れた視覚的プログラミング学習と、順次処理のみに制限された視覚的プログラミング学習の効果を比較検証しました。その結果、SRAプログラミングを行った児童は計算論的思考力テスト（CTt）の事後テストにおいて統制群を有意に上回る成績を示しました。",
+    "evidence": "Total (28) t = 5.93 df = 20.92 p = 0.000 CI 0.14 – 0.30 d = 2.18; Post-test group without SRA M = 0.45 SD = 0.13; Post-test group with SRA M = 0.67 SD = 0.07",
+    "ja": {
+     "country": "オランダ",
+     "gradeLevel": "小学5年",
+     "design": "ランダム化比較試験",
+     "intervention": "SRA概念を取り入れた視覚的プログラミング",
+     "comparison": "順次処理のみに制限された視覚的プログラミング",
+     "outcomeMeasure": "計算論的思考力テスト（CTt）"
+    },
+    "stats": {
+     "nTreatment": "15",
+     "nControl": "15",
+     "meanTreatment": "0.67",
+     "meanControl": "0.45",
+     "sdTreatment": "0.07",
+     "sdControl": "0.13",
+     "t": "5.93",
+     "F": "",
+     "d": "2.18",
+     "g": "",
+     "r": "",
+     "nTotal": "30",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.7-flash",
+    "unverified": [],
+    "comparisonEvidence": "Bomberbot can be used without the application of SRA. To make this possible, the application of loops, conditionals and functions can be disabled. In this condition linear, sequential programming must be used",
+    "comparisonType": "active"
+   }
+  },
+  {
+   "id": "W4284975437",
+   "title": "Effect of SRA-programming on computational thinking through different output modalities",
+   "year": "2022",
+   "screenScore": 7,
+   "outcome": "採用",
+   "extracted": {
+    "eligible": true,
+    "reason": "The study evaluated the effects of block-based programming on computational thinking using a randomized controlled trial with primary school students and an active/passive control group.",
+    "country": "Netherlands",
+    "gradeLevel": "Grades 5-6",
+    "gradeBand": "elementary",
+    "design": "randomized controlled trial",
+    "intervention": "visual SRA-programming instruction using Bomberbot",
+    "comparison": "regular curriculum without programming instruction",
+    "outcomeMeasure": "Computational Thinking test (CTt)",
+    "summaryEn": "This study examined the effects of sense-reason-act (SRA) visual programming using screen-based (Bomberbot) or tangible (Lego EV3) modalities compared to a regular-curriculum control group on elementary students' computational thinking. The results showed that students in the screen-based visual programming group achieved significantly higher computational thinking scores than the control group.",
+    "summaryJa": "本研究では、画面上での視覚的プログラミング（Bomberbot）またはタンジブルロボット（Lego EV3）を用いたSRAプログラミング指導が、小学生のコンピュテーショナル・シンキングに与える効果を統制群と比較検証しました。その結果、画面上の視覚的プログラミングを実施した群は、通常授業を受けた統制群と比較して計算論的思考テストのスコアが有意に向上しました。",
+    "evidence": "there was a significant difference, with a medium measurable effect, between the group that programmed using Bomberbot and the control group t (153) = 2.527, p = 0.013, d = 0.409",
+    "ja": {
+     "country": "オランダ",
+     "gradeLevel": "小学5〜6年",
+     "design": "ランダム化比較試験",
+     "intervention": "Bomberbotを用いた視覚的SRAプログラミング指導",
+     "comparison": "プログラミング指導を行わない通常カリキュラム",
+     "outcomeMeasure": "計算論的思考テスト（CTt）"
+    },
+    "stats": {
+     "nTreatment": "50",
+     "nControl": "59",
+     "meanTreatment": "0.61",
+     "meanControl": "0.55",
+     "sdTreatment": "0.14",
+     "sdControl": "0.15",
+     "t": "2.527",
+     "F": "",
+     "d": "0.409",
+     "g": "",
+     "r": "",
+     "nTotal": "156",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.7-flash",
+    "unverified": [],
+    "comparisonEvidence": "The control group did not receive any programming offerings and followed the regular curriculum during the implementation of the study.",
+    "comparisonType": "passive"
+   }
+  },
+  {
+   "id": "W4318387343",
+   "title": "The Effect of Block Based Coding Education on the Students' Attitudes about the Secondary School Students' Computational Learning Skills and Coding Learning: Blocky Sample",
+   "year": "2023",
+   "screenScore": 7,
+   "outcome": "適格でない: The study assessed computational thinking using a self-report self-efficacy scale rather than a cognitive or performance test.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The study assessed computational thinking using a self-report self-efficacy scale rather than a cognitive or performance test.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 5",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Block-based coding instruction using Blockly",
+    "comparison": "Traditional or unplugged coding instruction following the regular curriculum",
+    "outcomeMeasure": "Computational thinking self-efficacy scale",
+    "summaryEn": "This study examined the effects of a 4-week block-based coding intervention using Blockly on fifth-grade students' computational thinking self-efficacy and attitudes toward coding. The authors reported significant increases in self-efficacy and attitudes for both groups, favoring the experimental group.",
+    "summaryJa": "本研究では、Blocklyを用いた4週間のブロックプログラミング学習が小学5年生の計算論的思考の自己効力感およびプログラミング学習への態度に及ぼす影響を検討しました。その結果、両群とも自己効力感と態度が向上したものの、実験群の方が有意に高い伸びを示したと報告されています。",
+    "evidence": "",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学5年",
+     "design": "準実験",
+     "intervention": "Blocklyを用いたブロックプログラミング教育",
+     "comparison": "年間指導計画に基づく従来のプログラミング教育",
+     "outcomeMeasure": "計算論的思考自己効力感尺度"
+    },
+    "stats": {
+     "nTreatment": "19",
+     "nControl": "19",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "38",
+     "direction": "treatment_higher"
+    },
+    "model": "gemini-3.7-flash",
+    "unverified": [],
+    "comparisonEvidence": "The control group continued teaching within the annual plan.",
+    "comparisonType": "active"
+   }
+  },
+  {
+   "id": "W4379282220",
+   "title": "The Effect of Coding Education Designed with Different Visual Programs on Academic Success and Attitudes and Self-Efficiencies of Secondary School Students",
+   "year": "2023",
+   "screenScore": 7,
+   "outcome": "適格でない: The study does not compare the intervention and control groups on a computational thinking or programming achievement test, reporting between-group comparisons only for attitude and self-efficacy measures.",
+   "extracted": {
+    "eligible": false,
+    "reason": "The study does not compare the intervention and control groups on a computational thinking or programming achievement test, reporting between-group comparisons only for attitude and self-efficacy measures.",
+    "country": "Turkey",
+    "gradeLevel": "Grade 6",
+    "gradeBand": "elementary",
+    "design": "quasi-experimental",
+    "intervention": "Scratch block-based programming instruction",
+    "comparison": "Tospaa computer-free coding instruction",
+    "outcomeMeasure": "Academic achievement test",
+    "summaryEn": "This study evaluated a 10-week Scratch coding curriculum compared with an unplugged coding program (Tospaa) among 45 sixth-grade students in Turkey. Although within-group gains were evaluated, no between-group statistical comparison was conducted on a shared computational thinking or programming achievement test.",
+    "summaryJa": "本研究は、トルコの第6学年児童45名を対象に、10週間のScratchプログラミング学習の効果をアンプラグド教材（Tospaa）と比較検証した。群内の事前・事後テスト比較は行われたものの、共通の計算論的思考またはプログラミング達成度テストによる群間比較は実施されなかった。",
+    "evidence": "",
+    "ja": {
+     "country": "トルコ",
+     "gradeLevel": "小学6年",
+     "design": "準実験",
+     "intervention": "Scratchを用いたブロックベースプログラミング指導",
+     "comparison": "Tospaaを用いたアンプラグドプログラミング指導",
+     "outcomeMeasure": "学業達成度テスト"
+    },
+    "stats": {
+     "nTreatment": "",
+     "nControl": "",
+     "meanTreatment": "",
+     "meanControl": "",
+     "sdTreatment": "",
+     "sdControl": "",
+     "t": "",
+     "F": "",
+     "d": "",
+     "g": "",
+     "r": "",
+     "nTotal": "",
+     "direction": ""
+    },
+    "model": "gemini-3.7-flash",
+    "unverified": [],
+    "comparisonEvidence": "In the control group, the lessons were taught using the Tospaa computer-free coding program (Tospaa, 2020).",
+    "comparisonType": "active"
+   }
+  }
+ ],
+ "models": [
+  "gemini-3.8-flash",
+  "gemini-3.6-flash",
+  "gemini-3.7-flash"
+ ],
+ "date": "2026-10-11",
+ "dateEn": "October 11, 2026",
+ "dateJa": "2026年10月11日",
+ "analysis": {
+  "effectType": "smd",
+  "overall": {
+   "k": 9,
+   "est": 1.4668585165427912,
+   "se": 0.25918709920006705,
+   "ci": [
+    0.8691719939958714,
+    2.064545039089711
+   ],
+   "test": 5.6594580558599485,
+   "p": 0.0004761754996827072,
+   "df": 8,
+   "fixed": {
+    "est": 1.2979207365768173,
+    "se": 0.07860155137470612
+   },
+   "Q": 63.622131495286155,
+   "pQ": 9.031764225397865e-11,
+   "I2": 87.42575922563562,
+   "tau2": 0.4129330008847086,
+   "pi": [
+    -0.15071820117753565,
+    3.0844352342631183
+   ],
+   "weights": [
+    11.286704758035828,
+    10.317027639364653,
+    12.577448186468034,
+    10.639403015746474,
+    12.528787613392979,
+    10.647534578936918,
+    10.747432356918603,
+    9.031850580053092,
+    12.223811271083406
+   ]
+  },
+  "subgroups": {
+   "groups": [
+    {
+     "band": "elementary",
+     "key": "elementary",
+     "k": 6,
+     "est": 1.4124157341456969,
+     "se": 0.32626371124625836,
+     "ci": [
+      0.5737281643887857,
+      2.251103303902608
+     ],
+     "test": 4.329061692918797,
+     "p": 0.007506017704373313,
+     "df": 5,
+     "fixed": {
+      "est": 1.2383962867058798,
+      "se": 0.08686200809761668
+     },
+     "Q": 45.401192892495864,
+     "pQ": 1.2023889217616102e-8,
+     "I2": 88.98707350743106,
+     "tau2": 0.39790893219292095,
+     "pi": [
+      -0.5037919860012414,
+      3.328623454292635
+     ],
+     "weights": [
+      16.59742008424624,
+      15.130148622165882,
+      18.562997810339095,
+      18.488636005415636,
+      13.197752715496602,
+      18.02304476233655
+     ]
+    },
+    {
+     "band": "middle",
+     "key": "middle",
+     "k": 3,
+     "est": 1.5800506832960164,
+     "se": 0.513775084976868,
+     "ci": [
+      -0.6305450885569075,
+      3.7906464551489405
+     ],
+     "test": 3.0753742824394763,
+     "p": 0.09145811588740616,
+     "df": 2,
+     "fixed": {
+      "est": 1.5669820160954961,
+      "se": 0.1846748571199387
+     },
+     "Q": 15.628643987744157,
+     "pQ": 0.0004039085795422004,
+     "I2": 87.20298445873883,
+     "tau2": 0.6973952012625464,
+     "pi": [
+      -10.895224508947312,
+      14.055325875539346
+     ],
+     "weights": [
+      33.25551502692759,
+      33.27190808780422,
+      33.4725768852682
+     ]
+    }
+   ],
+   "Qbetween": 0.07586528487766742,
+   "df": 1,
+   "p": 0.7829808781945431
+  },
+  "comparatorSubgroups": {
+   "groups": [
+    {
+     "band": "passive",
+     "key": "passive",
+     "k": 5,
+     "est": 1.1408009205762732,
+     "se": 0.23148510210442466,
+     "ci": [
+      0.4980952419122422,
+      1.7835065992403043
+     ],
+     "test": 4.9281828947318145,
+     "p": 0.00788308323432263,
+     "df": 4,
+     "fixed": {
+      "est": 1.1463331156745828,
+      "se": 0.08813703223035328
+     },
+     "Q": 25.74784013904815,
+     "pQ": 0.00003557351186633806,
+     "I2": 84.4647163474743,
+     "tau2": 0.22459236064739266,
+     "pi": [
+      -0.5417627910713674,
+      2.823364632223914
+     ],
+     "weights": [
+      18.361929464539788,
+      22.049232003776254,
+      16.705694424065694,
+      21.899874345797894,
+      20.983269761820377
+     ]
+    },
+    {
+     "band": "active",
+     "key": "active",
+     "k": 4,
+     "est": 1.940849401541289,
+     "se": 0.4566045529902974,
+     "ci": [
+      0.48772992890162215,
+      3.3939688741809557
+     ],
+     "test": 4.2506133345160295,
+     "p": 0.02386197727201078,
+     "df": 3,
+     "fixed": {
+      "est": 1.8869640985192282,
+      "se": 0.173740148099289
+     },
+     "Q": 23.421598696534087,
+     "pQ": 0.000032983109595541293,
+     "I2": 87.19130987226787,
+     "tau2": 0.8374577253740535,
+     "pi": [
+      -2.528349388132993,
+      6.410048191215571
+     ],
+     "weights": [
+      25.20808186002068,
+      25.651423311601423,
+      25.782993347827627,
+      23.357501480550262
+     ]
+    }
+   ],
+   "Qbetween": 2.44236300640411,
+   "df": 1,
+   "p": 0.11809820144143901
+  },
+  "comparatorUnclear": 0,
+  "leaveOneOut": [
+   {
+    "id": "S1",
+    "est": 1.5391263836542834,
+    "ci": [
+     0.867788412468103,
+     2.2104643548404637
+    ]
+   },
+   {
+    "id": "S2",
+    "est": 1.3217127528939951,
+    "ci": [
+     0.7489708737896561,
+     1.8944546319983342
+    ]
+   },
+   {
+    "id": "S3",
+    "est": 1.5201080498479955,
+    "ci": [
+     0.8282360167560693,
+     2.2119800829399217
+    ]
+   },
+   {
+    "id": "S4",
+    "est": 1.4447499751706312,
+    "ci": [
+     0.7542676203065125,
+     2.13523233003475
+    ]
+   },
+   {
+    "id": "S5",
+    "est": 1.4561339908993096,
+    "ci": [
+     0.7567015952155214,
+     2.155566386583098
+    ]
+   },
+   {
+    "id": "S6",
+    "est": 1.3481155502886235,
+    "ci": [
+     0.7307648588703748,
+     1.9654662417068722
+    ]
+   },
+   {
+    "id": "S7",
+    "est": 1.5660229230811238,
+    "ci": [
+     0.9263420728460847,
+     2.205703773316163
+    ]
+   },
+   {
+    "id": "S8",
+    "est": 1.4091263173750275,
+    "ci": [
+     0.7440390446345303,
+     2.0742135901155248
+    ]
+   },
+   {
+    "id": "S9",
+    "est": 1.6048662780587615,
+    "ci": [
+     1.0188590845563388,
+     2.190873471561184
+    ]
+   }
+  ],
+  "looRange": [
+   1.3217127528939951,
+   1.6048662780587615
+  ],
+  "egger": null,
+  "totalN": 806
+ },
+ "warnings": [],
+ "text": {
+  "en": {
+   "background": "Fostering computational thinking skills in school education is increasingly vital for preparing young learners to solve complex problems in digital environments.",
+   "conclusionAbstract": "Block-based programming instruction can effectively foster computational thinking across primary and lower secondary classrooms compared to both passive and active alternatives.",
+   "introduction": [
+    "Computational thinking has emerged as an essential skill within primary and lower secondary school curricula. As schools aim to prepare young learners for problem-solving in modern technology-rich societies, introducing algorithmic thinking and programming principles during elementary and middle school grades has become a major educational priority. However, implementing programming instruction in early grades requires pedagogical approaches that are developmentally appropriate for novice students.",
+    "Visual and block-based programming environments, such as Scratch, allow students to assemble programs using graphical blocks rather than typing text-based code. The included primary studies evaluated various block-based implementations across elementary and middle school grades, ranging from standalone visual programming activities [S1, S3] to visual coding integrated into science curricula [S4, S7]. Other studies investigated block-based curricula that transition into text-based languages [S5] or focused on structured visual frameworks such as Sense-Reason-Act programming environments [S8, S9].",
+    "Although numerous empirical evaluations have examined visual programming, their findings are distributed across distinct instructional settings, comparison conditions, and school levels. Prior studies have compared block-based instruction to passive baselines [S1, S3, S4, S9] as well as active instructional alternatives [S2, S6, S7, S8]. A quantitative synthesis is therefore useful to combine these diverse findings into a single pooled estimate. The purpose of this meta-analysis is to evaluate the effects of block-based programming instruction on computational thinking in school students, examining overall efficacy as well as potential variations across school levels and comparison types."
+   ],
+   "discussion": [
+    "The synthesis revealed a statistically significant, large overall effect of block-based programming instruction on computational thinking outcomes (g = 1.47, 95% CI [0.87, 2.06], p < .001; Table 3). Across the included studies, effect sizes consistently favored the intervention over comparison groups (Fig. 1). Substantial heterogeneity was present across the sample of studies (Q(8) = 63.62, p < .001, I2 = 87.4%, tau2 = 0.413; Table 3), accompanied by a wide prediction interval of [−0.15, 3.08]. A sensitivity analysis examining leave-one-out estimates demonstrated that the pooled effect remained relatively stable, ranging from 1.32 to 1.60.",
+    "Subgroup analyses were conducted to explore school level and comparison type, although these comparisons are exploratory and based on few studies. In the analysis by school level (Table 3), elementary samples showed a large effect (k = 6, g = 1.41, 95% CI [0.57, 2.25]), which did not differ significantly from the middle school samples (k = 3, g = 1.58, 95% CI [−0.63, 3.79]; Q(1) = 0.08, p = .783). Similarly, when examining comparison types, active comparisons yielded an estimate of g = 1.94 (95% CI [0.49, 3.39], k = 4), whereas passive comparisons yielded g = 1.14 (95% CI [0.50, 1.78], k = 5), with no statistically significant subgroup difference (Q(1) = 2.44, p = .118). Because of the small number of studies in these subsets, these subgroup differences remain exploratory and cannot establish definitive causes.",
+    "An inspection of the individual studies summarized in Table 1 and Table 2 reveals variations across instructional designs and control conditions. Large effects were reported in elementary cohorts when Scratch was contrasted with regular algorithm instruction (g = 2.67 [S2]) and when visual Sense-Reason-Act concepts were contrasted with linear visual programming (g = 2.05 [S8]). Moderate to large effects occurred in elementary evaluations comparing block-based instruction with regular curriculum controls (g = 0.92 [S1]; g = 1.16 [S3]; g = 1.60 [S5]; g = 0.41 [S9]). In middle school cohorts, block-based learning produced substantial gains over text-based Python instruction (g = 2.42 [S6]) and regular science lessons (g = 1.67 [S4]), while comparison against unplugged algorithmic instruction in science yielded a smaller effect (g = 0.65 [S7]).",
+    "For teachers of grades 1-9, these findings indicate that block-based programming environments can serve as an effective means to develop student computational thinking. Visual environments may be implemented as dedicated computing units or integrated within subject areas such as science. Furthermore, teachers working with novice learners may find visual block platforms beneficial when introducing algorithmic principles before or alongside text-based or unplugged instructional alternatives."
+   ],
+   "limitations": [
+    "This meta-analysis has several limitations. The synthesis is based on a small total evidence base of 9 studies encompassing 806 participants, which restricts statistical power, prevented the assessment of publication bias, and means subgroup findings must be regarded as exploratory. Furthermore, the underlying data were extracted automatically, which may limit the precision of nuanced study characteristics.",
+    "In addition, the included studies displayed variability in study designs and assessment instruments. The evidence base comprises both randomized controlled trials [S1, S5, S8, S9] and quasi-experimental designs [S2, S3, S4, S6, S7]. Outcome measures also varied from standardized computational thinking tests to specific programming achievement tests and self-report scales, contributing to the substantial heterogeneity observed across findings."
+   ],
+   "conclusion": [
+    "In conclusion, this meta-analysis of 9 studies indicates that block-based programming instruction has a large positive effect on computational thinking in school students compared to both passive and active control conditions. Although the small number of studies and substantial heterogeneity require cautious interpretation, visual block-based tools provide a promising approach for cultivating algorithmic and computational skills across grades 1 through 9."
+   ],
+   "keywords": [
+    "block-based programming",
+    "visual programming",
+    "computational thinking",
+    "elementary education",
+    "middle school"
+   ]
+  },
+  "ja": {
+   "background": "学校教育における計算論的思考（computational thinking）の育成は，デジタル環境で複雑な問題を解決する児童生徒を育てる上で重要性を増している．",
+   "conclusionAbstract": "ブロック型プログラミング指導は，受動的・能動的な対照群の双方と比較して，小・中学校の授業において計算論的思考を効果的に育成できる．",
+   "introduction": [
+    "計算論的思考は，初等・中等教育のカリキュラムにおいて不可欠な資質・能力として浮上してきた．現代の技術に富んだ社会における問題解決に向けて子どもたちを準備させることが学校に求められるなか，小学校および中学校の段階でアルゴリズム的思考やプログラミングの基本原理を導入することは，主要な教育的優先課題となっている．しかし，早期の学年におけるプログラミング指導の実践には，初心者の児童生徒の発達段階に適した指導法が必要とされる．",
+    "Scratchに代表されるビジュアルおよびブロック型のプログラミング環境は，児童生徒がテキストベースのコードを入力するのではなく，視覚的なブロックを用いてプログラムを組み立てることを可能にする．分析対象となった原著論文は，小学校および中学校の学年における多様なブロック型の実践を評価しており，それらは単独のビジュアルプログラミング活動 [S1, S3] から理科のカリキュラムに統合されたビジュアルコーディング [S4, S7] まで多岐にわたる．他の研究では，テキストベースの言語へと移行するブロック型カリキュラムを検討したもの [S5] や，感覚・推論・行動（Sense-Reason-Act）プログラミング環境のような構造化された視覚的フレームワークに着目したもの [S8, S9] もあった．",
+    "ビジュアルプログラミングを検証した実証的な評価は多数存在するものの，その知見は異なる指導環境，対照条件，学校段階に分散している．先行研究では，ブロック型指導を受動的なベースライン [S1, S3, S4, S9] だけでなく，能動的な指導代替案 [S2, S6, S7, S8] とも比較してきた．したがって，これら多様な知見を統合して単一の統合推定量を得るためには，定量的統合が有用である．本メタ分析の目的は，児童生徒における計算論的思考に対するブロック型プログラミング指導の効果を評価し，全体的な有効性とともに学校段階や対照群のタイプによる潜在的な差異を検討することである．"
+   ],
+   "discussion": [
+    "統合の結果，計算論的思考のアウトカムに対するブロック型プログラミング指導の統計的に有意で大きな全体的効果が明らかになった（g = 1.47，95% CI [0.87, 2.06]，p < .001；表3）．含まれた研究全体において，効果量（effect size）は一貫して対照群よりも介入群を支持していた（図1）．研究サンプル全体で実質的な異質性（heterogeneity）が認められ（Q(8) = 63.62，p < .001，I2 = 87.4%，tau2 = 0.413；表3），[−0.15, 3.08] という広い予測区間を伴っていた．1研究除外（leave-one-out）推定量を検討した感度分析では，統合効果は1.32から1.60の範囲で比較的安定していることが示された．",
+    "これらの比較は探索的であり少数の研究に基づくものであるが，学校段階および対照群のタイプを探索するためにサブグループ分析が実施された．学校段階別の分析（表3）では，小学校のサンプルが大きな効果を示し（k = 6，g = 1.41，95% CI [0.57, 2.25]），中学校のサンプル（k = 3，g = 1.58，95% CI [−0.63, 3.79]；Q(1) = 0.08，p = .783）と有意な差は認められなかった．同様に，対照群のタイプを検討したところ，能動的対照群の推定値は g = 1.94（95% CI [0.49, 3.39]，k = 4）であったのに対し，受動的対照群は g = 1.14（95% CI [0.50, 1.78]，k = 5）であり，統計的に有意なサブグループ間の差は見られなかった（Q(1) = 2.44，p = .118）．これらのサブセットにおける研究数が少ないため，これらのサブグループ差は探索的なものにとどまり，決定的な要因を確定することはできない．",
+    "表1および表2に要約された個別研究の精査から，指導デザインおよび対照条件による差異が明らかになった．小学校のコホートでは，Scratchが通常のアルゴリズム指導と比較された場合（g = 2.67 [S2]），および感覚・推論・行動の視覚的概念が直線的なビジュアルプログラミングと比較された場合（g = 2.05 [S8]）に大きな効果が報告された．ブロック型指導を通常カリキュラムの対照群と比較した小学校の評価では，中程度から大きな効果が認められた（g = 0.92 [S1]；g = 1.16 [S3]；g = 1.60 [S5]；g = 0.41 [S9]）．中学校のコホートでは，ブロック型学習はテキストベースのPython指導（g = 2.42 [S6]）や通常の理科の授業（g = 1.67 [S4]）に対して大幅な向上をもたらした一方，理科におけるアンプラグドなアルゴリズム指導との比較ではより小さな効果にとどまった（g = 0.65 [S7]）．",
+    "小・中学校（1〜9年生）の教員にとって，これらの知見は，ブロック型プログラミング環境が児童生徒の計算論的思考を育成する効果的な手段となり得ることを示している．ビジュアル環境は，独立した情報分野の単元として実施することも，理科などの教科内に統合して実施することも可能である．さらに，初心者の学習者を指導する教員にとっては，テキストベースやアンプラグドな指導代替案の導入前またはそれと並行してアルゴリズムの原理を導入する際，視覚的なブロックプラットフォームが有用であると考えられる．"
+   ],
+   "limitations": [
+    "本メタ分析にはいくつかの限界がある．本統合は，計806名の参加者を含む9件の研究という小規模なエビデンスベースに基づいており，これにより統計的検出力が制限され，公表バイアス（publication bias）の評価が妨げられたほか，サブグループ分析の知見を探索的なものとみなさざるを得ない．さらに，基礎データが自動抽出されたため，研究特性の微細なニュアンスに関する精度が制限されている可能性がある．",
+    "加えて，含まれた研究の研究デザインおよび評価尺度には多様性がみられた．エビデンスベースは，ランダム化比較試験（randomized controlled trial）[S1, S5, S8, S9] と準実験デザイン [S2, S3, S4, S6, S7] の双方で構成されている．アウトカムの測定方法も，標準化された計算論的思考テストから特定のプログラミング達成度テスト，自己報告式尺度まで多岐にわたり，このことが知見全体で観察された実質的な異質性に寄与している．"
+   ],
+   "conclusion": [
+    "結論として，9件の研究を対象とした本メタ分析は，ブロック型プログラミング指導が受動的および能動的な対照条件の双方と比較して，児童生徒の計算論的思考に対して大きな正の効果を持つことを示している．研究数の少なさと実質的な異質性により慎重な解釈が求められるものの，視覚的なブロック型ツールは，小・中学校（1〜9年生）を通じてアルゴリズム的および計算論的スキルを育成するための有望なアプローチを提供する．"
+   ],
+   "keywords": [
+    "ブロック型プログラミング",
+    "ビジュアルプログラミング",
+    "計算論的思考",
+    "初等教育",
+    "中学校"
+   ],
+   "criteria": {
+    "population": "初等・中等教育（K-12）の児童生徒（小学校および中学校の標本を優先，高等学校の標本も許容．大学，成人，教員・教員志望者の標本は除外）",
+    "intervention": "ブロック型またはビジュアルプログラミング指導（例：Scratch，ScratchJr，Code.org，Blockly）",
+    "comparison": "通常の授業，プログラミング指導なし，またはテキストベースの指導や代替指導",
+    "outcome": "計算論的思考，プログラミング，または問題解決のテスト"
+   }
+  },
+  "article": {
+   "lead": "小・中学生を対象としたブロック型プログラミング指導が、計算論的思考力に与える影響を調べた9件の研究（計806名）のメタ分析結果をご紹介します。分析の結果、効果量g（平均の差を標準偏差で割った値）は1.47と大きなプラスの効果が示されました。視覚的にブロックを組み合わせる指導が、児童生徒の問題解決や論理的思考の育成に寄与する可能性が示唆されています。",
+   "question": "本分析の問いは「小・中学生へのブロック型プログラミング指導は、計算論的思考力の向上に効果があるのか」です。プログラミング教育が導入される中、学校現場では視覚的なブロックを用いた指導が児童生徒の思考力育成に本当に役立つのか関心が集まっています。通常授業や他の指導法と比べてどのような学習成果が得られるのかを整理することは、先生方が授業設計や教材選定を行う上で重要な手がかりとなります。",
+   "reading": [
+    "全体の統合結果では、効果量gが1.47（95%信頼区間[0.87, 2.06]）と統計的に有意な向上が示されました。研究を1つずつ除外して再計算してもgは1.32から1.60の範囲にとどまり、結果は一定の安定性を示しています。ただし、研究間のばらつき度合いを示す指標であるI2は87.4%と非常に高く、将来の同様の介入効果を予測する予測区間も[-0.15, 3.08]とマイナスを含むなど、指導環境による差が大きい点に留意が必要です。",
+    "学校段階別では、小学校（6件、g=1.41）と中学校（3件、g=1.58）の双方で効果が見られ、学校段階間の差は統計的に有意ではありませんでした（p=.783）。また、通常授業等と比較した受動的比較（5件、g=1.14）に加え、別の指導法と比較した能動的比較（4件、g=1.94）でも高い効果が見られました。ただし、これらは研究数が非常に少ない中での探索的な分析であり、確定的な結論を急ぐことはできません。"
+   ],
+   "hints": [
+    "小学校・中学校ともに効果が示されており、発達段階に応じたブロック型教材の活用は、計算論的思考力の基礎固めに役立ちます。",
+    "通常授業との比較だけでなく、別の学習法との比較でも良好な結果が得られており、視覚的ブロックを用いた指導活動は有効な選択肢です。",
+    "理科など他教科との統合指導（[S4]や[S7]）や、順次処理から発展させた概念指導（[S8]）など、工夫次第で効果的な授業展開が期待できます。"
+   ],
+   "cautions": [
+    "対象となった研究は9件（計806名）と少なく、データも自動抽出されたものであるため、過度に効果を強調せず慎重に受け止める必要があります。",
+    "研究間のばらつき（異質性）が大きく、予測区間（[-0.15, 3.08]）にマイナスが含まれるため、指導法や学級環境によっては効果が十分に出ない可能性もあります。",
+    "研究数が10件未満のため公表バイアスの評価が行われておらず、効果が肯定的な研究に偏っている可能性が否定できない点にご注意ください。"
+   ],
+   "sns": "小・中学生のブロック型プログラミング指導に関するメタ分析（9件・806名）では思考力向上に大きな効果（g=1.47）が示されました。研究数が少なく慎重さは必要ですが、授業の参考となる結果です。"
+  }
+ },
+ "dir": "2026-10-11-info-block-programming-ct"
+}

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="418" viewBox="0 0 900 418" font-family="'Noto Sans', 'Noto Sans CJK JP', 'Yu Gothic', 'Meiryo', Arial, sans-serif" font-size="13">
+<rect width="900" height="418" fill="#ffffff"/>
+<text x="12" y="32" font-weight="bold">Study</text>
+<text x="660" y="32" font-weight="bold">g [95% CI]</text>
+<text x="880" y="32" font-weight="bold" text-anchor="end">Weight</text>
+<line x1="12" y1="42" x2="888" y2="42" stroke="#333" stroke-width="1"/>
+<text x="12" y="68">Namlı and Aybek [1]</text>
+<line x1="398.9370760310964" y1="64" x2="481.89816370527603" y2="64" stroke="#222" stroke-width="1.4"/>
+<rect x="433.65477206078504" y="57.23715219259881" width="13.525695614802379" height="13.525695614802379" fill="#1f4e79"/>
+<text x="660" y="68">0.92 [0.39, 1.46]</text>
+<text x="880" y="68" text-anchor="end">11.3%</text>
+<text x="12" y="96">Oluk et al. [8]</text>
+<line x1="522.9634368352092" y1="92" x2="628.3736088265516" y2="92" stroke="#222" stroke-width="1.4"/>
+<rect x="569.0929041674232" y="85.42438133654272" width="13.15123732691456" height="13.15123732691456" fill="#1f4e79"/>
+<text x="660" y="96">2.67 [1.99, 3.35]</text>
+<text x="880" y="96" text-anchor="end">10.3%</text>
+<text x="12" y="124">Piedade and Dorotea [2]</text>
+<line x1="434.66434134235476" y1="120" x2="482.2588992102975" y2="120" stroke="#222" stroke-width="1.4"/>
+<rect x="451.46162027632613" y="113" width="14" height="14" fill="#1f4e79"/>
+<text x="660" y="124">1.16 [0.85, 1.46]</text>
+<text x="880" y="124" text-anchor="end">12.6%</text>
+<text x="12" y="152">Sungur and Özkan [3]</text>
+<line x1="449.41234993508044" y1="148" x2="547.4933953490478" y2="148" stroke="#222" stroke-width="1.4"/>
+<rect x="491.8140684970154" y="141.3611958549513" width="13.277608290097398" height="13.277608290097398" fill="#1f4e79"/>
+<text x="660" y="152">1.67 [1.04, 2.31]</text>
+<text x="880" y="152" text-anchor="end">10.6%</text>
+<text x="12" y="180">Wang et al. [5]</text>
+<line x1="468.09518783072684" y1="176" x2="517.3095705287361" y2="176" stroke="#222" stroke-width="1.4"/>
+<rect x="485.7110925840986" y="169.0087134043671" width="13.982573191265764" height="13.982573191265764" fill="#1f4e79"/>
+<text x="660" y="180">1.60 [1.28, 1.92]</text>
+<text x="880" y="180" text-anchor="end">12.5%</text>
+<text x="12" y="208">Çetin and OTU [9]</text>
+<line x1="507.4919803612148" y1="204" x2="605.3870259588934" y2="204" stroke="#222" stroke-width="1.4"/>
+<rect x="549.7991176988671" y="197.35961453881305" width="13.280770922373895" height="13.280770922373895" fill="#1f4e79"/>
+<text x="660" y="208">2.42 [1.79, 3.05]</text>
+<text x="880" y="208" text-anchor="end">10.6%</text>
+<text x="12" y="236">ÖZTÜRK and Arabacıoğlu [4]</text>
+<line x1="371.3554974037384" y1="232" x2="466.95951142911446" y2="232" stroke="#222" stroke-width="1.4"/>
+<rect x="412.4977412453532" y="225.34023682892678" width="13.319526342146444" height="13.319526342146444" fill="#1f4e79"/>
+<text x="660" y="236">0.65 [0.03, 1.27]</text>
+<text x="880" y="236" text-anchor="end">10.7%</text>
+<text x="12" y="264">Fanchamps et al. [6]</text>
+<line x1="460.34925973905666" y1="260" x2="594.9419693791826" y2="260" stroke="#222" stroke-width="1.4"/>
+<rect x="521.3322825633753" y="253.6866680042557" width="12.626663991488606" height="12.626663991488606" fill="#1f4e79"/>
+<text x="660" y="264">2.05 [1.18, 2.92]</text>
+<text x="880" y="264" text-anchor="end">9.0%</text>
+<text x="12" y="292">Fanchamps et al. [7]</text>
+<line x1="371.1857390544448" y1="288" x2="429.7801503922556" y2="288" stroke="#222" stroke-width="1.4"/>
+<rect x="393.5466584505236" y="281.06371372717336" width="13.872572545653254" height="13.872572545653254" fill="#1f4e79"/>
+<text x="660" y="292">0.41 [0.03, 0.79]</text>
+<text x="880" y="292" text-anchor="end">12.2%</text>
+<line x1="12" y1="314" x2="888" y2="314" stroke="#999" stroke-width="0.8"/>
+<text x="12" y="334" font-weight="bold">Random-effects model (HKSJ)</text>
+<polygon points="436.1108295346801,330 482.43153503206634,322 528.7522405294526,330 482.43153503206634,338" fill="#c00000"/>
+<text x="660" y="334" font-weight="bold">1.47 [0.87, 2.06]</text>
+<text x="880" y="334" text-anchor="end" font-weight="bold">100%</text>
+<text x="12" y="362">Prediction interval</text>
+<line x1="357.069339408741" y1="358" x2="607.7937306553916" y2="358" stroke="#c00000" stroke-width="1.4" stroke-dasharray="5,4"/>
+<text x="660" y="362">[−0.15, 3.08]</text>
+<line x1="368.75" y1="46" x2="368.75" y2="364" stroke="#666" stroke-width="1" stroke-dasharray="2,3"/>
+<line x1="330" y1="364" x2="640" y2="364" stroke="#333" stroke-width="1"/>
+<line x1="330" y1="364" x2="330" y2="369" stroke="#333"/>
+<text x="330" y="383" text-anchor="middle">−0.50</text>
+<line x1="368.75" y1="364" x2="368.75" y2="369" stroke="#333"/>
+<text x="368.75" y="383" text-anchor="middle">0.00</text>
+<line x1="407.5" y1="364" x2="407.5" y2="369" stroke="#333"/>
+<text x="407.5" y="383" text-anchor="middle">0.50</text>
+<line x1="446.25" y1="364" x2="446.25" y2="369" stroke="#333"/>
+<text x="446.25" y="383" text-anchor="middle">1.00</text>
+<line x1="485" y1="364" x2="485" y2="369" stroke="#333"/>
+<text x="485" y="383" text-anchor="middle">1.50</text>
+<line x1="523.75" y1="364" x2="523.75" y2="369" stroke="#333"/>
+<text x="523.75" y="383" text-anchor="middle">2.00</text>
+<line x1="562.5" y1="364" x2="562.5" y2="369" stroke="#333"/>
+<text x="562.5" y="383" text-anchor="middle">2.50</text>
+<line x1="601.25" y1="364" x2="601.25" y2="369" stroke="#333"/>
+<text x="601.25" y="383" text-anchor="middle">3.00</text>
+<line x1="640" y1="364" x2="640" y2="369" stroke="#333"/>
+<text x="640" y="383" text-anchor="middle">3.50</text>
+<text x="360.75" y="404" text-anchor="end" fill="#555">← Favors comparison</text>
+<text x="376.75" y="404" fill="#555">Favors intervention →</text>
+</svg>
