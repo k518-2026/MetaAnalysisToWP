@@ -46,10 +46,11 @@
         "claude-sonnet-5-5 (Claude Code, local)"
       ],
       "warnings": [],
-      "wpSentAt": "",
+      "wpSentAt": "2026-10-17T22:03:42.310Z",
       "ready": true,
       "readyAt": "2026-10-11T10:53:22.940Z",
-      "readyBy": "Sonnet 5.5（Claude Code セッション）が全文と照らして確認・修正"
+      "readyBy": "Sonnet 5.5（Claude Code セッション）が全文と照らして確認・修正",
+      "wpDraft": false
     },
     {
       "date": "2026-10-11",
